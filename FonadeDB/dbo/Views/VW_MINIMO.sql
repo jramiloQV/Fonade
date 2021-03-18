@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_MINIMO (minimo, Nombres, Apellidos, CodRol) AS SELECT Min(T1.Id_Contacto), T1.Nombres, T1.Apellidos, T2.CodRol FROM Contacto T1, ProyectoContacto T2 WHERE T1.Id_Contacto=T2.CodContacto GROUP BY T1.Nombres, T1.Apellidos, T2.CodRol

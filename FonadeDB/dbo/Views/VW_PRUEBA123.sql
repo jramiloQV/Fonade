@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PRUEBA123 (Id_Ciudad, Ciudad, Id_Periodo, CodProyecto, Impacto) AS SELECT T1.Id_Ciudad, T1.NomCiudad, T2.Id_Periodo, T3.CodProyecto, T3.Impacto FROM Ciudad T1, Periodo T2, ProyectoImpacto T3 WHERE T1.Id_Ciudad=T2.Id_Periodo AND T1.Id_Ciudad=T3.CodProyecto

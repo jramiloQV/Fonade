@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_ROL_USUARIO (Nombres, Apellidos, Email, NomGrupo) AS SELECT T1.Nombres, T1.Apellidos, T1.Email, T2.NomGrupo FROM Contacto T1, Grupo T2, GrupoContacto T3 WHERE T1.Id_Contacto=T3.CodContacto AND T2.Id_Grupo=T3.CodGrupo AND T1.Identificacion=80761988

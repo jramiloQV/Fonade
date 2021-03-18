@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_C2_MONTOSOLXSECTOR (SalariosMin, NomSector) AS SELECT Sum(T3.Recursos), T4.NomSector FROM ConvocatoriaProyecto T1, Proyecto T2, ProyectoFinanzasIngresos T3, Sector T4, SubSector T5 WHERE T1.CodProyecto=T2.Id_Proyecto AND T3.CodProyecto=T2.Id_Proyecto AND T1.CodConvocatoria=2 AND T2.CodSubSector=T5.Id_SubSector AND T4.Id_Sector=T5.CodSector GROUP BY T4.NomSector

@@ -1,0 +1,24 @@
+﻿/* aplicable a contenedor tablas */
+.contenedorTablasFrame {
+width: 882px !important;
+height: auto;
+}
+/* aplicables a tablas */
+.tablasFrame {
+width: 100%;
+height: auto;
+}
+/* aplicable a tr y tbody*/
+.todoElAncho {
+width: 100%;
+}
+/* aplicables a td */
+.anchoUnaFila {
+width: 100%;
+}
+.anchoDosFilas {
+width: 50%;
+}
+.anchoTresFilas {
+width: 33.3%;
+}

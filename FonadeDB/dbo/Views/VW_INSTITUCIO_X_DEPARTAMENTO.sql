@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_INSTITUCIO_X_DEPARTAMENTO (CodDepartamento) AS SELECT T1.CodDepartamento FROM Ciudad T1, Institucion T2 WHERE T1.Id_Ciudad=T2.CodCiudad AND T1.CodDepartamento=76

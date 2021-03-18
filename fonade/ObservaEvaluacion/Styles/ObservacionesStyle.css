@@ -1,0 +1,36 @@
+﻿.container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tituloGrande {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		color: #003366;
+		text-decoration: none;
+		font-weight: bold;
+}
+
+.imgCenter{
+    height: 150px;
+		line-height: 150px;
+		text-align: center;
+		width: 100%;
+}
+
+.Boton {
+    font-size: 9px;
+    font-weight: normal;
+    text-decoration: none;
+    background-color: #FFAE35;
+    color: #000000;
+    border: 1px solid #FD9800;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

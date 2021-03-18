@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_APROBADOS_TECNICAMENTE (Id_Proyecto, NomProyecto, CodEstado, Fecha) AS SELECT T1.Id_Proyecto, T1.NomProyecto, T1.CodEstado, T2.Fecha FROM Proyecto T1, ProyectoFormalizacion T2 WHERE T1.Id_Proyecto=T2.codProyecto AND T1.CodEstado=2

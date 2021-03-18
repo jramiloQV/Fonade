@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PAEXPIMP (posicionarancelaria, Importaciones, Exportaciones) AS SELECT * FROM PAExpImp T1

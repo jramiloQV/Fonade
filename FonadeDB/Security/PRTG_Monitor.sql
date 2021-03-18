@@ -1,0 +1,6 @@
+﻿CREATE USER [PRTG_Monitor] WITHOUT LOGIN;
+
+
+
+
+

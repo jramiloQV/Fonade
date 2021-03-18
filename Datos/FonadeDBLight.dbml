@@ -1,0 +1,1964 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Fonade" Class="FonadeDBLightDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.213.245;Initial Catalog=Fonade;Persist Security Info=True;User ID=SQL_Fonade" SettingsObjectName="Datos.Properties.Settings" SettingsPropertyName="FonadeConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.EvaluacionRiesgo" Member="EvaluacionRiesgos">
+    <Type Name="EvaluacionRiesgo">
+      <Column Name="Id_Riesgo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Riesgo" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Mitigacion" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimNotas" Member="ActaSeguimNotas">
+    <Type Name="ActaSeguimNota">
+      <Column Name="idActaNotas" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIngresado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Nota" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContratosArchivosEliminados" Member="ContratosArchivosEliminados">
+    <Type Name="ContratosArchivosEliminado">
+      <Column Name="idContratoArchivoEliminado" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodProyecto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ruta" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="NombreArchivo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="FechaIngresoEnAnexos" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CodContactoEnAnexos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodContactoEliminaArchivo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MotivoEliminacion" Type="System.String" DbType="VarChar(600)" CanBeNull="true" />
+      <Column Name="FechaEliminacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HistoricoIndicadorGenerico" Member="HistoricoIndicadorGenerico">
+    <Type Name="HistoricoIndicadorGenerico">
+      <Column Name="idHistoricoIndicadorGen" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_IndicadorGenerico" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodEmpresa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NombreIndicador" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Numerador_Old" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Denominador_Old" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Evaluacion_Old" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Observacion_Old" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Numerador_New" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Denominador_New" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Evaluacion_New" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Observacion_New" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="MotivoCambio" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="FechaCambio" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CodContactoCambio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HistoricoObservacionEmpresa" Member="HistoricoObservacionEmpresa">
+    <Type Name="HistoricoObservacionEmpresa">
+      <Column Name="id_HistoricoObserEmpresa" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codEmpresa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Observacion_Old" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Observacion_New" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="motivoCambio" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaCambio" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="codContactoCambio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vista_InterventoresActivos" Member="Vista_InterventoresActivos">
+    <Type Name="Vista_InterventoresActivos">
+      <Column Name="codInterventor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="interventores" Type="System.String" DbType="VarChar(201) NOT NULL" CanBeNull="false" />
+      <Column Name="codCoordinador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="codOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vista_Estadisticas_Pagos" Member="Vista_Estadisticas_Pagos">
+    <Type Name="Vista_Estadisticas_Pagos">
+      <Column Name="Id_Proyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomProyecto" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="codInterventor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Interventor" Type="System.String" DbType="VarChar(201) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAprobacionInterventor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FechaAprobacionORechazoCoord" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FechaRespuestaFiduciaria" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Id_PagoActividad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomPagoActividad" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CantidadDinero" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Estado" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="ObservacionesFiduciariaOCoordinacion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="codCoordinador" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="coordInterventor" Type="System.String" DbType="VarChar(201) NOT NULL" CanBeNull="false" />
+      <Column Name="codOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreOperador" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Operador" Member="Operador">
+    <Type Name="Operador">
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NombreOperador" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="TelefonoOperador" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="DireccionOperador" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="NitOperador" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailOperador" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="NombreRepresentante" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="TelefonoRepresentante" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailRepresentante" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaCreacion" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FechaModificacion" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EmailObservacionAcreditacion" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Rutalogo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AplicaTerminosSCD" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConfiguracionOperadores" Member="ConfiguracionOperadores">
+    <Type Name="ConfiguracionOperadores">
+      <Column Name="idConfiguracion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codOperador" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cargarCertificadoDigitalAutenticado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="estadoProyectoCargaCertificadoDigAut" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HistorialAvancesPlanOperativo" Member="HistorialAvancesPlanOperativo">
+    <Type Name="HistorialAvancesPlanOperativo">
+      <Column Name="idHistoricoAvance" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codActividad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Mes" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAvanceEmprendedor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionEmprendedor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FechaAvanceInterventor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionInterventor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Aprobada" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ValorFondoEmprender" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="ValorAporteEmprendedor" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="codContacto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HistorialAvancesNomina" Member="HistorialAvancesNomina">
+    <Type Name="HistorialAvancesNomina">
+      <Column Name="idHistoricoAvaNomina" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codNomina" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Mes" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAvanceEmprendedor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionEmprendedor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FechaAvanceInterventor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionInterventor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Aprobada" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="valorSueldo" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="valorPrestaciones" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="codContacto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HistorialAvancesProduccion" Member="HistorialAvancesProduccion">
+    <Type Name="HistorialAvancesProduccion">
+      <Column Name="idHistorialAvaProduccion" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodProduccion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Mes" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAvanceEmprendedor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionEmprendedor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FechaAvanceInterventor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionInterventor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Aprobada" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Cantidad" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Costo" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="codContacto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HistorialAvancesVentas" Member="HistorialAvancesVentas">
+    <Type Name="HistorialAvancesVentas">
+      <Column Name="idHistoricoAvaVentas" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodVenta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Mes" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAvanceEmprendedor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionEmprendedor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FechaAvanceInterventor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionInterventor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Aprobada" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Ventas" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Ingreso" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="codContacto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimientoDespublicada" Member="ActaSeguimientoDespublicada">
+    <Type Name="ActaSeguimientoDespublicada">
+      <Column Name="idJustificacionActaDespublicada" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codContacto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Justificacion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaActaDespublicada" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PermisosInformesCoordInterv" Member="PermisosInformesCoordInterv">
+    <Type Name="PermisosInformesCoordInterv">
+      <Column Name="id_Permiso" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codCoordinadorInterventor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EstadisticasAvances" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EstadisticasPagos" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TodosInterventores" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ListadoInterventores" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RecomendacionInterventoria" Member="RecomendacionInterventoria">
+    <Type Name="RecomendacionInterventoria">
+      <Column Name="idRecomendacion" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RecomendacionInterventoria" Member="RecomendacionInterventoria1" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CorreosInfomesConsolidados" Member="CorreosInfomesConsolidados">
+    <Type Name="CorreosInfomesConsolidados">
+      <Column Name="idCorreo" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codContactoEnvia" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codContactoRecibe" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NombresEnvia" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="NombresRecibe" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailRecibe" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="codRecomendacionInterventoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Mensaje" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaHoraGenerado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Enviado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FechaHoraEnvio" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HabilitarSeguimientoInterventoria" Member="HabilitarSeguimientoInterventoria">
+    <Type Name="HabilitarSeguimientoInterventoria">
+      <Column Name="idSeguimientoInterventoria" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="habilitado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="codUsuarioCrea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaCreacion" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ArchivosSeguimInterventoria" Member="ArchivosSeguimInterventoria">
+    <Type Name="ArchivosSeguimInterventoria">
+      <Column Name="idArchivoSeguimInterventoria" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ruta" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="nomArchivo" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaCarga" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="codContactoCarga" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Borrado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="eliminadoPor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CorreoNotificacionCargaArhivoInterventoria" Member="CorreoNotificacionCargaArhivoInterventoria">
+    <Type Name="CorreoNotificacionCargaArhivoInterventoria">
+      <Column Name="idCorreo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codContactoEnvia" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codContactoRecibe" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmailEnvia" Type="System.String" DbType="VarChar(350) NOT NULL" CanBeNull="false" />
+      <Column Name="NombreEnvia" Type="System.String" DbType="VarChar(350) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailRecibe" Type="System.String" DbType="VarChar(350) NOT NULL" CanBeNull="false" />
+      <Column Name="NombreRecibe" Type="System.String" DbType="VarChar(350) NOT NULL" CanBeNull="false" />
+      <Column Name="Asunto" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Mensaje" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaHoraGenerado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Enviado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FechaHoraEnvio" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LogContrasena" Member="LogContrasena">
+    <Type Name="LogContrasena">
+      <Column Name="idLog" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="codContacto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="clave" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="claveVencida" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ArchivosAdicionalesContrato" Member="ArchivosAdicionalesContrato">
+    <Type Name="ArchivosAdicionalesContrato">
+      <Column Name="idArchivo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ruta" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="NombreArchivo" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIngreso" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CodContacto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NombreContacto" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="TipoArchivo" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Eliminado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EliminadoPor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fechaEliminado" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimientoDatos" Member="ActaSeguimientoDatos">
+    <Type Name="ActaSeguimientoDatos">
+      <Column Name="idActa" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumActa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumContrato" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FechaActaInicio" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Prorroga" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NombrePlanNegocio" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="NombreEmpresa" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="NitEmpresa" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ContratoMarcoInteradmin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ContratoInterventoria" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Contratista" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ValorAprobado" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DomicilioPrincipal" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Convocatoria" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="SectorEconomico" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ObjetoProyecto" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ObjetoVisita" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NombreGestorTecnicoSena" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="EmailGestorTecnicoSena" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="TelefonoGestorTecnicoSena" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NombreGestorOperativoSena" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="EmailGestorOperativoSena" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="TelefonoGestorOperativoSena" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FechaIngresado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LogSoporte" Member="LogSoporte">
+    <Type Name="LogSoporte">
+      <Column Name="idLog" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codContacto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Accion" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Detalle" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimRiesgosEvaluacion" Member="ActaSeguimRiesgosEvaluacion">
+    <Type Name="ActaSeguimRiesgosEvaluacion">
+      <Column Name="idRiesgoInterventoria" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idRiesgoEvaluacion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Riesgo" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Mitigacion" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="codContactoModifica" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaUltimaModificacion" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Ocultar" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimGestionProduccionEvaluacion" Member="ActaSeguimGestionProduccionEvaluacion">
+    <Type Name="ActaSeguimGestionProduccionEvaluacion">
+      <Column Name="idProduccionInterventoria" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_Producto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nomProducto" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="unidades" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="unidadMedida" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="productoRepresentativo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="codContacto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaUltimaActualizacion" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ocultar" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="composicion" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="condicionesEspeciales" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="descripcionGeneral" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="formaDePago" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="iva" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="justificacion" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="nombreComercial" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="otros" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="porcentajeIva" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimGestionMercadeoEvaluacion" Member="ActaSeguimGestionMercadeoEvaluacion">
+    <Type Name="ActaSeguimGestionMercadeoEvaluacion">
+      <Column Name="idActividadInterventoria" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idActividad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="unidades" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="actividad" Type="System.String" DbType="VarChar(5000) NOT NULL" CanBeNull="false" />
+      <Column Name="codContacto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaUltimaActualizacion" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ocultar" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimRiesgos" Member="ActaSeguimRiesgos">
+    <Type Name="ActaSeguimRiesgos">
+      <Column Name="idActaRiesgo" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodRiego" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GestionEmprendorRiesgo" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIngreso" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimGestionEmpleo" Member="ActaSeguimGestionEmpleo">
+    <Type Name="ActaSeguimGestionEmpleo">
+      <Column Name="idActaGestionEmpleo" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VerificaIndicador" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DesarrolloIndicador" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIngreso" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimInfoPagos" Member="ActaSeguimInfoPagos">
+    <Type Name="ActaSeguimInfoPagos">
+      <Column Name="idActaInfoPago" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idPagoActividad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaModificado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="codigoPago" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Actividad" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Valor" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Concepto" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="verificoDocumentos" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="verificoActivosEstado" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Observacion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimInventarioContrato" Member="ActaSeguimInventarioContrato">
+    <Type Name="ActaSeguimInventarioContrato">
+      <Column Name="idActaInventContrato" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaModificado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="descripcionRecursos" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="valorActivos" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaCargaAnexo" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimGestionMercadeo" Member="ActaSeguimGestionMercadeo">
+    <Type Name="ActaSeguimGestionMercadeo">
+      <Column Name="idActaGestionMercadeo" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DescripcionEvento" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="PublicidadLogos" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIngreso" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimContrapartida" Member="ActaSeguimContrapartida">
+    <Type Name="ActaSeguimContrapartida">
+      <Column Name="idActaSegContrapartida" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cantContrapartida" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIngresado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimGestionProduccion" Member="ActaSeguimGestionProduccion">
+    <Type Name="ActaSeguimGestionProduccion">
+      <Column Name="idActaSegProduccion" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Medida" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIngreso" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="codProducto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomProducto" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="productoRepresentativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimObligacionesContables" Member="ActaSeguimObligacionesContables">
+    <Type Name="ActaSeguimObligacionesContables">
+      <Column Name="idActaSegObligTipicas" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaIngresado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="estadosFinancieros" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="librosComerciales" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="librosContabilidad" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="conciliacionBancaria" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="cuentaBancaria" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="observObligacionContable" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimObligacionesTributarias" Member="ActaSeguimObligacionesTributarias">
+    <Type Name="ActaSeguimObligacionesTributarias">
+      <Column Name="idObligTributaria" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaIngresado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="declaraReteFuente" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="autorretencionRenta" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="declaraIva" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="declaImpConsumo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="declaRenta" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="declaInfoExogena" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="declaIndustriaComercio" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="declaRetencionImpIndusComercio" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="observObligacionTributaria" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimObligacionesLaborales" Member="ActaSeguimObligacionesLaborales">
+    <Type Name="ActaSeguimObligacionesLaborales">
+      <Column Name="idObligLaboral" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaIngresado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="contratosLaborales" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="pagosNomina" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="pagoPrestacionesSociales" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="afiliacionSegSocial" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="pagoSegSocial" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="certParafiscalesSegSocial" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="reglaInternoTrab" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="sisGestionSegSaludTrabajo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="observObligacionLaboral" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimOtrosAspectos" Member="ActaSeguimOtrosAspectos">
+    <Type Name="ActaSeguimOtrosAspectos">
+      <Column Name="idOtrosAspectos" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DescripCompInnovador" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripCompAmbiental" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIngresado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimOtrosAspInnovador" Member="ActaSeguimOtrosAspInnovador">
+    <Type Name="ActaSeguimOtrosAspInnovador">
+      <Column Name="idOtroAspInnovador" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="valoracion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="observacion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIngreso" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimOtrosAspAmbiental" Member="ActaSeguimOtrosAspAmbiental">
+    <Type Name="ActaSeguimOtrosAspAmbiental">
+      <Column Name="idOtrosAspAmbiental" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="valoracion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="observacion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIngreso" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimOtrasObligaciones" Member="ActaSeguimOtrasObligaciones">
+    <Type Name="ActaSeguimOtrasObligaciones">
+      <Column Name="idOtrasObligaciones" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIngresado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DescripInfoPlataforma" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripTiempoEmprendedor" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripAcomAsesoria" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimOtrasObligAcomAsesoria" Member="ActaSeguimOtrasObligAcomAsesoria">
+    <Type Name="ActaSeguimOtrasObligAcomAsesoria">
+      <Column Name="idOtrasObligAcomAsesoria" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIngreso" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="valoracion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="observacion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimOtrasObligInfoPlataforma" Member="ActaSeguimOtrasObligInfoPlataforma">
+    <Type Name="ActaSeguimOtrasObligInfoPlataforma">
+      <Column Name="idOtrasObligInfoPlataforma" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIngreso" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="valoracion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="observacion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimOtrasObligTiempoEmp" Member="ActaSeguimOtrasObligTiempoEmp">
+    <Type Name="ActaSeguimOtrasObligTiempoEmp">
+      <Column Name="idOtrasObligTiempoEmprendedor" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIngreso" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="valoracion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="observacion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimEstadoEmpresa" Member="ActaSeguimEstadoEmpresa">
+    <Type Name="ActaSeguimEstadoEmpresa">
+      <Column Name="idActaEstadoEmpresa" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIngresado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="IDH" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NBI" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimCompromisos" Member="ActaSeguimCompromisos">
+    <Type Name="ActaSeguimCompromisos">
+      <Column Name="idActaCompromiso" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaModificado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="compromiso" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaPropuestaEjec" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="observacion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="estado" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaCumpliCompromiso" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimCompromisosHistorico" Member="ActaSeguimCompromisosHistorico">
+    <Type Name="ActaSeguimCompromisosHistorico">
+      <Column Name="idActaCompromisoHist" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idCompromiso" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaModificado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="compromiso" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaPropuestaEjec" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="observacion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="estado" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaCumpliCompromiso" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ObservacionesEvaluacionCorreo" Member="ObservacionesEvaluacionCorreo">
+    <Type Name="ObservacionesEvaluacionCorreo">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="correo_principalAcreditacion" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="correo_secundarioAcreditacion" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="correo_principal" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="correo_secundario" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="codOperador" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="correo_terciarioAcreditacion" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimGestionVentas" Member="ActaSeguimGestionVentas">
+    <Type Name="ActaSeguimGestionVentas">
+      <Column Name="idActaSegVentas" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="valor" Type="System.Decimal" DbType="Decimal(38,2) NOT NULL" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaIngreso" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimObligacionesTramites" Member="ActaSeguimObligacionesTramites">
+    <Type Name="ActaSeguimObligacionesTramites">
+      <Column Name="idObligTramites" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaIngresado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="insCamaraComercio" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="renovaRegistroMercantil" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="rut" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="resolFacturacion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="certLibertadTradicion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DocumentoIdoneidad" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="permisoUsoSuelo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="certBomberos" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="regMarca" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="otrosPermisos" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="contratoArrendamiento" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="observRegistroTramiteLicencia" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActaSeguimAporteEmprendedor" Member="ActaSeguimAporteEmprendedor">
+    <Type Name="ActaSeguimAporteEmprendedor">
+      <Column Name="idActaAporteEmp" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codConvocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="numActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="visita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaModificado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="metaEmprendedor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetPagoActSinRegistrarActa" Method="GetPagoActSinRegistrarActa">
+    <Parameter Name="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetPagoActSinRegistrarActaResult">
+      <Column Name="Id_PagoActividad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomPagoActividad" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="codigopago" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CodProyecto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CantidadDinero" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="NomPagoConcepto" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.MD_ConsultarCantTareasPendientesXContacto" Method="MD_ConsultarCantTareasPendientesXContacto">
+    <Parameter Name="IN_CodContacto" Parameter="iN_CodContacto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="MD_ConsultarCantTareasPendientesXContactoResult">
+      <Column Name="CantRegistros" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_ValidarPagoEnviadoAFiducia" Method="SP_ValidarPagoEnviadoAFiducia">
+    <Parameter Name="codActa" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ValidarPagoEnviadoAFiduciaResult">
+      <Column Name="resultado" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_EstadisticaAvanceXInterventor" Method="sp_EstadisticaAvanceXInterventor">
+    <Parameter Name="codContacto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_EstadisticaAvanceXInterventorResult">
+      <Column Name="CodProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodActividad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomActividad" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Item" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Mes" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAvance" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Observaciones" Type="System.String" DbType="VarChar(5120)" CanBeNull="true" />
+      <Column Name="FechaAprobacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionesInterventor" Type="System.String" DbType="VarChar(5120)" CanBeNull="true" />
+      <Column Name="Aprobada" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="codInterventor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Interventor" Type="System.String" DbType="VarChar(201) NOT NULL" CanBeNull="false" />
+      <Column Name="Entidad" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="Operador" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.MD_VerTODOSLosProyectos" Method="MD_VerTODOSLosProyectos">
+    <ElementType Name="MD_VerTODOSLosProyectosResult">
+      <Column Name="Id_Proyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomProyecto" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Institucion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodEstado" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="NomUnidad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomInstitucion" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomCiudad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomDepartamento" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodTipoInstitucion" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Inactivo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="codOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreOperador" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.MD_VerTODOSLosProyectosActivos" Method="MD_VerTODOSLosProyectosActivos">
+    <ElementType Name="MD_VerTODOSLosProyectosActivosResult">
+      <Column Name="Id_Proyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomProyecto" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Institucion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodEstado" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="NomUnidad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomInstitucion" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomCiudad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomDepartamento" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodTipoInstitucion" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Inactivo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="codOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreOperador" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.MD_VerTODOSLosProyectosJefeUnidad" Method="MD_VerTODOSLosProyectosJefeUnidad">
+    <Parameter Name="CodInstitucion" Parameter="codInstitucion" Type="System.Int32" DbType="Int" />
+    <ElementType Name="MD_VerTODOSLosProyectosJefeUnidadResult">
+      <Column Name="Id_Proyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomProyecto" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Institucion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodEstado" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="NomUnidad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomInstitucion" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomCiudad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomDepartamento" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodTipoInstitucion" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Inactivo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="codOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreOperador" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.MD_VerProyectosEmprendedorOAsesor" Method="MD_VerProyectosEmprendedorOAsesor">
+    <Parameter Name="CodInstitucion" Parameter="codInstitucion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="codContacto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="MD_VerProyectosEmprendedorOAsesorResult">
+      <Column Name="Id_Proyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomProyecto" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Institucion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodEstado" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="NomUnidad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomInstitucion" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomCiudad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomDepartamento" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodTipoInstitucion" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Inactivo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="codOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreOperador" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.MD_VerProyectosTodosEvaluacionCoordinacion" Method="MD_VerProyectosTodosEvaluacionCoordinacion">
+    <Parameter Name="codContacto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodEstadoProyecto" Parameter="codEstadoProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodOperador" Parameter="codOperador" Type="System.Int32" DbType="Int" />
+    <ElementType Name="MD_VerProyectosTodosEvaluacionCoordinacionResult">
+      <Column Name="Id_Proyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomProyecto" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Institucion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodEstado" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="NomUnidad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomInstitucion" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomCiudad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomDepartamento" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodTipoInstitucion" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Inactivo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="codOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreOperador" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.MD_VerTodosProyectosGerenciaEvaluacion" Method="MD_VerTodosProyectosGerenciaEvaluacion">
+    <Parameter Name="CodEstadoProyecto" Parameter="codEstadoProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodOperador" Parameter="codOperador" Type="System.Int32" DbType="Int" />
+    <ElementType Name="MD_VerTodosProyectosGerenciaEvaluacionResult">
+      <Column Name="Id_Proyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomProyecto" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Institucion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodEstado" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="NomUnidad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomInstitucion" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomCiudad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomDepartamento" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodTipoInstitucion" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Inactivo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="codOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreOperador" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.MD_VerTodosProyectosLiderRegional" Method="MD_VerTodosProyectosLiderRegional">
+    <Parameter Name="codDptoInst" Type="System.Int32" DbType="Int" />
+    <ElementType Name="MD_VerTodosProyectosLiderRegionalResult">
+      <Column Name="Id_Proyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomProyecto" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Institucion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodEstado" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="NomUnidad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomInstitucion" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomCiudad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomDepartamento" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodTipoInstitucion" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Inactivo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="codOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreOperador" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.MD_ActasSeguimientoInterventor" Method="MD_ActasSeguimientoInterventor">
+    <Parameter Name="CodContactoCoordinador" Parameter="codContactoCoordinador" Type="System.Int32" DbType="Int" />
+    <ElementType Name="MD_ActasSeguimientoInterventorResult">
+      <Column Name="IdProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Interventor" Type="System.String" DbType="VarChar(201) NOT NULL" CanBeNull="false" />
+      <Column Name="codInterventor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.MD_ConsultarCantTareasXContactoProyecto" Method="MD_ConsultarCantTareasXContactoProyecto">
+    <Parameter Name="IN_CodContacto" Parameter="iN_CodContacto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="MD_ConsultarCantTareasXContactoProyectoResult">
+      <Column Name="CantRegistros" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.MD_ConsultarTareasXContactoProyecto" Method="MD_ConsultarTareasXContactoProyecto">
+    <Parameter Name="IN_CodContacto" Parameter="iN_CodContacto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IN_OffSet" Parameter="iN_OffSet" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IN_RegistrosXPagina" Parameter="iN_RegistrosXPagina" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="MD_ConsultarTareasXContactoProyectoResult">
+      <Column Name="Tipo" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Ejecutable" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Icono" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CodigoTarea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RecordatorioEmail" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="NivelUrgencia" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="RequiereRespuesta" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RecordatorioPantalla" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoContactoAgendo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdTareaUsuarioRepeticion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Parametros" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdProyecto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreProyecto" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="NombreContactoAgendo" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ApellidoContactoAgendo" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="GrupoContactoAgendo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_Convocatorias" Method="SPIA_Convocatorias">
+    <Parameter Name="CodigoOperador" Parameter="codigoOperador" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_ConvocatoriasResult">
+      <Column Name="Id_Convocatoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomConvocatoria" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_ProtagonistaCliente" Method="SPIA_ProtagonistaCliente">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_ProtagonistaClienteResult">
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Perfil" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="Localizacion" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="Justificacion" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_Protagonista" Method="SPIA_Protagonista">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_ProtagonistaResult">
+      <Column Name="PerfilConsumidor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NecesidadesPotencialesClientes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NecesidadesPotencialesConsumidores" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_OportunidadDeMercado" Method="SPIA_OportunidadDeMercado">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_OportunidadDeMercadoResult">
+      <Column Name="TendenciaCrecimiento" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_OportunidadDeMercadoCompetidores" Method="SPIA_OportunidadDeMercadoCompetidores">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_OportunidadDeMercadoCompetidoresResult">
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Localizacion" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductosServicios" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="Precios" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="LogisticaDistribucion" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="OtroCual" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_SolucionFichaTecnica" Method="SPIA_SolucionFichaTecnica">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_SolucionFichaTecnicaResult">
+      <Column Name="NomProducto" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="NombreComercial" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="UnidadMedida" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DescripcionGeneral" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CondicionesEspeciales" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Composicion" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Otros" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ProductoMasRepresentativo" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_SolucionSolucion" Method="SPIA_SolucionSolucion">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_SolucionSolucionResult">
+      <Column Name="ConceptoNegocio" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="InnovadorConceptoNegocio" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ProductoServicio" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Proceso" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="AceptacionProyecto" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="TecnicoProductivo" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Comercial" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Legal" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_DesarrolloSolucionIngresos" Method="SPIA_DesarrolloSolucionIngresos">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_DesarrolloSolucionIngresosResult">
+      <Column Name="Ingresos" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DondeCompra" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CaracteristicasCompra" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FrecuenciaCompra" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Precio" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_DesarrolloSolucionNormatividad" Method="SPIA_DesarrolloSolucionNormatividad">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_DesarrolloSolucionNormatividadResult">
+      <Column Name="Ambiental" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CondicionesTecnicas" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Empresarial" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Laboral" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="RegistroMarca" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Tecnica" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Tributaria" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_DesarrolloSolucionReqInversion" Method="SPIA_DesarrolloSolucionReqInversion">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="codTipo" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_DesarrolloSolucionReqInversionResult">
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorUnidad" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DescFuente" Type="System.String" DbType="NVarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="RequisitosTecnicos" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NomTipoInfraestructura" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_DesarrolloSolucionProduccion" Method="SPIA_DesarrolloSolucionProduccion">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_DesarrolloSolucionProduccionResult">
+      <Column Name="CondicionesTecnicas" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="RealizaImportacion" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="JustificacionImportacion" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ActivosProveedores" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="IncrementoValor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_DesarrolloSolucionRequerimientos" Method="SPIA_DesarrolloSolucionRequerimientos">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_DesarrolloSolucionRequerimientosResult">
+      <Column Name="LugarFisico" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="TieneLugarFisico" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_DesarrolloSolucionProcesoProduccion" Method="SPIA_DesarrolloSolucionProcesoProduccion">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_DesarrolloSolucionProcesoProduccionResult">
+      <Column Name="NomProducto" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DescripcionProceso" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_DesarrolloSolucíonProductividad" Method="SPIA_DesarrolloSolucíonProductividad">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_DesarrolloSolucíonProductividadResult">
+      <Column Name="CapacidadProductiva" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Perfil" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Rol" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_DesarrolloSolucíonCargosOperación" Method="SPIA_DesarrolloSolucíonCargosOperación">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_DesarrolloSolucíonCargosOperaciónResult">
+      <Column Name="Cargo" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Funciones" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Formacion" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ExperienciaGeneral" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ExperienciaEspecifica" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TipoContratacion" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Dedicacion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UnidadDeMedidaDeTiempo" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="TiempoVinculacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ValorRemuneracion" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="OtrosGastos" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="ValorConPrestaciones" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="RemuneraciónPrimerAño" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="ValorFondoEmprender" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="AportesEmprendedor" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="IngresosVentas" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_FuturoDelNegocioEstrategias" Method="SPIA_FuturoDelNegocioEstrategias">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_FuturoDelNegocioEstrategiasResult">
+      <Column Name="EstrategiaPromocion" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="EstrategiaPromocionProposito" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="EstrategiaComunicacion" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="EstrategiaComunicacionProposito" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="EstrategiaDistribucion" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="EstrategiaDistribucionProposito" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_FuturoDelNegocioEstrategiasPromocion" Method="SPIA_FuturoDelNegocioEstrategiasPromocion">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_FuturoDelNegocioEstrategiasPromocionResult">
+      <Column Name="Actividad" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="RecursosRequeridos" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="MesEjecucion" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Costo" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Responsable" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_FuturoDelNegocioEstrategiasComunicacion" Method="SPIA_FuturoDelNegocioEstrategiasComunicacion">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_FuturoDelNegocioEstrategiasComunicacionResult">
+      <Column Name="Actividad" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="RecursosRequeridos" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="MesEjecucion" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Costo" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Responsable" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_FuturoDelNegocioEstrategiasDistribucion" Method="SPIA_FuturoDelNegocioEstrategiasDistribucion">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_FuturoDelNegocioEstrategiasDistribucionResult">
+      <Column Name="Actividad" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="RecursosRequeridos" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="MesEjecucion" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Costo" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Responsable" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_FuturoDelNegocioPeriodoDeArranque" Method="SPIA_FuturoDelNegocioPeriodoDeArranque">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_FuturoDelNegocioPeriodoDeArranqueResult">
+      <Column Name="PeriodoArranque" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PeriodoImproductivo" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_Riesgos" Method="SPIA_Riesgos">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_RiesgosResult">
+      <Column Name="ActoresExternos" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FactoresExternos" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_ResumenEjecutivo" Method="SPIA_ResumenEjecutivo">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_ResumenEjecutivoResult">
+      <Column Name="ConceptoDelNegocio" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Empleos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Contrapartidas" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EjecucionPresupuestal" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Ventas" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Mercadeo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PeriodoImproductivo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDH" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="RecursosAportadosEmprendedor" Type="System.String" DbType="NChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="VideoEmprendedor" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_DesarrolloSolucionIngresosYCondicionesComer" Method="SPIA_DesarrolloSolucionIngresosYCondicionesComer">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_DesarrolloSolucionIngresosYCondicionesComerResult">
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+      <Column Name="VolúmenesYFrecuencia" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CaracteristicasCompra" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SitioCompra" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FormaPago" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Precio" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+      <Column Name="RequisitosPostVenta" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Garantias" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="MargenDeComercialización" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_General" Method="SPIA_General">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_GeneralResult">
+      <Column Name="Id_proyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomProyecto" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
+      <Column Name="NomSector" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="NomSubsector" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="CodInstitucion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomInstitucion" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomUnidad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoDane" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NomCiudad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaNacimiento" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Genero" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="NivelEstudio" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Programa" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Institucion" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Estado" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_DesarrolloSolucionProyeccionProductos" Method="SPIA_DesarrolloSolucionProyeccionProductos">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_DesarrolloSolucionProyeccionProductosResult">
+      <Column Name="NomProducto" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="UnidadMedida" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="FormaDePago" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Justificacion" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Iva" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_PlanDeCompras" Method="SPIA_PlanDeCompras">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_PlanDeComprasResult">
+      <Column Name="NomTipoInsumo" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="nominsumo" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Unidad" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Cantidad" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Presentacion" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Desperdicio" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_TablaCostosDeProduccionEnPesos" Method="SPIA_TablaCostosDeProduccionEnPesos">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_TablaCostosDeProduccionEnPesosResult">
+      <Column Name="NombreInsumo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Ano" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="AnioProyeccion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_TablaProyeccionDeComprarUnidades" Method="SPIA_TablaProyeccionDeComprarUnidades">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_TablaProyeccionDeComprarUnidadesResult">
+      <Column Name="NomTipoInsumo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="NombreInsumo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Unidades" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="AnioProyeccion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_TablaProyeccionDeComprarPesos" Method="SPIA_TablaProyeccionDeComprarPesos">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_TablaProyeccionDeComprarPesosResult">
+      <Column Name="NomTipoInsumo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="NombreInsumo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ComprasEnPesos" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="AnioProyeccion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_CostosAdmnPuestaEnMarcha" Method="SPIA_CostosAdmnPuestaEnMarcha">
+    <Parameter Name="CodigoProyecto" Parameter="codigoProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_CostosAdmnPuestaEnMarchaResult">
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Valor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_CostosAdmnGastoAnualesAdtvos" Method="SPIA_CostosAdmnGastoAnualesAdtvos">
+    <Parameter Name="CodigoProyecto" Parameter="codigoProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_CostosAdmnGastoAnualesAdtvosResult">
+      <Column Name="Id_Gasto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Valor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Protegido" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_RecursosSolicitadosProyecto" Method="SPIA_RecursosSolicitadosProyecto">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_RecursosSolicitadosProyectoResult">
+      <Column Name="recursos" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_EstructuraFnAporteEmprend" Method="SPIA_EstructuraFnAporteEmprend">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_EstructuraFnAporteEmprendResult">
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Valor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Detalle" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_EstructuraFnRecursoCapital" Method="SPIA_EstructuraFnRecursoCapital">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_EstructuraFnRecursoCapitalResult">
+      <Column Name="Tipo" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Cuantia" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Plazo" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Formapago" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Interes" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Destinacion" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_EstructuraFnProyeccionIngresosVentas" Method="SPIA_EstructuraFnProyeccionIngresosVentas">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_EstructuraFnProyeccionIngresosVentasResult">
+      <Column Name="NomProducto" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="[1]" Member="_1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="[2]" Member="_2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="[3]" Member="_3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="[4]" Member="_4" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="[5]" Member="_5" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="[6]" Member="_6" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="[7]" Member="_7" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="[8]" Member="_8" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="[9]" Member="_9" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="[10]" Member="_10" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_EstructuraFnIndiceActuaMonet" Method="SPIA_EstructuraFnIndiceActuaMonet">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_EstructuraFnIndiceActuaMonetResult">
+      <Column Name="ActualizacionMonetaria" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_EstructuraFnInverFijayDife" Method="SPIA_EstructuraFnInverFijayDife">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_EstructuraFnInverFijayDifeResult">
+      <Column Name="concepto" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="valor" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="mes" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="tipoFuente" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TipoInversion" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_EstructuraFnCostosPuestaEnMar" Method="SPIA_EstructuraFnCostosPuestaEnMar">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_EstructuraFnCostosPuestaEnMarResult">
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Valor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_EstructuraFnCostosAnuaAdtvos" Method="SPIA_EstructuraFnCostosAnuaAdtvos">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_EstructuraFnCostosAnuaAdtvosResult">
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Año1" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Año2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Año3" Type="System.Decimal" DbType="Decimal(38,2)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_EstructuraFnCapitalDeTrabajo" Method="SPIA_EstructuraFnCapitalDeTrabajo">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_EstructuraFnCapitalDeTrabajoResult">
+      <Column Name="Componente" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Valor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="DescFuente" Type="System.String" DbType="NVarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Observacion" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_PlanOperativoCronoActividades" Method="SPIA_PlanOperativoCronoActividades">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_PlanOperativoCronoActividadesResult">
+      <Column Name="CodProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="item" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="NomActividad" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 1 - Fondo Emprender]" Member="Mes_1___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 1 - Aporte Emprendedor]" Member="Mes_1___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 2 - Fondo Emprender]" Member="Mes_2___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 2 - Aporte Emprendedor]" Member="Mes_2___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 3 - Fondo Emprender]" Member="Mes_3___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 3 - Aporte Emprendedor]" Member="Mes_3___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 4 - Fondo Emprender]" Member="Mes_4___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 4 - Aporte Emprendedor]" Member="Mes_4___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 5 - Fondo Emprender]" Member="Mes_5___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 5 - Aporte Emprendedor]" Member="Mes_5___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 6 - Fondo Emprender]" Member="Mes_6___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 6 - Aporte Emprendedor]" Member="Mes_6___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 7 - Fondo Emprender]" Member="Mes_7___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 7 - Aporte Emprendedor]" Member="Mes_7___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 8 - Fondo Emprender]" Member="Mes_8___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 8 - Aporte Emprendedor]" Member="Mes_8___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 9 - Fondo Emprender]" Member="Mes_9___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 9 - Aporte Emprendedor]" Member="Mes_9___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 10 - Fondo Emprender]" Member="Mes_10___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 10 - Aporte Emprendedor]" Member="Mes_10___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 11 - Fondo Emprender]" Member="Mes_11___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 11 - Aporte Emprendedor]" Member="Mes_11___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 12 - Fondo Emprender]" Member="Mes_12___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 12 - Aporte Emprendedor]" Member="Mes_12___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="FondoEmprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="AporteEmprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_PlanOperativoMetasSocialesPlan" Method="SPIA_PlanOperativoMetasSocialesPlan">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_PlanOperativoMetasSocialesPlanResult">
+      <Column Name="PlanNacional" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PlanRegional" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Cluster" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_PlanOperativoEmpleo" Method="SPIA_PlanOperativoEmpleo">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_PlanOperativoEmpleoResult">
+      <Column Name="TipoDeEmpleoDirecto" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Cargo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ValorMensual" Type="System.Decimal" DbType="Decimal(38,2)" CanBeNull="true" />
+      <Column Name="GeneradoPrimerAnio" Type="System.String" DbType="VarChar(34)" CanBeNull="true" />
+      <Column Name="EdadEntre18y24Años" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="EsDesplazado" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="EsMadre" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="EsMinoria" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="EsRecluido" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="EsDesmovilizado" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="EsDiscapacitado" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="EsDesvinculado" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_PlanOperativoEmpleoAGenerar" Method="SPIA_PlanOperativoEmpleoAGenerar">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_PlanOperativoEmpleoAGenerarResult">
+      <Column Name="EmpleosAGenerarPrimerAño" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EmpleosAGenerarTotalidadProyecto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EmpleosIndirectos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIA_PlanOperativoParticipacionEmprendedores" Method="SPIA_PlanOperativoParticipacionEmprendedores">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIA_PlanOperativoParticipacionEmprendedoresResult">
+      <Column Name="nombres" Type="System.String" DbType="VarChar(201) NOT NULL" CanBeNull="false" />
+      <Column Name="Beneficiario" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Participacion" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAE_TabEvaDatosGenerales" Method="SPIAE_TabEvaDatosGenerales">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodConvocatoria" Parameter="codConvocatoria" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAE_TabEvaDatosGeneralesResult">
+      <Column Name="Localizacion" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Sector" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ResumenConcepto" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAE_TabEvaPuntajesDeAspectos" Method="SPIAE_TabEvaPuntajesDeAspectos">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodConvocatoria" Parameter="codConvocatoria" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAE_TabEvaPuntajesDeAspectosResult">
+      <Column Name="Id_Campo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Campo" Type="System.String" DbType="VarChar(350) NOT NULL" CanBeNull="false" />
+      <Column Name="Campo1" Type="System.String" DbType="VarChar(350) NOT NULL" CanBeNull="false" />
+      <Column Name="Puntaje" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Justificacion" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAE_EvalFinanIndicadores" Method="SPIAE_EvalFinanIndicadores">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodConvocatoria" Parameter="codConvocatoria" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAE_EvalFinanIndicadoresResult">
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Valor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Tipo" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAE_ConceptoFinalAportesInverFijas" Method="SPIAE_ConceptoFinalAportesInverFijas">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodConvocatoria" Parameter="codConvocatoria" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAE_ConceptoFinalAportesInverFijasResult">
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Detalle" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="DescFuente" Type="System.String" DbType="NVarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Solicitado" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PorcentajeSolicitado" Type="System.Decimal" DbType="Decimal(28,2)" CanBeNull="true" />
+      <Column Name="Recomendado" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PorcentajeRecomendado" Type="System.Decimal" DbType="Decimal(28,2)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAE_ConceptoFinalAportesCapTrabPrimerAnio" Method="SPIAE_ConceptoFinalAportesCapTrabPrimerAnio">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodConvocatoria" Parameter="codConvocatoria" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAE_ConceptoFinalAportesCapTrabPrimerAnioResult">
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Detalle" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="FuentedeFinanciacion" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="Solicitado" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PorcentajeSolicitado" Type="System.Decimal" DbType="Decimal(28,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Recomendado" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PorcentajeRecomendado" Type="System.Decimal" DbType="Decimal(28,2) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAE_ConceptoFinalAportesInverDiferidas" Method="SPIAE_ConceptoFinalAportesInverDiferidas">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodConvocatoria" Parameter="codConvocatoria" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAE_ConceptoFinalAportesInverDiferidasResult">
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Detalle" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="DescFuente" Type="System.String" DbType="NVarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Solicitado" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PorcentajeSolicitado" Type="System.Decimal" DbType="Decimal(28,2)" CanBeNull="true" />
+      <Column Name="Recomendado" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PorcentajeRecomendado" Type="System.Decimal" DbType="Decimal(28,14)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAE_ConceptoFinalAportesObservaciones" Method="SPIAE_ConceptoFinalAportesObservaciones">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodConvocatoria" Parameter="codConvocatoria" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAE_ConceptoFinalAportesObservacionesResult">
+      <Column Name="EquipoTrabajo" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="RecursosSolicitados" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="ValorRecomendado" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAE_ConceptoFinalRiesgos" Method="SPIAE_ConceptoFinalRiesgos">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodConvocatoria" Parameter="codConvocatoria" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAE_ConceptoFinalRiesgosResult">
+      <Column Name="Riesgo" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Mitigacion" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAE_ConceptoFinalConclusion" Method="SPIAE_ConceptoFinalConclusion">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodConvocatoria" Parameter="codConvocatoria" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAE_ConceptoFinalConclusionResult">
+      <Column Name="Viable" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="ConceptoDeJustificacion" Type="System.String" DbType="VarChar(2500)" CanBeNull="true" />
+      <Column Name="Justificacion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAE_IndicadoresDeGestion" Method="SPIAE_IndicadoresDeGestion">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodConvocatoria" Parameter="codConvocatoria" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAE_IndicadoresDeGestionResult">
+      <Column Name="EjecuciónPresupuestalEmprendedor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="EjecuciónPresupuestalEvaluador" Type="System.String" DbType="VarChar(58)" CanBeNull="true" />
+      <Column Name="IDHEmprendedor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IDHEvaluador" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ContrapartidasEmprendedor" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ContrapartidasEvaluador" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="VentasEmprendedor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VentasEvaluador" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="PeriodoImproductivoEmprendedor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PeriodoImproductivoEvaluador" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RecursosAportadosEmprendedor" Type="System.String" DbType="NChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="RecursosAportadorEmprendedorEvaluador" Type="System.String" DbType="NChar(255) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAE_IndicadoresDeGestionProduccion" Method="SPIAE_IndicadoresDeGestionProduccion">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodConvocatoria" Parameter="codConvocatoria" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAE_IndicadoresDeGestionProduccionResult">
+      <Column Name="ProductoMasRepresentativo" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductoMasRepresentativoEvaluador" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Producto" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Unidades" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UnidadesEvaluador" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAE_IndicadoresDeGestionMercadeo" Method="SPIAE_IndicadoresDeGestionMercadeo">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodConvocatoria" Parameter="codConvocatoria" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAE_IndicadoresDeGestionMercadeoResult">
+      <Column Name="Cantidad" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Actividad" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DatosEvaluador" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAE_IndicadoresDeGestionEmpleos" Method="SPIAE_IndicadoresDeGestionEmpleos">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodConvocatoria" Parameter="codConvocatoria" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAE_IndicadoresDeGestionEmpleosResult">
+      <Column Name="Cantidad" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Cargo" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DatosEvaluador" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_ActividadesPlanOperativoEjecucionMesXMes" Method="SPIAI_ActividadesPlanOperativoEjecucionMesXMes">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_ActividadesPlanOperativoEjecucionMesXMesResult">
+      <Column Name="CodProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="item" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="NomActividad" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 1 - Fondo Emprender]" Member="Mes_1___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 1 - Aporte Emprendedor]" Member="Mes_1___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 2 - Fondo Emprender]" Member="Mes_2___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 2 - Aporte Emprendedor]" Member="Mes_2___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 3 - Fondo Emprender]" Member="Mes_3___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 3 - Aporte Emprendedor]" Member="Mes_3___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 4 - Fondo Emprender]" Member="Mes_4___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 4 - Aporte Emprendedor]" Member="Mes_4___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 5 - Fondo Emprender]" Member="Mes_5___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 5 - Aporte Emprendedor]" Member="Mes_5___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 6 - Fondo Emprender]" Member="Mes_6___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 6 - Aporte Emprendedor]" Member="Mes_6___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 7 - Fondo Emprender]" Member="Mes_7___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 7 - Aporte Emprendedor]" Member="Mes_7___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 8 - Fondo Emprender]" Member="Mes_8___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 8 - Aporte Emprendedor]" Member="Mes_8___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 9 - Fondo Emprender]" Member="Mes_9___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 9 - Aporte Emprendedor]" Member="Mes_9___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 10 - Fondo Emprender]" Member="Mes_10___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 10 - Aporte Emprendedor]" Member="Mes_10___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 11 - Fondo Emprender]" Member="Mes_11___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 11 - Aporte Emprendedor]" Member="Mes_11___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 12 - Fondo Emprender]" Member="Mes_12___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 12 - Aporte Emprendedor]" Member="Mes_12___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 13 - Fondo Emprender]" Member="Mes_13___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 13 - Aporte Emprendedor]" Member="Mes_13___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 14 - Fondo Emprender]" Member="Mes_14___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 14 - Aporte Emprendedor]" Member="Mes_14___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 15 - Fondo Emprender]" Member="Mes_15___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 15 - Aporte Emprendedor]" Member="Mes_15___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 16 - Fondo Emprender]" Member="Mes_16___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 16 - Aporte Emprendedor]" Member="Mes_16___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 17 - Fondo Emprender]" Member="Mes_17___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 17 - Aporte Emprendedor]" Member="Mes_17___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 18 - Fondo Emprender]" Member="Mes_18___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 18 - Aporte Emprendedor]" Member="Mes_18___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 19 - Fondo Emprender]" Member="Mes_19___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 19 - Aporte Emprendedor]" Member="Mes_19___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 20 - Fondo Emprender]" Member="Mes_20___Fondo_Emprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 20 - Aporte Emprendedor]" Member="Mes_20___Aporte_Emprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="FondoEmprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="AporteEmprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_AvanceMesAMesPorActividad" Method="SPIAI_AvanceMesAMesPorActividad">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_AvanceMesAMesPorActividadResult">
+      <Column Name="IdPlan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Actividad" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Mes" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAvance" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionesEmprendedor" Type="System.String" DbType="VarChar(5120)" CanBeNull="true" />
+      <Column Name="FechaAprobacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionesInterventor" Type="System.String" DbType="VarChar(5120)" CanBeNull="true" />
+      <Column Name="ActividadAprobada" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="TipoFinanciacion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_AvanceHistoricoPlanOperativo" Method="SPIAI_AvanceHistoricoPlanOperativo">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_AvanceHistoricoPlanOperativoResult">
+      <Column Name="Id_Actividad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomActividad" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Item" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Mes" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAvanceEmprendedor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionEmprendedor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FechaAvanceInterventor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionInterventor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Aprobado" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ValorFondoEmprender" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="ValorAporteEmprendedor" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="codContacto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RegistradoPor" Type="System.String" DbType="VarChar(201) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_ActividadesNominaEjecucionMesXMes" Method="SPIAI_ActividadesNominaEjecucionMesXMes">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_ActividadesNominaEjecucionMesXMesResult">
+      <Column Name="CodProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Nomina" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cargo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[Mes 1 - Sueldo]" Member="Mes_1___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 1 - Prestaciones]" Member="Mes_1___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 2 - Sueldo]" Member="Mes_2___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 2 - Prestaciones]" Member="Mes_2___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 3 - Sueldo]" Member="Mes_3___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 3 - Prestaciones]" Member="Mes_3___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 4 - Sueldo]" Member="Mes_4___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 4 - Prestaciones]" Member="Mes_4___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 5 - Sueldo]" Member="Mes_5___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 5 - Prestaciones]" Member="Mes_5___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 6 - Sueldo]" Member="Mes_6___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 6 - Prestaciones]" Member="Mes_6___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 7 - Sueldo]" Member="Mes_7___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 7 - Prestaciones]" Member="Mes_7___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 8 - Sueldo]" Member="Mes_8___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 8 - Prestaciones]" Member="Mes_8___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 9 - Sueldo]" Member="Mes_9___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 9 - Prestaciones]" Member="Mes_9___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 10 - Sueldo]" Member="Mes_10___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 10 - Prestaciones]" Member="Mes_10___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 11 - Sueldo]" Member="Mes_11___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 11 - Prestaciones]" Member="Mes_11___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 12 - Sueldo]" Member="Mes_12___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 12 - Prestaciones]" Member="Mes_12___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 13 - Sueldo]" Member="Mes_13___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 13 - Prestaciones]" Member="Mes_13___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 14 - Sueldo]" Member="Mes_14___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 14 - Prestaciones]" Member="Mes_14___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 15 - Sueldo]" Member="Mes_15___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 15 - Prestaciones]" Member="Mes_15___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 16 - Sueldo]" Member="Mes_16___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 16 - Prestaciones]" Member="Mes_16___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 17 - Sueldo]" Member="Mes_17___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 17 - Prestaciones]" Member="Mes_17___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 18 - Sueldo]" Member="Mes_18___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 18 - Prestaciones]" Member="Mes_18___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 19 - Sueldo]" Member="Mes_19___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 19 - Prestaciones]" Member="Mes_19___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 20 - Sueldo]" Member="Mes_20___Sueldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 20 - Prestaciones]" Member="Mes_20___Prestaciones" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="SueldoTotal" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="PrestacionesTotal" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_AvancesNominaMesXMes" Method="SPIAI_AvancesNominaMesXMes">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_AvancesNominaMesXMesResult">
+      <Column Name="IdPlan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cargo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Mes" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAvance" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionEmprendedor" Type="System.String" DbType="VarChar(5120)" CanBeNull="true" />
+      <Column Name="FechaAprobacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionInterventor" Type="System.String" DbType="VarChar(5120)" CanBeNull="true" />
+      <Column Name="ActividadAprobada" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_AvanceHistoricoNomina" Method="SPIAI_AvanceHistoricoNomina">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_AvanceHistoricoNominaResult">
+      <Column Name="Id_Nomina" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cargo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Mes" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAvanceEmprendedor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionEmprendedor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FechaAvanceInterventor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionInterventor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Aprobado" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="valorSueldo" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="valorPrestaciones" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="codContacto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NombreCompleto" Type="System.String" DbType="VarChar(201) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_ActividadesProduccionEjecucionMesXMes" Method="SPIAI_ActividadesProduccionEjecucionMesXMes">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_ActividadesProduccionEjecucionMesXMesResult">
+      <Column Name="CodProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomProducto" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[Mes 1 - Cantidad]" Member="Mes_1___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 1 - Costo]" Member="Mes_1___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 2 - Cantidad]" Member="Mes_2___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 2 - Costo]" Member="Mes_2___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 3 - Cantidad]" Member="Mes_3___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 3 - Costo]" Member="Mes_3___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 4 - Cantidad]" Member="Mes_4___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 4 - Costo]" Member="Mes_4___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 5 - Cantidad]" Member="Mes_5___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 5 - Costo]" Member="Mes_5___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 6 - Cantidad]" Member="Mes_6___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 6 - Costo]" Member="Mes_6___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 7 - Cantidad]" Member="Mes_7___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 7 - Costo]" Member="Mes_7___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 8 - Cantidad]" Member="Mes_8___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 8 - Costo]" Member="Mes_8___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 9 - Cantidad]" Member="Mes_9___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 9 - Costo]" Member="Mes_9___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 10 - Cantidad]" Member="Mes_10___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 10 - Costo]" Member="Mes_10___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 11 - Cantidad]" Member="Mes_11___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 11 - Costo]" Member="Mes_11___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 12 - Cantidad]" Member="Mes_12___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 12 - Costo]" Member="Mes_12___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 13 - Cantidad]" Member="Mes_13___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 13 - Costo]" Member="Mes_13___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 14 - Cantidad]" Member="Mes_14___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 14 - Costo]" Member="Mes_14___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 15 - Cantidad]" Member="Mes_15___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 15 - Costo]" Member="Mes_15___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 16 - Cantidad]" Member="Mes_16___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 16 - Costo]" Member="Mes_16___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 17 - Cantidad]" Member="Mes_17___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 17 - Costo]" Member="Mes_17___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 18 - Cantidad]" Member="Mes_18___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 18 - Costo]" Member="Mes_18___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 19 - Cantidad]" Member="Mes_19___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 19 - Costo]" Member="Mes_19___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 20 - Cantidad]" Member="Mes_20___Cantidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 20 - Costo]" Member="Mes_20___Costo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="CantidadTotal" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="CostoTotal" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_AvancesProduccionMesXMes" Method="SPIAI_AvancesProduccionMesXMes">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_AvancesProduccionMesXMesResult">
+      <Column Name="IdPlan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Producto" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Mes" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAvance" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionEmprendedor" Type="System.String" DbType="VarChar(5120)" CanBeNull="true" />
+      <Column Name="FechaAprobacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionInterventor" Type="System.String" DbType="VarChar(5120)" CanBeNull="true" />
+      <Column Name="ActividadAprobada" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_AvanceHistoricoProduccion" Method="SPIAI_AvanceHistoricoProduccion">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_AvanceHistoricoProduccionResult">
+      <Column Name="id_produccion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomProducto" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Mes" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAvanceEmprendedor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionEmprendedor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FechaAvanceInterventor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionInterventor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Aprobado" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Costo" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CodContacto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NombreCompleto" Type="System.String" DbType="VarChar(201) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_ActividadesVentasEjecucionMesXMes" Method="SPIAI_ActividadesVentasEjecucionMesXMes">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_ActividadesVentasEjecucionMesXMesResult">
+      <Column Name="CodProyecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomProducto" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[Mes 1 - Ventas]" Member="Mes_1___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 1 - Ingreso]" Member="Mes_1___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 2 - Ventas]" Member="Mes_2___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 2 - Ingreso]" Member="Mes_2___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 3 - Ventas]" Member="Mes_3___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 3 - Ingreso]" Member="Mes_3___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 4 - Ventas]" Member="Mes_4___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 4 - Ingreso]" Member="Mes_4___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 5 - Ventas]" Member="Mes_5___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 5 - Ingreso]" Member="Mes_5___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 6 - Ventas]" Member="Mes_6___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 6 - Ingreso]" Member="Mes_6___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 7 - Ventas]" Member="Mes_7___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 7 - Ingreso]" Member="Mes_7___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 8 - Ventas]" Member="Mes_8___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 8 - Ingreso]" Member="Mes_8___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 9 - Ventas]" Member="Mes_9___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 9 - Ingreso]" Member="Mes_9___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 10 - Ventas]" Member="Mes_10___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 10 - Ingreso]" Member="Mes_10___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 11 - Ventas]" Member="Mes_11___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 11 - Ingreso]" Member="Mes_11___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 12 - Ventas]" Member="Mes_12___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 12 - Ingreso]" Member="Mes_12___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 13 - Ventas]" Member="Mes_13___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 13 - Ingreso]" Member="Mes_13___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 14 - Ventas]" Member="Mes_14___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 14 - Ingreso]" Member="Mes_14___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 15 - Ventas]" Member="Mes_15___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 15 - Ingreso]" Member="Mes_15___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 16 - Ventas]" Member="Mes_16___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 16 - Ingreso]" Member="Mes_16___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 17 - Ventas]" Member="Mes_17___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 17 - Ingreso]" Member="Mes_17___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 18 - Ventas]" Member="Mes_18___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 18 - Ingreso]" Member="Mes_18___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 19 - Ventas]" Member="Mes_19___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 19 - Ingreso]" Member="Mes_19___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 20 - Ventas]" Member="Mes_20___Ventas" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="[Mes 20 - Ingreso]" Member="Mes_20___Ingreso" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="FondoEmprender" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="AporteEmprendedor" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_AvanceMesAMesPorVentas" Method="SPIAI_AvanceMesAMesPorVentas">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_AvanceMesAMesPorVentasResult">
+      <Column Name="IdPlan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Producto" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Mes" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAvance" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionesEmprendedor" Type="System.String" DbType="VarChar(5120)" CanBeNull="true" />
+      <Column Name="FechaAprobacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionesInterventor" Type="System.String" DbType="VarChar(5120)" CanBeNull="true" />
+      <Column Name="ActividadAprobada" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_AvanceHistoricoVentas" Method="SPIAI_AvanceHistoricoVentas">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_AvanceHistoricoVentasResult">
+      <Column Name="id_ventas" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomProducto" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Mes" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ObservacionEmprendedor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FechaAvanceEmprendedor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ObservacionInterventor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FechaAvanceInterventor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Ventas" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Ingreso" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Aprobado" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="codContacto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NombreCompleto" Type="System.String" DbType="VarChar(201) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_IndicadoresGenericos" Method="SPIAI_IndicadoresGenericos">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_IndicadoresGenericosResult">
+      <Column Name="NombreIndicador" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Evaluacion" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Observacion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_RiesgosInterventor" Method="SPIAI_RiesgosInterventor">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_RiesgosInterventorResult">
+      <Column Name="NomEjeFuncional" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Riesgo" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Mitigacion" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Observacion" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_ConceptoFinalYRecomendaciones" Method="SPIAI_ConceptoFinalYRecomendaciones">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_ConceptoFinalYRecomendacionesResult">
+      <Column Name="ObservacionesInterventor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DificultadCentral" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_ContratoInterventoria" Method="SPIAI_ContratoInterventoria">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_ContratoInterventoriaResult">
+      <Column Name="NumeroContrato" Type="System.String" DbType="Char(15) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaDeInicioContrato" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="ObjetoContrato" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="FechaAP" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NumeroPoliza" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ValorInicialEnPesos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="PlazoContratoMeses" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="NumeroAPContrato" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaFirmaDelContrato" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="CompaniaSeguros" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_ListadoEmprendedoresSocios" Method="SPIAI_ListadoEmprendedoresSocios">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_ListadoEmprendedoresSociosResult">
+      <Column Name="NombreCompleto" Type="System.String" DbType="VarChar(201) NOT NULL" CanBeNull="false" />
+      <Column Name="Identificacion" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPIAI_RegistroMercantil" Method="SPIAI_RegistroMercantil">
+    <Parameter Name="CodProyecto" Parameter="codProyecto" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPIAI_RegistroMercantilResult">
+      <Column Name="NomProyecto" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="razonsocial" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ObjetoSocial" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="CapitalSocial" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="NomTipoSociedad" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="codigoCIIU" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NumEscrituraPublica" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DomicilioEmpresa" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="NomDepartamento" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomCiudad" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Nit" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RegimenEspecial" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="RENorma" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REFechaNorma" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Contribuyente" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="CNorma" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CFechaNorma" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AutoRetenedor" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ARNorma" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ARFechaNorma" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Declarante" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="DNorma" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DFechaNorma" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ExentoReteFuente" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ERFNorma" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ERFFechaNorma" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GranContribuyente" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="GCNorma" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GCFechaNorma" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

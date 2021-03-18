@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_INSTITUCION_CONTACTO (Nombres, Apellidos, Identificacion, NomUnidad, FechaInicio, FechaFin) AS SELECT T1.Nombres, T1.Apellidos, T1.Identificacion, T2.NomUnidad, T3.FechaInicio, T3.FechaFin FROM Contacto T1, Institucion T2, InstitucionContacto T3 WHERE T1.Id_Contacto=T3.CodContacto AND T2.Id_Institucion=T3.CodInstitucion

@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PUNTAJEPRIORIZACION (CodProyecto, CodConvocatoria, Total) AS SELECT * FROM PuntajeTotalPriorizacion T1

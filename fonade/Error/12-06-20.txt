@@ -1,0 +1,16 @@
+
+Log Entry : 
+06/12/2020 22:52:28
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/GestionarActas.aspx?codigo=65775.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/GestionarActas.aspx?codigo=65775.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: La expresión Value del objeto ‘Textbox13.Paragraphs[0].TextRuns[0]’ de tipo textrun contiene un error: [BC30205] Se esperaba el fin de instrucción.
+Error InnerException: 
+Error StackTrace:    en Microsoft.ReportingServices.ReportPublishing.ReportPublishing.InternalCreateIntermediateFormat(Stream definitionStream, String& description, String& language, ParameterInfoCollection& parameters, DataSourceInfoCollection& dataSources, DataSetInfoCollection& sharedDataSetReferences, UserLocationFlags& userReferenceLocation, ArrayList& dataSetsName, Boolean& hasExternalImages, Boolean& hasHyperlinks, Byte[]& dataSetsHash)
+   en Microsoft.ReportingServices.ReportPublishing.ReportPublishing.CreateIntermediateFormat(Byte[] definition, String& description, String& language, ParameterInfoCollection& parameters, DataSourceInfoCollection& dataSources, DataSetInfoCollection& sharedDataSetReferences, UserLocationFlags& userReferenceLocation, ArrayList& dataSetsName, Boolean& hasExternalImages, Boolean& hasHyperlinks, Byte[]& dataSetsHash)
+   en Microsoft.ReportingServices.ReportProcessing.ReportProcessing.CompileOdpReport(PublishingContext reportPublishingContext, PublishingErrorContext errorContext, String& reportDescription, String& reportLanguage, ParameterInfoCollection& parameters, DataSourceInfoCollection& dataSources, DataSetInfoCollection& sharedDataSetReferences, UserLocationFlags& userReferenceLocation, ArrayList& dataSetsName, Boolean& hasExternalImages, Boolean& hasHyperlinks, Byte[]& dataSetsHash)
+   en Microsoft.ReportingServices.ReportProcessing.ReportProcessing.CreateIntermediateFormat(PublishingContext reportPublishingContext)
+   en Microsoft.Reporting.ReportCompiler.CompileReport(ICatalogItemContext context, Byte[] reportDefinition, Boolean generateExpressionHostWithRefusedPermissions, ControlSnapshot& snapshot)
+elena.alzate@udea.edu.co
+109442
+__________________________

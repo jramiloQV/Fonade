@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PROYECTO1 (Id_Ciudad, NomCiudad, codProyecto, codConvocatoria, Valor, CodSupuesto, Periodo, TOTAL) AS SELECT T1.Id_Ciudad, T1.NomCiudad, T2.codProyecto, T2.codConvocatoria, T2.Valor, T3.CodSupuesto, T3.Periodo, T3.Valor FROM Ciudad T1, EvaluacionProyectoIndicador T2, EvaluacionProyectoSupuestoValor T3 WHERE T1.Id_Ciudad=T2.codProyecto AND T1.Id_Ciudad=T3.Valor

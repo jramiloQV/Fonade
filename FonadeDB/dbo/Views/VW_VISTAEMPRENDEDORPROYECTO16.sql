@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_VISTAEMPRENDEDORPROYECTO16 (Nombres, Apellidos, NomProyecto) AS SELECT T1.Nombres, T1.Apellidos, T2.NomProyecto FROM Contacto T1, Proyecto T2, ProyectoContacto T3

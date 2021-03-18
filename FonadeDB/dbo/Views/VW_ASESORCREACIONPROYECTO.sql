@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_ASESORCREACIONPROYECTO (Nombres, Apellidos, Email, CodInstitucion, Clave, Inactivo, NomProyecto, CodInstitucionProy) AS SELECT T1.Nombres, T1.Apellidos, T1.Email, T1.CodInstitucion, T1.Clave, T1.Inactivo, T2.NomProyecto, T2.CodInstitucion FROM Contacto T1, Proyecto T2 WHERE T1.Identificacion=1102851870

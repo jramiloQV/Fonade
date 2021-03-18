@@ -1,0 +1,25 @@
+
+Log Entry : 
+12/27/2019 10:52:50
+Error in: http://localhost:5153/PlanDeNegocioV2/Formulacion/Anexos/Anexos.aspx?codproyecto=71805.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Formulacion/Anexos/Anexos.aspx?codproyecto=71805.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: D:\zPruebasDocumentos\Documentos\Proyecto\Proyecto_71805\71805-solicitud de certificado digital.pdf
+Error InnerException: 
+Error StackTrace:    en Ionic.Zip.SharedUtilities.GetFileLength(String fileName)
+   en Ionic.Zip.ZipEntry.MaybeUnsetCompressionMethodForWriting(Int32 cycle)
+   en Ionic.Zip.ZipEntry.WriteHeader(Stream s, Int32 cycle)
+   en Ionic.Zip.ZipEntry.Write(Stream s)
+   en Ionic.Zip.ZipFile.Save()
+   en Ionic.Zip.ZipFile.Save(Stream outputStream)
+   en Fonade.PlanDeNegocioV2.Formulacion.Anexos.Anexos.DescargarAnexo(String titulo, GridView gridView) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Formulacion\Anexos\Anexos.aspx.cs:línea 800
+   en Fonade.PlanDeNegocioV2.Formulacion.Anexos.Anexos.btnDescargarContratos_Click(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Formulacion\Anexos\Anexos.aspx.cs:línea 817
+   en System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   en System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+diegomarin1406@hotmail.com
+108138
+__________________________

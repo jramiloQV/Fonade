@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FonadeSE4" Class="ObservacionEvaluacionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.3.3.119;Initial Catalog=FonadeSE4;Persist Security Info=True;User ID=SQL_Fonade" SettingsObjectName="Datos.Properties.Settings" SettingsPropertyName="FonadeSE4ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.LOVObjetoSE" Member="LOVObjetoSEs">
+    <Type Name="LOVObjetoSE">
+      <Column Name="Id_LovObjetoSE" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NomLovObjetoSE" Type="System.String" DbType="Char(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Valor" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOVObjetoSEAcreditacion" Member="LOVObjetoSEAcreditacion">
+    <Type Name="LOVObjetoSEAcreditacion">
+      <Column Name="Id_LovObjetoSEAcreditacion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NomLovObjetoSE" Type="System.String" DbType="Char(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Valor" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

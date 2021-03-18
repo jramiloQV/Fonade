@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_RIESGO (Riesgo, Mitigacion, Observacion, NoProyecto, Proyecto) AS SELECT T1.Riesgo, T1.Mitigacion, T1.Observacion, T2.Id_Proyecto, T2.NomProyecto FROM InterventorRiesgo T1, Proyecto T2 WHERE T1.CodProyecto=T2.Id_Proyecto

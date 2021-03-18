@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Fonade" Class="FonadeDatosDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.213.245;Initial Catalog=Fonade;Persist Security Info=True;User ID=SQL_Fonade" SettingsObjectName="Datos.Properties.Settings" SettingsPropertyName="FonadeConnectionString2" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.MD_ConsultarTareasPendientesXContacto" Method="MD_ConsultarTareasPendientesXContacto">
+    <Parameter Name="IN_CodContacto" Parameter="iN_CodContacto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IN_OffSet" Parameter="iN_OffSet" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IN_RegistrosXPagina" Parameter="iN_RegistrosXPagina" Type="System.Int32" DbType="Int" />
+    <ElementType Name="MD_ConsultarTareasPendientesXContactoResult">
+      <Column Name="Tipo" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Ejecutable" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Icono" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CodigoTarea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RecordatorioEmail" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="NivelUrgencia" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="RequiereRespuesta" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RecordatorioPantalla" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoContactoAgendo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdTareaUsuarioRepeticion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Parametros" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdProyecto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreProyecto" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="NombreContactoAgendo" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ApellidoContactoAgendo" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="GrupoContactoAgendo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

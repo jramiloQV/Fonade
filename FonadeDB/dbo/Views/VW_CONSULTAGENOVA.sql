@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_CONSULTAGENOVA (Justificacion, Id_Proyecto, NomProyecto) AS SELECT T1.Justificacion, T2.Id_Proyecto, T2.NomProyecto FROM ConvocatoriaProyecto T1, Proyecto T2 WHERE T1.CodProyecto=T2.Id_Proyecto AND T2.Id_Proyecto=16774

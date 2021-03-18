@@ -1,0 +1,117 @@
+
+Log Entry : 
+01/20/2020 21:05:54
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/AdministrarActasSeguimiento.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/AdministrarActasSeguimiento.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: DataBinding: 'Fonade.Negocio.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimientos.InterventoresProyecto' no contiene una propiedad con el nombre 'IdProyecto'.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   en System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   en System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   en System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   en System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   en System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   en System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   en System.Web.UI.WebControls.GridView.DataBind()
+   en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.AdministrarActasSeguimiento.cargarGrilla() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\AdministrarActasSeguimiento.aspx.cs:línea 28
+   en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.AdministrarActasSeguimiento.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\AdministrarActasSeguimiento.aspx.cs:línea 17
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 89
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+lmmunozo@hotmail.com
+31547
+__________________________
+
+Log Entry : 
+01/20/2020 21:07:03
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/AdministrarActasSeguimiento.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/AdministrarActasSeguimiento.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: DataBinding: 'Fonade.Negocio.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimientos.InterventoresProyecto' no contiene una propiedad con el nombre 'IdProyecto'.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   en System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   en System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   en System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   en System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   en System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   en System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   en System.Web.UI.WebControls.GridView.DataBind()
+   en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.AdministrarActasSeguimiento.cargarGrilla() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\AdministrarActasSeguimiento.aspx.cs:línea 28
+   en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.AdministrarActasSeguimiento.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\AdministrarActasSeguimiento.aspx.cs:línea 17
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 89
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+lmmunozo@hotmail.com
+31547
+__________________________
+
+Log Entry : 
+01/20/2020 21:08:07
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/AdministrarActasSeguimiento.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/AdministrarActasSeguimiento.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: DataBinding: 'Fonade.Negocio.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimientos.InterventoresProyecto' no contiene una propiedad con el nombre 'IdProyecto'.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   en System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   en System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   en System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   en System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   en System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   en System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   en System.Web.UI.WebControls.GridView.DataBind()
+   en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.AdministrarActasSeguimiento.cargarGrilla() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\AdministrarActasSeguimiento.aspx.cs:línea 28
+   en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.AdministrarActasSeguimiento.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\AdministrarActasSeguimiento.aspx.cs:línea 17
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 89
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+lmmunozo@hotmail.com
+31547
+__________________________
+
+Log Entry : 
+01/20/2020 21:09:25
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/AdministrarActasSeguimiento.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/AdministrarActasSeguimiento.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: No se encontró ningún campo o propiedad 'interventor' en el origen de datos seleccionado.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.WebControls.BoundField.TryGetSimplePropertyValue(Object dataItem, Object& data)
+   en System.Web.UI.WebControls.BoundField.GetValue(Control controlContainer)
+   en System.Web.UI.WebControls.BoundField.OnDataBindField(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnDataBinding(EventArgs e)
+   en System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   en System.Web.UI.Control.DataBind()
+   en System.Web.UI.Control.DataBindChildren()
+   en System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   en System.Web.UI.Control.DataBind()
+   en System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   en System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   en System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   en System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   en System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   en System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   en System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   en System.Web.UI.WebControls.GridView.DataBind()
+   en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.AdministrarActasSeguimiento.cargarGrilla() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\AdministrarActasSeguimiento.aspx.cs:línea 28
+   en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.AdministrarActasSeguimiento.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\AdministrarActasSeguimiento.aspx.cs:línea 17
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 89
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+lmmunozo@hotmail.com
+31547
+__________________________

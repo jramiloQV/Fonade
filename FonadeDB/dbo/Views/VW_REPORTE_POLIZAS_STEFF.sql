@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_REPORTE_POLIZAS_STEFF (Nombres, Apellidos, Identificacion, FechaNacimiento, Id_Proyecto) AS SELECT T1.Nombres, T1.Apellidos, T1.Identificacion, T1.FechaNacimiento, T1.Id_Proyecto FROM Conv_Avalados_General T1 WHERE T1.CodConvocatoria>=101 AND T1.Inactivo=0 AND T1.CodRol=3

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsConfirmacionEnvioCorreo" targetNamespace="http://tempuri.org/dsConfirmacionEnvioCorreo.xsd" xmlns:mstns="http://tempuri.org/dsConfirmacionEnvioCorreo.xsd" xmlns="http://tempuri.org/dsConfirmacionEnvioCorreo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsConfirmacionEnvioCorreo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsConfirmacionEnvioCorreo" msprop:Generator_UserDSName="dsConfirmacionEnvioCorreo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtInfoEnvio" msprop:Generator_TableClassName="dtInfoEnvioDataTable" msprop:Generator_TableVarName="tabledtInfoEnvio" msprop:Generator_TablePropName="dtInfoEnvio" msprop:Generator_RowDeletingName="dtInfoEnvioRowDeleting" msprop:Generator_RowChangingName="dtInfoEnvioRowChanging" msprop:Generator_RowEvHandlerName="dtInfoEnvioRowChangeEventHandler" msprop:Generator_RowDeletedName="dtInfoEnvioRowDeleted" msprop:Generator_UserTableName="dtInfoEnvio" msprop:Generator_RowChangedName="dtInfoEnvioRowChanged" msprop:Generator_RowEvArgName="dtInfoEnvioRowChangeEvent" msprop:Generator_RowClassName="dtInfoEnvioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NombreEnvia" msprop:Generator_ColumnVarNameInTable="columnNombreEnvia" msprop:Generator_ColumnPropNameInRow="NombreEnvia" msprop:Generator_ColumnPropNameInTable="NombreEnviaColumn" msprop:Generator_UserColumnName="NombreEnvia" type="xs:string" minOccurs="0" />
+              <xs:element name="NombreRecibe" msprop:Generator_ColumnVarNameInTable="columnNombreRecibe" msprop:Generator_ColumnPropNameInRow="NombreRecibe" msprop:Generator_ColumnPropNameInTable="NombreRecibeColumn" msprop:Generator_UserColumnName="NombreRecibe" type="xs:string" minOccurs="0" />
+              <xs:element name="EmailRecibe" msprop:Generator_ColumnVarNameInTable="columnEmailRecibe" msprop:Generator_ColumnPropNameInRow="EmailRecibe" msprop:Generator_ColumnPropNameInTable="EmailRecibeColumn" msprop:Generator_UserColumnName="EmailRecibe" type="xs:string" minOccurs="0" />
+              <xs:element name="Mensaje" msprop:Generator_ColumnVarNameInTable="columnMensaje" msprop:Generator_ColumnPropNameInRow="Mensaje" msprop:Generator_ColumnPropNameInTable="MensajeColumn" msprop:Generator_UserColumnName="Mensaje" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaHoraEnvio" msprop:Generator_ColumnVarNameInTable="columnFechaHoraEnvio" msprop:Generator_ColumnPropNameInRow="FechaHoraEnvio" msprop:Generator_ColumnPropNameInTable="FechaHoraEnvioColumn" msprop:Generator_UserColumnName="FechaHoraEnvio" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

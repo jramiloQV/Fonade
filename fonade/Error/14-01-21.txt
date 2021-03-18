@@ -1,0 +1,518 @@
+
+Log Entry : 
+01/14/2021 15:03:10
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: No se pudo encontrar el archivo 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto\prueba.xlsx'.
+Error InnerException: 
+Error StackTrace:    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   en System.Web.HttpResponse.WriteFile(String filename, Boolean readIntoMemory)
+   en System.Web.HttpResponse.WriteFile(String filename)
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(DataSet ds) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3757
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3714
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 15:06:07
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: El servidor no puede anexar un encabezado después de enviar los encabezados HTTP.
+Error InnerException: 
+Error StackTrace:    en System.Web.HttpResponse.AppendHeader(String name, String value)
+   en System.Web.HttpResponse.AddHeader(String name, String value)
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(DataSet ds) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3753
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3714
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:47
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\68186_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\68186_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:47
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\68297_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\68297_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:47
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\68450_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\68450_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:47
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\69109_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\69109_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:50
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\69522_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\69522_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:50
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\70748_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\70748_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:50
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\70939_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\70939_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:50
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\70977_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\70977_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:50
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71011_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71011_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:50
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71060_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71060_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:50
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71108_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71108_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:50
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71140_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71140_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:50
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71196_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71196_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:50
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71440_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71440_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:50
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71584_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71584_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:50
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71620_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71620_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:50
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71719_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71719_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:54
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71739_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71739_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:54
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71769_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71769_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:54
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71806_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71806_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:54
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71933_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71933_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:54
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71976_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\71976_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:54
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72004_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72004_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:54
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72067_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72067_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:54
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72074_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72074_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:55
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72157_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72157_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:56
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72168_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72168_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:56
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72188_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72188_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:58
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72270_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72270_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:58
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72298_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72298_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:58
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72320_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72320_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:58
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72334_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72334_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 16:41:58
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error saving file D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72336_DescargaPagos.xlsx
+Error InnerException: No se puede encontrar una parte de la ruta de acceso 'D:\zPruebasDocumentos\Documentos\ExportarArchivosHIS\CONVOCATORIA NACIONAL No 74 MUJERES Primer Corte\Presupuesto_2021114_1640\72336_DescargaPagos.xlsx'.
+Error StackTrace:    en OfficeOpenXml.ExcelPackage.Save()
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.ExportDataSetToExcel(List`1 descargaPagos, Int32 idProyecto, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3817
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoExcelPagos(List`1 listadoProyectos, String nomConvocatoria, String fecha) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3715
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/14/2021 23:01:46
+Error in: http://localhost:5153/Fonade/interventoria/ProyectoEmpresa.aspx.
+Error URL: http://localhost:5153/Fonade/interventoria/ProyectoEmpresa.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: No se pudo encontrar el archivo 'D:\zPruebasDocumentos\Documentos\Proyecto\Proyecto_69450\RUT_69450.pdf'.
+Error InnerException: 
+Error StackTrace:    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   en System.Web.HttpResponse.WriteFile(String filename, Boolean readIntoMemory)
+   en System.Web.HttpResponse.WriteFile(String filename)
+   en Fonade.FONADE.interventoria.ProyectoEmpresa.btnVerArchivo_Click(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\interventoria\ProyectoEmpresa.aspx.cs:línea 1238
+   en System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   en System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+avicoladonmarcos@yopmail.com
+104723
+__________________________

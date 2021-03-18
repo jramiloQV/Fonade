@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PROY_X_SECT (Cantidad, NomSector) AS SELECT Count(T1.Id_Proyecto), T2.NomSector FROM Proyecto T1, Sector T2, SubSector T3 WHERE T1.CodSubSector=T3.Id_SubSector AND T2.Id_Sector=T3.CodSector GROUP BY T2.NomSector

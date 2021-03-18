@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_CONSULTAAVALADOS (Id_Proyecto, NomProyecto, CodEstado, codProyecto, Fecha, CodConvocatoria) AS SELECT T1.Id_Proyecto, T1.NomProyecto, T1.CodEstado, T2.codProyecto, T2.Fecha, T2.CodConvocatoria FROM Proyecto T1, ProyectoFormalizacion T2 WHERE T1.Id_Proyecto=T2.codProyecto AND T2.CodConvocatoria>=4 AND T1.CodEstado>=3

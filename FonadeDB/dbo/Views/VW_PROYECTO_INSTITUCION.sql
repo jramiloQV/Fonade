@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PROYECTO_INSTITUCION (NomInstitucion, NomUnidad, Id_Proyecto, NomProyecto) AS SELECT T1.NomInstitucion, T1.NomUnidad, T2.Id_Proyecto, T2.NomProyecto FROM Institucion T1, Proyecto T2 WHERE T1.Id_Institucion=T2.CodInstitucion

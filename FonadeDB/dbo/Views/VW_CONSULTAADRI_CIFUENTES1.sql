@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_CONSULTAADRI_CIFUENTES1 (Nombres, Apellidos, Identificacion, Email, Id_Proyecto, NomProyecto, CodRol) AS SELECT T1.Nombres, T1.Apellidos, T1.Identificacion, T1.Email, T2.Id_Proyecto, T2.NomProyecto, T3.CodRol FROM Contacto T1, Proyecto T2, ProyectoContacto T3 WHERE T1.Id_Contacto=T3.CodContacto AND T2.Id_Proyecto=T3.CodProyecto

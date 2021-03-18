@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5332F5C6-2B63-4BA4-842C-ADEB440BAADA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Datos</RootNamespace>
+    <AssemblyName>Datos</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+    <DocumentationFile>bin\Debug\Datos.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="FonadeDatos.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>FonadeDatos.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FonadeDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>FonadeDB1.designer.cs</LastGenOutput>
+    </None>
+    <None Include="FonadeDBLight.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>FonadeDBLight.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HubDeEmprendimiento.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>HubDeEmprendimiento.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HubDeEmprendimiento.dbml.layout">
+      <DependentUpon>HubDeEmprendimiento.dbml</DependentUpon>
+    </None>
+    <None Include="ObservacionEvaluacion.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>ObservacionEvaluacion.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RegistroUnico.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>RegistroUnico.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegistroUnico.dbml.layout">
+      <DependentUpon>RegistroUnico.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.XML" />
+    <Reference Include="TSHAK.Components">
+      <HintPath>..\Fonade\bin\TSHAK.Components.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataType\CargosPlanNegocio.cs" />
+    <Compile Include="Constantes.cs" />
+    <Compile Include="Consultas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataType\CondicionesCliente.cs" />
+    <Compile Include="DataType\Emprendedor.cs" />
+    <Compile Include="DataType\EquipoTrabajo.cs" />
+    <Compile Include="DataType\GrillaDocumentos.cs" />
+    <Compile Include="DataType\MoreLinq.cs" />
+    <Compile Include="DataType\ObjectShredder.cs" />
+    <Compile Include="DataType\PlanDeNegocio.cs" />
+    <Compile Include="DataType\PuntajesEvaluacion.cs" />
+    <Compile Include="DataType\ReportePuntaje.cs" />
+    <Compile Include="DataType\RequerimientosNeg.cs" />
+    <Compile Include="DataType\UsuarioFonade.cs" />
+    <Compile Include="FonadeDatos.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FonadeDatos.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="FonadeDB.cs">
+      <DependentUpon>FonadeDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="FonadeDB.designer.cs">
+      <DependentUpon>FonadeDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FonadeDBLight.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FonadeDBLight.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="HubDeEmprendimiento.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HubDeEmprendimiento.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\ActaSeguimCompromisosModel.cs" />
+    <Compile Include="Modelos\ActaSeguimContrapartidaModel.cs" />
+    <Compile Include="Modelos\ActaSeguimEstadoEmpresaModel.cs" />
+    <Compile Include="Modelos\ActaSeguimGestionEmpleoModel.cs" />
+    <Compile Include="Modelos\ActaSeguimGestionMercadeoModel.cs" />
+    <Compile Include="Modelos\ActaSeguimGestionProduccionModel.cs" />
+    <Compile Include="Modelos\ActaSeguimGestionVentasModel.cs" />
+    <Compile Include="Modelos\ActaSeguimientoDatosModel.cs" />
+    <Compile Include="Modelos\ActaSeguimientoInterventoriaModelDTO.cs" />
+    <Compile Include="Modelos\ActaSeguimientoModel.cs" />
+    <Compile Include="Modelos\ActaSeguimInfoPagosModel.cs" />
+    <Compile Include="Modelos\ActaSeguimNotasModel.cs" />
+    <Compile Include="Modelos\ActaSeguimObligContablesModel.cs" />
+    <Compile Include="Modelos\ActaSeguimOtrasObligacionesModel.cs" />
+    <Compile Include="Modelos\ActaSeguimOtrosAspectosModel.cs" />
+    <Compile Include="Modelos\ActaSeguimRiesgosModel.cs" />
+    <Compile Include="Modelos\ContratoModel.cs" />
+    <Compile Include="Modelos\ConvenioModel.cs" />
+    <Compile Include="Modelos\ConvocatoriaModel.cs" />
+    <Compile Include="Modelos\DatosActaModelDTO.cs" />
+    <Compile Include="Modelos\ddlCumplimientoModel.cs" />
+    <Compile Include="Modelos\EmpresaModel.cs" />
+    <Compile Include="Modelos\EvaluacionRiesgoModel.cs" />
+    <Compile Include="Modelos\HistoricoIndicadorGenericoModel.cs" />
+    <Compile Include="Modelos\HistoricoObservacionEmpresaModel.cs" />
+    <Compile Include="Modelos\IndicadorActasSeguimModelDTO.cs" />
+    <Compile Include="Modelos\MetasProduccionModelDTO.cs" />
+    <Compile Include="Modelos\MetasActividadModelDTO.cs" />
+    <Compile Include="Modelos\MetasEmpleoModelDTO.cs" />
+    <Compile Include="Modelos\MetasVentasModelDTO.cs" />
+    <Compile Include="Modelos\ProyectoModel.cs" />
+    <Compile Include="Modelos\SectorModel.cs" />
+    <Compile Include="Modelos\TipoActaSeguimientoModel.cs" />
+    <Compile Include="Modelos\TipoCampoValoresModel.cs" />
+    <Compile Include="Modelos\UsuarioModel.cs" />
+    <Compile Include="ObservacionEvaluacion.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ObservacionEvaluacion.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataType\ProductoProceso.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroUnico.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistroUnico.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FonadeDB.dbml.layout">
+      <DependentUpon>FonadeDB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ObservacionEvaluacion.dbml.layout">
+      <DependentUpon>ObservacionEvaluacion.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PlanDeNegocioV2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FonadeDatos.dbml.layout">
+      <DependentUpon>FonadeDatos.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FonadeDBLight.dbml.layout">
+      <DependentUpon>FonadeDBLight.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

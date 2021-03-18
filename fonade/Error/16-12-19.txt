@@ -1,0 +1,287 @@
+
+Log Entry : 
+12/16/2019 11:53:07
+Error in: http://localhost:5153/FONADE/AdministrarPerfiles/AdministrarUsuarios.aspx?codGrupo=12.
+Error URL: http://localhost:5153/FONADE/AdministrarPerfiles/AdministrarUsuarios.aspx?codGrupo=12.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Índice fuera de los límites de la matriz.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.AdministrarPerfiles.AdministrarUsuarios.ocultarColumnas(Int32 _codGrupo) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\AdministrarPerfiles\AdministrarUsuarios.aspx.cs:línea 716
+   en Fonade.FONADE.AdministrarPerfiles.AdministrarUsuarios.lds_Administradores_Selecting(Object sender, LinqDataSourceSelectEventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\AdministrarPerfiles\AdministrarUsuarios.aspx.cs:línea 896
+   en System.Web.UI.WebControls.LinqDataSourceView.OnSelecting(LinqDataSourceSelectEventArgs e)
+   en System.Web.UI.WebControls.LinqDataSourceView.GetSource(QueryContext context)
+   en System.Web.UI.WebControls.LinqDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   en System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   en System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   en System.Web.UI.WebControls.GridView.DataBind()
+   en System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   en System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+12/16/2019 13:44:29
+Error in: http://localhost:5153/FONADE/AdministrarPerfiles/AdministrarUsuarios.aspx?codGrupo=15.
+Error URL: http://localhost:5153/FONADE/AdministrarPerfiles/AdministrarUsuarios.aspx?codGrupo=15.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.AdministrarPerfiles.AdministrarUsuarios.lds_Administradores_Selecting(Object sender, LinqDataSourceSelectEventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\AdministrarPerfiles\AdministrarUsuarios.aspx.cs:línea 861
+   en System.Web.UI.WebControls.LinqDataSourceView.OnSelecting(LinqDataSourceSelectEventArgs e)
+   en System.Web.UI.WebControls.LinqDataSourceView.GetSource(QueryContext context)
+   en System.Web.UI.WebControls.LinqDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   en System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   en System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   en System.Web.UI.WebControls.GridView.DataBind()
+   en System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   en System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+12/16/2019 14:56:01
+Error in: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error URL: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.Convocatoria.Convocatoria.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Convocatoria\Convocatoria.aspx.cs:línea 70
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 88
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+12/16/2019 14:58:50
+Error in: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error URL: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.Convocatoria.Convocatoria.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Convocatoria\Convocatoria.aspx.cs:línea 70
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 88
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+12/16/2019 16:39:32
+Error in: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error URL: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.Convocatoria.Convocatoria.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Convocatoria\Convocatoria.aspx.cs:línea 70
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 88
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+12/16/2019 16:42:49
+Error in: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error URL: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.Convocatoria.Convocatoria.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Convocatoria\Convocatoria.aspx.cs:línea 70
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 88
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+12/16/2019 16:52:14
+Error in: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error URL: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.Convocatoria.Convocatoria.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Convocatoria\Convocatoria.aspx.cs:línea 72
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 88
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+12/16/2019 17:18:53
+Error in: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error URL: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.Convocatoria.Convocatoria.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Convocatoria\Convocatoria.aspx.cs:línea 72
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 88
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+12/16/2019 17:20:10
+Error in: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error URL: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: El origen de datos no es un tipo válido. Deber ser IListSource, IEnumerable o IDataSource.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.WebControls.DataBoundControl.ValidateDataSource(Object dataSource)
+   en System.Web.UI.WebControls.BaseDataBoundControl.set_DataSource(Object value)
+   en Fonade.FONADE.Convocatoria.Convocatoria.cargarDllOperadorSeleccionado(Nullable`1 _codOperador) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Convocatoria\Convocatoria.aspx.cs:línea 92
+   en Fonade.FONADE.Convocatoria.Convocatoria.llenarInfoConvocatoria(Int32 IdConvoct) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Convocatoria\Convocatoria.aspx.cs:línea 181
+   en Fonade.FONADE.Convocatoria.Convocatoria.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Convocatoria\Convocatoria.aspx.cs:línea 79
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 88
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+12/16/2019 17:21:18
+Error in: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error URL: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.Convocatoria.Convocatoria.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Convocatoria\Convocatoria.aspx.cs:línea 72
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 88
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+12/16/2019 17:21:23
+Error in: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error URL: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.Convocatoria.Convocatoria.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Convocatoria\Convocatoria.aspx.cs:línea 72
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 88
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+12/16/2019 17:25:09
+Error in: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error URL: http://localhost:5153/FONADE/Convocatoria/Convocatoria.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.Convocatoria.Convocatoria.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Convocatoria\Convocatoria.aspx.cs:línea 72
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 88
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+12/16/2019 21:32:48
+Error in: http://localhost:5153/FONADE/AdministrarPerfiles/Convenios/CatalogoConvenios.aspx?Accion=Editar&CodCriterio=15.
+Error URL: http://localhost:5153/FONADE/AdministrarPerfiles/Convenios/CatalogoConvenios.aspx?Accion=Editar&CodCriterio=15.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: El valor no puede ser nulo.
+Nombre del parámetro: container
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   en System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName, String format)
+   en System.Web.UI.WebControls.ListControl.PerformDataBinding(IEnumerable dataSource)
+   en System.Web.UI.WebControls.ListControl.OnDataBinding(EventArgs e)
+   en System.Web.UI.WebControls.ListControl.PerformSelect()
+   en System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   en Fonade.FONADE.AdministrarPerfiles.Convenios.CatalogoConvenios.cargarDllOperador(Nullable`1 _codOperador) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\AdministrarPerfiles\Convenios\CatalogoConvenios.aspx.cs:línea 204
+   en Fonade.FONADE.AdministrarPerfiles.Convenios.CatalogoConvenios.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\AdministrarPerfiles\Convenios\CatalogoConvenios.aspx.cs:línea 178
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 88
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+12/16/2019 21:55:15
+Error in: http://localhost:5153/FONADE/AdministrarPerfiles/Convenios/CatalogoConvenios.aspx.
+Error URL: http://localhost:5153/FONADE/AdministrarPerfiles/Convenios/CatalogoConvenios.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.AdministrarPerfiles.Convenios.CatalogoConvenios.lds_Convenios_Selecting(Object sender, LinqDataSourceSelectEventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\AdministrarPerfiles\Convenios\CatalogoConvenios.aspx.cs:línea 284
+   en System.Web.UI.WebControls.LinqDataSourceView.OnSelecting(LinqDataSourceSelectEventArgs e)
+   en System.Web.UI.WebControls.LinqDataSourceView.GetSource(QueryContext context)
+   en System.Web.UI.WebControls.LinqDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   en System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   en System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   en System.Web.UI.WebControls.GridView.DataBind()
+   en System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   en System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________

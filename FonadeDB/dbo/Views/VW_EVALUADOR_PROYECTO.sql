@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_EVALUADOR_PROYECTO (Nombres, Apellidos, NomGrupo, CodGrupo, Id_Proyecto, NomProyecto) AS SELECT T1.Nombres, T1.Apellidos, T2.NomGrupo, T3.CodGrupo, T4.Id_Proyecto, T4.NomProyecto FROM Contacto T1, Grupo T2, GrupoContacto T3, Proyecto T4 WHERE T1.Id_Contacto=T4.CodContacto AND T3.CodContacto=T4.CodContacto AND T2.Id_Grupo=T3.CodGrupo

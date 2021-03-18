@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_C2_ENCONVOCATORIAREGIONAL (NoProyectos, Departamento) AS SELECT Count(T3.Id_Departamento), T3.NomDepartamento FROM Ciudad T1, ConvocatoriaProyecto T2, departamento T3, Proyecto T4 WHERE T1.CodDepartamento=T3.Id_Departamento AND T1.Id_Ciudad=T4.CodCiudad AND T2.CodProyecto=T4.Id_Proyecto AND T2.CodConvocatoria=2 GROUP BY T3.NomDepartamento

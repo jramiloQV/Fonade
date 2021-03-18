@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_INFORMECISA (NomCiudad, Id_Proyecto, NomProyecto, Nombres, Apellidos, Identificacion, Direccion, Telefono) AS SELECT T1.NomCiudad, T1.Id_Proyecto, T1.NomProyecto, T2.Nombres, T2.Apellidos, T2.Identificacion, T2.Direccion, T2.Telefono FROM Conv_Avalados_General T1, Contacto T2 WHERE T1.CodRol=3 AND T1.CodConvocatoria=2 AND T1.Identificacion=T2.Identificacion

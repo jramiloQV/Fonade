@@ -1,0 +1,421 @@
+/*******   styles globals   *****/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.boton {
+    display: inline-block;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: .7rem;
+    margin-top: 1rem;
+}
+
+
+/****       header    *****/
+
+.home {
+    background-image: url(../IMAGES/Group\ 40.png), url(../IMAGES/Group\ 39.png);
+    background-size: 30%, 30%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: -15% 40%, 115% 90%;
+    width: 100%;
+}
+
+header {
+    background: url('../IMAGES/Group\ 6.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+}
+
+header nav {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+
+.nav-rev {
+    flex-flow: row-reverse;
+}
+
+.logo img {
+    width: 65%
+}
+
+nav ul {
+    display: flex;
+    align-items: baseline;
+}
+
+ul li {
+    padding-right: 1.8rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:nth-last-child():hover {
+    color: #000;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    align-items: center
+}
+
+ul li:last-of-type {
+    padding-right: unset;
+}
+
+ul li:last-of-type a {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: .7rem;
+    transition: all 1s;
+}
+
+ul li:last-of-type a:hover {
+    color: #2abdc4;
+    background-color: white;
+}
+
+
+/*** eventos ***/
+
+.seccion-eventos {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem 8rem
+}
+
+.seccion-eventos .card {
+    margin-right: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.seccion-eventos .card:last-of-type {
+    margin-right: unset;
+}
+
+.seccion-eventos img {
+    width: 100%;
+    height: 111%;
+}
+
+.info-eventos {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1.3rem
+}
+
+.info-eventos hr {
+    width: 20%;
+    background-color: #fff;
+    margin: 1.4rem 0;
+    border: 1px solid #fff;
+}
+
+.info-eventos .boton:hover {
+    background-color: #cac9c9;
+    color: #000;
+    text-decoration: unset !important;
+}
+
+.inscribete {
+    margin: 7rem 2rem 0 4rem;
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.inscribete h1 {
+    width: 70%;
+    letter-spacing: 3px;
+    color: #414141;
+    padding-bottom: 2rem;
+}
+
+.inscribete p {
+    color: #808080;
+    padding-bottom: 1rem;
+}
+
+.inscribete .boton {
+    border-color: #2abdc4;
+    color: #2abdc4;
+    font-size: 1.2rem;
+    transition: 1s;
+}
+
+.inscribete .boton:hover {
+    background-color: #2abdc4;
+    color: white;
+    text-decoration: unset !important;
+}
+
+footer {
+    background-image: url(../IMAGES/cuadro-azul-footer.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 2rem 2rem 0;
+    width: 70%;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    flex-wrap: wrap
+}
+
+.container-footer .logo-sena {
+    width: 70%;
+}
+
+.redes i:hover,
+.redes a img:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+}
+
+.redes img {
+    padding-bottom: 6px
+}
+
+
+/***** Media Querys *****/
+
+@media (max-width:800px) {
+    header {
+        height: 100%;
+        background-size: cover;
+        background-position: bottom;
+    }
+    header nav {
+        padding: 2rem;
+    }
+    .logo img {
+        width: 50%;
+    }
+    ul li {
+        padding-right: 0.8rem;
+    }
+    .inscribete {
+        width: 70%;
+        margin: 0rem 2rem 0 11rem;
+        text-align: center;
+        padding-top: 2rem;
+        align-items: center;
+    }
+    .inscribete h1 {
+        width: 100%;
+        letter-spacing: 3px;
+        color: #fff;
+        padding-bottom: 1rem;
+    }
+    .inscribete p {
+        color: #000;
+    }
+    .inscribete .boton {
+        background-color: rgba(36, 36, 36, 0.153);
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+    .inscribete .boton:hover {
+        background-color: #fff;
+        color: #000;
+    }
+    .seccion-eventos {
+        margin: 3rem 2rem;
+    }
+    .seccion-eventos .card {
+        margin-right: 1rem;
+        height: 360px;
+    }
+    .card img {
+        width: 100%;
+        height: 100%;
+    }
+    .card .w-95 {
+        width: 95%;
+    }
+    footer {
+        clip-path: inset(0 0 0 0);
+        background-color: #2abdc4;
+    }
+    .container-footer {
+        width: 100%;
+    }
+}
+
+@media (max-width:580px) {
+    .seccion-eventos {
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .seccion-eventos .card {
+        margin-right: 1rem;
+        height: 480px;
+        margin-bottom: 1rem;
+    }
+    .inscribete {
+        width: 80%;
+        margin: 0rem 3rem;
+    }
+    .inscribete h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/***** Formulario *****/
+
+.form {
+    background-image: url(../IMAGES/Elemento\formulario\1.png), url(../IMAGES/Elemento\formulario\2.png);
+    background-size: 30%, 30%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0% 0%, 100% 100%;
+    width: 100%;
+}
+
+.bg-inputs {
+    background-color: #e0e0e0;
+    border: unset;
+    border-radius: .6rem;
+}
+
+.input-group>.form-control:not(:last-child) {
+    border-top-right-radius: .6rem;
+    border-bottom-right-radius: .6rem;
+}
+
+.text-primary {
+    color: rgb(240, 109, 2) !important;
+}
+
+.color-secundario {
+    color: #2abdc4;
+}
+
+.btn-submit {
+    border-radius: .6rem;
+    background-color: #2abdc4;
+    border: unset;
+}
+
+.perfiles input[type=radio] {
+    display: none;
+}
+
+.perfiles input[type=radio]+label {
+    display: inline-block;
+    padding: 2px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin: 0px;
+    background: #bebebe;
+    color: #fff;
+}
+
+.perfiles input[type=radio].visible:checked+label {
+    background: #2abdc4;
+}
+
+.perfiles input[type=radio].novisible:checked+label {
+    background: #2abdc4;
+}
+
+.radio-custom {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+
+.radio-custom+.radio-custom {
+    margin-left: 20px;
+}
+
+.radio-custom input[type=radio],
+.radio-custom input[type=checkbox] {
+    display: none;
+}
+
+.radio-custom span {
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: #cac9c9;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.radio-custom span::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #2abdc4;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out 0s;
+}
+
+.radio-custom input[type=radio]:checked~span::after,
+.radio-custom input[type=checkbox]:checked~span::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.spinner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

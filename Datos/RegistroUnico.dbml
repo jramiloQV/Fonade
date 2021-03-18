@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Fonade" Class="RegistroUnicoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.213.245;Initial Catalog=Fonade;Persist Security Info=True;User ID=SQL_Fonade" SettingsObjectName="Datos.Properties.Settings" SettingsPropertyName="FonadeConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.RU_CentroDesarrolloEmpresarial" Member="RU_CentroDesarrolloEmpresarial">
+    <Type Name="RU_CentroDesarrolloEmpresarial">
+      <Column Name="Id_RUCentroDesarrollo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NomCentro" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CodCiudad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Indicativo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NombreContacto" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="TelefonoContacto" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Correo" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Association Name="RU_CentroDesarrolloEmpresarial_RU_ContactoRegistro" Member="RU_ContactoRegistro" ThisKey="Id_RUCentroDesarrollo" OtherKey="Id_RUCentroDesarrollo" Type="RU_ContactoRegistro" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RU_ContactoRegistro" Member="RU_ContactoRegistro">
+    <Type Name="RU_ContactoRegistro">
+      <Column Name="Id_ContactoRegistro" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombres" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Apellidos" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CodTipoIdentificacion" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Identificacion" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="LugarExpedicionDI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Correo" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Genero" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Fecha_Nacimiento" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CiudadNacimiento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CodTipoAprendiz" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_EstadoCivil" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_RUOcupacion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CiudadDondeReside" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DireccionDondeReside" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Estrato" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_RUCentroDesarrollo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_RUServicio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CiudadDesarrollarProyecto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodSubSector" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NomProyecto" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="DescripcionProyecto" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
+      <Column Name="ProductoServicioOferta" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
+      <Column Name="ProductoEnElMercado" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
+      <Column Name="Local" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Regional" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Nacional" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Internacional" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="EmpleadosACargo" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CantidadEmpleados" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreEmpresa" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="CodCiudadEmpresa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaConstitucion" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DireccionEmpresa" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TelefonoEmpresa" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CorreoEmpresa" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TamaEmpresa" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ValorVentasAnuales" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="UstedEsElPropietario" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CargoQueOcupa" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DescripcionActividadEmpresa" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
+      <Column Name="FechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CodCurso" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CiudadCurso" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="RU_ContactoRegistro_RU_ContactoRegistroEstudio" Member="RU_ContactoRegistroEstudio" ThisKey="Id_ContactoRegistro" OtherKey="Id_ContactoRegistro" Type="RU_ContactoRegistroEstudio" />
+      <Association Name="RU_CentroDesarrolloEmpresarial_RU_ContactoRegistro" Member="RU_CentroDesarrolloEmpresarial" ThisKey="Id_RUCentroDesarrollo" OtherKey="Id_RUCentroDesarrollo" Type="RU_CentroDesarrolloEmpresarial" IsForeignKey="true" />
+      <Association Name="RU_EstadoCivil_RU_ContactoRegistro" Member="RU_EstadoCivil" ThisKey="Id_EstadoCivil" OtherKey="Id_EstadoCivil" Type="RU_EstadoCivil" IsForeignKey="true" />
+      <Association Name="RU_Ocupacion_RU_ContactoRegistro" Member="RU_Ocupacion" ThisKey="Id_RUOcupacion" OtherKey="Id_RUOcupacion" Type="RU_Ocupacion" IsForeignKey="true" />
+      <Association Name="RU_Servicio_RU_ContactoRegistro" Member="RU_Servicio" ThisKey="Id_RUServicio" OtherKey="Id_RUServicio" Type="RU_Servicio" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RU_ContactoRegistroEstudio" Member="RU_ContactoRegistroEstudio">
+    <Type Name="RU_ContactoRegistroEstudio">
+      <Column Name="Id_RUContactoRegistroEstudio" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodTipoNivelEstudio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProgramaRealizado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodInstitucion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodCiudad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Estado" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Fecha_Inicio" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FechaFinMaterias" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FechaGrado" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SemestresCursados" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AnoTitulo" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="Id_ContactoRegistro" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="RU_ContactoRegistro_RU_ContactoRegistroEstudio" Member="RU_ContactoRegistro" ThisKey="Id_ContactoRegistro" OtherKey="Id_ContactoRegistro" Type="RU_ContactoRegistro" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RU_CursoCiudad" Member="RU_CursoCiudad">
+    <Type Name="RU_CursoCiudad">
+      <Column Name="Id_RUCursoCiudad" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodigoCiudad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RU_CursoFormacion" Member="RU_CursoFormacion">
+    <Type Name="RU_CursoFormacion">
+      <Column Name="Id_RUCurso" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodCentro" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomCentro" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="LineaAtencion" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CodCurso" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="NomCurso" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="CantidadCursos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HorasDiseñoCurricular" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Sector" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoDane" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="CodCiudad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodDepartamento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RU_EstadoCivil" Member="RU_EstadoCivil">
+    <Type Name="RU_EstadoCivil">
+      <Column Name="Id_EstadoCivil" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NomEstadoCivil" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="RU_EstadoCivil_RU_ContactoRegistro" Member="RU_ContactoRegistro" ThisKey="Id_EstadoCivil" OtherKey="Id_EstadoCivil" Type="RU_ContactoRegistro" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RU_Ocupacion" Member="RU_Ocupacion">
+    <Type Name="RU_Ocupacion">
+      <Column Name="Id_RUOcupacion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NomOcupacion" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="RU_Ocupacion_RU_ContactoRegistro" Member="RU_ContactoRegistro" ThisKey="Id_RUOcupacion" OtherKey="Id_RUOcupacion" Type="RU_ContactoRegistro" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RU_Servicio" Member="RU_Servicio">
+    <Type Name="RU_Servicio">
+      <Column Name="Id_RUServicio" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NomServicio" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripcionServicio" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Association Name="RU_Servicio_RU_ContactoRegistro" Member="RU_ContactoRegistro" ThisKey="Id_RUServicio" OtherKey="Id_RUServicio" Type="RU_ContactoRegistro" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SharePointArchivosComportEmprendedor" Member="SharePointArchivosComportEmprendedor">
+    <Type Name="SharePointArchivosComportEmprendedor">
+      <Column Name="idRuta" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RutaArchivo" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SharePointComportamientoEmprendedor" Member="SharePointComportamientoEmprendedor">
+    <Type Name="SharePointComportamientoEmprendedor">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombres" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Apellidos" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="TipoIdentificacion" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Identificacion" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="codCiudad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Modulo" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Unidad" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="RutaArchivoDescargado" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="emailEnviado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="archivoDescargado" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="fechaIngreso" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ParticiparCharlasHablemosDe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ServicioOrientacion" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ServicioAsesoriaCreacionEmpresa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ServicioAsesoriaFormulacionPlan" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ServicioFortalecimientoEmpresarial" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RU_CorreoRegionales" Member="RU_CorreoRegionales">
+    <Type Name="RU_CorreoRegionales">
+      <Column Name="idCorreoRegional" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codDepartamento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Regional" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Responsable" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailConCopia" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="EmailConCopiaOculta" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.SP_RegistroUnico_Total" Method="SP_RegistroUnico_Total">
+    <ElementType Name="SP_RegistroUnico_TotalResult">
+      <Column Name="Id_ContactoRegistro" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Nombres" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Apellidos" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CodTipoIdentificacion" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ID_tipoidentificacion" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="NomTipoIdentificacion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Identificacion" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="LugarExpedicionDi" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CiudadExpedicion" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="CodDepartamento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DeptoExpedicion" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Fecha_Nacimiento" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Ciudad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CiudadNacimiento" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DeptoNacimiento" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Genero" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_EstadoCivil" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomEstadoCivil" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_RUOcupacion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomOcupacion" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Correo" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="CiudadDondeReside" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CiudadResidencia" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="CodDepartamento1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DeptoResidencia" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="DireccionDondeReside" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Estrato" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="CodTipoNivelEstudio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomNivelEstudio" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="CodProgramaRealizado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ProgramaAcademico" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CodInstitucion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomInstitucionEducativa" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Ciudad1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CiudadEstudio" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DeptoEstudio" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="EstadoEstudio" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaINIEstudio" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FechaFinMaterias" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FechaGradoEstudio" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SemestresCursados" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodTipoAprendiz" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomTipoAprendiz" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Id_RUCentroDesarrollo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CentroDesaEmpresarial" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Ciudad2" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CiudadCentEmpresarial" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Departamento2" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DeptoCentEmpresarial" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_RUServicio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomServicio" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_RUCurso" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FormacionInteres" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Ciudad3" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CiudEmprendeRural" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="dptoEmprendeRural" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NomProyecto" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="local" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Regional" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Nacional" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Internacional" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripcionProyecto" Type="System.String" DbType="VarChar(5000) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductoServicioOferta" Type="System.String" DbType="VarChar(5000) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductoEnElMercado" Type="System.String" DbType="VarChar(5000) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpleadosACargo" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="CantidadEmpleados" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_SubSector" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomSubSector" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Sector" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomSector" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Ciudad4" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CiudadFondoEmprender" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="DeptoFondoEmprender" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpresaFortalecimiento" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CorreoEmpresa" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="TelefonoEmpresa" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DireccionEmpresa" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaConstitucionEmpresa" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="TamaEmpresa" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="localEmpresa" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="RegionalEmpresa" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="NacionalEmpresa" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="InternacionalEmpresa" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductoServicioOfertaEmpresa" Type="System.String" DbType="VarChar(5000) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripcionActividadEmpresa" Type="System.String" DbType="VarChar(5000) NOT NULL" CanBeNull="false" />
+      <Column Name="ValorVentasAnuales" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="EmpleadosEmpresa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EsElPropietario" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="CargoQueOcupa" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CodCiudadEmpresa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CiudadEmpresa" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="DepartamentoEmpresa" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="idSubSectorEmpresa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomSubSectorEmpresa" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_SectorEmpresa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomSectorEmpresa" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

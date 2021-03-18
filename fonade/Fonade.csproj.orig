@@ -1,0 +1,1539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEB854FE-D60F-42F0-A7C4-E4DDC60647F7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fonade</RootNamespace>
+    <AssemblyName>Fonade</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.1005, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin, Version=5.3.5068.16458, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net40\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit">
+      <HintPath>C:\Users\Ricardo\Downloads\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="App_Data\ASPNETDB.MDF" />
+    <Content Include="App_Data\aspnetdb_log.ldf">
+      <DependentUpon>ASPNETDB.MDF</DependentUpon>
+    </Content>
+    <Content Include="Controles\Alert.ascx" />
+    <Content Include="Controles\CargarArchivos.ascx" />
+    <Content Include="FONADE\AdministrarPerfiles\ActivarEmprendedor.aspx" />
+    <Content Include="FONADE\AdministrarPerfiles\AdministrarAsesores.aspx" />
+    <Content Include="FONADE\AdministrarPerfiles\AdministrarUsuarios.aspx" />
+    <Content Include="FONADE\AdministrarPerfiles\BuscarPerfil.aspx" />
+    <Content Include="FONADE\AdministrarPerfiles\CatalogoEmprendedor\AdministrarEmprendedores.aspx" />
+    <Content Include="FONADE\AdministrarPerfiles\CatalogoEmprendedor\InformacionAcademica.aspx" />
+    <Content Include="FONADE\AdministrarPerfiles\CatalogoEmprendedor\PerfilEmprendedor.aspx" />
+    <Content Include="FONADE\AdministrarPerfiles\Convenios\CatalogoConvenios.aspx" />
+    <Content Include="FONADE\AdministrarPerfiles\Convenios\CatalogoCriterioPriorizacion.aspx" />
+    <Content Include="FONADE\AdministrarPerfiles\CrearAsesores.aspx" />
+    <Content Include="FONADE\AdministrarPerfiles\Editar.aspx" />
+    <Content Include="FONADE\AdministrarPerfiles\FiltroEmprendedorInactivo.aspx" />
+    <Content Include="FONADE\AdministrarPerfiles\VerDetalle.aspx" />
+    <Content Include="FONADE\AdministrarPerfiles\VerProyecto.aspx" />
+    <Content Include="FONADE\Anexos\ActaAsignacionRecursos.aspx" />
+    <Content Include="FONADE\Anexos\CatalagoConvenios.aspx" />
+    <Content Include="FONADE\AdministrarPerfiles\Convenios\CatalogoTexto.aspx" />
+    <Content Include="FONADE\Anexos\CiteriosdePriorizacion.aspx" />
+    <Content Include="FONADE\Anexos\ProyectosPriorizacion.aspx" />
+    <Content Include="FONADE\AdministrarPerfiles\Convocatoria\CatalogoConvocatoria.aspx" />
+    <Content Include="FONADE\Auditoria\ConfiguracionAuditoria.aspx" />
+    <Content Include="FONADE\Beneficiario\Beneficiario.aspx" />
+    <Content Include="FONADE\Beneficiario\CatalogoBeneficiario.aspx" />
+    <Content Include="FONADE\Creacion_Perfiles\CrearUsuario.aspx" />
+    <Content Include="FONADE\MiPerfil\CambiarClave.aspx" />
+    <Content Include="FONADE\MiPerfil\Consultas.aspx" />
+    <Content Include="FONADE\MiPerfil\Home.aspx" />
+    <Content Include="FONADE\MiPerfil\IngresarInformacionAcademica.aspx" />
+    <Content Include="FONADE\MiPerfil\MiPerfil.aspx" />
+    <Content Include="FONADE\Offline\DownloadScript.aspx" />
+    <Content Include="FONADE\Offline\ProyectoOffline.aspx" />
+    <Content Include="FONADE\PlandeNegocio\CatalogoProyecto.aspx" />
+    <Content Include="FONADE\Proyecto\PProyectoOperativoMetasSociales.aspx" />
+    <Content Include="FONADE\Proyecto\PProyectoOperativoPlanOperativo.aspx" />
+    <Content Include="FONADE\Proyecto\PProyectoFinanzasCapitalTrabajo.aspx" />
+    <Content Include="FONADE\Proyecto\PProyectoFinanzasIngreso.aspx" />
+    <Content Include="FONADE\Proyecto\PProyectoFinanzasEgreso.aspx" />
+    <Content Include="FONADE\Proyecto\InterContratoFrame.aspx" />
+    <Content Include="FONADE\Proyecto\javascriptFunctions.js" />
+    <Content Include="FONADE\Proyecto\PProyectoMercadoEstrategia.aspx" />
+    <Content Include="FONADE\Proyecto\PProyectoMercadoInvestigacion.aspx" />
+    <Content Include="FONADE\Proyecto\PProyectoMercadoProyecciones.aspx" />
+    <Content Include="FONADE\Proyecto\PProyectoOperacion.aspx" />
+    <Content Include="FONADE\Proyecto\PProyectoOperacionCompras.aspx" />
+    <Content Include="FONADE\Proyecto\PProyectoOperacionCostos.aspx" />
+    <Content Include="FONADE\Proyecto\PProyectoOperacionInfraestructura.aspx" />
+    <Content Include="FONADE\Proyecto\PProyectoResumen.aspx" />
+    <Content Include="FONADE\Proyecto\ProyectoAnexos.aspx" />
+    <Content Include="FONADE\Proyecto\ProyectoEmpresaFrame.aspx" />
+    <Content Include="FONADE\Proyecto\ProyectoFinanzasFrame.aspx" />
+    <Content Include="FONADE\Proyecto\ProyectoFormalizar.aspx" />
+    <Content Include="FONADE\Proyecto\ProyectoFormalizar2.aspx" />
+    <Content Include="FONADE\Proyecto\ProyectoFrameSet.aspx" />
+    <Content Include="FONADE\Proyecto\ProyectoImpacto.aspx" />
+    <Content Include="FONADE\Proyecto\ProyectoMercadoFrame.aspx" />
+    <Content Include="FONADE\Proyecto\ProyectoOperacionFrame.aspx" />
+    <Content Include="FONADE\Proyecto\ProyectoOperativoFrame.aspx" />
+    <Content Include="FONADE\Proyecto\ProyectoOrganizacionFrame.aspx" />
+    <Content Include="FONADE\Proyecto\ProyectoResumenEquipo.aspx" />
+    <Content Include="FONADE\Proyecto\ProyectoResumenFrame.aspx" />
+    <Content Include="FONADE\Proyecto\Proyectos.aspx" />
+    <Content Include="FONADE\Proyecto\SeguimientopptalFrame.aspx" />
+    <Content Include="FONADE\Proyecto\verFormalizacion.aspx" />
+    <Content Include="FONADE\Prueba\ConsultaPrueba.aspx" />
+    <Content Include="FONADE\Tareas\MisTareas.aspx" />
+    <Content Include="FONADE\Tareas\PruebasSP.aspx" />
+    <Content Include="FONADE\Tareas\TareasAgendar.aspx" />
+    <Content Include="Images\add.png" />
+    <Content Include="Images\adjuntarK.png" />
+    <Content Include="Images\admiracion.gif" />
+    <Content Include="Images\Advertencia.gif" />
+    <Content Include="Images\agregar.png" />
+    <Content Include="Images\bgrAnotacion.gif" />
+    <Content Include="Images\bgrAnotacion2.gif" />
+    <Content Include="Images\bgrAzul.jpg" />
+    <Content Include="Images\bgrBusqueda.jpg" />
+    <Content Include="Images\bgrCabezote2.jpg" />
+    <Content Include="Images\bgrIcoPos.gif" />
+    <Content Include="Images\bgrIcoPos2.gif" />
+    <Content Include="Images\bgrLineaAzul.gif" />
+    <Content Include="Images\bgrLineGrisBase.gif" />
+    <Content Include="Images\bgrSombraDerecha.jpg" />
+    <Content Include="Images\bgrSombraIzquierda.jpg" />
+    <Content Include="Images\BlancaAsc.gif" />
+    <Content Include="Images\BlancaDesc.gif" />
+    <Content Include="Images\botAnexos.gif" />
+    <Content Include="Images\botAnexosAdvertencia.gif" />
+    <Content Include="Images\botAnexosAdvertenciaOver.gif" />
+    <Content Include="Images\botAnexosAprobado.gif" />
+    <Content Include="Images\botAnexosAprobadoOver.gif" />
+    <Content Include="Images\botAnexosOver.gif" />
+    <Content Include="Images\botAtras.gif" />
+    <Content Include="Images\botAtrasOver.gif" />
+    <Content Include="Images\botAyuda.gif" />
+    <Content Include="Images\botAyudaOver.gif" />
+    <Content Include="Images\botBasica.gif" />
+    <Content Include="Images\botBasicaAdvertencia.gif" />
+    <Content Include="Images\botBasicaAdvertenciaOver.gif" />
+    <Content Include="Images\botBasicaAprobado.gif" />
+    <Content Include="Images\botBasicaAprobadoOver.gif" />
+    <Content Include="Images\botBasicaOver.gif" />
+    <Content Include="Images\BotBinocular.gif" />
+    <Content Include="Images\botConcepto.gif" />
+    <Content Include="Images\botConceptoAdvertencia.gif" />
+    <Content Include="Images\botConceptoAdvertenciaOver.gif" />
+    <Content Include="Images\botConceptoAprobado.gif" />
+    <Content Include="Images\botConceptoAprobadoOver.gif" />
+    <Content Include="Images\botConceptoOver.gif" />
+    <Content Include="Images\botConceptos.gif" />
+    <Content Include="Images\botConceptosAdvertencia.gif" />
+    <Content Include="Images\botConceptosAdvertenciaOver.gif" />
+    <Content Include="Images\botConceptosAprobado.gif" />
+    <Content Include="Images\botConceptosAprobadoOver.gif" />
+    <Content Include="Images\botConceptosOver.gif" />
+    <Content Include="Images\BotConceptosRec.gif" />
+    <Content Include="Images\BotConceptosRecAdvertencia.gif" />
+    <Content Include="Images\BotConceptosRecAdvertenciaOver.gif" />
+    <Content Include="Images\BotConceptosRecAprobado.gif" />
+    <Content Include="Images\BotConceptosRecAprobadoOver.gif" />
+    <Content Include="Images\BotConceptosRecOver.gif" />
+    <Content Include="Images\botConsolidado.gif" />
+    <Content Include="Images\botConsolidadoAdvertencia.gif" />
+    <Content Include="Images\botConsolidadoAdvertenciaOver.gif" />
+    <Content Include="Images\botConsolidadoAprobado.gif" />
+    <Content Include="Images\botConsolidadoAprobadoOver.gif" />
+    <Content Include="Images\botConsolidadoOver.gif" />
+    <Content Include="Images\botContrato.gif" />
+    <Content Include="Images\botContratoAdvertencia.gif" />
+    <Content Include="Images\botContratoAdvertenciaOver.gif" />
+    <Content Include="Images\botContratoAprobado.gif" />
+    <Content Include="Images\botContratoAprobadoOver.gif" />
+    <Content Include="Images\botContratoOver.gif" />
+    <Content Include="Images\botDesembolsos.gif" />
+    <Content Include="Images\botDesembolsosOver.gif" />
+    <Content Include="Images\botDesempeno.gif" />
+    <Content Include="Images\botDesempenoAdvertencia.gif" />
+    <Content Include="Images\botDesempenoAdvertenciaOver.gif" />
+    <Content Include="Images\botDesempenoAprobado.gif" />
+    <Content Include="Images\botDesempenoAprobadoOver.gif" />
+    <Content Include="Images\botDesempenoOver.gif" />
+    <Content Include="Images\botEmpresa.gif" />
+    <Content Include="Images\botEmpresaAdvertencia.gif" />
+    <Content Include="Images\botEmpresaAdvertenciaOver.gif" />
+    <Content Include="Images\botEmpresaAprobado.gif" />
+    <Content Include="Images\botEmpresaAprobadoOver.gif" />
+    <Content Include="Images\botEmpresaOver.gif" />
+    <Content Include="Images\botFinanzas.gif" />
+    <Content Include="Images\botFinanzasAdvertencia.gif" />
+    <Content Include="Images\botFinanzasAdvertenciaOver.gif" />
+    <Content Include="Images\botFinanzasAprobado.gif" />
+    <Content Include="Images\botFinanzasAprobadoOver.gif" />
+    <Content Include="Images\botFinanzasOver.gif" />
+    <Content Include="Images\botGeneral.gif" />
+    <Content Include="Images\botGeneralOver.gif" />
+    <Content Include="Images\botHojaAvance.gif" />
+    <Content Include="Images\botHojaAvanceAdvertencia.gif" />
+    <Content Include="Images\botHojaAvanceAdvertenciaOver.gif" />
+    <Content Include="Images\botHojaAvanceAprobado.gif" />
+    <Content Include="Images\botHojaAvanceAprobadoOver.gif" />
+    <Content Include="Images\botHojaAvanceOver.gif" />
+    <Content Include="Images\botImpacto.gif" />
+    <Content Include="Images\botImpactoAdvertencia.gif" />
+    <Content Include="Images\botImpactoAdvertenciaOver.gif" />
+    <Content Include="Images\botImpactoAprobado.gif" />
+    <Content Include="Images\botImpactoAprobadoOver.gif" />
+    <Content Include="Images\botImpactoOver.gif" />
+    <Content Include="Images\botImprimir.gif" />
+    <Content Include="Images\botImprimirOver.gif" />
+    <Content Include="Images\botIndicadores.gif" />
+    <Content Include="Images\botIndicadoresAdvertencia.gif" />
+    <Content Include="Images\botIndicadoresAdvertenciaOver.gif" />
+    <Content Include="Images\botIndicadoresAprobado.gif" />
+    <Content Include="Images\botIndicadoresAprobadoOver.gif" />
+    <Content Include="Images\botIndicadoresOver.gif" />
+    <Content Include="Images\botInforme.gif" />
+    <Content Include="Images\botInformeOver.gif" />
+    <Content Include="Images\botInformes.gif" />
+    <Content Include="Images\botInformesOver.gif" />
+    <Content Include="Images\botInicio.gif" />
+    <Content Include="Images\botInicioOver.gif" />
+    <Content Include="Images\botIr.gif" />
+    <Content Include="Images\botMercado.gif" />
+    <Content Include="Images\botMercadoAdvertencia.gif" />
+    <Content Include="Images\botMercadoAdvertenciaOver.gif" />
+    <Content Include="Images\botMercadoAprobado.gif" />
+    <Content Include="Images\botMercadoAprobadoOver.gif" />
+    <Content Include="Images\botMercadoOver.gif" />
+    <Content Include="Images\botMiPerfil.jpg" />
+    <Content Include="Images\botMiPerfilOver.jpg" />
+    <Content Include="Images\botMiProyecto.jpg" />
+    <Content Include="Images\botMiProyectoOver.jpg" />
+    <Content Include="Images\botModelo.gif" />
+    <Content Include="Images\botModeloAdvertencia.gif" />
+    <Content Include="Images\botModeloAdvertenciaOver.gif" />
+    <Content Include="Images\botModeloAprobado.gif" />
+    <Content Include="Images\botModeloAprobadoOver.gif" />
+    <Content Include="Images\botModeloOver.gif" />
+    <Content Include="Images\botOperacion.gif" />
+    <Content Include="Images\botOperacionAdvertencia.gif" />
+    <Content Include="Images\botOperacionAdvertenciaOver.gif" />
+    <Content Include="Images\botOperacionAprobado.gif" />
+    <Content Include="Images\botOperacionAprobadoOver.gif" />
+    <Content Include="Images\botOperacionOver.gif" />
+    <Content Include="Images\botOperativo.gif" />
+    <Content Include="Images\botOperativoAdvertencia.gif" />
+    <Content Include="Images\botOperativoAdvertenciaOver.gif" />
+    <Content Include="Images\botOperativoAprobado.gif" />
+    <Content Include="Images\botOperativoAprobadoOver.gif" />
+    <Content Include="Images\botOperativoOver.gif" />
+    <Content Include="Images\botOrganizacion.gif" />
+    <Content Include="Images\botOrganizacionAdvertencia.gif" />
+    <Content Include="Images\botOrganizacionAdvertenciaOver.gif" />
+    <Content Include="Images\botOrganizacionAprobado.gif" />
+    <Content Include="Images\botOrganizacionAprobadoOver.gif" />
+    <Content Include="Images\botOrganizacionOver.gif" />
+    <Content Include="Images\botOtrosProyectos.jpg" />
+    <Content Include="Images\botOtrosProyectosOver.jpg" />
+    <Content Include="Images\botResumen.gif" />
+    <Content Include="Images\botResumenAdvertencia.gif" />
+    <Content Include="Images\botResumenAdvertenciaOver.gif" />
+    <Content Include="Images\botResumenAprobado.gif" />
+    <Content Include="Images\botResumenAprobadoOver.gif" />
+    <Content Include="Images\botResumenOver.gif" />
+    <Content Include="Images\botRiesgos.gif" />
+    <Content Include="Images\botRiesgosAdvertencia.gif" />
+    <Content Include="Images\botRiesgosAdvertenciaOver.gif" />
+    <Content Include="Images\botRiesgosAprobado.gif" />
+    <Content Include="Images\botRiesgosAprobadoOver.gif" />
+    <Content Include="Images\botRiesgosOver.gif" />
+    <Content Include="Images\botSalir.gif" />
+    <Content Include="Images\botSalirOver.gif" />
+    <Content Include="Images\botSeguimiento.gif" />
+    <Content Include="Images\botSeguimientoOver.gif" />
+    <Content Include="Images\botTabla.gif" />
+    <Content Include="Images\botTablaAdvertencia.gif" />
+    <Content Include="Images\botTablaAdvertenciaOver.gif" />
+    <Content Include="Images\botTablaAprobado.gif" />
+    <Content Include="Images\botTablaAprobadoOver.gif" />
+    <Content Include="Images\botTablaOver.gif" />
+    <Content Include="Images\botTerceros.gif" />
+    <Content Include="Images\botTercerosOver.gif" />
+    <Content Include="Images\Buscar.gif" />
+    <Content Include="Images\buscarrr.png" />
+    <Content Include="Images\calendar.png" />
+    <Content Include="Images\checked.GIF" />
+    <Content Include="Images\chulo.gif" />
+    <Content Include="Images\fonfo.png" />
+    <Content Include="Images\gifTransparente.gif" />
+    <Content Include="Images\icoActivar.gif" />
+    <Content Include="Images\icoAdicionar.gif" />
+    <Content Include="Images\icoAdicionarUsuario.gif" />
+    <Content Include="Images\IcoBMPDoc.jpg" />
+    <Content Include="Images\icoBorrar.gif" />
+    <Content Include="Images\icocanceladas.gif" />
+    <Content Include="Images\icoClick.gif" />
+    <Content Include="Images\icoClick2.gif" />
+    <Content Include="Images\icoClip.gif" />
+    <Content Include="Images\icoClip2.gif" />
+    <Content Include="Images\icoComentario.gif" />
+    <Content Include="Images\icoConObservacion.gif" />
+    <Content Include="Images\icocumplidas.gif" />
+    <Content Include="Images\IcoDocExel.gif" />
+    <Content Include="Images\IcoDocExelG.gif" />
+    <Content Include="Images\IcoDocNormal.gif" />
+    <Content Include="Images\IcoDocNormal.png" />
+    <Content Include="Images\IcoDocPDF.gif" />
+    <Content Include="Images\IcoDocWord.gif" />
+    <Content Include="Images\IcoDocWordG.gif" />
+    <Content Include="Images\icoEliminar.gif" />
+    <Content Include="Images\IcoLinkDoc.jpg" />
+    <Content Include="Images\icoMenu.gif" />
+    <Content Include="Images\icoModificar.gif" />
+    <Content Include="Images\icoNuevo.gif" />
+    <Content Include="Images\icopendientes.gif" />
+    <Content Include="Images\icoPost.gif" />
+    <Content Include="Images\IcoPPTDoc.jpg" />
+    <Content Include="Images\IcoPrioridad.gif" />
+    <Content Include="Images\IcoSectorA.gif" />
+    <Content Include="Images\IcoSectorB.gif" />
+    <Content Include="Images\IcoSectorC.gif" />
+    <Content Include="Images\IcoSectorD.gif" />
+    <Content Include="Images\IcoSectorE.gif" />
+    <Content Include="Images\IcoSectorF.gif" />
+    <Content Include="Images\IcoSectorG.gif" />
+    <Content Include="Images\IcoSectorH.gif" />
+    <Content Include="Images\IcoSectorI.gif" />
+    <Content Include="Images\IcoSectorJ.gif" />
+    <Content Include="Images\IcoSectorK.gif" />
+    <Content Include="Images\IcoSectorL.gif" />
+    <Content Include="Images\IcoSectorM.gif" />
+    <Content Include="Images\IcoSectorN.gif" />
+    <Content Include="Images\IcoSectorO.gif" />
+    <Content Include="Images\IcoSectorP.gif" />
+    <Content Include="Images\IcoSectorQ.gif" />
+    <Content Include="Images\icoSinObservacion.gif" />
+    <Content Include="Images\ImgAyuda.gif" />
+    <Content Include="Images\ImgBaseLogos.gif" />
+    <Content Include="Images\ImgCabezote.jpg" />
+    <Content Include="Images\ImgCorreoAttach.gif" />
+    <Content Include="Images\ImgCorreoNormal.gif" />
+    <Content Include="Images\imgDegradeMenu.jpg" />
+    <Content Include="Images\ImgDivBotones.gif" />
+    <Content Include="Images\ImgDivMenu.gif" />
+    <Content Include="Images\ImgFlechaOrdenDown.gif" />
+    <Content Include="Images\ImgFlechaOrdenUp.gif" />
+    <Content Include="Images\ImgFlechaTit.gif" />
+    <Content Include="Images\imgLogoEmprender.jpg" />
+    <Content Include="Images\ImgLogoFonade.gif" />
+    <Content Include="Images\ImgLogoIcono.gif" />
+    <Content Include="Images\ImgLogoIcono_1882011.gif" />
+    <Content Include="Images\imgLogoSena.jpg" />
+    <Content Include="Images\ImgLT1.jpg" />
+    <Content Include="Images\imgLT10.jpg" />
+    <Content Include="Images\imgLT11.jpg" />
+    <Content Include="Images\imgLT12.jpg" />
+    <Content Include="Images\imgLT13.jpg" />
+    <Content Include="Images\imgLT15.jpg" />
+    <Content Include="Images\imgLT16.jpg" />
+    <Content Include="Images\ImgLT2.jpg" />
+    <Content Include="Images\imgLT3.jpg" />
+    <Content Include="Images\imgLT4.jpg" />
+    <Content Include="Images\imgLT5.jpg" />
+    <Content Include="Images\imgLT6.jpg" />
+    <Content Include="Images\ImgLT7.jpg" />
+    <Content Include="Images\imgLT8.jpg" />
+    <Content Include="Images\ImgLT9.jpg" />
+    <Content Include="Images\ImgLTFormulacion.jpg" />
+    <Content Include="Images\ImgMapa01.jpg" />
+    <Content Include="Images\ImgSombra2.gif" />
+    <Content Include="Images\Img\Back.png" />
+    <Content Include="Images\Img\BackOFF.png" />
+    <Content Include="Images\Img\BackOn.png" />
+    <Content Include="Images\Img\BG.jpg" />
+    <Content Include="Images\Img\BgBuscador.png" />
+    <Content Include="Images\Img\borde1.png" />
+    <Content Include="Images\Img\borde2.png" />
+    <Content Include="Images\Img\fonfo.png" />
+    <Content Include="Images\Img\HomeOFF.png" />
+    <Content Include="Images\Img\HomeON.png" />
+    <Content Include="Images\Img\LogoFE.png" />
+    <Content Include="Images\Img\LogOut.png" />
+    <Content Include="Images\Img\LogOutOFF.png" />
+    <Content Include="Images\Img\lupa.png" />
+    <Content Include="Images\Img\PrintOFF.png" />
+    <Content Include="Images\Img\PrintON.png" />
+    <Content Include="Images\Img\px-bottom.png" />
+    <Content Include="Images\Img\pxbtoff.png" />
+    <Content Include="Images\Img\pxbton.png" />
+    <Content Include="Images\Img\Pxmenufather.png" />
+    <Content Include="Images\Img\PxmenufatherHover.png" />
+    <Content Include="Images\Img\Selected.png" />
+    <Content Include="Images\Img\UP.png" />
+    <Content Include="Images\Img\UPhover.png" />
+    <Content Include="Images\key.png" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\logoEmprender.jpg" />
+    <Content Include="Images\LogoFondoEmprender2.JPG" />
+    <Content Include="Images\logoSena.gif" />
+    <Content Include="Images\mapas\amazonas.gif" />
+    <Content Include="Images\mapas\amazonasPq.gif" />
+    <Content Include="Images\mapas\antioquia.gif" />
+    <Content Include="Images\mapas\antioquiaPq.gif" />
+    <Content Include="Images\mapas\arauca.gif" />
+    <Content Include="Images\mapas\araucaPq.gif" />
+    <Content Include="Images\mapas\Archipielago de San andres.gif" />
+    <Content Include="Images\mapas\Archipielago de San andresPq.gif" />
+    <Content Include="Images\mapas\atlantico.gif" />
+    <Content Include="Images\mapas\atlanticoPq.gif" />
+    <Content Include="Images\mapas\Bogota D.C.gif" />
+    <Content Include="Images\mapas\Bogota D.Cpq.gif" />
+    <Content Include="Images\mapas\bolivar.gif" />
+    <Content Include="Images\mapas\bolivarPq.gif" />
+    <Content Include="Images\mapas\boyaca.gif" />
+    <Content Include="Images\mapas\boyacaPq.gif" />
+    <Content Include="Images\mapas\caldas.gif" />
+    <Content Include="Images\mapas\caldasPq.gif" />
+    <Content Include="Images\mapas\caqueta.gif" />
+    <Content Include="Images\mapas\caquetaPq.gif" />
+    <Content Include="Images\mapas\casanare.gif" />
+    <Content Include="Images\mapas\casanarePq.gif" />
+    <Content Include="Images\mapas\cauca.gif" />
+    <Content Include="Images\mapas\caucaPq.gif" />
+    <Content Include="Images\mapas\cesar.gif" />
+    <Content Include="Images\mapas\cesarPq.gif" />
+    <Content Include="Images\mapas\choco.gif" />
+    <Content Include="Images\mapas\chocoPq.gif" />
+    <Content Include="Images\mapas\cordoba.gif" />
+    <Content Include="Images\mapas\cordobaPq.gif" />
+    <Content Include="Images\mapas\cundinamarca.gif" />
+    <Content Include="Images\mapas\cundinamarcaPq.gif" />
+    <Content Include="Images\mapas\guainia.gif" />
+    <Content Include="Images\mapas\guainiaPq.gif" />
+    <Content Include="Images\mapas\guajira.gif" />
+    <Content Include="Images\mapas\guajiraPq.gif" />
+    <Content Include="Images\mapas\guaviare.gif" />
+    <Content Include="Images\mapas\guaviarePq.gif" />
+    <Content Include="Images\mapas\huila.gif" />
+    <Content Include="Images\mapas\huilaPq.gif" />
+    <Content Include="Images\mapas\La guajira.gif" />
+    <Content Include="Images\mapas\la guajiraPq.gif" />
+    <Content Include="Images\mapas\magdalena.gif" />
+    <Content Include="Images\mapas\magdalenaPq.gif" />
+    <Content Include="Images\mapas\meta.gif" />
+    <Content Include="Images\mapas\metaPq.gif" />
+    <Content Include="Images\mapas\nariño.gif" />
+    <Content Include="Images\mapas\nariñoPq.gif" />
+    <Content Include="Images\mapas\norte de Santander.gif" />
+    <Content Include="Images\mapas\norte de SantanderPq.gif" />
+    <Content Include="Images\mapas\norteSantander.gif" />
+    <Content Include="Images\mapas\norteSantanderPq.gif" />
+    <Content Include="Images\mapas\putumayo.gif" />
+    <Content Include="Images\mapas\putumayoPq.gif" />
+    <Content Include="Images\mapas\quindio.gif" />
+    <Content Include="Images\mapas\quindioPq.gif" />
+    <Content Include="Images\mapas\risaralda.gif" />
+    <Content Include="Images\mapas\risaraldaPq.gif" />
+    <Content Include="Images\mapas\santander.gif" />
+    <Content Include="Images\mapas\santanderPq.gif" />
+    <Content Include="Images\mapas\sucre.gif" />
+    <Content Include="Images\mapas\sucrePq.gif" />
+    <Content Include="Images\mapas\tolima.gif" />
+    <Content Include="Images\mapas\tolimaPq.gif" />
+    <Content Include="Images\mapas\valle del cauca.gif" />
+    <Content Include="Images\mapas\valle del caucaPq.gif" />
+    <Content Include="Images\mapas\valle.gif" />
+    <Content Include="Images\mapas\vallePq.gif" />
+    <Content Include="Images\mapas\vaupes.gif" />
+    <Content Include="Images\mapas\vaupesPq.gif" />
+    <Content Include="Images\mapas\vichada.gif" />
+    <Content Include="Images\mapas\vichadaPq.gif" />
+    <Content Include="Images\mas.GIF" />
+    <Content Include="Images\menos.GIF" />
+    <Content Include="Images\next.gif" />
+    <Content Include="Images\pata_logo.jpg" />
+    <Content Include="Images\prev.gif" />
+    <Content Include="Images\Tareas\IcoPostIt.gif" />
+    <Content Include="Images\Tareas\Urgencia1.gif" />
+    <Content Include="Images\Tareas\Urgencia2.gif" />
+    <Content Include="Images\Tareas\Urgencia3.gif" />
+    <Content Include="Images\Tareas\Urgencia4.gif" />
+    <Content Include="Images\Tareas\Urgencia5.gif" />
+    <Content Include="Images\Tareas\Urgencia6.gif" />
+    <Content Include="Images\UI_Bold.jpg" />
+    <Content Include="Images\UI_color.jpg" />
+    <Content Include="Images\UI_copy.jpg" />
+    <Content Include="Images\UI_cut.jpg" />
+    <Content Include="Images\UI_italic.jpg" />
+    <Content Include="Images\UI_jcenter.jpg" />
+    <Content Include="Images\UI_jleft.jpg" />
+    <Content Include="Images\UI_jright.jpg" />
+    <Content Include="Images\UI_link.jpg" />
+    <Content Include="Images\UI_paste.jpg" />
+    <Content Include="Images\UI_underline.jpg" />
+    <Content Include="Images\UI_undo.jpg" />
+    <Content Include="Images\vacio1x1.gif" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.3.min.js" />
+    <Content Include="Scripts\ScriptsGenerales.js" />
+    <Content Include="Scripts\Templates\ayuda.tmpl.htm" />
+    <Content Include="Styles\Fonts\Foundation\foundation-icons.css" />
+    <Content Include="Styles\Fonts\Foundation\foundation-icons.svg" />
+    <Content Include="Styles\Fonts\Foundation\preview.html" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-address-book.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-alert.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-align-center.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-align-justify.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-align-left.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-align-right.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-anchor.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-annotate.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-archive.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-arrow-down.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-arrow-left.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-arrow-right.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-arrow-up.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-arrows-compress.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-arrows-expand.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-arrows-in.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-arrows-out.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-asl.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-asterisk.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-at-sign.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-background-color.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-battery-empty.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-battery-full.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-battery-half.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-bitcoin-circle.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-bitcoin.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-blind.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-bluetooth.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-bold.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-book-bookmark.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-book.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-bookmark.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-braille.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-burst-new.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-burst-sale.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-burst.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-calendar.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-camera.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-check.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-checkbox.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-clipboard-notes.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-clipboard-pencil.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-clipboard.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-clock.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-closed-caption.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-cloud.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-comment-minus.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-comment-quotes.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-comment-video.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-comment.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-comments.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-compass.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-contrast.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-credit-card.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-crop.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-crown.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-css3.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-database.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-die-five.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-die-four.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-die-one.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-die-six.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-die-three.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-die-two.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-dislike.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-dollar-bill.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-dollar.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-download.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-eject.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-elevator.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-euro.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-eye.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-fast-forward.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-female-symbol.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-female.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-filter.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-first-aid.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-flag.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-folder-add.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-folder-lock.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-folder.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-foot.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-foundation.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-graph-bar.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-graph-horizontal.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-graph-pie.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-graph-trend.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-guide-dog.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-hearing-aid.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-heart.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-home.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-html5.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-indent-less.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-indent-more.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-info.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-italic.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-key.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-laptop.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-layout.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-lightbulb.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-like.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-link.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-list-bullet.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-list-number.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-list-thumbnails.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-list.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-lock.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-loop.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-magnifying-glass.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-mail.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-male-female.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-male-symbol.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-male.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-map.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-marker.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-megaphone.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-microphone.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-minus-circle.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-minus.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-mobile-signal.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-mobile.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-monitor.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-mountains.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-music.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-next.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-no-dogs.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-no-smoking.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page-add.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page-copy.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page-csv.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page-delete.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page-doc.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page-edit.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page-export-csv.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page-export-doc.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page-export-pdf.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page-export.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page-filled.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page-multiple.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page-pdf.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page-remove.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page-search.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-page.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-paint-bucket.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-paperclip.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-pause.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-paw.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-paypal.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-pencil.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-photo.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-play-circle.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-play-video.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-play.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-plus.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-pound.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-power.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-previous.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-price-tag.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-pricetag-multiple.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-print.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-prohibited.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-projection-screen.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-puzzle.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-quote.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-record.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-refresh.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-results-demographics.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-results.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-rewind-ten.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-rewind.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-rss.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-safety-cone.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-save.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-share.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-sheriff-badge.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-shield.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-shopping-bag.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-shopping-cart.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-shuffle.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-skull.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-500px.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-adobe.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-amazon.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-android.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-apple.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-behance.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-bing.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-blogger.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-delicious.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-designer-news.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-deviant-art.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-digg.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-dribbble.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-drive.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-dropbox.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-evernote.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-facebook.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-flickr.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-forrst.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-foursquare.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-game-center.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-github.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-google-plus.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-hacker-news.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-hi5.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-instagram.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-joomla.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-lastfm.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-linkedin.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-medium.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-myspace.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-orkut.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-path.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-picasa.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-pinterest.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-rdio.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-reddit.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-skillshare.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-skype.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-smashing-mag.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-snapchat.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-spotify.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-squidoo.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-stack-overflow.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-steam.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-stumbleupon.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-treehouse.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-tumblr.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-twitter.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-vimeo.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-windows.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-xbox.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-yahoo.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-yelp.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-youtube.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-zerply.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-social-zurb.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-sound.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-star.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-stop.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-strikethrough.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-subscript.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-superscript.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-tablet-landscape.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-tablet-portrait.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-target-two.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-target.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-telephone-accessible.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-telephone.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-text-color.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-thumbnails.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-ticket.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-torso-business.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-torso-female.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-torso.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-torsos-all-female.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-torsos-all.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-torsos-female-male.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-torsos-male-female.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-torsos.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-trash.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-trees.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-trophy.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-underline.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-universal-access.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-unlink.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-unlock.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-upload-cloud.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-upload.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-usb.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-video.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-volume-none.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-volume-strike.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-volume.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-web.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-wheelchair.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-widget.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-wrench.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-x-circle.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-x.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-yen.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-zoom-in.svg" />
+    <Content Include="Styles\Fonts\Foundation\svgs\fi-zoom-out.svg" />
+    <Content Include="Styles\images\animated-overlay.gif" />
+    <Content Include="Styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Styles\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Styles\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Styles\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Styles\images\ui-icons_222222_256x240.png" />
+    <Content Include="Styles\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Styles\images\ui-icons_454545_256x240.png" />
+    <Content Include="Styles\images\ui-icons_888888_256x240.png" />
+    <Content Include="Styles\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Styles\jquery-ui-1.10.3.min.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Styles\siteProyecto.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\FonadeMembershipProvider.cs" />
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\FonadeRole.cs" />
+    <Compile Include="Account\FonadeUser.cs" />
+    <Compile Include="Clases\Correo.cs" />
+    <Compile Include="Controles\Alert.ascx.cs">
+      <DependentUpon>Alert.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Alert.ascx.designer.cs">
+      <DependentUpon>Alert.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CargarArchivos.ascx.cs">
+      <DependentUpon>CargarArchivos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CargarArchivos.ascx.designer.cs">
+      <DependentUpon>CargarArchivos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Emergente.Master.cs">
+      <DependentUpon>Emergente.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Emergente.Master.designer.cs">
+      <DependentUpon>Emergente.Master</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\ActivarEmprendedor.aspx.cs">
+      <DependentUpon>ActivarEmprendedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\ActivarEmprendedor.aspx.designer.cs">
+      <DependentUpon>ActivarEmprendedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\AdministrarAsesores.aspx.cs">
+      <DependentUpon>AdministrarAsesores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\AdministrarAsesores.aspx.designer.cs">
+      <DependentUpon>AdministrarAsesores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\AdministrarUsuarios.aspx.cs">
+      <DependentUpon>AdministrarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\AdministrarUsuarios.aspx.designer.cs">
+      <DependentUpon>AdministrarUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\BuscarPerfil.aspx.cs">
+      <DependentUpon>BuscarPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\BuscarPerfil.aspx.designer.cs">
+      <DependentUpon>BuscarPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\CatalogoEmprendedor\AdministrarEmprendedores.aspx.cs">
+      <DependentUpon>AdministrarEmprendedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\CatalogoEmprendedor\AdministrarEmprendedores.aspx.designer.cs">
+      <DependentUpon>AdministrarEmprendedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\CatalogoEmprendedor\FrameEmprendedor.Master.cs">
+      <DependentUpon>FrameEmprendedor.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\CatalogoEmprendedor\FrameEmprendedor.Master.designer.cs">
+      <DependentUpon>FrameEmprendedor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\CatalogoEmprendedor\InformacionAcademica.aspx.cs">
+      <DependentUpon>InformacionAcademica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\CatalogoEmprendedor\InformacionAcademica.aspx.designer.cs">
+      <DependentUpon>InformacionAcademica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\CatalogoEmprendedor\PerfilEmprendedor.aspx.cs">
+      <DependentUpon>PerfilEmprendedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\CatalogoEmprendedor\PerfilEmprendedor.aspx.designer.cs">
+      <DependentUpon>PerfilEmprendedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\Convenios\CatalogoConvenios.aspx.cs">
+      <DependentUpon>CatalogoConvenios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\Convenios\CatalogoConvenios.aspx.designer.cs">
+      <DependentUpon>CatalogoConvenios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\Convenios\CatalogoCriterioPriorizacion.aspx.cs">
+      <DependentUpon>CatalogoCriterioPriorizacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\Convenios\CatalogoCriterioPriorizacion.aspx.designer.cs">
+      <DependentUpon>CatalogoCriterioPriorizacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\CrearAsesores.aspx.cs">
+      <DependentUpon>CrearAsesores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\CrearAsesores.aspx.designer.cs">
+      <DependentUpon>CrearAsesores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\FiltroEmprendedorInactivo.aspx.cs">
+      <DependentUpon>FiltroEmprendedorInactivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\FiltroEmprendedorInactivo.aspx.designer.cs">
+      <DependentUpon>FiltroEmprendedorInactivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\VerDetalle.aspx.cs">
+      <DependentUpon>VerDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\VerDetalle.aspx.designer.cs">
+      <DependentUpon>VerDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\VerProyecto.aspx.cs">
+      <DependentUpon>VerProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\VerProyecto.aspx.designer.cs">
+      <DependentUpon>VerProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Anexos\ActaAsignacionRecursos.aspx.cs">
+      <DependentUpon>ActaAsignacionRecursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Anexos\ActaAsignacionRecursos.aspx.designer.cs">
+      <DependentUpon>ActaAsignacionRecursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Anexos\CatalagoConvenios.aspx.cs">
+      <DependentUpon>CatalagoConvenios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Anexos\CatalagoConvenios.aspx.designer.cs">
+      <DependentUpon>CatalagoConvenios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\Convenios\CatalogoTexto.aspx.cs">
+      <DependentUpon>CatalogoTexto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\Convenios\CatalogoTexto.aspx.designer.cs">
+      <DependentUpon>CatalogoTexto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Anexos\CiteriosdePriorizacion.aspx.cs">
+      <DependentUpon>CiteriosdePriorizacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Anexos\CiteriosdePriorizacion.aspx.designer.cs">
+      <DependentUpon>CiteriosdePriorizacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Anexos\ProyectosPriorizacion.aspx.cs">
+      <DependentUpon>ProyectosPriorizacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Anexos\ProyectosPriorizacion.aspx.designer.cs">
+      <DependentUpon>ProyectosPriorizacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\Convocatoria\CatalogoConvocatoria.aspx.cs">
+      <DependentUpon>CatalogoConvocatoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\AdministrarPerfiles\Convocatoria\CatalogoConvocatoria.aspx.designer.cs">
+      <DependentUpon>CatalogoConvocatoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Auditoria\ConfiguracionAuditoria.aspx.cs">
+      <DependentUpon>ConfiguracionAuditoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Auditoria\ConfiguracionAuditoria.aspx.designer.cs">
+      <DependentUpon>ConfiguracionAuditoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Beneficiario\Beneficiario.aspx.cs">
+      <DependentUpon>Beneficiario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Beneficiario\Beneficiario.aspx.designer.cs">
+      <DependentUpon>Beneficiario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Beneficiario\CatalogoBeneficiario.aspx.cs">
+      <DependentUpon>CatalogoBeneficiario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Beneficiario\CatalogoBeneficiario.aspx.designer.cs">
+      <DependentUpon>CatalogoBeneficiario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Creacion_Perfiles\CrearUsuario.aspx.cs">
+      <DependentUpon>CrearUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Creacion_Perfiles\CrearUsuario.aspx.designer.cs">
+      <DependentUpon>CrearUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\MiPerfil\CambiarClave.aspx.cs">
+      <DependentUpon>CambiarClave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\MiPerfil\CambiarClave.aspx.designer.cs">
+      <DependentUpon>CambiarClave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\MiPerfil\Consultas.aspx.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\MiPerfil\Consultas.aspx.designer.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\MiPerfil\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\MiPerfil\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\MiPerfil\IngresarInformacionAcademica.aspx.cs">
+      <DependentUpon>IngresarInformacionAcademica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\MiPerfil\IngresarInformacionAcademica.aspx.designer.cs">
+      <DependentUpon>IngresarInformacionAcademica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\MiPerfil\MiPerfil.aspx.cs">
+      <DependentUpon>MiPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\MiPerfil\MiPerfil.aspx.designer.cs">
+      <DependentUpon>MiPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Offline\DownloadScript.aspx.cs">
+      <DependentUpon>DownloadScript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Offline\DownloadScript.aspx.designer.cs">
+      <DependentUpon>DownloadScript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Offline\ProyectoOffline.aspx.cs">
+      <DependentUpon>ProyectoOffline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Offline\ProyectoOffline.aspx.designer.cs">
+      <DependentUpon>ProyectoOffline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\PlandeNegocio\CatalogoProyecto.aspx.cs">
+      <DependentUpon>CatalogoProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\PlandeNegocio\CatalogoProyecto.aspx.designer.cs">
+      <DependentUpon>CatalogoProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoOperativoMetasSociales.aspx.cs">
+      <DependentUpon>PProyectoOperativoMetasSociales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoOperativoMetasSociales.aspx.designer.cs">
+      <DependentUpon>PProyectoOperativoMetasSociales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoOperativoPlanOperativo.aspx.cs">
+      <DependentUpon>PProyectoOperativoPlanOperativo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoOperativoPlanOperativo.aspx.designer.cs">
+      <DependentUpon>PProyectoOperativoPlanOperativo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoFinanzasCapitalTrabajo.aspx.cs">
+      <DependentUpon>PProyectoFinanzasCapitalTrabajo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoFinanzasCapitalTrabajo.aspx.designer.cs">
+      <DependentUpon>PProyectoFinanzasCapitalTrabajo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoFinanzasIngreso.aspx.cs">
+      <DependentUpon>PProyectoFinanzasIngreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoFinanzasIngreso.aspx.designer.cs">
+      <DependentUpon>PProyectoFinanzasIngreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoFinanzasEgreso.aspx.cs">
+      <DependentUpon>PProyectoFinanzasEgreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoFinanzasEgreso.aspx.designer.cs">
+      <DependentUpon>PProyectoFinanzasEgreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\InterContratoFrame.aspx.cs">
+      <DependentUpon>InterContratoFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\InterContratoFrame.aspx.designer.cs">
+      <DependentUpon>InterContratoFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoMercadoEstrategia.aspx.cs">
+      <DependentUpon>PProyectoMercadoEstrategia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoMercadoEstrategia.aspx.designer.cs">
+      <DependentUpon>PProyectoMercadoEstrategia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoMercadoInvestigacion.aspx.cs">
+      <DependentUpon>PProyectoMercadoInvestigacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoMercadoInvestigacion.aspx.designer.cs">
+      <DependentUpon>PProyectoMercadoInvestigacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoMercadoProyecciones.aspx.cs">
+      <DependentUpon>PProyectoMercadoProyecciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoMercadoProyecciones.aspx.designer.cs">
+      <DependentUpon>PProyectoMercadoProyecciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoOperacion.aspx.cs">
+      <DependentUpon>PProyectoOperacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoOperacion.aspx.designer.cs">
+      <DependentUpon>PProyectoOperacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoOperacionCompras.aspx.cs">
+      <DependentUpon>PProyectoOperacionCompras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoOperacionCompras.aspx.designer.cs">
+      <DependentUpon>PProyectoOperacionCompras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoOperacionCostos.aspx.cs">
+      <DependentUpon>PProyectoOperacionCostos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoOperacionCostos.aspx.designer.cs">
+      <DependentUpon>PProyectoOperacionCostos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoOperacionInfraestructura.aspx.cs">
+      <DependentUpon>PProyectoOperacionInfraestructura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoOperacionInfraestructura.aspx.designer.cs">
+      <DependentUpon>PProyectoOperacionInfraestructura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoResumen.aspx.cs">
+      <DependentUpon>PProyectoResumen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\PProyectoResumen.aspx.designer.cs">
+      <DependentUpon>PProyectoResumen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\Proyecto.Master.cs">
+      <DependentUpon>Proyecto.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\Proyecto.Master.designer.cs">
+      <DependentUpon>Proyecto.Master</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoAnexos.aspx.cs">
+      <DependentUpon>ProyectoAnexos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoAnexos.aspx.designer.cs">
+      <DependentUpon>ProyectoAnexos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoEmpresaFrame.aspx.cs">
+      <DependentUpon>ProyectoEmpresaFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoEmpresaFrame.aspx.designer.cs">
+      <DependentUpon>ProyectoEmpresaFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoFinanzasFrame.aspx.cs">
+      <DependentUpon>ProyectoFinanzasFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoFinanzasFrame.aspx.designer.cs">
+      <DependentUpon>ProyectoFinanzasFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoFormalizar.aspx.cs">
+      <DependentUpon>ProyectoFormalizar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoFormalizar.aspx.designer.cs">
+      <DependentUpon>ProyectoFormalizar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoFormalizar2.aspx.cs">
+      <DependentUpon>ProyectoFormalizar2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoFormalizar2.aspx.designer.cs">
+      <DependentUpon>ProyectoFormalizar2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoFrameSet.aspx.cs">
+      <DependentUpon>ProyectoFrameSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoFrameSet.aspx.designer.cs">
+      <DependentUpon>ProyectoFrameSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoImpacto.aspx.cs">
+      <DependentUpon>ProyectoImpacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoImpacto.aspx.designer.cs">
+      <DependentUpon>ProyectoImpacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoMercadoFrame.aspx.cs">
+      <DependentUpon>ProyectoMercadoFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoMercadoFrame.aspx.designer.cs">
+      <DependentUpon>ProyectoMercadoFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoOperacionFrame.aspx.cs">
+      <DependentUpon>ProyectoOperacionFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoOperacionFrame.aspx.designer.cs">
+      <DependentUpon>ProyectoOperacionFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoOperativoFrame.aspx.cs">
+      <DependentUpon>ProyectoOperativoFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoOperativoFrame.aspx.designer.cs">
+      <DependentUpon>ProyectoOperativoFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoOrganizacionFrame.aspx.cs">
+      <DependentUpon>ProyectoOrganizacionFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoOrganizacionFrame.aspx.designer.cs">
+      <DependentUpon>ProyectoOrganizacionFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoResumenEquipo.aspx.cs">
+      <DependentUpon>ProyectoResumenEquipo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoResumenEquipo.aspx.designer.cs">
+      <DependentUpon>ProyectoResumenEquipo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoResumenFrame.aspx.cs">
+      <DependentUpon>ProyectoResumenFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\ProyectoResumenFrame.aspx.designer.cs">
+      <DependentUpon>ProyectoResumenFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\Proyectos.aspx.cs">
+      <DependentUpon>Proyectos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\Proyectos.aspx.designer.cs">
+      <DependentUpon>Proyectos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\SeguimientopptalFrame.aspx.cs">
+      <DependentUpon>SeguimientopptalFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\SeguimientopptalFrame.aspx.designer.cs">
+      <DependentUpon>SeguimientopptalFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\Templates\ProyectoTabRealizado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoTabRealizado.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\Templates\TemplatesCode.cs" />
+    <Compile Include="FONADE\Proyecto\verFormalizacion.aspx.cs">
+      <DependentUpon>verFormalizacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Proyecto\verFormalizacion.aspx.designer.cs">
+      <DependentUpon>verFormalizacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Prueba\ConsultaPrueba.aspx.cs">
+      <DependentUpon>ConsultaPrueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Prueba\ConsultaPrueba.aspx.designer.cs">
+      <DependentUpon>ConsultaPrueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\AgendarTarea.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Tareas\MisTareas.aspx.cs">
+      <DependentUpon>MisTareas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Tareas\MisTareas.aspx.designer.cs">
+      <DependentUpon>MisTareas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Tareas\PruebasSP.aspx.cs">
+      <DependentUpon>PruebasSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Tareas\PruebasSP.aspx.designer.cs">
+      <DependentUpon>PruebasSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FONADE\Tareas\TareasAgendar.aspx.cs">
+      <DependentUpon>TareasAgendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FONADE\Tareas\TareasAgendar.aspx.designer.cs">
+      <DependentUpon>TareasAgendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterImpr.Master.cs">
+      <DependentUpon>MasterImpr.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterImpr.Master.designer.cs">
+      <DependentUpon>MasterImpr.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio\Base_Master.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Negocio\Base_Page.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FONADE\Convocatoria\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FONADE\Proyecto\Proyecto.Master" />
+    <Content Include="Emergente.Master" />
+    <None Include="Fonade.csproj.orig" />
+    <Content Include="FONADE\AdministrarPerfiles\CatalogoEmprendedor\FrameEmprendedor.Master" />
+    <None Include="FONADE\Proyecto\Templates\ProyectoTabRealizado.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>ProyectoTabRealizado.cs</LastGenOutput>
+    </None>
+    <None Include="Images\_notes\bgrAzul.jpg.mno" />
+    <None Include="Images\_notes\bgrCabezote2.jpg.mno" />
+    <None Include="Images\_notes\botAnexosAdvertencia.gif.mno" />
+    <None Include="Images\_notes\botAnexosAdvertenciaOver.gi.mno" />
+    <None Include="Images\_notes\botAnexosAprobado.gif.mno" />
+    <None Include="Images\_notes\botAnexosAprobadoOver.gif.mno" />
+    <None Include="Images\_notes\botBasicaAdvertencia.gif.mno" />
+    <None Include="Images\_notes\botBasicaAdvertenciaOver.gi.mno" />
+    <None Include="Images\_notes\botBasicaAprobado.gif.mno" />
+    <None Include="Images\_notes\botBasicaAprobadoOver.gif.mno" />
+    <None Include="Images\_notes\botFinanzasAdvertenciaOver..mno" />
+    <None Include="Images\_notes\botFinanzasAprobado.gif.mno" />
+    <None Include="Images\_notes\botFinanzasAprobadoOver.gif.mno" />
+    <None Include="Images\_notes\botImpactoAdvertencia.gif.mno" />
+    <None Include="Images\_notes\botImpactoAdvertenciaOver.g.mno" />
+    <None Include="Images\_notes\botImpactoAprobado.gif.mno" />
+    <None Include="Images\_notes\botImpactoAprobadoOver.gif.mno" />
+    <None Include="Images\_notes\botMercadoAdvertencia.gif.mno" />
+    <None Include="Images\_notes\botMercadoAdvertenciaOver.g.mno" />
+    <None Include="Images\_notes\botMercadoAprobado.gif.mno" />
+    <None Include="Images\_notes\botMercadoAprobadoOver.gif.mno" />
+    <None Include="Images\_notes\botOperacionAdvertencia.gif.mno" />
+    <None Include="Images\_notes\botOperacionAdvertenciaOver.mno" />
+    <None Include="Images\_notes\botOperacionAprobado.gif.mno" />
+    <None Include="Images\_notes\botOperacionAprobadoOver.gi.mno" />
+    <None Include="Images\_notes\botOperativoAdvertencia.gif.mno" />
+    <None Include="Images\_notes\botOperativoAdvertenciaOver.mno" />
+    <None Include="Images\_notes\botOperativoAprobado.gif.mno" />
+    <None Include="Images\_notes\botOrganizacionAdvertencia..mno" />
+    <None Include="Images\_notes\botOrganizacionAdvertenciaO.mno" />
+    <None Include="Images\_notes\botOrganizacionAprobado.gif.mno" />
+    <None Include="Images\_notes\botOrganizacionAprobadoOver.mno" />
+    <None Include="Images\_notes\botResumenAdvertencia.gif.mno" />
+    <None Include="Images\_notes\botResumenAdvertenciaOver.g.mno" />
+    <None Include="Images\_notes\botResumenAprobado.gif.mno" />
+    <None Include="Images\_notes\botResumenAprobadoOver.gif.mno" />
+    <Content Include="packages.config" />
+    <Content Include="MasterImpr.Master" />
+    <None Include="Styles\Fonts\Foundation\.DS_Store" />
+    <None Include="Styles\Fonts\Foundation\.fontcustom-data" />
+    <None Include="Styles\Fonts\Foundation\foundation-icons.eot" />
+    <None Include="Styles\Fonts\Foundation\foundation-icons.ttf" />
+    <None Include="Styles\Fonts\Foundation\foundation-icons.woff" />
+    <None Include="Styles\Site.css.orig" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{5332F5C6-2B63-4BA4-842C-ADEB440BAADA}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>5153</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

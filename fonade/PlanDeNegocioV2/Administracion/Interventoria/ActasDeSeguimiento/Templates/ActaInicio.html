@@ -1,0 +1,237 @@
+﻿<html>
+<head>
+    <link href="http://www.fondoemprender.com:8080/styles/estilos_generales.css" rel="stylesheet" type="text/css" />
+    <style>
+        table.specialTable, table.specialTable th,table.specialTable td {
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+
+            table.specialTable th, table.specialTable td {
+                padding: 5px;
+                text-align: left;    
+                font-size:12px;
+            }
+
+            .centered {
+                text-align: center !important;
+            }
+            .gray {
+                color:gray;
+            }
+            .bold {
+                font-weight:bold;
+            }
+            .verticalSpace {
+                margin-top:5px;
+                margin-bottom:5px;
+            }
+        .tabla_anexo_2 {
+            padding-left: 50px;
+            padding-right: 50px;
+        }              
+        page {
+            background: white;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 0.5cm;            
+        }
+
+            page[size="A4"] {
+                width: 21cm;
+                height: 29.7cm;
+            }
+
+                page[size="A4"][layout="portrait"] {
+                    width: 29.7cm;
+                    height: 21cm;
+                }
+
+        @media print {
+            body, page {
+                margin: 0;
+                box-shadow: 0;
+            }
+        }
+        
+        div.footer {
+            display: block;
+            text-align: center;            
+        }
+    </style>
+</head>
+<body>
+    <page size="A4" style="page-break-after: always;">
+        <table class="tabla_anexo_2 letterTable">
+            <tr>
+                <td align="center" valign="top">
+                    <br />
+                    <table id="actaHeader" style="width:100%" class="specialTable gray">
+                        <tr>                            
+                            <th rowspan="3" width="29%">
+                                <img src="http://www.fondoemprender.com:8080/Styles/Image/logoFonade.png" width="80" height="90" style="margin:10px 10px 10px 10px;" />
+                            </th>
+                            <td rowspan="2" class="centered">
+                                <h3>ACTA DE INICIO</h3>
+                            </td>
+                            <td>CODIGO</td>
+                            <td>[CODIGO]</td>
+                        </tr>
+                        <tr>
+                            <td>VERSION</td>
+                            <td>[VERSION]</td>
+                        </tr>
+                        <tr>                            
+                            <td class="centered"> <h3>GERENCIA DE PROYECTOS</h3></td>
+                            <td>VIGENCIA</td>
+                            <td>[VIGENCIA]</td>
+                        </tr>
+                    </table>
+                    <br />
+                    <table id="actaInfo" style="width:100%" class="specialTable">
+                        <tr>
+                            <td class="bold">CONTRATO N°</td>
+                            <td>[CONTRATO]</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">TIPO CONTRATO</td>
+                            <td>[TIPOCONTRATO]</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">OBJETO</td>
+                            <td>[OBJETO]</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">VALOR</td>
+                            <td>[VALOR]</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">CONTRATISTA</td>
+                            <td>[CONTRATISTA]</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">PLAZO</td>
+                            <td>[PLAZO]</td>
+                        </tr>
+                    </table>
+                    <br />
+                    <table id="actaInfo2" width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <p class="text_5" align="justify">
+                                    Los suscritos mediante el presente documento, dejan constancia del inicio real y
+                                    efectivo del contrato anteriormente citado, previo cumplimiento de los requisitos
+                                    de legalización del mismo.
+                                </p>
+                                <p class="text_5" align="justify">
+                                    En consecuencia, se procede a la iniciación del contrato el día <strong> [DIAINICIOACTA] </strong> del mes de <strong> [MESINICIOACTA] </strong> del
+                                    año <strong> [ANNOINICIOACTA] </strong>, el cual debe concluir el día <strong> [DIAFINALACTA] </strong> del mes de <strong> [MESFINALACTA] </strong> del año<strong> [ANNOFINALACTA] </strong>.
+                                </p>
+                                <p class="text_5" align="justify">
+                                    Para constancia de lo anterior, se firma la presente acta bajo la responsabilidad expresa de
+                                    los que intervienen en ella.
+                                </p>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <table id="actaFirmas" style="width:100%" class="specialTable">
+                        [FIRMAS]                                                             
+                    </table>                   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="text_5 bold" align="justify">
+                        Nota:
+                    </p>
+                    <p class="text_5" align="justify">
+                        Para la suscripción del acta de inicio será necesario verificar el cumplimiento de los siguientes requisitos:
+                    </p>
+                    <ul>
+                        <li>
+                            <p class="text_5" align="justify">
+                                El contrato debe encontrarse perfeccionado (verificar en el contrato los requisitos de perfeccionamiento en la cláusula correspondiente).
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text_5" align="justify">
+                                La garantía única debe encontrarse aprobada por FONADE.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text_5" align="justify">
+                                Previo a la suscripción del acta de inicio de los contratos, recibir en los casos que aplique, para su revisión y aprobación las hojas de vida del equipo de trabajo presentado por el Contratista, diferente al que fue objeto de evaluación por parte de FONADE en desarrollo del proceso de selección. Para el efecto deberá revisar la formación académica y las certificaciones de experiencia general y específica de conformidad con los criterios y metodología establecida en las reglas de participación que dieron origen al contrato y suscribir el Acta de Aprobación de Personal para la Ejecución del Contrato, formato FMI029, la cual deberá estar anexa al Acta de Inicio.
+                            </p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>    
+
+        <div class='footer'>Pagina 1</div>
+    </page>
+
+    <page size="A4">
+        <table class="tabla_anexo_2 letterTable">
+            <tr>
+                <td align="center" valign="top">
+                    <br />
+                    <table id="actaHeader2" style="width:100%" class="specialTable gray">
+                        <tr>
+                            <th rowspan="3" width="29%">
+                                <img src="http://www.fondoemprender.com:8080/Styles/Image/logoFonade.png" width="80" height="90" style="margin:10px 10px 10px 10px;" />
+                            </th>
+                            <td rowspan="2" class="centered">
+                                <h3>ACTA DE INICIO</h3>
+                            </td>
+                            <td>CODIGO</td>
+                            <td>[CODIGO]</td>
+                        </tr>
+                        <tr>
+
+                            <td>VERSION</td>
+                            <td>[VERSION]</td>
+                        </tr>
+                        <tr>
+                            <td class="centered"> <h3>GERENCIA DE PROYECTOS</h3></td>
+                            <td>VIGENCIA</td>
+                            <td>[VIGENCIA]</td>
+                        </tr>
+                    </table>
+                    <br />
+                    <table id="actaNotes" width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                               <!--Se corre espacio de notas a la primera pagina-->
+                                <p class="text_5" align="justify">
+                                    Anexos (según aplique):
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p class="text_5" align="justify">
+                                            La acreditación por EL INTERVENTOR de que todo el personal necesario para el inicio de la ejecución del contrato se encuentra afiliado a los Sistemas de Seguridad Social en salud, pensiones y riesgos profesionales, incluso los trabajadores independientes y que los pagos de las cotizaciones respectivas se encuentran al día.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="text_5" align="justify">
+                                            La comprobación por el contratista ante FONADE, de que todo el personal necesario para el inicio de la ejecución del contrato se encuentra afiliado a los Sistemas de Seguridad Social en salud, pensiones y riesgos profesionales, incluso los trabajadores independientes y que los pagos de las cotizaciones respectivas se encuentran al día.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="text_5" align="justify">
+                                            Para acreditar la calidad de supervisor, se deberá anexar la comunicación de delegación correspondiente o copia del contrato, según sea lo pertinente.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <div class='footer'>Pagina 2</div>
+    </page>        
+</body>
+</html>

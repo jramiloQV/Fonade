@@ -1,0 +1,37 @@
+
+Log Entry : 
+09/15/2020 15:35:13
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/Riesgos/GeneralRiesgos.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/Riesgos/GeneralRiesgos.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.Riesgos.GeneralRiesgos.CargarDatosRiesgos() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\Riesgos\GeneralRiesgos.aspx.cs:línea 120
+   en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.Riesgos.GeneralRiesgos.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\Riesgos\GeneralRiesgos.aspx.cs:línea 39
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 89
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+liyana0507@outlook.com
+104225
+__________________________
+
+Log Entry : 
+09/15/2020 15:40:28
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/Riesgos/GeneralRiesgos.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/Riesgos/GeneralRiesgos.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.Riesgos.GeneralRiesgos.guardarDatos() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\Riesgos\GeneralRiesgos.aspx.cs:línea 100
+   en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.Riesgos.GeneralRiesgos.btnGuardar_Click(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\Riesgos\GeneralRiesgos.aspx.cs:línea 56
+   en System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   en System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+liyana0507@outlook.com
+104225
+__________________________

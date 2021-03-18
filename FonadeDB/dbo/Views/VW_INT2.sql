@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_INT2 (Id_InterventorContrato, CodContacto, numContrato, FechaInicio, FechaExpiracion, Motivo) AS SELECT * FROM InterventorContrato T1

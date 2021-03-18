@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_ESTADOPROYECTOACREDITACION (Id_Proyecto, NomProyecto, Nombres, Apellidos, CodConvocatoria, CodEstado, EstadoAcreditacion, EstadoProyecto) AS SELECT T1.Id_Proyecto, T1.NomProyecto, T1.Nombres, T1.Apellidos, T1.CodConvocatoria, T1.CodEstado, T1.EstadoAcreditacion, T1.EstadoProyecto FROM EstadoProyectoAcreditacion T1

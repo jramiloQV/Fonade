@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PLANES_ESTADO (NomEstado, Id_Proyecto, NomProyecto) AS SELECT T1.NomEstado, T2.Id_Proyecto, T2.NomProyecto FROM Estado T1, Proyecto T2 WHERE T1.Id_Estado=T2.CodEstado

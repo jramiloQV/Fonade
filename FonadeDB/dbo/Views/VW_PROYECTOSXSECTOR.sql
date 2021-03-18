@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PROYECTOSXSECTOR (Id_Proyecto, NomProyecto, FechaCreacion, CostoTotal, NomSector, NomSubSector) AS SELECT T1.Id_Proyecto, T1.NomProyecto, T1.FechaCreacion, T1.CostoTotal, T2.NomSector, T3.NomSubSector FROM Proyecto T1, Sector T2, SubSector T3 WHERE T1.CodSubSector=T3.Id_SubSector AND T1.CodSubSector=T3.Id_SubSector AND T2.Id_Sector=T3.CodSector

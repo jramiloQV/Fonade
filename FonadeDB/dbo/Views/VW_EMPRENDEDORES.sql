@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_EMPRENDEDORES (Email, Clave, razonsocial, Id_Proyecto, NomProyecto, CodRol) AS SELECT T1.Email, T1.Clave, T2.razonsocial, T3.Id_Proyecto, T3.NomProyecto, T4.CodRol FROM Contacto T1, Empresa T2, Proyecto T3, ProyectoContacto T4 WHERE T1.Id_Contacto=T4.CodContacto AND T2.codproyecto=T3.Id_Proyecto AND T3.Id_Proyecto=T4.CodProyecto AND T4.CodRol=3

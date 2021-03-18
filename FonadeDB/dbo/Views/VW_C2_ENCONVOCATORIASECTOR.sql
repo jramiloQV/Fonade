@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_C2_ENCONVOCATORIASECTOR (NoProyectos, NomSector) AS SELECT Count(T3.Id_Sector), T3.NomSector FROM ConvocatoriaProyecto T1, Proyecto T2, Sector T3, SubSector T4 WHERE T1.CodProyecto=T2.Id_Proyecto AND T1.CodConvocatoria=2 AND T3.Id_Sector=T4.CodSector AND T2.CodSubSector=T4.Id_SubSector GROUP BY T3.NomSector

@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_INT (CodContacto, CodBanco, CodTipoCuenta, Cuenta, MaximoPlanes, ExperienciaPrincipal, Experienciasecundaria, CodCoordinador, numContrato, FechaInicio, FechaExpiracion, Persona, Celular, Salario) AS SELECT * FROM Interventor T1

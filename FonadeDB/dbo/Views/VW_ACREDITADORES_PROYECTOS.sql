@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_ACREDITADORES_PROYECTOS (Nombres, Apellidos, CodProyecto) AS SELECT T1.Nombres, T1.Apellidos, T2.CodProyecto FROM Contacto T1, ProyectoContacto T2 WHERE T1.Id_Contacto=T2.CodContacto AND T2.CodRol=9

@@ -1,0 +1,56 @@
+
+Log Entry : 
+08/28/2020 22:21:46
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionIA.aspx.
+Error URL: SFTP.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.Administracion.ExportarInformacionIA.crearArchivoPlano(Int32 _codConvocatoria, String _nomConvocatoria, String fechaArchivo, String& rutaConvocatoria, String& nombreArchivoPlano, Int32& cantidadProyectos) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionIA.aspx.cs:línea 715
+wdazan@sena.edu.co
+81764
+__________________________
+
+Log Entry : 
+08/28/2020 22:25:12
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionIA.aspx.
+Error URL: SFTP.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.Administracion.ExportarInformacionIA.crearArchivoPlano(Int32 _codConvocatoria, String _nomConvocatoria, String fechaArchivo, String& rutaConvocatoria, String& nombreArchivoPlano, Int32& cantidadProyectos) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionIA.aspx.cs:línea 715
+wdazan@sena.edu.co
+81764
+__________________________
+
+Log Entry : 
+08/28/2020 22:37:43
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionIA.aspx.
+Error URL: SFTP.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.Administracion.ExportarInformacionIA.crearArchivoPlano(Int32 _codConvocatoria, String _nomConvocatoria, String fechaArchivo, String& rutaConvocatoria, String& nombreArchivoPlano, Int32& cantidadProyectos)
+wdazan@sena.edu.co
+81764
+__________________________
+
+Log Entry : 
+08/28/2020 22:37:43
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionIA.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionIA.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: El método Update sólo se puede llamar en el control UpdatePanel con el id. 'upboton' cuando UpdateMode está establecido en Conditional.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.UpdatePanel.Update()
+   en Fonade.FONADE.Administracion.ExportarInformacionIA.Alert(String mensaje, Boolean correcto)
+   en Fonade.FONADE.Administracion.ExportarInformacionIA.btnExportar_Click(Object sender, EventArgs e)
+   en System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   en System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+wdazan@sena.edu.co
+81764
+__________________________

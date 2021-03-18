@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_AVAL_CONVOCATORIA (Id_Estado, NomEstado, Id_Proyecto, NomProyecto, Fecha, Aval, CodConvocatoria) AS SELECT T1.Id_Estado, T1.NomEstado, T2.Id_Proyecto, T2.NomProyecto, T3.Fecha, T3.Aval, T3.CodConvocatoria FROM Estado T1, Proyecto T2, ProyectoFormalizacion T3 WHERE T1.Id_Estado=T2.CodEstado AND T2.Id_Proyecto=T3.codProyecto

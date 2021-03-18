@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_FECHA_CREACIÓN (Id_Proyecto, NomProyecto, FechaCreacion, FechaModificacion) AS SELECT T1.Id_Proyecto, T1.NomProyecto, T1.FechaCreacion, T1.FechaModificacion FROM Proyecto T1

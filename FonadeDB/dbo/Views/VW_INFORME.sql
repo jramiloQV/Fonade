@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_INFORME (CodConvocatoria) AS SELECT T2.CodConvocatoria FROM EstadoProyectoAcreditacion T1, ProyectoAcreditacionUltimo T2 WHERE T1.Id_Proyecto>=T1.CodConvocatoria AND T2.CodConvocatoria>=T2.CodConvocatoria

@@ -1,0 +1,18 @@
+
+Log Entry : 
+01/02/2020 15:10:51
+Error in: http://localhost:5153/Fonade/evaluacion/DesactivarEvaluador.aspx.
+Error URL: http://localhost:5153/Fonade/evaluacion/DesactivarEvaluador.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.evaluacion.DesactivarEvaluador.TraerMotivo() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\evaluacion\DesactivarEvaluador.aspx.cs:línea 73
+   en Fonade.FONADE.evaluacion.DesactivarEvaluador.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\evaluacion\DesactivarEvaluador.aspx.cs:línea 49
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 89
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+lflorez2@fonade.gov.co
+103929
+__________________________

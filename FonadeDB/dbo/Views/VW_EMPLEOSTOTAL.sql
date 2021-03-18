@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_EMPLEOSTOTAL (CodProyecto, Generado, Joven, Desplazado, Madre, Minoria, Recluido, Desmovilizado, Discapacitado, Desvinculado) AS SELECT T1.CodProyecto, T1.Generado, T1.Joven, T1.Desplazado, T1.Madre, T1.Minoria, T1.Recluido, T1.Desmovilizado, T1.Discapacitado, T1.Desvinculado FROM EmpleosGenerados T1

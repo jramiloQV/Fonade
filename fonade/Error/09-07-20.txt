@@ -1,0 +1,30 @@
+
+Log Entry : 
+07/09/2020 10:37:43
+Error in: http://localhost:5153/FONADE/interventoria/SeguimientoPptal.aspx.
+Error URL: http://localhost:5153/FONADE/interventoria/SeguimientoPptal.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: El objeto que acepta valores Null debe tener un valor.
+Error InnerException: 
+Error StackTrace:    en System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   en System.Nullable`1.get_Value()
+   en Fonade.FONADE.interventoria.SeguimientoPptal.<llenarGid>b__8_0(MD_PresupuestoInterventorResult pi) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\interventoria\SeguimientoPptal.aspx.cs:línea 167
+   en System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   en System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   en System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   en System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   en System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   en System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   en System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   en System.Web.UI.WebControls.GridView.DataBind()
+   en Fonade.FONADE.interventoria.SeguimientoPptal.llenarGid() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\interventoria\SeguimientoPptal.aspx.cs:línea 274
+   en Fonade.FONADE.interventoria.SeguimientoPptal.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\interventoria\SeguimientoPptal.aspx.cs:línea 52
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 89
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+slaitonfondoemprender@gmail.com
+103987
+__________________________

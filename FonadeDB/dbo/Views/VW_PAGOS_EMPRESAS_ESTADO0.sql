@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PAGOS_EMPRESAS_ESTADO0 (razonsocial, No_Pagos, Valor_Solicitado) AS SELECT T1.razonsocial, Count(T2.Id_PagoActividad), Sum(T2.CantidadDinero) FROM Empresa T1, PagoActividad T2, PagoBeneficiario T3 WHERE T1.codproyecto=T2.CodProyecto AND T2.CodPagoBeneficiario=T3.Id_PagoBeneficiario AND T2.Estado=0 GROUP BY T1.razonsocial

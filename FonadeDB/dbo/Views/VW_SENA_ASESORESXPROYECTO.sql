@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_SENA_ASESORESXPROYECTO (Nombres, Apellidos, Email, No_PROYECTOS, CodRol) AS SELECT T1.Nombres, T1.Apellidos, T1.Email, Count(T2.Id_Proyecto), T3.CodRol FROM Contacto T1, Proyecto T2, ProyectoContacto T3 WHERE T1.Id_Contacto=T3.CodContacto AND T2.Id_Proyecto=T3.CodProyecto AND T3.CodRol<=2 AND T3.Inactivo<=0 GROUP BY T1.Nombres, T1.Apellidos, T1.Email, T3.CodRol

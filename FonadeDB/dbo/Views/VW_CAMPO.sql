@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_CAMPO (idbanco, Banco, idCampo, campo) AS SELECT T1.Id_Banco, T1.nomBanco, T2.id_Campo, T2.Campo FROM Banco T1, Campo T2 WHERE T1.Id_Banco=T2.id_Campo

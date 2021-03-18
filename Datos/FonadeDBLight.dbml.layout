@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 29.125, 39.5" name="FonadeDBLight">
+  <DataContextMoniker Name="/FonadeDBLightDataContext" />
+  <nestedChildShapes>
+    <classShape Id="272b4b74-a6b0-414a-b7fd-cd74fdd8c659" absoluteBounds="2.75, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/EvaluacionRiesgo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="19571f3e-2117-4ad4-8eb0-734a5608db8f" absoluteBounds="2.765, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7c5d02c4-b801-4fa1-b78d-8ec22ad5f96a" absoluteBounds="0.625, 12.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimNota" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d06cbe5d-3ae2-47f9-8ee0-931574a21dfe" absoluteBounds="0.64, 12.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2f1c558d-68bf-4712-9be1-8f2d9e602782" absoluteBounds="5, 3, 2, 2.5401025390625">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ContratosArchivosEliminado" />
+      <nestedChildShapes>
+        <elementListCompartment Id="11fd374f-97e8-41dc-af80-d2d80b096c94" absoluteBounds="5.015, 3.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="75264911-64ad-4ff2-be27-7a694449174a" absoluteBounds="0.625, 14.5, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/HistoricoIndicadorGenerico" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ef27189-cce8-4dba-b66f-b4dc0377e643" absoluteBounds="0.64, 14.96, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b8d248f4-de18-4cfa-a97f-a534573fbe17" absoluteBounds="3.25, 14.875, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/HistoricoObservacionEmpresa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9add186d-640d-4be9-8be8-47dec483396b" absoluteBounds="3.265, 15.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f5dd4b05-84ce-4df1-8b6f-82bcb79b23b8" absoluteBounds="6.125, 11.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/Vista_InterventoresActivos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5ff9199e-d7d9-4eb6-b23f-ce3e48d71e74" absoluteBounds="6.14, 11.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7a23f430-3867-4627-b67d-ee3c18c3c060" absoluteBounds="3.125, 10.875, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/Vista_Estadisticas_Pagos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3a1d5e2a-7384-4042-98b0-ce1004e913df" absoluteBounds="3.14, 11.335, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="452a10f6-37c4-467b-b1b4-1a4f4cfcfb3e" absoluteBounds="6.125, 14, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/Operador" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81531112-5b02-414f-8e69-75a3ab8e594c" absoluteBounds="6.14, 14.46, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="714a96a2-4b51-4d78-83f5-a599d1e90ea6" absoluteBounds="3.125, 17.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ConfiguracionOperadores" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17a5f333-0dc7-4954-b91b-0d37470d7a15" absoluteBounds="3.14, 18.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cd038ea3-e01d-42dc-a2d6-710abedc75ae" absoluteBounds="3.125, 19.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/HistorialAvancesPlanOperativo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e397acb-411c-49c6-bf2e-c57f98e5de8a" absoluteBounds="3.14, 20.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6fdf9ccb-d854-4b78-944f-7263aeaa1b0a" absoluteBounds="0.875, 20.875, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/HistorialAvancesNomina" />
+      <nestedChildShapes>
+        <elementListCompartment Id="27796892-d291-4bb0-b8fa-4028b7038d32" absoluteBounds="0.89, 21.335, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="93702c6c-48a6-4eec-9d99-1b4dbcbb4c3d" absoluteBounds="5.625, 20.25, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/HistorialAvancesProduccion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ebe8bfd4-ddc7-49c4-86e0-601ed160d7e9" absoluteBounds="5.64, 20.71, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="34d49c56-a050-420d-a996-2980aa7732df" absoluteBounds="8.125, 20.375, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/HistorialAvancesVentas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="358f193b-cd9c-48f8-ac4d-3c8d66f44c1b" absoluteBounds="8.14, 20.835, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4bc8c9d2-50d8-46e3-aac7-7ce39fc7e6eb" absoluteBounds="0.75, 18.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimientoDespublicada" />
+      <nestedChildShapes>
+        <elementListCompartment Id="702f3c6f-b05a-452f-ad3a-420463c149bb" absoluteBounds="0.765, 19.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4dcd975b-59fb-4487-ac8c-fe64babb5d69" absoluteBounds="1.125, 24.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/PermisosInformesCoordInterv" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3703936e-35e2-426d-8788-0b918328b3e4" absoluteBounds="1.1400000000000001, 24.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e9ab0c24-4534-4c79-9807-bb8bd3b58c10" absoluteBounds="3.375, 23.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/RecomendacionInterventoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2668805f-b188-4807-8f40-5476bfbaf1a0" absoluteBounds="3.3899999999999997, 24.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="622a41ca-ef70-4ed8-8965-8535a2e3a7c5" absoluteBounds="3.75, 25.5, 2, 3.1170068359375">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/CorreosInfomesConsolidados" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e7cdb030-8aa9-48ec-8e80-b4b70ab9480d" absoluteBounds="3.765, 25.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="124461f3-8aa1-46be-85f9-5252ce299f8f" absoluteBounds="1.125, 26.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/HabilitarSeguimientoInterventoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a391a463-a49c-4a1b-9ccb-7b68955c7954" absoluteBounds="1.1400000000000001, 27.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29af256f-9601-4971-9fbb-87be1cd7937f" absoluteBounds="1.375, 29.125, 2, 2.5401025390625">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ArchivosSeguimInterventoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd32555d-2d4e-4996-8e8b-dd87306408e0" absoluteBounds="1.3900000000000001, 29.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="be4d0cd2-9363-4060-941e-6ae68918495b" absoluteBounds="3.875, 29.25, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/CorreoNotificacionCargaArhivoInterventoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be70f713-efb8-4507-932c-6fe1378e1fe2" absoluteBounds="3.89, 29.71, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="69cff62c-1625-43a8-a640-eeacc8d1f162" absoluteBounds="8.875, 29.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/LogContrasena" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0780d144-17a2-42c9-aefc-f2f2a400da5e" absoluteBounds="8.89, 29.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e3449e47-5bcf-451c-ac29-b604c806c638" absoluteBounds="6.375, 29.5, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ArchivosAdicionalesContrato" />
+      <nestedChildShapes>
+        <elementListCompartment Id="50e64d50-a328-4fc1-b334-8bcd7cead9df" absoluteBounds="6.39, 29.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a0bf2fb0-ca11-445a-b7b7-662ff2acd916" absoluteBounds="0.5, 0.625, 2, 5.4246240234375">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimientoDatos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="402ded1a-704e-4573-ab2c-1e5380735cf6" absoluteBounds="0.515, 1.085, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5725da96-1373-49d9-a7c9-38a92396a8e7" absoluteBounds="1.375, 32.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/LogSoporte" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c3f5435-feab-4253-9dc6-5093e55e95bd" absoluteBounds="1.3900000000000001, 32.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="429d2a47-49c7-4b03-b536-48ad917bfda6" absoluteBounds="3.75, 32.875, 2, 2.5401025390625">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimRiesgosEvaluacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79668502-04d0-4321-93e0-f86f10fba22e" absoluteBounds="3.765, 33.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8ca4c2ed-e6dc-44ba-b876-936f06d1795c" absoluteBounds="0.875, 34.75, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimGestionProduccionEvaluacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="80642043-7866-41eb-8e3f-e8bc946fd949" absoluteBounds="0.89, 35.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bf47c46e-3b21-47dd-b34c-502aadb9dffd" absoluteBounds="8.75, 14.25, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimGestionMercadeoEvaluacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f613e9f7-2502-4b92-92b7-8446d606ed61" absoluteBounds="8.765, 14.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="42ab6a61-227d-469e-9952-8dc3742cceb6" absoluteBounds="2.75, 2.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimRiesgos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d64cfea-6480-4bb4-8b31-79f6ab2c9277" absoluteBounds="2.765, 2.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2226b226-21d6-458d-b2f6-e8c1bed570fe" absoluteBounds="5, 0.625, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimGestionEmpleo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6a5922df-e802-44fe-8144-1ecbadef70a0" absoluteBounds="5.015, 1.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bbfe03a0-57eb-4446-9ab6-24a07dcee713" absoluteBounds="0.5, 8.75, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimInfoPagos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b051d968-6267-4c50-a9eb-a36780720ef6" absoluteBounds="0.515, 9.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e86fe2d4-9c73-4e26-89d3-3e0484671afa" absoluteBounds="2.75, 8.25, 2, 2.5401025390625">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimInventarioContrato" />
+      <nestedChildShapes>
+        <elementListCompartment Id="281fedb9-344e-4e0b-8aeb-16cb56e12919" absoluteBounds="2.765, 8.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0dbedd8c-3424-4946-881b-b10b6441447f" absoluteBounds="0.5, 6.125, 2, 2.5401025390625">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimGestionMercadeo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0feddd00-9b05-4aae-9448-bfc123b5807e" absoluteBounds="0.515, 6.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="063fc2a7-1c22-4b42-8e34-c815584defd9" absoluteBounds="7.125, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimContrapartida" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d49a2b09-99d5-4276-ba52-1ab22781e0de" absoluteBounds="7.14, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="731adae1-5220-4fa4-9749-b06dbb234fd5" absoluteBounds="7.5, 5.625, 2, 3.1170068359375">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimGestionProduccion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b726492d-3dd0-4b5c-9592-1361a09f658e" absoluteBounds="7.515, 6.085, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="173d4786-79b9-4e36-9020-cb88d4d8fed3" absoluteBounds="2.75, 4.875, 2, 3.1170068359375">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimObligacionesContables" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d061b07c-16ca-4552-9f16-b5092a09dc47" absoluteBounds="2.765, 5.335, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6e47feed-e767-4270-b230-27555e7c8485" absoluteBounds="9.375, 0.625, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimObligacionesTributarias" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ee08d27e-590c-477e-99af-7a679eb842fb" absoluteBounds="9.39, 1.085, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a55692c5-458e-4216-8f06-7629474ed6de" absoluteBounds="11.5, 0.5, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimObligacionesLaborales" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb6f725c-373b-4f98-80f9-f5ea22c7879c" absoluteBounds="11.515, 0.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b3659a7c-9c38-4c6c-92c9-192f6605c2b1" absoluteBounds="15.875, 3, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimOtrosAspectos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="06814280-6763-4ece-a5ba-793c2446f665" absoluteBounds="15.89, 3.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1de2d25d-233d-491c-bf44-bdbd6a064569" absoluteBounds="17.5, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimOtrosAspInnovador" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a2ba56e5-2e6a-41b3-a498-e90ba875391a" absoluteBounds="17.515, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1119e79d-fad3-4b7f-96f9-bc9622d4362c" absoluteBounds="19.875, 1.375, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimOtrosAspAmbiental" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c6492edb-98a8-487e-8041-cfe62092fdb6" absoluteBounds="19.89, 1.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="95c1944c-f3f9-4228-b547-4039672642d2" absoluteBounds="22, 0.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimOtrasObligaciones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3adef724-8c95-4f0d-9227-e8923468a5cc" absoluteBounds="22.015, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d16cd1f1-77ed-47f3-932f-0fb967e0096d" absoluteBounds="26.75, 3.375, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimOtrasObligAcomAsesoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62dc3ea9-d0a8-4c2e-a5eb-79d6aa98f116" absoluteBounds="26.765, 3.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="62e4e3ba-df9c-4d35-9da1-c5ff73da43d4" absoluteBounds="24.125, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimOtrasObligInfoPlataforma" />
+      <nestedChildShapes>
+        <elementListCompartment Id="015fd9fe-b5ca-4dfe-b550-3e1a9dd3e7db" absoluteBounds="24.14, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f61ec7cd-99bf-44dc-860d-fa3dff768672" absoluteBounds="26.875, 0.875, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimOtrasObligTiempoEmp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="71134640-fdb9-44e9-ad6c-848a9007b0f3" absoluteBounds="26.89, 1.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e9348f87-6d06-42b1-89f9-8253fc96d84d" absoluteBounds="5.125, 6, 2, 2.5401025390625">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimEstadoEmpresa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ef3c6d1-fef5-4c57-ab0a-7f3a070f1e7a" absoluteBounds="5.14, 6.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="732ec75e-0b6e-48dd-a4ed-7e4f1e24983d" absoluteBounds="24.25, 3.25, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimCompromisos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79d53cc8-2e0f-4574-941c-badd9250151b" absoluteBounds="24.265, 3.71, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b7aa308a-0b58-4bc8-b0ea-b0d07c7d47c3" absoluteBounds="22, 4.125, 2, 3.1170068359375">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimCompromisosHistorico" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c1542fc-4708-45f7-8808-2c80469f296a" absoluteBounds="22.015, 4.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a64a41a8-60e9-4ad2-a392-02f5ecbd8206" absoluteBounds="10.5, 5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ObservacionesEvaluacionCorreo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cda577c3-097f-49db-80cd-2d61a053c309" absoluteBounds="10.515, 5.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d49f0223-dfae-4bbe-a400-f62e32790a30" absoluteBounds="7.125, 3.125, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimGestionVentas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="65309ee1-f8ef-4ed5-b400-1943a1399e06" absoluteBounds="7.14, 3.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="07c3bef2-d334-4549-93a8-d1ae2ed5ad16" absoluteBounds="13.625, 0.625, 2, 4.2708154296875">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimObligacionesTramites" />
+      <nestedChildShapes>
+        <elementListCompartment Id="263defd8-cbd7-451c-9406-2a98c7d06998" absoluteBounds="13.64, 1.085, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c4dddc60-c5b1-4ab5-b47a-e011a4cf95b3" absoluteBounds="5.25, 8.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/FonadeDBLightDataContext/ActaSeguimAporteEmprendedor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8aac3865-839a-48a2-8a59-b492bd7c4e69" absoluteBounds="5.265, 9.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

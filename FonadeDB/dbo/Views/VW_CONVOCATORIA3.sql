@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_CONVOCATORIA3 (NomConvocatoria, FechaInicio, FechaFin, Presupuesto) AS SELECT T1.NomConvocatoria, T1.FechaInicio, T1.FechaFin, T1.Presupuesto FROM Convocatoria T1

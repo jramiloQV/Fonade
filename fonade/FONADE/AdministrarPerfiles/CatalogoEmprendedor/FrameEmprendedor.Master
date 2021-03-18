@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FrameEmprendedor.master.cs" Inherits="Fonade.FONADE.AdministrarPerfiles.CatalogoEmprendedor.FrameEmprendedor" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-85402368-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <title></title>
+    <link href="../../../Styles/Site.css" rel="stylesheet" type="text/css" />
+    <style  type="text/css">
+    .RightContainer
+    {
+         width:500px !important;
+         max-width : 500px !imporntat;
+    }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</head>
+<body">
+ <form id="form1" runat="server">
+<!--INICIA MASTER-->
+
+    <!--Contenedor principal-->
+<div id="MainContainer">
+<div class="dvLogin">
+<div class="Login">
+
+</div>
+
+</div>
+
+
+<div class="ContentInfo">
+<div class="RightContainer" style="width:94%; margin-right:20px;">
+<!-- Inicio Contenido body
+
+
+
+<div> <!--style="width: 100%; left: 0; position: relative;"-->
+        
+            <h1 style="Margin-bottom:5px;"><asp:Label ID="lbl_title" runat="server" Text=""></asp:Label></h1>
+        <div style="display: inline-block">
+            <!--- Login-->
+        </div>
+        <div>
+            <h2><asp:Label ID="lbl_convocatoria" runat="server" Text=""></asp:Label></h2>
+        </div>
+        <div>
+            
+            
+            <asp:ContentPlaceHolder    ID="bodyHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+
+<!--Fin Contenido-->
+
+</div>
+</div>
+
+
+<div class="Up">
+<span><a href="#FullHead">Ir arriba</a></span>
+
+</div>
+<!--Este es Footer-->
+<div id="FootFull"><span>Fondo Emprender</span></div>
+
+
+</div>
+
+<!--FINALIZA MASTER-->
+
+
+
+   
+    
+    </form>
+</body>
+</html>

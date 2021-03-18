@@ -1,0 +1,51 @@
+
+Log Entry : 
+07/22/2020 00:02:05
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/GestionarActas.aspx?codigo=69127.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/GestionarActas.aspx?codigo=69127.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.GestionarActas.GenerarActaSeguimiento(Int32 _codProyecto, Int32 _numActa, Int32 _codConvocatoria, Boolean borrador) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\GestionarActas.aspx.cs:línea 905
+   en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.GestionarActas.gvMain_RowCommand(Object sender, GridViewCommandEventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\GestionarActas.aspx.cs:línea 1291
+   en System.Web.UI.WebControls.GridView.OnRowCommand(GridViewCommandEventArgs e)
+   en System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   en System.Web.UI.WebControls.GridView.OnBubbleEvent(Object source, EventArgs e)
+   en System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   en System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(Object source, EventArgs e)
+   en System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   en System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   en System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.LinkButton.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+anabelcorcho@yahoo.com
+109448
+__________________________
+
+Log Entry : 
+07/22/2020 14:17:54
+Error in: http://localhost:5153/PlanDeNegocioV2/Formulacion/PlanOperativo/PlanOperativo.aspx?codproyecto=73103.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Formulacion/PlanOperativo/PlanOperativo.aspx?codproyecto=73103.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Se detectó un posible valor Request.Form peligroso en el cliente (txtMetas="...ecnificaci&#243").
+Error InnerException: 
+Error StackTrace:    en System.Web.HttpRequest.ValidateString(String value, String collectionKey, RequestValidationSource requestCollection)
+   en System.Web.HttpRequest.ValidateHttpValueCollection(HttpValueCollection collection, RequestValidationSource requestCollection)
+   en System.Web.HttpRequest.get_Form()
+   en System.Web.HttpRequest.get_HasForm()
+   en System.Web.UI.Page.GetCollectionBasedOnMethod(Boolean dontReturnNull)
+   en System.Web.UI.Page.DeterminePostBackMode()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   en System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   en System.Web.UI.Page.ProcessRequest()
+   en System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   en System.Web.UI.Page.ProcessRequest(HttpContext context)
+   en ASP.plandenegociov2_formulacion_planoperativo_planoperativo_aspx.ProcessRequest(HttpContext context) en c:\Users\wilpenlo\AppData\Local\Temp\Temporary ASP.NET Files\vs\d680be28\ebee33ae\App_Web_kz3ofpau.1.cs:línea 0
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+cesarmora19998@gmail.com
+109661
+__________________________

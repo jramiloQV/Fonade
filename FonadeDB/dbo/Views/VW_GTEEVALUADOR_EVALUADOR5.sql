@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_GTEEVALUADOR_EVALUADOR5 (Nombres, Apellidos, CodProyecto, NomTareaUsuario) AS SELECT T2.Nombres, T2.Apellidos, T3.CodProyecto, T3.NomTareaUsuario FROM GrupoContacto T1, Contacto T2, TareaUsuario T3 WHERE T1.CodGrupo=11 AND T1.CodContacto=T2.Id_Contacto AND T3.CodContactoAgendo=6366 AND T3.CodContacto=T2.Id_Contacto

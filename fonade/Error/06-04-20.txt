@@ -1,0 +1,50 @@
+
+Log Entry : 
+04/06/2020 17:21:01
+Error in: http://localhost:5153/PlanDeNegocioV2/LiderRegional/ListadoRegistroUnico.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/LiderRegional/ListadoRegistroUnico.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: El valor Null no se puede asignar a un miembro con el tipo System.Int32 que es un tipo de valor que no acepta valores Null.
+Error InnerException: 
+Error StackTrace:    en Read_SP_RegistroUnico_TotalResult(ObjectMaterializer`1 )
+   en System.Data.Linq.SqlClient.ObjectReaderCompiler.ObjectReader`2.MoveNext()
+   en System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   en System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   en System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   en Fonade.Negocio.PlanDeNegocioV2.LiderRegional.LiderRegionalBLL.getDatosRegistroUnico() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade.Negocio\PlanDeNegocioV2\LiderRegional\LiderRegionalBLL.cs:línea 19
+   en Fonade.PlanDeNegocioV2.LiderRegional.ListadoRegistroUnico.cargarGrid() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\LiderRegional\ListadoRegistroUnico.aspx.cs:línea 96
+   en Fonade.PlanDeNegocioV2.LiderRegional.ListadoRegistroUnico.cargarGrid(Int32 _codGrupo) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\LiderRegional\ListadoRegistroUnico.aspx.cs:línea 44
+   en Fonade.PlanDeNegocioV2.LiderRegional.ListadoRegistroUnico.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\LiderRegional\ListadoRegistroUnico.aspx.cs:línea 16
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 89
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+04/06/2020 17:26:49
+Error in: http://localhost:5153/PlanDeNegocioV2/LiderRegional/ListadoRegistroUnico.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/LiderRegional/ListadoRegistroUnico.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: El valor Null no se puede asignar a un miembro con el tipo System.Int32 que es un tipo de valor que no acepta valores Null.
+Error InnerException: 
+Error StackTrace:    en Read_SP_RegistroUnico_TotalResult(ObjectMaterializer`1 )
+   en System.Data.Linq.SqlClient.ObjectReaderCompiler.ObjectReader`2.MoveNext()
+   en System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   en System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   en System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   en Fonade.Negocio.PlanDeNegocioV2.LiderRegional.LiderRegionalBLL.getDatosRegistroUnico() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade.Negocio\PlanDeNegocioV2\LiderRegional\LiderRegionalBLL.cs:línea 19
+   en Fonade.PlanDeNegocioV2.LiderRegional.ListadoRegistroUnico.cargarGrid() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\LiderRegional\ListadoRegistroUnico.aspx.cs:línea 96
+   en Fonade.PlanDeNegocioV2.LiderRegional.ListadoRegistroUnico.cargarGrid(Int32 _codGrupo) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\LiderRegional\ListadoRegistroUnico.aspx.cs:línea 44
+   en Fonade.PlanDeNegocioV2.LiderRegional.ListadoRegistroUnico.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\LiderRegional\ListadoRegistroUnico.aspx.cs:línea 16
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 89
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________

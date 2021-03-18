@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_ICONOXXXX (CodTareaUsuario, Parametros, Respuesta) AS SELECT T1.CodTareaUsuario, T1.Parametros, T1.Respuesta FROM TareaUsuarioRepeticion T1

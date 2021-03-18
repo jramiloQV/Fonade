@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PRUEBAREGIS (Id_Ciudad, NomCiudad, CodConvocatoria, Justificacion, Id_Departamento, NomDepartamento) AS SELECT T1.Id_Ciudad, T1.NomCiudad, T2.CodConvocatoria, T2.Justificacion, T3.Id_Departamento, T3.NomDepartamento FROM Ciudad T1, ConvocatoriaProyecto T2, departamento T3 WHERE T1.Id_Ciudad=T2.CodConvocatoria AND T2.CodConvocatoria=T3.Id_Departamento

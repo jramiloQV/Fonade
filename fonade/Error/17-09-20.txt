@@ -1,0 +1,19 @@
+
+Log Entry : 
+09/17/2020 14:39:13
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/IndicadoresGestion/GestionProduccionTotal.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/IndicadoresGestion/GestionProduccionTotal.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: GridView 'gvMetasProduccion' desencadenó el evento RowEditing, que no estaba controlado.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.WebControls.GridView.OnRowEditing(GridViewEditEventArgs e)
+   en System.Web.UI.WebControls.GridView.HandleEdit(Int32 rowIndex)
+   en System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   en System.Web.UI.WebControls.GridView.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.GridView.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+liyana0507@outlook.com
+104225
+__________________________

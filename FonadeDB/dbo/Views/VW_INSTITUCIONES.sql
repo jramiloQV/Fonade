@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_INSTITUCIONES (Ciudad, Departamento, Institucion, Direccion, Telefono, Fax, WebSite) AS SELECT T1.NomCiudad, T2.NomDepartamento, T3.NomInstitucion, T3.Direccion, T3.Telefono, T3.Fax, T3.WebSite FROM Ciudad T1, departamento T2, Institucion T3 WHERE T3.CodCiudad=T1.Id_Ciudad AND T2.Id_Departamento=T1.CodDepartamento

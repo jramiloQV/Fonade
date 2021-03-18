@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PROFESIONES_PROYECTO (TituloObtenido, Id_Proyecto, NomProyecto, CodEstado) AS SELECT T1.TituloObtenido, T2.Id_Proyecto, T2.NomProyecto, T2.CodEstado FROM ContactoEstudio T1, Proyecto T2, ProyectoContacto T3 WHERE T1.CodContacto=T3.CodContacto AND T2.Id_Proyecto=T3.CodProyecto

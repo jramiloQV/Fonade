@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PRUEBA_GRAFICA_CONVOCATORIA (Id_Convocatoria, Presupuesto) AS SELECT T1.Id_Convocatoria, T1.Presupuesto FROM Convocatoria T1

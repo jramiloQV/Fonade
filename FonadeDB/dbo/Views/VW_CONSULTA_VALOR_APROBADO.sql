@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_CONSULTA_VALOR_APROBADO (ValorRecomendado, Id_Proyecto, NomProyecto) AS SELECT T1.ValorRecomendado, T2.Id_Proyecto, T2.NomProyecto FROM EvaluacionObservacion T1, Proyecto T2 WHERE T1.CodProyecto=T2.Id_Proyecto

@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_AF_EMPRESA_FIDUCIARIA (CodConvocatoria, CodProyecto, razonsocial, DomicilioEmpresa, CodCiudad, Telefono, Email, Nit) AS SELECT T1.CodConvocatoria, T1.CodProyecto, T2.razonsocial, T2.DomicilioEmpresa, T2.CodCiudad, T2.Telefono, T2.Email, T2.Nit FROM ConvocatoriaProyecto T1, Empresa T2 WHERE T1.CodProyecto=T2.codproyecto AND T1.CodConvocatoria=102

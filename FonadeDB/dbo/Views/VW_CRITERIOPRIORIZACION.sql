@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_CRITERIOPRIORIZACION (Id_Criterio, NomCriterio, Sigla, CodFactor, Componente, Indicador, ValorBase, Formulacion, Query, Parametros) AS SELECT * FROM CriterioPriorizacion T1

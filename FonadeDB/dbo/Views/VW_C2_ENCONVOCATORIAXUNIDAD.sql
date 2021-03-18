@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_C2_ENCONVOCATORIAXUNIDAD (NomInstitucion, NoProyectos) AS SELECT T2.NomInstitucion, Count(T3.Id_Proyecto) FROM ConvocatoriaProyecto T1, Institucion T2, Proyecto T3 WHERE T1.CodProyecto=T3.Id_Proyecto AND T1.CodConvocatoria=2 AND T2.Id_Institucion=T3.CodInstitucion GROUP BY T2.NomInstitucion

@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_USUARIOS (id_Contacto, identificacion, Contacto, email, Rol, CodigoProyecto, NombreProyecto, Ciudad, departamento) AS SELECT T1.id_Contacto, T1.identificacion, T1.Contacto, T1.email, T1.Rol, T1.CodigoProyecto, T1.NombreProyecto, T1.Ciudad, T1.departamento FROM ContactosRol T1

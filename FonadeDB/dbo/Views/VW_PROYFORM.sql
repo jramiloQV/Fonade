@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PROYFORM (Id_ProyectoFormalizacion, codProyecto, codContacto, Fecha, Aval, Observaciones, CodConvocatoria) AS SELECT * FROM ProyectoFormalizacion T1

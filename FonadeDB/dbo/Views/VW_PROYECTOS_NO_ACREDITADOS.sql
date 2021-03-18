@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PROYECTOS_NO_ACREDITADOS (Id_ProyectoAcreditacion, CodProyecto, CodConvocatoria, ObservacionFinal, Fecha, CodEstado) AS SELECT * FROM ProyectoAcreditacionUltimo T1 WHERE T1.CodConvocatoria=80 AND T1.CodEstado=14

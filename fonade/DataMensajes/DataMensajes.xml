@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <TMensajes>
+    <IdMensaje>1</IdMensaje>
+    <Mensaje>El campo perfil supera el máximo permitido</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>2</IdMensaje>
+    <Mensaje>El campo localización supera el máximo permitido</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>3</IdMensaje>
+    <Mensaje>El campo justificación supera el máximo permitido</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>4</IdMensaje>
+    <Mensaje>El sistema solamente permite agregar 99 clientes</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>5</IdMensaje>
+    <Mensaje>El registro ya existe. Por favor ingrese uno nuevo.</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>6</IdMensaje>
+    <Mensaje>Cliente agregado correctamente</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>7</IdMensaje>
+    <Mensaje>Ocurrió un inconveniente, Por favor vuelva a intentarlo</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>8</IdMensaje>
+    <Mensaje>Cambios realizados correctamente</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>9</IdMensaje>
+    <Mensaje>El registro fue eliminado correctamente</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>10</IdMensaje>
+    <Mensaje>El registro seleccionado para eliminar, está siendo usado en la(s) sección(es) "Desarrollo Solución - Ingresos y Condiciones Comerciales". Por favor retirelo primero de allí</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>11</IdMensaje>
+    <Mensaje>Se debe adicionar como mínimo un cliente</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>12</IdMensaje>
+    <Mensaje>Se debe adicionar como mínimo un competidor</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>13</IdMensaje>
+    <Mensaje>El sistema solamente permite agregar 10 competidores</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>14</IdMensaje>
+    <Mensaje>El registro no se puede eliminar ya que como mínimo debe existir uno</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>15</IdMensaje>
+    <Mensaje>Se debe adicionar como mínimo una actividad en la estrategia de promoción</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>16</IdMensaje>
+    <Mensaje>Se debe adicionar como mínimo una actividad en la estrategia de comunicación</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>17</IdMensaje>
+    <Mensaje>Se debe adicionar como mínimo una actividad en la estrategia de distribución</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>18</IdMensaje>
+    <Mensaje>¿Está seguro de cambiar su selección, ya que perdería información ingresada en preguntas relacionadas?</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>19</IdMensaje>
+    <Mensaje>No puede marcar como realizada la sección/subsección, ya que tiene campos requeridos que aun no se diligencian.</Mensaje>
+  </TMensajes>
+   <TMensajes>
+    <IdMensaje>20</IdMensaje>
+    <Mensaje>No se puede marcar como realizada la sección, ya que tiene campos requeridos que no han sido diligenciados</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>101</IdMensaje>
+    <Mensaje>No hay registros para mostrar</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>102</IdMensaje>
+    <Mensaje>Debe diligenciar en su totalidad las condiciones de los clientes</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>104</IdMensaje>
+    <Mensaje>El campo {0} es obligatorio y no puede estar vacío.</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>105</IdMensaje>
+    <Mensaje>Pregunta 14.1 (selección)</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>106</IdMensaje>
+    <Mensaje>Pregunta 14.1 (justificación)</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>107</IdMensaje>
+    <Mensaje>Normatividad empresarial</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>108</IdMensaje>
+    <Mensaje>Normatividad tributaria</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>109</IdMensaje>
+    <Mensaje>Normatividad técnica</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>110</IdMensaje>
+    <Mensaje>Normatividad laboral</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>111</IdMensaje>
+    <Mensaje>Normatividad ambiental</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>112</IdMensaje>
+    <Mensaje>Registro de marca – Propiedad intelectual:</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>113</IdMensaje>
+    <Mensaje>Condiciones técnicas importantes</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>114</IdMensaje>
+    <Mensaje>Pregunta 14.4 (selección)</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>115</IdMensaje>
+    <Mensaje>Pregunta 14.4 (justificación)</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>116</IdMensaje>
+    <Mensaje>Pregunta 14.4.1</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>117</IdMensaje>
+    <Mensaje>Pregunta 14.4.2</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>118</IdMensaje>
+    <Mensaje>Debe ingresar un valor numérico</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>119</IdMensaje>
+    <Mensaje>Descripción</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>120</IdMensaje>
+    <Mensaje>Cantidad</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>121</IdMensaje>
+    <Mensaje>Valor Unitario</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>122</IdMensaje>
+    <Mensaje>Fuente de financiación</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>123</IdMensaje>
+    <Mensaje>Requisitos Técnicos</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>124</IdMensaje>
+    <Mensaje>El valor de la cantidad debe ser mayor a cero</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>125</IdMensaje>
+    <Mensaje>Pregunta 16</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>126</IdMensaje>
+    <Mensaje>Perfil</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>127</IdMensaje>
+    <Mensaje>Rol</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>128</IdMensaje>
+    <Mensaje>Debe diligenciar en su totalidad el perfil de los emprendedores</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>129</IdMensaje>
+    <Mensaje>Nombre del Cargo</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>130</IdMensaje>
+    <Mensaje>Funciones Principales</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>131</IdMensaje>
+    <Mensaje>Formación</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>132</IdMensaje>
+    <Mensaje>Experiencia General</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>133</IdMensaje>
+    <Mensaje>Experiencia Específica</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>134</IdMensaje>
+    <Mensaje>Tipo de Contratación</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>135</IdMensaje>
+    <Mensaje>Dedicación de Tiempo</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>136</IdMensaje>
+    <Mensaje>Unidad de Medida en Tiempo</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>137</IdMensaje>
+    <Mensaje>Tiempo Vinculación Primer Año</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>138</IdMensaje>
+    <Mensaje>Valor Remuneración *Unitario</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>139</IdMensaje>
+    <Mensaje>Otros Gastos</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>140</IdMensaje>
+    <Mensaje>Valor Solicitado Fondo Emprender</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>141</IdMensaje>
+    <Mensaje>Aportes Emprendedores</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>142</IdMensaje>
+    <Mensaje>Ingresos por Ventas</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>143</IdMensaje>
+    <Mensaje>Sólo se permite valores entre 1 y 12 en el Tiempo de Vinculación si se selecciona la unidad Mes</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>144</IdMensaje>
+    <Mensaje>Sólo se permite valores entre 1 y 365 en el Tiempo de Vinculación si se selecciona la unidad Días</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>145</IdMensaje>
+    <Mensaje>Sólo se permiten números en el Tiempo de Vinculación</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>146</IdMensaje>
+    <Mensaje>No ha subido ningún archivo</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>147</IdMensaje>
+    <Mensaje>El tamaño del archivo debe ser menor a 10 Mb</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>148</IdMensaje>
+    <Mensaje>El Archivo fue guardado</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>149</IdMensaje>
+    <Mensaje>No se pudo generar el registro</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>150</IdMensaje>
+    <Mensaje>Debe seleccionar la unidad de tiempo para realizar el cálculo</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>151</IdMensaje>
+    <Mensaje>Debe ingresar al menos un requerimiento de inversión</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>152</IdMensaje>
+    <Mensaje>Debe ingresar al menos un cargo en el plan</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>153</IdMensaje>
+    <Mensaje>El Archivo que intenta adjuntar no es permitido</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>154</IdMensaje>
+    <Mensaje>No se encontró un documento a actualizar</Mensaje>
+  </TMensajes>
+  <TMensajes>
+    <IdMensaje>155</IdMensaje>
+    <Mensaje>Ya existe un documento con ese nombre.</Mensaje>
+  </TMensajes>
+<TMensajes>
+    <IdMensaje>156</IdMensaje>
+    <Mensaje>Debe ingresar un valor mayor a cero en alguno de los siguientes valores: Aportes Emprendedores, Fondo Emprender o Ingreso por Ventas.</Mensaje>
+  </TMensajes>
+</DocumentElement>

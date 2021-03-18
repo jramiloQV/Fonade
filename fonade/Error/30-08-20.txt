@@ -1,0 +1,84 @@
+
+Log Entry : 
+08/30/2020 16:44:11
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionIA.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionIA.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: No se pudo encontrar un evento denominado 'btnExportar_Click' en el control asociado 'btnExportar' para el desencadenador de UpdatePanel 'upboton'.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.AsyncPostBackTrigger.Initialize()
+   en System.Web.UI.UpdatePanelTriggerCollection.Initialize()
+   en System.Web.UI.UpdatePanel.Initialize()
+   en System.Web.UI.UpdatePanel.OnLoad(EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+wdazan@sena.edu.co
+81764
+__________________________
+
+Log Entry : 
+08/30/2020 16:45:22
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionIA.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionIA.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: No se pudo encontrar un evento denominado 'btnExportar_Click' en el control asociado 'btnExportar' para el desencadenador de UpdatePanel 'upboton'.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.AsyncPostBackTrigger.Initialize()
+   en System.Web.UI.UpdatePanelTriggerCollection.Initialize()
+   en System.Web.UI.UpdatePanel.Initialize()
+   en System.Web.UI.UpdatePanel.OnLoad(EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+wdazan@sena.edu.co
+81764
+__________________________
+
+Log Entry : 
+08/30/2020 16:50:22
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionIA.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionIA.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: No se pudo encontrar un evento denominado 'btnExportar_Click' en el control asociado 'btnExportar' para el desencadenador de UpdatePanel 'upExportar'.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.AsyncPostBackTrigger.Initialize()
+   en System.Web.UI.UpdatePanelTriggerCollection.Initialize()
+   en System.Web.UI.UpdatePanel.Initialize()
+   en System.Web.UI.UpdatePanel.OnLoad(EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+wdazan@sena.edu.co
+81764
+__________________________
+
+Log Entry : 
+08/30/2020 18:32:21
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionIA.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionIA.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: La cadena de entrada no tiene el formato correcto.
+Error InnerException: 
+Error StackTrace:    en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en Fonade.FONADE.Administracion.ExportarInformacionIA.btnMostrarConfirmacion_Click(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionIA.aspx.cs:línea 1242
+   en System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   en System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+wdazan@sena.edu.co
+81764
+__________________________

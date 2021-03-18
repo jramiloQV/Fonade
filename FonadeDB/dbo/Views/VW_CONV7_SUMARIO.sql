@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_CONV7_SUMARIO (NomConvocatoria, Id_Proyecto, NomProyecto, Sumario) AS SELECT T1.NomConvocatoria, T3.Id_Proyecto, T3.NomProyecto, T3.Sumario FROM Convocatoria T1, ConvocatoriaProyecto T2, Proyecto T3 WHERE T1.Id_Convocatoria=T2.CodConvocatoria AND T2.CodProyecto=T3.Id_Proyecto AND T2.Viable=1 AND T2.CodConvocatoria=50

@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_DATOS_COMPLETOS (CodContacto, Nombres, Identificacion, Clave) AS SELECT T2.CodContacto, T3.Nombres, T3.Identificacion, T3.Clave FROM Empresa T1, EmpresaInterventor T2, Contacto T3, Institucion T4, Proyecto T5 WHERE T3.Identificacion=51564096

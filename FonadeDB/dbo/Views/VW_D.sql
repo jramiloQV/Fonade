@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_D (email) AS SELECT T1.email FROM ContactosRol T1

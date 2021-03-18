@@ -1,0 +1,39 @@
+
+Log Entry : 
+11/05/2020 11:30:53
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: SFTP.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Error en el nivel del transporte al recibir los resultados del servidor. (provider: TCP Provider, error: 0 - Se agotó el tiempo de espera del semáforo.)
+Error InnerException: Se agotó el tiempo de espera del semáforo
+Error StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   en System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   en System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   en System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   en System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.ExecuteReader()
+   en System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   en System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   en System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   en System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   en System.Linq.Queryable.Sum[TSource](IQueryable`1 source, Expression`1 selector)
+   en Fonade.Negocio.PlanDeNegocioV2.Formulacion.DesarrolloSolucion.Proyeccion.VentasPorPeriodo(Int32 codigoProducto, Int32 year) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade.Negocio\PlanDeNegocioV2\Formulacion\DesarrolloSolucion\Proyeccion.cs:línea 614
+   en Fonade.Negocio.PlanDeNegocioV2.Formulacion.DesarrolloSolucion.Proyeccion.IngresosPorVentasPorProducto(Int32 codigoProducto, Int32 tiempoProyeccion) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade.Negocio\PlanDeNegocioV2\Formulacion\DesarrolloSolucion\Proyeccion.cs:línea 535
+   en Fonade.Negocio.PlanDeNegocioV2.Formulacion.DesarrolloSolucion.Proyeccion.GetIngresosPorVentas(Int32 codigoProyecto) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade.Negocio\PlanDeNegocioV2\Formulacion\DesarrolloSolucion\Proyeccion.cs:línea 466
+   en Fonade.Negocio.Proyecto.ProyectoController.infoIngresosPorVentas(Int32 codigoProyecto) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade.Negocio\Proyecto\ProyectoController.cs:línea 685
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoPlano(Int32 _codConvocatoria, String _nomConvocatoria, String fechaArchivo, String tipoArchivo, String& rutaConvocatoria, String& nombreArchivoPlano, Int32& cantidadProyectos) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 494
+wdazan@sena.edu.co
+81764
+__________________________

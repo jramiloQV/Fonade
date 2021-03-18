@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_INFORMEFINALINTERVENTORIA (razonsocial, codproyecto, ObservacionesInt) AS SELECT T1.razonsocial, T1.codproyecto, T1.ObservacionesInt FROM Empresa T1

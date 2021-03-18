@@ -1,0 +1,48 @@
+
+Log Entry : 
+01/21/2020 11:00:08
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/AdministrarActasSeguimiento.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/AdministrarActasSeguimiento.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: No connection string named 'FonadeEntities' could be found in the application config file.
+Error InnerException: 
+Error StackTrace:    en System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   en System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   en System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   en System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   en Fonade.Negocio.Model.FonadeEntities.MD_ActasSeguimientoInterventor(Nullable`1 codContactoCoordinador) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade.Negocio\Model\FonadeModel.Context.cs:línea 38
+   en Fonade.Negocio.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimientos.ActaSeguimiento.interventoresPorProyecto(Int32 _codCoordinador) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade.Negocio\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimientos\ActaSeguimiento.cs:línea 154
+   en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.AdministrarActasSeguimiento.cargarGrilla() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\AdministrarActasSeguimiento.aspx.cs:línea 23
+   en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.AdministrarActasSeguimiento.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\AdministrarActasSeguimiento.aspx.cs:línea 17
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 89
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+lmmunozo@hotmail.com
+31547
+__________________________
+
+Log Entry : 
+01/21/2020 14:10:39
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/AdministrarActasSeguimiento.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/AdministrarActasSeguimiento.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Índice fuera de los límites de la matriz.
+Error InnerException: 
+Error StackTrace:    en Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.AdministrarActasSeguimiento.gvMain_RowCommand(Object sender, GridViewCommandEventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimiento\AdministrarActasSeguimiento.aspx.cs:línea 37
+   en System.Web.UI.WebControls.GridView.OnRowCommand(GridViewCommandEventArgs e)
+   en System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   en System.Web.UI.WebControls.GridView.OnBubbleEvent(Object source, EventArgs e)
+   en System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   en System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(Object source, EventArgs e)
+   en System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   en System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   en System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.LinkButton.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+lmmunozo@hotmail.com
+31547
+__________________________

@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PAGOS_FIDUBOGOTA (razonsocial, Id_Proyecto, Id_PagoActividad, CantidadDinero) AS SELECT T1.razonsocial, T1.Id_Proyecto, T1.Id_PagoActividad, T1.CantidadDinero FROM VISTA_PAGOS_DETALLADOS T1 WHERE T1.Id_PagoActividad>=34694 AND T1.Estado=4

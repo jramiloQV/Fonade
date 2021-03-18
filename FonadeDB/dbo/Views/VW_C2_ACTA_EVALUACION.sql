@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_C2_ACTA_EVALUACION (Id_Acta, NomActa, NumActa, FechaActa, CodConvocatoria, CodActa, CodProyecto, Viable) AS SELECT T1.Id_Acta, T1.NomActa, T1.NumActa, T1.FechaActa, T1.CodConvocatoria, T2.CodActa, T2.CodProyecto, T2.Viable FROM EvaluacionActa T1, EvaluacionActaProyecto T2 WHERE T1.Id_Acta=T2.CodActa AND T1.CodConvocatoria=2

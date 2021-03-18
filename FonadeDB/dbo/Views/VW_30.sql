@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_30 (id_Contacto, identificacion, Contacto, email, Rol, CodigoProyecto, NombreProyecto, Ciudad, departamento) AS SELECT * FROM ContactosRol T1

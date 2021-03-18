@@ -1,0 +1,58 @@
+
+Log Entry : 
+02/24/2020 13:25:27
+Error in: http://localhost:5153/PlanDeNegocioV2/Fiduciaria/BuscarInfoPago.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Fiduciaria/BuscarInfoPago.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: No se puede encontrar el identificador de control 'TextBox1' al que hace referencia la propiedad 'ControlToValidate' de 'RegularExpressionValidator1'.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.WebControls.BaseValidator.CheckControlValidationProperty(String name, String propertyName)
+   en System.Web.UI.WebControls.BaseValidator.ControlPropertiesValid()
+   en System.Web.UI.WebControls.BaseValidator.OnPreRender(EventArgs e)
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+andream.chavez@fiduagraria.gov.co
+104209
+__________________________
+
+Log Entry : 
+02/24/2020 13:59:37
+Error in: http://localhost:5153/PlanDeNegocioV2/Fiduciaria/BuscarInfoPago.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Fiduciaria/BuscarInfoPago.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.PlanDeNegocioV2.Fiduciaria.BuscarInfoPago.buscarInfo(Int32 _codPago) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Fiduciaria\BuscarInfoPago.aspx.cs:línea 36
+   en Fonade.PlanDeNegocioV2.Fiduciaria.BuscarInfoPago.btnBuscarPago_Click(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Fiduciaria\BuscarInfoPago.aspx.cs:línea 46
+   en System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   en System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+andream.chavez@fiduagraria.gov.co
+104209
+__________________________
+
+Log Entry : 
+02/24/2020 14:52:08
+Error in: http://localhost:5153/PlanDeNegocioV2/Fiduciaria/BuscarInfoPago.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Fiduciaria/BuscarInfoPago.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.PlanDeNegocioV2.Fiduciaria.BuscarInfoPago.buscarInfo(Int32 _codPago) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Fiduciaria\BuscarInfoPago.aspx.cs:línea 36
+   en Fonade.PlanDeNegocioV2.Fiduciaria.BuscarInfoPago.btnBuscarPago_Click(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Fiduciaria\BuscarInfoPago.aspx.cs:línea 53
+   en System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   en System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+andream.chavez@fiduagraria.gov.co
+104209
+__________________________

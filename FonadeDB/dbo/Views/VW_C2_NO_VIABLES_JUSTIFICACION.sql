@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_C2_NO_VIABLES_JUSTIFICACION (CodConvocatoria, Justificacion, Viable, Id_Proyecto, NomProyecto) AS SELECT T1.CodConvocatoria, T1.Justificacion, T1.Viable, T2.Id_Proyecto, T2.NomProyecto FROM ConvocatoriaProyecto T1, Proyecto T2 WHERE T1.CodProyecto=T2.Id_Proyecto AND T1.CodConvocatoria=2 AND T1.Viable=0

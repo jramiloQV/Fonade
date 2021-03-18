@@ -1,0 +1,1858 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>FonadeDB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{9268008c-ac3e-48c5-b473-6708cc2e835a}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>FonadeDB</RootNamespace>
+    <AssemblyName>FonadeDB</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="dbo\Defaults\" />
+    <Folder Include="Storage\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Snapshots" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\AcreditacionActa.sql" />
+    <Build Include="dbo\Tables\AcreditacionActaProyecto.sql" />
+    <Build Include="dbo\Tables\ActaAcreditacionFinal.sql" />
+    <Build Include="dbo\Tables\ActividadDefault.sql" />
+    <Build Include="dbo\Tables\Ambito.sql" />
+    <Build Include="dbo\Tables\AmbitoDetalle.sql" />
+    <Build Include="dbo\Tables\AnalisisBitacora_20100615.sql" />
+    <Build Include="dbo\Tables\AnalisisInactivacion_20100617.sql" />
+    <Build Include="dbo\Tables\AsignacionActa.sql" />
+    <Build Include="dbo\Tables\AsignacionActaProyecto.sql" />
+    <Build Include="dbo\Tables\Audit.sql" />
+    <Build Include="dbo\Tables\AvanceActividadPOAnexos.sql" />
+    <Build Include="dbo\Tables\AvanceActividadPOAnexos20131017.sql" />
+    <Build Include="dbo\Tables\AvanceActividadPOMes.sql" />
+    <Build Include="dbo\Tables\AvanceCargoPOAnexos.sql" />
+    <Build Include="dbo\Tables\AvanceCargoPOMes.sql" />
+    <Build Include="dbo\Tables\AvanceProduccionPOAnexos.sql" />
+    <Build Include="dbo\Tables\AvanceProduccionPOMes.sql" />
+    <Build Include="dbo\Tables\AvanceVentasPOAnexos.sql" />
+    <Build Include="dbo\Tables\AvanceVentasPOMes.sql" />
+    <Build Include="dbo\Tables\Banco.sql" />
+    <Build Include="dbo\Tables\bck_avance_act_129072.sql" />
+    <Build Include="dbo\Tables\bck_InterventorVentas.sql" />
+    <Build Include="dbo\Tables\bck_pagosactasolicitudpagos.sql" />
+    <Build Include="dbo\Tables\bck_proy_IM341616.sql" />
+    <Build Include="dbo\Tables\BicatocaEventos.sql" />
+    <Build Include="dbo\Tables\Bitacora.sql" />
+    <Build Include="dbo\Tables\Bitacora20131019.sql" />
+    <Build Include="dbo\Tables\bitacora25ago2010.sql" />
+    <Build Include="dbo\Tables\bkp_observacionesevaluacion.sql" />
+    <Build Include="dbo\Tables\bkp_observacionesevaluacion2.sql" />
+    <Build Include="dbo\Tables\bkp_observacionesevaluacion3.sql" />
+    <Build Include="dbo\Tables\bkp_proy_48403.sql" />
+    <Build Include="dbo\Tables\bkpproyectoactividadPOInterventor.sql" />
+    <Build Include="dbo\Tables\Campo.sql" />
+    <Build Include="dbo\Tables\Carpetas.sql" />
+    <Build Include="dbo\Tables\Ciudad.sql" />
+    <Build Include="dbo\Tables\CiudadesPorAdicionarACiudad.sql" />
+    <Build Include="dbo\Tables\Clave.sql" />
+    <Build Include="dbo\Tables\Contacto.sql" />
+    <Build Include="dbo\Tables\Contacto14062010.sql" />
+    <Build Include="dbo\Tables\ContactoActualizoReactivacion.sql" />
+    <Build Include="dbo\Tables\ContactoArchivosAnexos.sql" />
+    <Build Include="dbo\Tables\ContactoClaveHistorico.sql" />
+    <Build Include="dbo\Tables\ContactoDesactivacion.sql" />
+    <Build Include="dbo\Tables\ContactoEstudio.sql" />
+    <Build Include="dbo\Tables\ContactoEstudioHistorico.sql" />
+    <Build Include="dbo\Tables\ContactoHistorico.sql" />
+    <Build Include="dbo\Tables\ContactoHistoricoEmailAcreditacion.sql" />
+    <Build Include="dbo\Tables\ContactoReActivacion.sql" />
+    <Build Include="dbo\Tables\ContratoEmpresa.sql" />
+    <Build Include="dbo\Tables\ContratosArchivosAnexos.sql" />
+    <Build Include="dbo\Tables\Convenio.sql" />
+    <Build Include="dbo\Tables\Convocatoria.sql" />
+    <Build Include="dbo\Tables\ConvocatoriaActa.sql" />
+    <Build Include="dbo\Tables\ConvocatoriaCampo.sql" />
+    <Build Include="dbo\Tables\ConvocatoriaCofinanciacion.sql" />
+    <Build Include="dbo\Tables\ConvocatoriaCriterio.sql" />
+    <Build Include="dbo\Tables\ConvocatoriaCriterioCiudad.sql" />
+    <Build Include="dbo\Tables\ConvocatoriaCriterioPriorizacion.sql" />
+    <Build Include="dbo\Tables\ConvocatoriaCriterioSector.sql" />
+    <Build Include="dbo\Tables\ConvocatoriaHistoria.sql" />
+    <Build Include="dbo\Tables\ConvocatoriaProyecto.sql" />
+    <Build Include="dbo\Tables\ConvocatoriaReglaSalarios.sql" />
+    <Build Include="dbo\Tables\copia_EvaluacionProyectoIndicador.sql" />
+    <Build Include="dbo\Tables\CriterioPriorizacion.sql" />
+    <Build Include="dbo\Tables\departamento.sql" />
+    <Build Include="dbo\Tables\DesempenoApp.sql" />
+    <Build Include="dbo\Tables\DificultadCentral.sql" />
+    <Build Include="dbo\Tables\dim_tiempo.sql" />
+    <Build Include="dbo\Tables\DocPerdidos.sql" />
+    <Build Include="dbo\Tables\docperdidosAnalisis.sql" />
+    <Build Include="dbo\Tables\docperdidosRecursos.sql" />
+    <Build Include="dbo\Tables\Documento.sql" />
+    <Build Include="dbo\Tables\DocumentoFormato.sql" />
+    <Build Include="dbo\Tables\EjeFuncional.sql" />
+    <Build Include="dbo\Tables\Empresa.sql" />
+    <Build Include="dbo\Tables\EmpresaContacto.sql" />
+    <Build Include="dbo\Tables\EmpresaInterventor.sql" />
+    <Build Include="dbo\Tables\ErrorLog.sql" />
+    <Build Include="dbo\Tables\Estado.sql" />
+    <Build Include="dbo\Tables\EvaluacionActa.sql" />
+    <Build Include="dbo\Tables\EvaluacionActaProyecto.sql" />
+    <Build Include="dbo\Tables\EvaluacionCampo.sql" />
+    <Build Include="dbo\Tables\EvaluacionCampoJustificacion.sql" />
+    <Build Include="dbo\Tables\evaluacionconceptos.sql" />
+    <Build Include="dbo\Tables\EvaluacionContacto.sql" />
+    <Build Include="dbo\Tables\EvaluacionEvaluador.sql" />
+    <Build Include="dbo\Tables\EvaluacionIndicadorFinancieroModelo.sql" />
+    <Build Include="dbo\Tables\EvaluacionIndicadorFinancieroProyecto.sql" />
+    <Build Include="dbo\Tables\EvaluacionIndicadorFinancieroValor.sql" />
+    <Build Include="dbo\Tables\EvaluacionIndicadorGestion.sql" />
+    <Build Include="dbo\Tables\EvaluacionObservacion.sql" />
+    <Build Include="dbo\Tables\EvaluacionProyectoAporte.sql" />
+    <Build Include="dbo\Tables\evaluacionproyectobloqueado.sql" />
+    <Build Include="dbo\Tables\EvaluacionProyectoIndicador.sql" />
+    <Build Include="dbo\Tables\EvaluacionProyectoSupuesto.sql" />
+    <Build Include="dbo\Tables\EvaluacionProyectoSupuestoModelo.sql" />
+    <Build Include="dbo\Tables\EvaluacionProyectoSupuestoValor.sql" />
+    <Build Include="dbo\Tables\EvaluacionRiesgo.sql" />
+    <Build Include="dbo\Tables\EvaluacionRubroModelo.sql" />
+    <Build Include="dbo\Tables\EvaluacionRubroProyecto.sql" />
+    <Build Include="dbo\Tables\EvaluacionRubroValor.sql" />
+    <Build Include="dbo\Tables\EvaluacionSeguimiento.sql" />
+    <Build Include="dbo\Tables\Evaluador.sql" />
+    <Build Include="dbo\Tables\EvaluadorContrato.sql" />
+    <Build Include="dbo\Tables\EvaluadorHistorico.sql" />
+    <Build Include="dbo\Tables\EvaluadorSector.sql" />
+    <Build Include="dbo\Tables\EvaluadorSectorHistorico.sql" />
+    <Build Include="dbo\Tables\Factor.sql" />
+    <Build Include="dbo\Tables\Fase.sql" />
+    <Build Include="dbo\Tables\FirmasAutorizadas.sql" />
+    <Build Include="dbo\Tables\Fog_Trace_ClassesAndEvents.sql" />
+    <Build Include="dbo\Tables\Fog_Trace_SQLBySPID.sql" />
+    <Build Include="dbo\Tables\Fog_TraceConsumer_Global.sql" />
+    <Build Include="dbo\Tables\Fog_TraceData.sql" />
+    <Build Include="dbo\Tables\Fog_TraceEventNames.sql" />
+    <Build Include="dbo\Tables\Fog_TraceFilter.sql" />
+    <Build Include="dbo\Tables\Fog_TraceGlobalData.sql" />
+    <Build Include="dbo\Tables\Fog_TraceGlobalSummary.sql" />
+    <Build Include="dbo\Tables\Fog_Traces.sql" />
+    <Build Include="dbo\Tables\Grupo.sql" />
+    <Build Include="dbo\Tables\GrupoContacto.sql" />
+    <Build Include="dbo\Tables\GrupoObjeto.sql" />
+    <Build Include="dbo\Tables\HistoricoAuditoria.sql" />
+    <Build Include="dbo\Tables\HistoricoEmailAcreditacion.sql" />
+    <Build Include="dbo\Tables\IdSumario.sql" />
+    <Build Include="dbo\Tables\Indicadores_en_default.sql" />
+    <Build Include="dbo\Tables\IndicadoresGenericosModelo.sql" />
+    <Build Include="dbo\Tables\IndicadorGenerico.sql" />
+    <Build Include="dbo\Tables\IndicadorModelo.sql" />
+    <Build Include="dbo\Tables\InformeBimensual.sql" />
+    <Build Include="dbo\Tables\InformeMedioTransporte.sql" />
+    <Build Include="dbo\Tables\InformePresupuestal.sql" />
+    <Build Include="dbo\Tables\InformeVisitaInterventoria.sql" />
+    <Build Include="dbo\Tables\InformeVisitaInterventoriabkp.sql" />
+    <Build Include="dbo\Tables\Institucion.sql" />
+    <Build Include="dbo\Tables\Institucion_12Oct2010.sql" />
+    <Build Include="dbo\Tables\InstitucionContacto.sql" />
+    <Build Include="dbo\Tables\InstitucionEducativa.sql" />
+    <Build Include="dbo\Tables\institucioneducativa20100817.sql" />
+    <Build Include="dbo\Tables\Interventor.sql" />
+    <Build Include="dbo\Tables\InterventorAnexos.sql" />
+    <Build Include="dbo\Tables\InterventorContrato.sql" />
+    <Build Include="dbo\Tables\InterventorHistorico.sql" />
+    <Build Include="dbo\Tables\InterventorIndicador.sql" />
+    <Build Include="dbo\Tables\InterventorIndicadorTMP.sql" />
+    <Build Include="dbo\Tables\InterventorInformeFinal.sql" />
+    <Build Include="dbo\Tables\InterventorInformeFinal_2Nov2010.sql" />
+    <Build Include="dbo\Tables\InterventorInformeFinalAnexos.sql" />
+    <Build Include="dbo\Tables\InterventorInformeFinalCriterio.sql" />
+    <Build Include="dbo\Tables\InterventorInformeFinalCumplimiento.sql" />
+    <Build Include="dbo\Tables\InterventorInformeFinalItem.sql" />
+    <Build Include="dbo\Tables\InterventorNomina.sql" />
+    <Build Include="dbo\Tables\InterventorNominaMes.sql" />
+    <Build Include="dbo\Tables\InterventorNominaMesTMP.sql" />
+    <Build Include="dbo\Tables\InterventorNominatemp.sql" />
+    <Build Include="dbo\Tables\InterventorNominaTMP.sql" />
+    <Build Include="dbo\Tables\InterventorProduccion.sql" />
+    <Build Include="dbo\Tables\InterventorProduccionMes.sql" />
+    <Build Include="dbo\Tables\InterventorProduccionMesTMP.sql" />
+    <Build Include="dbo\Tables\InterventorProduccionTMP.sql" />
+    <Build Include="dbo\Tables\InterventorRiesgo.sql" />
+    <Build Include="dbo\Tables\InterventorRiesgoTMP.sql" />
+    <Build Include="dbo\Tables\InterventorSector.sql" />
+    <Build Include="dbo\Tables\InterventorSectorHistorico.sql" />
+    <Build Include="dbo\Tables\InterventorVentas.sql" />
+    <Build Include="dbo\Tables\interventorventasbkp52929.sql" />
+    <Build Include="dbo\Tables\InterventorVentasMes.sql" />
+    <Build Include="dbo\Tables\InterventorVentasMesTMP.sql" />
+    <Build Include="dbo\Tables\InterventorVentasTMP.sql" />
+    <Build Include="dbo\Tables\Item.sql" />
+    <Build Include="dbo\Tables\ItemEscala.sql" />
+    <Build Include="dbo\Tables\LegalizacionActa.sql" />
+    <Build Include="dbo\Tables\LegalizacionActaProyecto.sql" />
+    <Build Include="dbo\Tables\LogEnvios.sql" />
+    <Build Include="dbo\Tables\LogIngreso.sql" />
+    <Build Include="dbo\Tables\LogTrasladoProyectos.sql" />
+    <Build Include="dbo\Tables\MedioDeTransporte.sql" />
+    <Build Include="dbo\Tables\Nivel.sql" />
+    <Build Include="dbo\Tables\NivelEstudio.sql" />
+    <Build Include="dbo\Tables\Objeto.sql" />
+    <Build Include="dbo\Tables\ObservacionesEvaluacion.sql" />
+    <Build Include="dbo\Tables\OProyectoSel.sql" />
+    <Build Include="dbo\Tables\PAD_bak.sql" />
+    <Build Include="dbo\Tables\PAExpImp.sql" />
+    <Build Include="dbo\Tables\Pagina.sql" />
+    <Build Include="dbo\Tables\Pagina_Grupo.sql" />
+    <Build Include="dbo\Tables\pago8457.sql" />
+    <Build Include="dbo\Tables\PagoActividad.sql" />
+    <Build Include="dbo\Tables\PagoActividadarchivo.sql" />
+    <Build Include="dbo\Tables\pagoactividadarchivo6Abr2010.sql" />
+    <Build Include="dbo\Tables\PagoActividadHistorico.sql" />
+    <Build Include="dbo\Tables\PagoBanco.sql" />
+    <Build Include="dbo\Tables\PagoBeneficiario.sql" />
+    <Build Include="dbo\Tables\PagoConcepto.sql" />
+    <Build Include="dbo\Tables\PagoForma.sql" />
+    <Build Include="dbo\Tables\PagosActaSolicitudes.sql" />
+    <Build Include="dbo\Tables\PagosActaSolicitudPagos.sql" />
+    <Build Include="dbo\Tables\PagosRechazosFirmaDigital.sql" />
+    <Build Include="dbo\Tables\PagoSucursal.sql" />
+    <Build Include="dbo\Tables\PagoTipoArchivo.sql" />
+    <Build Include="dbo\Tables\PagoTipoMovimiento.sql" />
+    <Build Include="dbo\Tables\PagoTipoRetencion.sql" />
+    <Build Include="dbo\Tables\Pais.sql" />
+    <Build Include="dbo\Tables\parametro.sql" />
+    <Build Include="dbo\Tables\PasswordModelo.sql" />
+    <Build Include="dbo\Tables\Periodo.sql" />
+    <Build Include="dbo\Tables\PosicionArancelaria.sql" />
+    <Build Include="dbo\Tables\ProgramaAcademico.sql" />
+    <Build Include="dbo\Tables\programaacademico20100817.sql" />
+    <Build Include="dbo\Tables\Proyecto.sql" />
+    <Build Include="dbo\Tables\ProyectoAcreditacion.sql" />
+    <Build Include="dbo\Tables\ProyectoAcreditacionDocumento.sql" />
+    <Build Include="dbo\Tables\ProyectoAcreditacionDocumento_bkp.sql" />
+    <Build Include="dbo\Tables\ProyectoAcreditaciondocumentosCRIF.sql" />
+    <Build Include="dbo\Tables\ProyectoActividadPO.sql" />
+    <Build Include="dbo\Tables\ProyectoActividadPOInterventor.sql" />
+    <Build Include="dbo\Tables\proyectoactividadPOInterventor_bkp.sql" />
+    <Build Include="dbo\Tables\ProyectoActividadPOInterventorTMP.sql" />
+    <Build Include="dbo\Tables\ProyectoActividadPOInterventorTMP_2.sql" />
+    <Build Include="dbo\Tables\ProyectoActividadPOMes.sql" />
+    <Build Include="dbo\Tables\ProyectoActividadPOMesInterventor.sql" />
+    <Build Include="dbo\Tables\ProyectoActividadPOMesInterventorTMP.sql" />
+    <Build Include="dbo\Tables\ProyectoAporte.sql" />
+    <Build Include="dbo\Tables\ProyectoCapital.sql" />
+    <Build Include="dbo\Tables\ProyectoContacto.sql" />
+    <Build Include="dbo\Tables\proyectocontacto_bkc141015.sql" />
+    <Build Include="dbo\Tables\ProyectoContactoAcreditadorNI.sql" />
+    <Build Include="dbo\Tables\ProyectoContactobck.sql" />
+    <Build Include="dbo\Tables\ProyectoEmpleoCargo.sql" />
+    <Build Include="dbo\Tables\ProyectoEmpleoManoObra.sql" />
+    <Build Include="dbo\Tables\ProyectoFinanzasEgresos.sql" />
+    <Build Include="dbo\Tables\ProyectoFinanzasIngresos.sql" />
+    <Build Include="dbo\Tables\ProyectoFormalizacion.sql" />
+    <Build Include="dbo\Tables\ProyectoGastos.sql" />
+    <Build Include="dbo\Tables\ProyectoGastosModelo.sql" />
+    <Build Include="dbo\Tables\ProyectoGastosPersonal.sql" />
+    <Build Include="dbo\Tables\ProyectoImpacto.sql" />
+    <Build Include="dbo\Tables\ProyectoInfraestructura.sql" />
+    <Build Include="dbo\Tables\ProyectoInsumo.sql" />
+    <Build Include="dbo\Tables\ProyectoInsumoPrecio.sql" />
+    <Build Include="dbo\Tables\ProyectoInsumoUnidadesCompras.sql" />
+    <Build Include="dbo\Tables\ProyectoInversion.sql" />
+    <Build Include="dbo\Tables\ProyectoMaquinaria.sql" />
+    <Build Include="dbo\Tables\ProyectoMercadoEstrategias.sql" />
+    <Build Include="dbo\Tables\ProyectoMercadoInvestigacion.sql" />
+    <Build Include="dbo\Tables\ProyectoMercadoProyeccionVentas.sql" />
+    <Build Include="dbo\Tables\ProyectoMetaSocial.sql" />
+    <Build Include="dbo\Tables\ProyectoOperacion.sql" />
+    <Build Include="dbo\Tables\ProyectoOperacionInfraestructura.sql" />
+    <Build Include="dbo\Tables\ProyectoOrganizacionEstrategia.sql" />
+    <Build Include="dbo\Tables\ProyectoOrganizacionEstructura.sql" />
+    <Build Include="dbo\Tables\ProyectoOrganizacionLegal.sql" />
+    <Build Include="dbo\Tables\ProyectoProducto.sql" />
+    <Build Include="dbo\Tables\ProyectoProductoInsumo.sql" />
+    <Build Include="dbo\Tables\ProyectoProductoPrecio.sql" />
+    <Build Include="dbo\Tables\ProyectoProductoUnidadesVentas.sql" />
+    <Build Include="dbo\Tables\ProyectoProrroga.sql" />
+    <Build Include="dbo\Tables\ProyectoRecurso.sql" />
+    <Build Include="dbo\Tables\ProyectoResumenEjecutivo.sql" />
+    <Build Include="dbo\Tables\pruebas_gio.sql" />
+    <Build Include="dbo\Tables\PuntajeCriterioPriorizacion.sql" />
+    <Build Include="dbo\Tables\PuntajeTotalPriorizacion.sql" />
+    <Build Include="dbo\Tables\RechazoFirmaDigital.sql" />
+    <Build Include="dbo\Tables\ReporteAuditoria.sql" />
+    <Build Include="dbo\Tables\Rol.sql" />
+    <Build Include="dbo\Tables\SalariosMinimos.sql" />
+    <Build Include="dbo\Tables\Sector.sql" />
+    <Build Include="dbo\Tables\seg_contacto.sql" />
+    <Build Include="dbo\Tables\ServicioRegistroDesactivacion.sql" />
+    <Build Include="dbo\Tables\ServicioUsuariosDesactivados.sql" />
+    <Build Include="dbo\Tables\Spot_Constants.sql" />
+    <Build Include="dbo\Tables\Spot_Log.sql" />
+    <Build Include="dbo\Tables\Spot_RefreshAutoClose.sql" />
+    <Build Include="dbo\Tables\Spot_RefreshRates.sql" />
+    <Build Include="dbo\Tables\Spot_Repl_Agents.sql" />
+    <Build Include="dbo\Tables\Spot_Repl_PubSub.sql" />
+    <Build Include="dbo\Tables\Spot_SuppressedFeatures.sql" />
+    <Build Include="dbo\Tables\Spot_TableFragDetails.sql" />
+    <Build Include="dbo\Tables\Spot_Trace_ClassesAndEvents.sql" />
+    <Build Include="dbo\Tables\Spot_Trace_SQLBySPID.sql" />
+    <Build Include="dbo\Tables\Spot_TraceConsumer_Global.sql" />
+    <Build Include="dbo\Tables\Spot_TraceData.sql" />
+    <Build Include="dbo\Tables\Spot_TraceEventNames.sql" />
+    <Build Include="dbo\Tables\Spot_TraceFilter.sql" />
+    <Build Include="dbo\Tables\Spot_TraceGlobalData.sql" />
+    <Build Include="dbo\Tables\Spot_TraceGlobalSummary.sql" />
+    <Build Include="dbo\Tables\Spot_Traces.sql" />
+    <Build Include="dbo\Tables\Spot_VersionControl.sql" />
+    <Build Include="dbo\Tables\Spot_Work_BufferCacheContents.sql" />
+    <Build Include="dbo\Tables\Spot_Work_DBInfo.sql" />
+    <Build Include="dbo\Tables\Spot_Work_Disks.sql" />
+    <Build Include="dbo\Tables\Spot_Work_FGInfo.sql" />
+    <Build Include="dbo\Tables\Spot_Work_FileInfo.sql" />
+    <Build Include="dbo\Tables\Spot_Work_GeneralCounters.sql" />
+    <Build Include="dbo\Tables\Spot_Work_IXInfo.sql" />
+    <Build Include="dbo\Tables\Spot_Work_Jobs.sql" />
+    <Build Include="dbo\Tables\Spot_Work_Locks.sql" />
+    <Build Include="dbo\Tables\Spot_Work_LogShippingInfo.sql" />
+    <Build Include="dbo\Tables\Spot_Work_MountPoints.sql" />
+    <Build Include="dbo\Tables\Spot_Work_OldestTranInfo.sql" />
+    <Build Include="dbo\Tables\Spot_Work_SQLErrorlogContents.sql" />
+    <Build Include="dbo\Tables\Spot_Work_syscacheobjects.sql" />
+    <Build Include="dbo\Tables\Spot_Work_TBInfo.sql" />
+    <Build Include="dbo\Tables\Spot_Work_Volumes.sql" />
+    <Build Include="dbo\Tables\Spot_Work1.sql" />
+    <Build Include="dbo\Tables\Spot_Work2.sql" />
+    <Build Include="dbo\Tables\Spot_Work3.sql" />
+    <Build Include="dbo\Tables\Spot_WorkFileDetails.sql" />
+    <Build Include="dbo\Tables\SubSector.sql" />
+    <Build Include="dbo\Tables\Tab.sql" />
+    <Build Include="dbo\Tables\TabEvaluacion.sql" />
+    <Build Include="dbo\Tables\TabEvaluacionProyecto.sql" />
+    <Build Include="dbo\Tables\TabInterventor.sql" />
+    <Build Include="dbo\Tables\TabInterventorProyecto.sql" />
+    <Build Include="dbo\Tables\Tablapr.sql" />
+    <Build Include="dbo\Tables\tablaprueba.sql" />
+    <Build Include="dbo\Tables\TabProyecto.sql" />
+    <Build Include="dbo\Tables\TareaPrograma.sql" />
+    <Build Include="dbo\Tables\TareaUsuario.sql" />
+    <Build Include="dbo\Tables\TareaUsuario20131019.sql" />
+    <Build Include="dbo\Tables\tareausuario25ago2010.sql" />
+    <Build Include="dbo\Tables\tareausuarioold.sql" />
+    <Build Include="dbo\Tables\TareaUsuarioRepeticion.sql" />
+    <Build Include="dbo\Tables\TareaUsuarioRepeticion20131019.sql" />
+    <Build Include="dbo\Tables\tareausuariorepeticion25ago2010.sql" />
+    <Build Include="dbo\Tables\TareaUsuarioRepeticionOLD.sql" />
+    <Build Include="dbo\Tables\tempIds.sql" />
+    <Build Include="dbo\Tables\tempRep.sql" />
+    <Build Include="dbo\Tables\Texto.sql" />
+    <Build Include="dbo\Tables\textoago122010.sql" />
+    <Build Include="dbo\Tables\TipoAmbito.sql" />
+    <Build Include="dbo\Tables\TipoAprendiz.sql" />
+    <Build Include="dbo\Tables\TipoCuenta.sql" />
+    <Build Include="dbo\Tables\TipoDocumento.sql" />
+    <Build Include="dbo\Tables\TipoFinanciacion.sql" />
+    <Build Include="dbo\Tables\TipoIdentificacion.sql" />
+    <Build Include="dbo\Tables\TipoIndicadorGestion.sql" />
+    <Build Include="dbo\Tables\TipoIndicadorInter.sql" />
+    <Build Include="dbo\Tables\TipoInfraestructura.sql" />
+    <Build Include="dbo\Tables\TipoInstitucion.sql" />
+    <Build Include="dbo\Tables\TipoInsumo.sql" />
+    <Build Include="dbo\Tables\TipoObjeto.sql" />
+    <Build Include="dbo\Tables\TipoProyecto.sql" />
+    <Build Include="dbo\Tables\TipoSociedad.sql" />
+    <Build Include="dbo\Tables\TipoSupuesto.sql" />
+    <Build Include="dbo\Tables\TipoVariable.sql" />
+    <Build Include="dbo\Tables\Trace.sql" />
+    <Build Include="dbo\Tables\trace1.sql" />
+    <Build Include="dbo\Tables\Variable.sql" />
+    <Build Include="dbo\Tables\VariableDetalle.sql" />
+    <Build Include="dbo\Tables\Viatico.sql" />
+    <Build Include="dbo\Tables\Visita.sql" />
+    <Build Include="dbo\Tables\vt_vista_total.sql" />
+    <Build Include="dbo\Tables\vw_tabla_total.sql" />
+    <Build Include="dbo\Tables\vw_vista_tabla.sql" />
+    <Build Include="dbo\Views\1310_ResumenConvocatoriaProyecto.sql" />
+    <Build Include="dbo\Views\A1320_Indicadores_X_Proyecto.sql" />
+    <Build Include="dbo\Views\ContactoFechaFormalizacionProyecto.sql" />
+    <Build Include="dbo\Views\ContactoFechaFormalizacionProyectoConRoles.sql" />
+    <Build Include="dbo\Views\ContactosRol.sql" />
+    <Build Include="dbo\Views\Conv_10_Avalados.sql" />
+    <Build Include="dbo\Views\Conv_Avalados_General.sql" />
+    <Build Include="dbo\Views\ConvocatoriaProyectoDtosGrales.sql" />
+    <Build Include="dbo\Views\DatosPerfilCoordEvaluacion.sql" />
+    <Build Include="dbo\Views\DatosPerfilEvaluador.sql" />
+    <Build Include="dbo\Views\EmpleosGenerados.sql" />
+    <Build Include="dbo\Views\EstadoEnvioEmails.sql" />
+    <Build Include="dbo\Views\EstadoProyectoAcreditacion.sql" />
+    <Build Include="dbo\Views\IndicadorGenericoComercial.sql" />
+    <Build Include="dbo\Views\IndicadorGenericoEmpleo.sql" />
+    <Build Include="dbo\Views\IndicadorGenericoMercadeo.sql" />
+    <Build Include="dbo\Views\INdicadorGenericoPresupuestal.sql" />
+    <Build Include="dbo\Views\IndicadorGenericoProduccion.sql" />
+    <Build Include="dbo\Views\IndicadorGenericoVentas.sql" />
+    <Build Include="dbo\Views\Institucio_X_Departamento.sql" />
+    <Build Include="dbo\Views\ListadoUsuariosCompleto.sql" />
+    <Build Include="dbo\Views\MinimoIndicadorGenerico.sql" />
+    <Build Include="dbo\Views\pagos.sql" />
+    <Build Include="dbo\Views\ProyectoAcreditacionUltimo.sql" />
+    <Build Include="dbo\Views\ProyectoProyeccionesVentas.sql" />
+    <Build Include="dbo\Views\ProyectoProyeccionesVentasTotal.sql" />
+    <Build Include="dbo\Views\Proyectos_Empleos_Generados.sql" />
+    <Build Include="dbo\Views\TodosLosProyectos.sql" />
+    <Build Include="dbo\Views\TodosLosProyectosTodoTitulo.sql" />
+    <Build Include="dbo\Views\Total_Contacto_por_grupo.sql" />
+    <Build Include="dbo\Views\UsuarioDetalladoActivos.sql" />
+    <Build Include="dbo\Views\UsuariosGrupoActivos.sql" />
+    <Build Include="dbo\Views\V_ProyectoProductoPrecio.sql" />
+    <Build Include="dbo\Views\v_temporal.sql" />
+    <Build Include="dbo\Views\View_1.sql" />
+    <Build Include="dbo\Views\Vista_Convocatorias_Proyectos.sql" />
+    <Build Include="dbo\Views\Vista_Emails_Acreditacion_Enviados.sql" />
+    <Build Include="dbo\Views\Vista_Evaluadores_Interventores_Proy.sql" />
+    <Build Include="dbo\Views\VISTA_EVALUADORES_Y_PLANES_EVALUADOS.sql" />
+    <Build Include="dbo\Views\Vista_EvaluadorProyectoConvocatoria.sql" />
+    <Build Include="dbo\Views\Vista_Formacion_Academica.sql" />
+    <Build Include="dbo\Views\Vista_Ingreso_Asesores_UnidadesExternas.sql" />
+    <Build Include="dbo\Views\Vista_Ingreso_JefesUnidad_Externos.sql" />
+    <Build Include="dbo\Views\VISTA_JEFES_UNIDAD_ACTIVOS.sql" />
+    <Build Include="dbo\Views\Vista_JefesUnidad_Proyectos_Convocatorias.sql" />
+    <Build Include="dbo\Views\Vista_Observaciones_Acreditacion.sql" />
+    <Build Include="dbo\Views\VISTA_PAGOS_DETALLADOS.sql" />
+    <Build Include="dbo\Views\VISTA_PAGOS_INDICADORES.sql" />
+    <Build Include="dbo\Views\Vista_Proyectos_Gestion_Cartera.sql" />
+    <Build Include="dbo\Views\VISTA_PROYECTOS_RECURSOS_INTERV.sql" />
+    <Build Include="dbo\Views\Vista_Proyectos_UnidadesExternas.sql" />
+    <Build Include="dbo\Views\VISTA_RECURSOS_PROYECTOS_EJECUCION.sql" />
+    <Build Include="dbo\Views\Vista_Recursos_ProyectosEjecucion.sql" />
+    <Build Include="dbo\Views\VISTA_TAREA_INTERVENTOR_EMPRENDEDOR.sql" />
+    <Build Include="dbo\Views\VISTA_TAREA_INTERVENTOR_EMPRENDEDOR_Ago2010.sql" />
+    <Build Include="dbo\Views\VISTA_TAREAS_COODEVA_EVALUADOR.sql" />
+    <Build Include="dbo\Views\VISTA_TAREASEVALUADORES.sql" />
+    <Build Include="dbo\Views\Vista_Ventas_Proyectadas.sql" />
+    <Build Include="dbo\Views\VISTA_VENTAS_PROYECTADAS_EJECUCION_PAGOS.sql" />
+    <Build Include="dbo\Views\VISTA_VENTAS_REGISTRADAS.sql" />
+    <Build Include="dbo\Views\VistaTipoAprendiz.sql" />
+    <Build Include="dbo\Views\VW_01_OBSERVACIONES_EVALUACION.sql" />
+    <Build Include="dbo\Views\VW_01_PROYECTOSEJECUCIONXCIUDAD.sql" />
+    <Build Include="dbo\Views\VW_01_Vtas_Proyectadas.sql" />
+    <Build Include="dbo\Views\VW_02_Desempeo_EvaluadorXConv.sql" />
+    <Build Include="dbo\Views\VW_03CONCEPTOS_EVALXCONV.sql" />
+    <Build Include="dbo\Views\VW_04_AVALADOS_CONV_NACIONAL.sql" />
+    <Build Include="dbo\Views\VW_05REP_LEGALXRAZSOCIAL.sql" />
+    <Build Include="dbo\Views\VW_1.sql" />
+    <Build Include="dbo\Views\VW_10.sql" />
+    <Build Include="dbo\Views\VW_10_EMPRENDEDORES_X_CONVOCATORIAS.sql" />
+    <Build Include="dbo\Views\VW_1000.sql" />
+    <Build Include="dbo\Views\VW_122.sql" />
+    <Build Include="dbo\Views\VW_123456.sql" />
+    <Build Include="dbo\Views\VW_1308_EMPR_X_PROY_X_INST_X_DPTO.sql" />
+    <Build Include="dbo\Views\VW_1308_EMPREND_X_PROY_X_UNIDEMPREND_X_DPTO.sql" />
+    <Build Include="dbo\Views\VW_1ER_INFORME_EVALUACION.sql" />
+    <Build Include="dbo\Views\VW_2C_PROYECTO.sql" />
+    <Build Include="dbo\Views\VW_2CONV_DATOS.sql" />
+    <Build Include="dbo\Views\VW_30.sql" />
+    <Build Include="dbo\Views\VW_3C_VIABLES.sql" />
+    <Build Include="dbo\Views\VW_48672.sql" />
+    <Build Include="dbo\Views\VW_50.sql" />
+    <Build Include="dbo\Views\VW_5000.sql" />
+    <Build Include="dbo\Views\VW_76332752.sql" />
+    <Build Include="dbo\Views\VW_ACREDITACION_ACTA_X_CONV.sql" />
+    <Build Include="dbo\Views\VW_ACREDITACION_CON_CONCEPTO.sql" />
+    <Build Include="dbo\Views\VW_ACREDITADORES.sql" />
+    <Build Include="dbo\Views\VW_ACREDITADORES_PROYECTOS.sql" />
+    <Build Include="dbo\Views\VW_ACTAS.sql" />
+    <Build Include="dbo\Views\VW_ACTASACREDITACION.sql" />
+    <Build Include="dbo\Views\VW_ACTIVIDADPLANOPERATIVO.sql" />
+    <Build Include="dbo\Views\VW_ACTUALIZACION_TABS_PROYECTOS.sql" />
+    <Build Include="dbo\Views\VW_AF_ACREDITACION.sql" />
+    <Build Include="dbo\Views\VW_AF_ACREDITADOR_X_PROYECTO.sql" />
+    <Build Include="dbo\Views\VW_AF_ASESORESXDEPARTAMENTO.sql" />
+    <Build Include="dbo\Views\VW_AF_ASESORESXPLAN.sql" />
+    <Build Include="dbo\Views\VW_AF_EMPRENDEDORESXCIUDAD.sql" />
+    <Build Include="dbo\Views\VW_AF_EMPRESA_FIDUCIARIA.sql" />
+    <Build Include="dbo\Views\VW_AF_FECHA_CARGA_DE_ARCHIVOS_X_PAGO.sql" />
+    <Build Include="dbo\Views\VW_AF_GESTORES_EXT_PLANES_FORMALIZADOS.sql" />
+    <Build Include="dbo\Views\VW_AF_HISTORICO_PAGOS.sql" />
+    <Build Include="dbo\Views\VW_AF_REPORTE_ACREDITACION.sql" />
+    <Build Include="dbo\Views\VW_AF_REPORTE_INDICADORES.sql" />
+    <Build Include="dbo\Views\VW_AF_TAREAS_AGEND_X_CEDULA.sql" />
+    <Build Include="dbo\Views\VW_AF_TAREAS_RECIB_X_CEDULA.sql" />
+    <Build Include="dbo\Views\VW_APORTES.sql" />
+    <Build Include="dbo\Views\VW_APORTES_3.sql" />
+    <Build Include="dbo\Views\VW_APRENDIZ_BASICA.sql" />
+    <Build Include="dbo\Views\VW_APROBADOS_TECNICAMENTE.sql" />
+    <Build Include="dbo\Views\VW_APROXINFOMREVISITAINTERVENTORIA.sql" />
+    <Build Include="dbo\Views\VW_ASESOR_INTERVENTOR_EMPRENDEDOR_EMPRESA.sql" />
+    <Build Include="dbo\Views\VW_ASESOR1.sql" />
+    <Build Include="dbo\Views\VW_ASESORCREACIONPROYECTO.sql" />
+    <Build Include="dbo\Views\VW_ASESORES.sql" />
+    <Build Include="dbo\Views\VW_ASESORESREPLEGALINTERVENTORESXEMPRESA1.sql" />
+    <Build Include="dbo\Views\VW_ASESORESREPLEGALINTERVENTORXEMPRESA.sql" />
+    <Build Include="dbo\Views\VW_ASESORESXUNIDAD_EMPRENDIMIENTO.sql" />
+    <Build Include="dbo\Views\VW_ASESORXPROYECTO.sql" />
+    <Build Include="dbo\Views\VW_AVAL_CONVOCATORIA.sql" />
+    <Build Include="dbo\Views\VW_AVALADO_TIBU.sql" />
+    <Build Include="dbo\Views\VW_AVALADOS_EMPLEOS.sql" />
+    <Build Include="dbo\Views\VW_AVALADOS_X_SECTOR.sql" />
+    <Build Include="dbo\Views\VW_AVALADOSCONV6.sql" />
+    <Build Include="dbo\Views\VW_AVALADOSREGIONALESCIERRE6AGOSTO.sql" />
+    <Build Include="dbo\Views\VW_AVALADOSTIBU1.sql" />
+    <Build Include="dbo\Views\VW_BASE_CL.sql" />
+    <Build Include="dbo\Views\VW_BASE1.sql" />
+    <Build Include="dbo\Views\VW_BASE2.sql" />
+    <Build Include="dbo\Views\VW_BASECONSULTA.sql" />
+    <Build Include="dbo\Views\VW_BIBI.sql" />
+    <Build Include="dbo\Views\VW_BOGOTA.sql" />
+    <Build Include="dbo\Views\VW_BOGOTA1.sql" />
+    <Build Include="dbo\Views\VW_C.sql" />
+    <Build Include="dbo\Views\VW_C_CERRADAS.sql" />
+    <Build Include="dbo\Views\VW_C_EVALUADORES.sql" />
+    <Build Include="dbo\Views\VW_C_JEFES_ASESORES.sql" />
+    <Build Include="dbo\Views\VW_C_PAGOS.sql" />
+    <Build Include="dbo\Views\VW_C_Rionegro_Empelo_Generados.sql" />
+    <Build Include="dbo\Views\VW_C1_CONS_SINDICATO.sql" />
+    <Build Include="dbo\Views\VW_C1_DATOSVARIOS.sql" />
+    <Build Include="dbo\Views\VW_C1_DATOSVARIOS_MOD1.sql" />
+    <Build Include="dbo\Views\VW_C1_DATOSVARIOS1.sql" />
+    <Build Include="dbo\Views\VW_C1_DATOSVARIOSSINEMPRESA.sql" />
+    <Build Include="dbo\Views\VW_C1_EMPLEOS_GENERADOS.sql" />
+    <Build Include="dbo\Views\VW_C1_EMPLEOSGENERADOS.sql" />
+    <Build Include="dbo\Views\VW_C1_EMPRENDEDORES.sql" />
+    <Build Include="dbo\Views\VW_C1_EMPRENDEDORES1.sql" />
+    <Build Include="dbo\Views\VW_C1_EMPRENDEDORES2.sql" />
+    <Build Include="dbo\Views\VW_C1_EMPRENDEDORES3.sql" />
+    <Build Include="dbo\Views\VW_C1_EMPRESAPROYECTO.sql" />
+    <Build Include="dbo\Views\VW_C1_EMPRESAS_PROYECTOS.sql" />
+    <Build Include="dbo\Views\VW_C1_Empresas_Proyectos1.sql" />
+    <Build Include="dbo\Views\VW_C1_EVALUADOR_POR_PROYECTO.sql" />
+    <Build Include="dbo\Views\VW_C1_EVALUADORES.sql" />
+    <Build Include="dbo\Views\VW_C1_FECHA_NACIMIENTO.sql" />
+    <Build Include="dbo\Views\VW_C1_NO_VIABLES.sql" />
+    <Build Include="dbo\Views\VW_C1_PAGOS_EMPRESAS_E4.sql" />
+    <Build Include="dbo\Views\VW_C1_Pagos_Empresas_E4_ValorAprobado.sql" />
+    <Build Include="dbo\Views\VW_C1_PAGOSANTIOQUIA.sql" />
+    <Build Include="dbo\Views\VW_C1_PLANESXSECTOR.sql" />
+    <Build Include="dbo\Views\VW_C1_Produccion.sql" />
+    <Build Include="dbo\Views\VW_C2_ACTA_EVALUACION.sql" />
+    <Build Include="dbo\Views\VW_C2_APROBADOSIDHVALOR.sql" />
+    <Build Include="dbo\Views\VW_C2_APTROBADOS_IDH.sql" />
+    <Build Include="dbo\Views\VW_C2_AVAL_VALSOL.sql" />
+    <Build Include="dbo\Views\VW_C2_AVALADOS.sql" />
+    <Build Include="dbo\Views\VW_C2_CONSULTA_XRA_PRIORIZACION.sql" />
+    <Build Include="dbo\Views\VW_C2_CONTACTOS_PROYECTO.sql" />
+    <Build Include="dbo\Views\VW_C2_DAT_EMPRENDEDORES.sql" />
+    <Build Include="dbo\Views\VW_C2_DATOSVARIOS.sql" />
+    <Build Include="dbo\Views\VW_C2_DESEMPENO.sql" />
+    <Build Include="dbo\Views\VW_C2_DESEMPENO1.sql" />
+    <Build Include="dbo\Views\VW_C2_DESEMPENO2.sql" />
+    <Build Include="dbo\Views\VW_C2_DESEMPENO3.sql" />
+    <Build Include="dbo\Views\VW_C2_EMPLEO_GENERADO.sql" />
+    <Build Include="dbo\Views\VW_C2_EMPLEOS_A_GENERAR.sql" />
+    <Build Include="dbo\Views\VW_C2_EMPLEOS_GENERADOS.sql" />
+    <Build Include="dbo\Views\VW_C2_EMPLEOS_GENERADOS_VIABLES.sql" />
+    <Build Include="dbo\Views\VW_C2_EMPLEOS_GENERADOS1.sql" />
+    <Build Include="dbo\Views\VW_C2_EMPLEOSGENERADOS.sql" />
+    <Build Include="dbo\Views\VW_C2_EMPRENDEDORES.sql" />
+    <Build Include="dbo\Views\VW_C2_ENCONVOCATORIAREGIONAL.sql" />
+    <Build Include="dbo\Views\VW_C2_ENCONVOCATORIASECTOR.sql" />
+    <Build Include="dbo\Views\VW_C2_ENCONVOCATORIAXUNIDAD.sql" />
+    <Build Include="dbo\Views\VW_C2_IDENTIFICACION.sql" />
+    <Build Include="dbo\Views\VW_C2_INTERVENTORES.sql" />
+    <Build Include="dbo\Views\VW_C2_MONTOSOLXREGIONAL.sql" />
+    <Build Include="dbo\Views\VW_C2_MONTOSOLXSECTOR.sql" />
+    <Build Include="dbo\Views\VW_C2_NARINO.sql" />
+    <Build Include="dbo\Views\VW_C2_NO_VIABLES.sql" />
+    <Build Include="dbo\Views\VW_C2_NO_VIABLES_ANTIOQUIA.sql" />
+    <Build Include="dbo\Views\VW_C2_NO_VIABLES_JUSTIFICACION.sql" />
+    <Build Include="dbo\Views\VW_C2_NO_VIABLES_JUSTIFICACION1.sql" />
+    <Build Include="dbo\Views\VW_C2_P_Viable_VAprobados.sql" />
+    <Build Include="dbo\Views\VW_C2_plane_Sector_Unidad.sql" />
+    <Build Include="dbo\Views\VW_C2_PLANES_AVALADOS.sql" />
+    <Build Include="dbo\Views\VW_C2_planes_por_sector_viables.sql" />
+    <Build Include="dbo\Views\VW_C2_PLANES_POR_SECTORES.sql" />
+    <Build Include="dbo\Views\VW_C2_Produccion.sql" />
+    <Build Include="dbo\Views\VW_C2_PRODUCCION1.sql" />
+    <Build Include="dbo\Views\VW_C2_PROYECCIONVENTAS.sql" />
+    <Build Include="dbo\Views\VW_C2_PUNTAJES_CRITERIOS_EVALUACION.sql" />
+    <Build Include="dbo\Views\VW_C2_PUNTAJES_EVALUACION_COPIA1.sql" />
+    <Build Include="dbo\Views\VW_C2_PYTSVIABILIZADOS.sql" />
+    <Build Include="dbo\Views\VW_C2_RESULTADO_EVALUACION.sql" />
+    <Build Include="dbo\Views\VW_C2_RESULTADO_EVALUACION1.sql" />
+    <Build Include="dbo\Views\VW_C2_RESULTADOEVALUACION2.sql" />
+    <Build Include="dbo\Views\VW_C2_SECTOR_UNIDAD.sql" />
+    <Build Include="dbo\Views\VW_C2_SENA_PROYECTO_DEPTOMONTOAPROBADO.sql" />
+    <Build Include="dbo\Views\VW_C2_TAREAS.sql" />
+    <Build Include="dbo\Views\VW_C2_TOTALEMPLEOSGENERADOS.sql" />
+    <Build Include="dbo\Views\VW_C2_TOTALMONTOSOL.sql" />
+    <Build Include="dbo\Views\VW_C2_VAL_APROBADOS.sql" />
+    <Build Include="dbo\Views\VW_C2_VALAPROBADO_GRAFICA.sql" />
+    <Build Include="dbo\Views\VW_C2_VALOR_SOLICITADO_EVALUACION.sql" />
+    <Build Include="dbo\Views\VW_C2_VALORES_APROBADOS.sql" />
+    <Build Include="dbo\Views\VW_C2_ValorSolicitado_Aprobado.sql" />
+    <Build Include="dbo\Views\VW_C2_VALSOL_VALREC.sql" />
+    <Build Include="dbo\Views\VW_C2_VENTAS.sql" />
+    <Build Include="dbo\Views\VW_C2_VENTAS_PROYECTADAS.sql" />
+    <Build Include="dbo\Views\VW_C2_VENTASPROYECTADAS.sql" />
+    <Build Include="dbo\Views\VW_C2_VERIFICACION1.sql" />
+    <Build Include="dbo\Views\VW_C2_VIABLES_SECTOR_SUBSECTOR.sql" />
+    <Build Include="dbo\Views\VW_C2_VIABLES_UNIDAD_EMPRENDIMIENTO.sql" />
+    <Build Include="dbo\Views\VW_C2EMPLEOSGENERADOS.sql" />
+    <Build Include="dbo\Views\VW_C3_AVALADOS.sql" />
+    <Build Include="dbo\Views\VW_C3_BD_ACIFUENTES.sql" />
+    <Build Include="dbo\Views\VW_C3_BDCONTACTOSF1.sql" />
+    <Build Include="dbo\Views\VW_C3_CAQUETA.sql" />
+    <Build Include="dbo\Views\VW_C3_CONTACTO_PRUEBA_CONTRATACION.sql" />
+    <Build Include="dbo\Views\VW_C3_CONTACTOS_MPIO_DEPTO.sql" />
+    <Build Include="dbo\Views\VW_C3_DESEMPENO_EVALUADOR.sql" />
+    <Build Include="dbo\Views\VW_C3_DESEMPENO_EVALUADOR1.sql" />
+    <Build Include="dbo\Views\VW_C3_DESEMPENO_EVALUADOR2.sql" />
+    <Build Include="dbo\Views\VW_C3_DESEMPENO_EVALUADORSOLONOPLAN.sql" />
+    <Build Include="dbo\Views\VW_C3_DIRECTORIO_EMPRENDEDORES.sql" />
+    <Build Include="dbo\Views\VW_C3_EMPLEROSAGENERAR.sql" />
+    <Build Include="dbo\Views\VW_C3_EVAL_NO_VIABLES.sql" />
+    <Build Include="dbo\Views\VW_C3_EVAL_NO_VIABLES_SIN_JUSTIFICACION.sql" />
+    <Build Include="dbo\Views\VW_C3_EVAL_NO_VIABLES1.sql" />
+    <Build Include="dbo\Views\VW_C3_EVALUACIONDESEMPENO3.sql" />
+    <Build Include="dbo\Views\VW_C3_NO_VIABLES_SECTOR_UNIDADEMPRENDIMEINTO.sql" />
+    <Build Include="dbo\Views\VW_C3_PAGOS_DETALLADOS.sql" />
+    <Build Include="dbo\Views\VW_C3_PROYECCIONVENTAS.sql" />
+    <Build Include="dbo\Views\VW_C3_PROYECTOS_AVALADOS_SECTOR_CONTACTOS.sql" />
+    <Build Include="dbo\Views\VW_C3_SUMARIO.sql" />
+    <Build Include="dbo\Views\VW_C3_VALSOLICITADO.sql" />
+    <Build Include="dbo\Views\VW_C3_VENTAS_PROYECTADAS.sql" />
+    <Build Include="dbo\Views\VW_C3_VIABLES_VAL_RECOMENDADO.sql" />
+    <Build Include="dbo\Views\VW_C3_VIABLESSECTOR.sql" />
+    <Build Include="dbo\Views\VW_CAMILOPRUEBA.sql" />
+    <Build Include="dbo\Views\VW_CAMPO.sql" />
+    <Build Include="dbo\Views\VW_CapacitacionAportes.sql" />
+    <Build Include="dbo\Views\VW_CERRADAS_CONTACTO.sql" />
+    <Build Include="dbo\Views\VW_CERRADAS_CONTACTOS.sql" />
+    <Build Include="dbo\Views\VW_CERRADASINSTITUCION.sql" />
+    <Build Include="dbo\Views\VW_CLAVES.sql" />
+    <Build Include="dbo\Views\VW_CLAVES_CONSULTA.sql" />
+    <Build Include="dbo\Views\VW_CLAVES_USUARIOS.sql" />
+    <Build Include="dbo\Views\VW_CONCEPTOSEVALUADORES.sql" />
+    <Build Include="dbo\Views\VW_CONSULTA_ASESORES.sql" />
+    <Build Include="dbo\Views\VW_CONSULTA_UNIDADESEMPRENDIMIENTO.sql" />
+    <Build Include="dbo\Views\VW_CONSULTA_VALOR_APROBADO.sql" />
+    <Build Include="dbo\Views\VW_CONSULTA_VALOR_RECOMENDADO.sql" />
+    <Build Include="dbo\Views\VW_CONSULTAADRI_CIFUENTES.sql" />
+    <Build Include="dbo\Views\VW_CONSULTAADRI_CIFUENTES1.sql" />
+    <Build Include="dbo\Views\VW_CONSULTAADRI1.sql" />
+    <Build Include="dbo\Views\VW_CONSULTAAVALADOS.sql" />
+    <Build Include="dbo\Views\VW_CONSULTACONVOCATORIA.sql" />
+    <Build Include="dbo\Views\VW_CONSULTADANI.sql" />
+    <Build Include="dbo\Views\VW_CONSULTADATOSEMPRENDEDORES.sql" />
+    <Build Include="dbo\Views\VW_CONSULTAGENOVA.sql" />
+    <Build Include="dbo\Views\VW_CONSULTAINACTIVACION.sql" />
+    <Build Include="dbo\Views\VW_CONSULTAINTERVENTORPORPLANOEMPRESA.sql" />
+    <Build Include="dbo\Views\VW_CONSULTAPLANESPABLO.sql" />
+    <Build Include="dbo\Views\VW_CONSULTAPLNAESAVALADOS.sql" />
+    <Build Include="dbo\Views\VW_CONTAC3YCERRVALSOL.sql" />
+    <Build Include="dbo\Views\VW_CONTACTCONV3YCERRADAS.sql" />
+    <Build Include="dbo\Views\VW_CONTACTOCONV4.sql" />
+    <Build Include="dbo\Views\VW_CONTACTOPROYECTO.sql" />
+    <Build Include="dbo\Views\VW_CONTACTOS.sql" />
+    <Build Include="dbo\Views\VW_CONTACTOS_CERRADAS.sql" />
+    <Build Include="dbo\Views\VW_CONTACTOS1.sql" />
+    <Build Include="dbo\Views\VW_CONTACTOSC4DEF.sql" />
+    <Build Include="dbo\Views\VW_CONTACTOSCONV4.sql" />
+    <Build Include="dbo\Views\VW_CONTRAPARTIDAS_VALORXMESXPROPYECTO.sql" />
+    <Build Include="dbo\Views\VW_CONTROL_EVALUACION_CONV4.sql" />
+    <Build Include="dbo\Views\VW_CONV_AVALADOS.sql" />
+    <Build Include="dbo\Views\VW_CONV_AVALADOS_2.sql" />
+    <Build Include="dbo\Views\VW_CONV_RECOMENDADO_EJECUTADO.sql" />
+    <Build Include="dbo\Views\VW_CONV3YCERRADSVALORSOLICITADO.sql" />
+    <Build Include="dbo\Views\VW_CONV4AVALADOS.sql" />
+    <Build Include="dbo\Views\VW_CONV4AVALADOSVALSOLICITADO.sql" />
+    <Build Include="dbo\Views\VW_CONV4CONTACTOSDEF.sql" />
+    <Build Include="dbo\Views\VW_CONV57_AVALADOS.sql" />
+    <Build Include="dbo\Views\VW_CONV7_AVALADOS.sql" />
+    <Build Include="dbo\Views\VW_CONV7_CONTACTOS.sql" />
+    <Build Include="dbo\Views\VW_CONV7_SUMARIO.sql" />
+    <Build Include="dbo\Views\VW_CONV7CONTACTOS1.sql" />
+    <Build Include="dbo\Views\VW_CONV7RESULTADOSEVALUACION.sql" />
+    <Build Include="dbo\Views\VW_CONVOCADOS.sql" />
+    <Build Include="dbo\Views\VW_CONVOCADOSREGIONAL.sql" />
+    <Build Include="dbo\Views\VW_CONVOCATORIA_PROYECTOS.sql" />
+    <Build Include="dbo\Views\VW_CONVOCATORIA_X_PROYECTO.sql" />
+    <Build Include="dbo\Views\VW_CONVOCATORIA3.sql" />
+    <Build Include="dbo\Views\VW_CONVOCATORIANAL4.sql" />
+    <Build Include="dbo\Views\VW_CONVOCATORIAS.sql" />
+    <Build Include="dbo\Views\VW_CONVOCATORIAS_COFINANCIACION.sql" />
+    <Build Include="dbo\Views\VW_CONVOCATORIAS_REGIONALES.sql" />
+    <Build Include="dbo\Views\VW_CONVOCCERRADA.sql" />
+    <Build Include="dbo\Views\VW_CONVREGIONALESCONTACTOS.sql" />
+    <Build Include="dbo\Views\VW_COORDINADOR_EVALUADOR.sql" />
+    <Build Include="dbo\Views\VW_COPIA_C2_PLANES_AVALADOS.sql" />
+    <Build Include="dbo\Views\VW_COPIA_PRUEBA_AVALADOS_POR_SECTOR.sql" />
+    <Build Include="dbo\Views\VW_COSTOSVISITAINTERVENTORIACONINTERVENTOR.sql" />
+    <Build Include="dbo\Views\VW_COSTOSVISITASINTERVENTORIA.sql" />
+    <Build Include="dbo\Views\VW_COSTOVISITACONINTERVENTOR1.sql" />
+    <Build Include="dbo\Views\VW_CREADOS.sql" />
+    <Build Include="dbo\Views\VW_CRIONEGRO_EMPLEOS_GENERADOS.sql" />
+    <Build Include="dbo\Views\VW_CRITERIOPRIORIZACION.sql" />
+    <Build Include="dbo\Views\VW_D.sql" />
+    <Build Include="dbo\Views\VW_DATOS_COMPLETOS.sql" />
+    <Build Include="dbo\Views\VW_DATOS_EMPRENDEDORE.sql" />
+    <Build Include="dbo\Views\VW_DATOS_EMPRESAS.sql" />
+    <Build Include="dbo\Views\VW_DATOSACCESOPLATAFORMA.sql" />
+    <Build Include="dbo\Views\VW_Desempeno2.sql" />
+    <Build Include="dbo\Views\VW_DESEMPNEVALUADORPORCONVOCATORIA.sql" />
+    <Build Include="dbo\Views\VW_DGSG.sql" />
+    <Build Include="dbo\Views\VW_DIRECTORIO_EMPRENDEDORES.sql" />
+    <Build Include="dbo\Views\VW_DIRECTORIO_EMPRESAS.sql" />
+    <Build Include="dbo\Views\VW_DIRECTORIO_EMPRESAS1.sql" />
+    <Build Include="dbo\Views\VW_DIRECTORIO_EVALUADORES.sql" />
+    <Build Include="dbo\Views\VW_DirectorSena.sql" />
+    <Build Include="dbo\Views\VW_DNP.sql" />
+    <Build Include="dbo\Views\VW_DNP1.sql" />
+    <Build Include="dbo\Views\VW_EDAD.sql" />
+    <Build Include="dbo\Views\VW_EDAD_EMPRENDEDOR.sql" />
+    <Build Include="dbo\Views\VW_EDAD1.sql" />
+    <Build Include="dbo\Views\VW_EDAD2.sql" />
+    <Build Include="dbo\Views\VW_EDAD3.sql" />
+    <Build Include="dbo\Views\VW_EDAD4.sql" />
+    <Build Include="dbo\Views\VW_EJ1.sql" />
+    <Build Include="dbo\Views\VW_EJ2.sql" />
+    <Build Include="dbo\Views\VW_EJECUCION_1CONV_CIUDAD.sql" />
+    <Build Include="dbo\Views\VW_EJECUCION1CONV_CIUD.sql" />
+    <Build Include="dbo\Views\VW_EJECUCIONVENTAS.sql" />
+    <Build Include="dbo\Views\VW_EJECUTAD_X_CIUDAD_DPTO.sql" />
+    <Build Include="dbo\Views\VW_EMP_X_TIPO_CONV.sql" />
+    <Build Include="dbo\Views\VW_EMPLEO_ICONO.sql" />
+    <Build Include="dbo\Views\VW_EMPLEOS.sql" />
+    <Build Include="dbo\Views\VW_EMPLEOS_GENERADOS_CCORENA_2.sql" />
+    <Build Include="dbo\Views\VW_EMPLEOSAGENERAPORCONVOCATORIA.sql" />
+    <Build Include="dbo\Views\VW_EMPLEOSAGENERARREGIONALES.sql" />
+    <Build Include="dbo\Views\VW_EMPLEOSGENERADOSEMPRESASVIABLES.sql" />
+    <Build Include="dbo\Views\VW_EMPLEOSGENERADOSPORCONVOCATORIA.sql" />
+    <Build Include="dbo\Views\VW_EMPLEOSGENERADOSVIABLESPORCONVOCATORIACONSULTA.sql" />
+    <Build Include="dbo\Views\VW_EMPLEOSTOTAL.sql" />
+    <Build Include="dbo\Views\VW_EMPRENDEDOR_ASEG.sql" />
+    <Build Include="dbo\Views\VW_EMPRENDEDORES.sql" />
+    <Build Include="dbo\Views\VW_EMPRENDEDORES_X_REGIONAL.sql" />
+    <Build Include="dbo\Views\VW_EMPRENDEDORESACTIVOS.sql" />
+    <Build Include="dbo\Views\VW_EMPRENDEDORESDATOSCOMPLETOS.sql" />
+    <Build Include="dbo\Views\VW_EMPRENDERORESACTIVOS.sql" />
+    <Build Include="dbo\Views\VW_EMPRESA_CAPITALSOCIAL.sql" />
+    <Build Include="dbo\Views\VW_EMPRESAS_SIN_PAGOS.sql" />
+    <Build Include="dbo\Views\VW_ESTADO_PROYECTOS.sql" />
+    <Build Include="dbo\Views\VW_ESTADOICONO.sql" />
+    <Build Include="dbo\Views\VW_ESTADOPROYECTOACREDITACION.sql" />
+    <Build Include="dbo\Views\VW_EVALUACION_CONV_54.sql" />
+    <Build Include="dbo\Views\VW_EVALUACIONEVALUADOR.sql" />
+    <Build Include="dbo\Views\VW_EVALUACIONNOVIABLESJUSTIFICACION.sql" />
+    <Build Include="dbo\Views\VW_EVALUADOR_EMPRENDEDOR.sql" />
+    <Build Include="dbo\Views\VW_EVALUADOR_EMPRENDEDOR1.sql" />
+    <Build Include="dbo\Views\VW_EVALUADOR_PROYECTO.sql" />
+    <Build Include="dbo\Views\VW_EVALUADORES_X_PLAN.sql" />
+    <Build Include="dbo\Views\VW_EVALUADORES_Y_PLANES_EVALUADOS.sql" />
+    <Build Include="dbo\Views\VW_EVALUADORESPROYECTO.sql" />
+    <Build Include="dbo\Views\VW_EVALUADORXPROYECTO.sql" />
+    <Build Include="dbo\Views\vw_f1.sql" />
+    <Build Include="dbo\Views\vw_f2.sql" />
+    <Build Include="dbo\Views\vw_f3.sql" />
+    <Build Include="dbo\Views\vw_f4.sql" />
+    <Build Include="dbo\Views\vw_fase1.sql" />
+    <Build Include="dbo\Views\VW_FC_INDICADOR_GENERICO.sql" />
+    <Build Include="dbo\Views\VW_FC_INFORMACIONINSTITUCION_SIGOB.sql" />
+    <Build Include="dbo\Views\VW_FC_NOMBRECONVOCATORIA.sql" />
+    <Build Include="dbo\Views\VW_FC_UNIDADESEXTERNASACTIVAS.sql" />
+    <Build Include="dbo\Views\VW_FC_USUARIOS_PLAN.sql" />
+    <Build Include="dbo\Views\VW_FECHA_CREACIÓN.sql" />
+    <Build Include="dbo\Views\VW_FORMACION_BENEFICIARIOS.sql" />
+    <Build Include="dbo\Views\VW_FORMACION_EMPRENDEDORES.sql" />
+    <Build Include="dbo\Views\VW_GRUPOUSUARIO.sql" />
+    <Build Include="dbo\Views\VW_GTEEVAL_EVALUADOR6.sql" />
+    <Build Include="dbo\Views\VW_GTEEVALUADOR_EVALUADOR.sql" />
+    <Build Include="dbo\Views\VW_GTEEVALUADOR_EVALUADOR1.sql" />
+    <Build Include="dbo\Views\VW_GTEEVALUADOR_EVALUADOR2.sql" />
+    <Build Include="dbo\Views\VW_GTEEVALUADOR_EVALUADOR4.sql" />
+    <Build Include="dbo\Views\VW_GTEEVALUADOR_EVALUADOR5.sql" />
+    <Build Include="dbo\Views\VW_ICONO_PAGOSPOREMPRESA.sql" />
+    <Build Include="dbo\Views\VW_ICONO_PROYECCIONESVENTASPROYECTO.sql" />
+    <Build Include="dbo\Views\VW_ICONO_PROYECTOS_CONVOCATORIA32.sql" />
+    <Build Include="dbo\Views\VW_ICONO_PRUEBA.sql" />
+    <Build Include="dbo\Views\VW_ICONO_VER_NUMEROINGRESOS.sql" />
+    <Build Include="dbo\Views\VW_ICONOEMPRESAXCONVOCATORIA.sql" />
+    <Build Include="dbo\Views\VW_ICONOJEFESDEUNIDADXPROYECTO.sql" />
+    <Build Include="dbo\Views\VW_ICONOPAGOSBENEFICIARIOPORPROYECTO.sql" />
+    <Build Include="dbo\Views\VW_ICONOPAGOSPOREMPRESA.sql" />
+    <Build Include="dbo\Views\VW_ICONOPAGOSPOREMPRESAEJECUCION.sql" />
+    <Build Include="dbo\Views\VW_ICONOProyectoConvocatoria.sql" />
+    <Build Include="dbo\Views\VW_ICONOXXXX.sql" />
+    <Build Include="dbo\Views\VW_IDH_ALIRIO.sql" />
+    <Build Include="dbo\Views\VW_IMPACTO.sql" />
+    <Build Include="dbo\Views\VW_INDGENERICO1.sql" />
+    <Build Include="dbo\Views\VW_IndicadoresEspecificos.sql" />
+    <Build Include="dbo\Views\VW_INDICADORESGENERICOS.sql" />
+    <Build Include="dbo\Views\VW_INDICADORESPECIFICO.sql" />
+    <Build Include="dbo\Views\VW_INF_VISITA_C_DESTINO.sql" />
+    <Build Include="dbo\Views\VW_INF_VISITA_C_ORIGEN.sql" />
+    <Build Include="dbo\Views\VW_INFOCONTACTO.sql" />
+    <Build Include="dbo\Views\VW_INFORM_VISITA.sql" />
+    <Build Include="dbo\Views\VW_INFORMACION_CONTACTO.sql" />
+    <Build Include="dbo\Views\VW_INFORME.sql" />
+    <Build Include="dbo\Views\VW_INFORME_EVAL.sql" />
+    <Build Include="dbo\Views\VW_Informe_Final_Evaluacion.sql" />
+    <Build Include="dbo\Views\VW_INFORMECISA.sql" />
+    <Build Include="dbo\Views\VW_INFORMECONTRAPARTIDAS.sql" />
+    <Build Include="dbo\Views\VW_INFORMEFINALINTERVENTORIA.sql" />
+    <Build Include="dbo\Views\VW_INFORMESEGUIMIENTOINTERVENTORIAAMBITO.sql" />
+    <Build Include="dbo\Views\VW_INFORMEVISITAINTERVENTORIA.sql" />
+    <Build Include="dbo\Views\VW_INST1_PROYECTO.sql" />
+    <Build Include="dbo\Views\VW_INSTITUCIO_X_DEPARTAMENTO.sql" />
+    <Build Include="dbo\Views\VW_INSTITUCION_CONTACTO.sql" />
+    <Build Include="dbo\Views\VW_INSTITUCION_EXTERNA.sql" />
+    <Build Include="dbo\Views\VW_INSTITUCIONES.sql" />
+    <Build Include="dbo\Views\VW_INT.sql" />
+    <Build Include="dbo\Views\VW_INT2.sql" />
+    <Build Include="dbo\Views\VW_INTERVENTOR_EMPLEOS.sql" />
+    <Build Include="dbo\Views\VW_INTERVENTOR_EMPRENDEDOR.sql" />
+    <Build Include="dbo\Views\VW_INTERVENTOR_EMPRENDEDOR4.sql" />
+    <Build Include="dbo\Views\VW_Interventor_Empresa_planNegocio.sql" />
+    <Build Include="dbo\Views\VW_INTERVENTORESXEMPRESA.sql" />
+    <Build Include="dbo\Views\VW_INTERVENTORIA_1.sql" />
+    <Build Include="dbo\Views\VW_INTERVENTORIA_2.sql" />
+    <Build Include="dbo\Views\VW_INTERVENTORXEMPRESA.sql" />
+    <Build Include="dbo\Views\VW_JEFES_UNIDAD.sql" />
+    <Build Include="dbo\Views\VW_JEFES_UNIDAD_HISTORICO.sql" />
+    <Build Include="dbo\Views\VW_JEFESUNIDAD.sql" />
+    <Build Include="dbo\Views\VW_JefesUNIdad1.sql" />
+    <Build Include="dbo\Views\VW_MAUROGAR.sql" />
+    <Build Include="dbo\Views\VW_MENSAJES1.sql" />
+    <Build Include="dbo\Views\VW_MENSALES2.sql" />
+    <Build Include="dbo\Views\VW_METASSOCIALES.sql" />
+    <Build Include="dbo\Views\VW_MINIMO.sql" />
+    <Build Include="dbo\Views\VW_MINIMOINDICADORGENERICO.sql" />
+    <Build Include="dbo\Views\VW_NIT_EMPRESAS.sql" />
+    <Build Include="dbo\Views\VW_NIT_PLANES_EN_EJECUCION.sql" />
+    <Build Include="dbo\Views\VW_NIVEL_DE_ESTUDIO_CONV.sql" />
+    <Build Include="dbo\Views\VW_NOEMPRENDEDORESPORDEPTOPLANESENEJECUCION.sql" />
+    <Build Include="dbo\Views\VW_NUEVOPOPO.sql" />
+    <Build Include="dbo\Views\VW_OBSERVACIONES_EVALUACION.sql" />
+    <Build Include="dbo\Views\VW_OBSERVACIONES_INFORME_EVALUACION.sql" />
+    <Build Include="dbo\Views\VW_OBSERVACIONESEVALUACIO.sql" />
+    <Build Include="dbo\Views\VW_OBSERVACIONESEVALUADOR.sql" />
+    <Build Include="dbo\Views\VW_OBSERVACIONINTERVENTOR.sql" />
+    <Build Include="dbo\Views\VW_P.sql" />
+    <Build Include="dbo\Views\VW_PAEXPIMP.sql" />
+    <Build Include="dbo\Views\VW_PAGOACTIVIDADACTA.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_1_CONVOCATORIA.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_1_CONVOCATORIA_NEW.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_2_CONV_FIDUCIARIA.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_2_CONV_RECHAZADOS.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_2_CONVOCATORIA.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_2_CONVOCATORIA_NEW.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_3_CONVOCATORIA.sql" />
+    <Build Include="dbo\Views\VW_Pagos_C2.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_COORDINACION.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_DETALLADOS.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_DETALLADOSSUPERIORID1500.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_EMPRES_CANTIDAD_VALOR.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_EMPRESA_ESTADO4.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_EMPRESAS_EN_FIDUAGRARIA.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_EMPRESAS_ESTADO0.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_EMPRESAS_ESTADO3.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_EMPRESAS_ESTADO4.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_EMPRESAS_ESTADO4_1.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_EMPRESAS_ESTADO5.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_EMPRESAS_TODS_ESTADOS.sql" />
+    <Build Include="dbo\Views\VW_Pagos_Estado3.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_FIDUBOGOTA.sql" />
+    <Build Include="dbo\Views\VW_Pagos_Fiduciaria.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_PRIMERA_CONV1.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_PRIMERACONVOCATORIA.sql" />
+    <Build Include="dbo\Views\VW_PAGOS_SEGUNDACONVOCATORIA.sql" />
+    <Build Include="dbo\Views\VW_PAGOSAPROBADOS.sql" />
+    <Build Include="dbo\Views\VW_PAGOSAPROBADOSCAPACITACION.sql" />
+    <Build Include="dbo\Views\VW_PAGOSNOMBREACTIVIDADES.sql" />
+    <Build Include="dbo\Views\VW_PAGOSPROYECTO147.sql" />
+    <Build Include="dbo\Views\VW_PagosProyectosVentas.sql" />
+    <Build Include="dbo\Views\VW_PAGOSREGIONALES.sql" />
+    <Build Include="dbo\Views\VW_PAGOSXCONVOCATORA.sql" />
+    <Build Include="dbo\Views\VW_PESCAC1YC2.sql" />
+    <Build Include="dbo\Views\VW_PI_USUARIOS_JEFEUNIDAD.sql" />
+    <Build Include="dbo\Views\VW_PLANES_ESTADO.sql" />
+    <Build Include="dbo\Views\VW_PLANES_INSCRITOS.sql" />
+    <Build Include="dbo\Views\VW_PLANES_PRESENTADOS_FECHAAVAL.sql" />
+    <Build Include="dbo\Views\VW_PLANES_REGISTRADOS.sql" />
+    <Build Include="dbo\Views\VW_PLANESEVALUADOSPORCONVOCATORIA.sql" />
+    <Build Include="dbo\Views\VW_POBLACION.sql" />
+    <Build Include="dbo\Views\VW_PPPPOOO.sql" />
+    <Build Include="dbo\Views\VW_PPROYECCION_VENTAS100206.sql" />
+    <Build Include="dbo\Views\VW_PREGUNTAS_EVALUADORES.sql" />
+    <Build Include="dbo\Views\VW_preguntasevaluadores.sql" />
+    <Build Include="dbo\Views\VW_PRIORIZACION.sql" />
+    <Build Include="dbo\Views\VW_PRODUCCION.sql" />
+    <Build Include="dbo\Views\VW_PRODUCCION_CANTIDAD.sql" />
+    <Build Include="dbo\Views\VW_PRODUCCION_CANTIDAD_C1.sql" />
+    <Build Include="dbo\Views\VW_Produccion_Valor.sql" />
+    <Build Include="dbo\Views\VW_PRODUCCION_VALORUNITARIO.sql" />
+    <Build Include="dbo\Views\VW_PROFESIONES_PROYECTO.sql" />
+    <Build Include="dbo\Views\VW_PROY_X_CIUD.sql" />
+    <Build Include="dbo\Views\VW_PROY_X_SECT.sql" />
+    <Build Include="dbo\Views\VW_PROYECCION_VENTAS.sql" />
+    <Build Include="dbo\Views\VW_PROYECCION_VENTAS_ANO1.sql" />
+    <Build Include="dbo\Views\VW_PROYECCION_VENTAS_ANO11.sql" />
+    <Build Include="dbo\Views\VW_PROYECTO_INSTITUCION.sql" />
+    <Build Include="dbo\Views\VW_PROYECTO1.sql" />
+    <Build Include="dbo\Views\VW_PROYECTOS_NO_ACREDITADOS.sql" />
+    <Build Include="dbo\Views\VW_PROYECTOS_X_UNIDAD.sql" />
+    <Build Include="dbo\Views\VW_PROYECTOSXSECTOR.sql" />
+    <Build Include="dbo\Views\VW_PROYECTS_VIABLES_X_UNIDAD_EMPRENDIMIENTO.sql" />
+    <Build Include="dbo\Views\VW_PROYFORM.sql" />
+    <Build Include="dbo\Views\VW_PRUEBA_C2_AVALADOS_POR_SECTOR.sql" />
+    <Build Include="dbo\Views\VW_PRUEBA_CARVAJAL.sql" />
+    <Build Include="dbo\Views\VW_PRUEBA_GRAFICA_CONVOCATORIA.sql" />
+    <Build Include="dbo\Views\VW_PRUEBA_GRAFICAS.sql" />
+    <Build Include="dbo\Views\VW_PRUEBA123.sql" />
+    <Build Include="dbo\Views\VW_PRUEBAFRANCO.sql" />
+    <Build Include="dbo\Views\VW_PRUEBAFRANCO2.sql" />
+    <Build Include="dbo\Views\VW_PRUEBAFRANCO3.sql" />
+    <Build Include="dbo\Views\VW_PRUEBAREGIS.sql" />
+    <Build Include="dbo\Views\vw_pruebas.sql" />
+    <Build Include="dbo\Views\VW_PUNTAJEPRIORIZACION.sql" />
+    <Build Include="dbo\Views\VW_PUNTAJES.sql" />
+    <Build Include="dbo\Views\VW_PY_CAPACITACION.sql" />
+    <Build Include="dbo\Views\VW_PY_VIABLES_MONTOS_UNIDADES.sql" />
+    <Build Include="dbo\Views\VW_PY_VIABLES_MONTOSOL_MONTOREC_2DACONV.sql" />
+    <Build Include="dbo\Views\VW_PY1_VIABLES_MONTOS.sql" />
+    <Build Include="dbo\Views\VW_REALIZADOS_INSTITUCIN.sql" />
+    <Build Include="dbo\Views\VW_RECHAZOS_PAGOS_INTERVENTOR.sql" />
+    <Build Include="dbo\Views\VW_RECHAZOS_PGOS_INTERVENTOR.sql" />
+    <Build Include="dbo\Views\VW_RECURSOSSOLICITADOS.sql" />
+    <Build Include="dbo\Views\VW_REGISTROMERCANTIL.sql" />
+    <Build Include="dbo\Views\VW_REGMERCANTILREPLEGAL.sql" />
+    <Build Include="dbo\Views\VW_REP_LEGALES.sql" />
+    <Build Include="dbo\Views\VW_REPLEGAL.sql" />
+    <Build Include="dbo\Views\VW_REPLEGAL1.sql" />
+    <Build Include="dbo\Views\VW_REPLEGAL4YOTRAS.sql" />
+    <Build Include="dbo\Views\VW_REPORTE_POLIZAS_STEFF.sql" />
+    <Build Include="dbo\Views\VW_REPORTEACREDITACIONCONVOCATORIAS.sql" />
+    <Build Include="dbo\Views\VW_REPORTEDIARIOCONVOCATORIAS.sql" />
+    <Build Include="dbo\Views\VW_REPRESENTANTELEGAL.sql" />
+    <Build Include="dbo\Views\VW_REPRESENTANTESLEGALESXEMPRESA.sql" />
+    <Build Include="dbo\Views\VW_RESULTADO_EVALUACION_CONV7.sql" />
+    <Build Include="dbo\Views\VW_RESUMENEJACUTIVO1.sql" />
+    <Build Include="dbo\Views\VW_RESUMENEJECUTIVO.sql" />
+    <Build Include="dbo\Views\VW_RESUMENEJECUTIVO2.sql" />
+    <Build Include="dbo\Views\VW_REVISAR_VALORES_APORTES.sql" />
+    <Build Include="dbo\Views\VW_RIESGO.sql" />
+    <Build Include="dbo\Views\VW_RIONEGRO_EMPLEOSGENERADOS.sql" />
+    <Build Include="dbo\Views\VW_ROL.sql" />
+    <Build Include="dbo\Views\VW_ROL_USUARIO.sql" />
+    <Build Include="dbo\Views\VW_ROL1.sql" />
+    <Build Include="dbo\Views\VW_SECTOR.sql" />
+    <Build Include="dbo\Views\VW_SECTOR_SUBSECTOR.sql" />
+    <Build Include="dbo\Views\VW_SECTOR_SUBSECTOR_PROYECTO.sql" />
+    <Build Include="dbo\Views\VW_SEGUNDACONVOCATORIAENEJECUCION.sql" />
+    <Build Include="dbo\Views\VW_SegundaPagosTramite.sql" />
+    <Build Include="dbo\Views\VW_SENA_ASESORESXPROYECTO.sql" />
+    <Build Include="dbo\Views\VW_SENA_CAPACITACIONPROYECTOS2CONV.sql" />
+    <Build Include="dbo\Views\VW_SENA_CONSULTA1.sql" />
+    <Build Include="dbo\Views\VW_SENA_JEFES_UNIDAD.sql" />
+    <Build Include="dbo\Views\VW_SENA_NOPLANESXASESORXUNIDADEMPRENDIMIENTO.sql" />
+    <Build Include="dbo\Views\VW_SENA_PLANESSECTORAGORYPESCA.sql" />
+    <Build Include="dbo\Views\VW_SENA_PROYECTOSVIABLESXUNIDAD.sql" />
+    <Build Include="dbo\Views\VW_SENA_PROYECTOSXUNIDAD.sql" />
+    <Build Include="dbo\Views\VW_SENA_PROYECTOXMUNICIPIO.sql" />
+    <Build Include="dbo\Views\VW_SENAJEFESUNIDAD.sql" />
+    <Build Include="dbo\Views\VW_SENAPRUEBA1.sql" />
+    <Build Include="dbo\Views\VW_SUCRE_AVALADOS.sql" />
+    <Build Include="dbo\Views\VW_SUMARIO.sql" />
+    <Build Include="dbo\Views\VW_TABLA_CONTACTOS.sql" />
+    <Build Include="dbo\Views\VW_TAREA_POR_CONV.sql" />
+    <Build Include="dbo\Views\VW_TAREAPLANDENEGOCIO.sql" />
+    <Build Include="dbo\Views\VW_TAREAS_ASESOR_AGENDADAS.sql" />
+    <Build Include="dbo\Views\VW_TAREAS_EMPRENDEDOR_AGENDADAS.sql" />
+    <Build Include="dbo\Views\VW_TAREAS_EMPRENDEDOR_RECIBIDAS.sql" />
+    <Build Include="dbo\Views\VW_TAREAS_INSTITUCION_PRUEBA.sql" />
+    <Build Include="dbo\Views\VW_tareas3.sql" />
+    <Build Include="dbo\Views\VW_TAREASAGENDADAS.sql" />
+    <Build Include="dbo\Views\VW_TAREASAGENDADAS_ICONO.sql" />
+    <Build Include="dbo\Views\VW_TELEFONOSEMPRENDEDORES.sql" />
+    <Build Include="dbo\Views\vw_test.sql" />
+    <Build Include="dbo\Views\VW_TIPO_APRENDIZ.sql" />
+    <Build Include="dbo\Views\VW_TIPO_APRENDIZ_PROY_TODASCONV.sql" />
+    <Build Include="dbo\Views\VW_TodosLosProyectosTodoTitulo50000.sql" />
+    <Build Include="dbo\Views\VW_UEMPRENDIMIENTOJESSI.sql" />
+    <Build Include="dbo\Views\VW_UNIDADES_DE_EMPRENDIMIENTO.sql" />
+    <Build Include="dbo\Views\VW_UNIDADES_EMPRENDIMIENTO.sql" />
+    <Build Include="dbo\Views\VW_UNIDADES_EMPRENDIMIENTOXDEPTO.sql" />
+    <Build Include="dbo\Views\VW_USUARIOS.sql" />
+    <Build Include="dbo\Views\VW_USUARIOS_X_GRUPO.sql" />
+    <Build Include="dbo\Views\VW_V_ASESORES.sql" />
+    <Build Include="dbo\Views\VW_V2_DNP.sql" />
+    <Build Include="dbo\Views\VW_VALOR_RECOMENDADIO_SUPERIOR.sql" />
+    <Build Include="dbo\Views\VW_VALORES_APROBADOS.sql" />
+    <Build Include="dbo\Views\VW_VENTAS.sql" />
+    <Build Include="dbo\Views\VW_VENTAS_C1.sql" />
+    <Build Include="dbo\Views\VW_VENTAS_C3.sql" />
+    <Build Include="dbo\Views\VW_VENTAS_EJECUCION.sql" />
+    <Build Include="dbo\Views\VW_Ventas_Ejecucion_Valor.sql" />
+    <Build Include="dbo\Views\VW_VENTAS_PROYECCIONPO.sql" />
+    <Build Include="dbo\Views\VW_ventasproyectadasXconv.sql" />
+    <Build Include="dbo\Views\VW_VENTASPROYECTADASYREGISTRADAS.sql" />
+    <Build Include="dbo\Views\VW_VIABLES_POR_SECTOR.sql" />
+    <Build Include="dbo\Views\VW_VISITAS_INTERVENTORIA.sql" />
+    <Build Include="dbo\Views\VW_VISTA_FINAL_SMLV_CON32.sql" />
+    <Build Include="dbo\Views\VW_VISTA_JESSI.sql" />
+    <Build Include="dbo\Views\vw_vista_mapa.sql" />
+    <Build Include="dbo\Views\vw_vista_test.sql" />
+    <Build Include="dbo\Views\vw_vista_total.sql" />
+    <Build Include="dbo\Views\vw_vista_total2.sql" />
+    <Build Include="dbo\Views\vw_vista_total3.sql" />
+    <Build Include="dbo\Views\VW_VISTACONVIVPATRICIA.sql" />
+    <Build Include="dbo\Views\VW_VISTAEMPRENDEDORPROYECTO16.sql" />
+    <Build Include="dbo\Views\VW_VISTATAREAS.sql" />
+    <Build Include="dbo\Defaults\defCero.sql" />
+    <Build Include="dbo\Defaults\defFecha.sql" />
+    <Build Include="dbo\Defaults\defFechaHora.sql" />
+    <Build Include="dbo\Defaults\defUno.sql" />
+    <Build Include="Storage\SECUNDARY.sql" />
+    <Build Include="Security\Consulta.sql" />
+    <Build Include="Security\consultar.sql" />
+    <Build Include="Security\Desarrollo.sql" />
+    <Build Include="Security\FONDOEMPRENDER_admin.dev.sql" />
+    <Build Include="Security\Giovanny.benitez.sql" />
+    <Build Include="Security\ReadUser.sql" />
+    <Build Include="Security\SQL_Fonade.sql" />
+    <Build Include="Security\SQL_FonadeDDL.sql" />
+    <Build Include="Security\Consulta_1.sql" />
+    <Build Include="Security\consultar_1.sql" />
+    <Build Include="Security\Desarrollo_1.sql" />
+    <Build Include="Security\FONDOEMPRENDER_admin_1.dev.sql" />
+    <Build Include="Security\fraamoba.sql" />
+    <Build Include="Security\Giovanny_1.benitez.sql" />
+    <Build Include="Security\operabac.sql" />
+    <Build Include="Security\PRTG_Monitor.sql" />
+    <Build Include="Security\ReadUser_1.sql" />
+    <Build Include="Security\SQL_Fonade_1.sql" />
+    <Build Include="Security\SQL_FonadeDDL_1.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Functions\fn_CalculaCodProyecto.sql" />
+    <Build Include="dbo\Functions\fn_CalculaCodProyectoCargo.sql" />
+    <Build Include="dbo\Functions\fn_CalculaCodProyectoProduccion.sql" />
+    <Build Include="dbo\Functions\fn_CalculaCodProyectoVentas.sql" />
+    <Build Include="dbo\Functions\fn_EmpleosPrimerAno.sql" />
+    <Build Include="dbo\Functions\fn_PuntajeEmpleosDirectos.sql" />
+    <Build Include="dbo\Functions\fn_PuntajeEmpleosDirectosNew.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\fn_PuntajeEmpleosJoven.sql" />
+    <Build Include="dbo\Functions\fn_PuntajeEmpleosVulnerables.sql" />
+    <Build Include="dbo\Functions\fn_PuntajeExportacion.sql" />
+    <Build Include="dbo\Functions\fn_PuntajeIDH.sql" />
+    <Build Include="dbo\Functions\fn_PuntajeImportacion.sql" />
+    <Build Include="dbo\Functions\fn_PuntajeResultadoEvaluacion.sql" />
+    <Build Include="dbo\Functions\fn_PuntajeSectores.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\fnMaximoCodConvocatoriaProyecto.sql" />
+    <Build Include="dbo\Functions\PuntajeCampo.sql" />
+    <Build Include="dbo\Functions\fn_Empleos.sql" />
+    <Build Include="dbo\Stored Procedures\ActividadesDuplicadas.sql" />
+    <Build Include="dbo\Stored Procedures\buscar.sql" />
+    <Build Include="dbo\Stored Procedures\BuscaValorEnBBDD.sql" />
+    <Build Include="dbo\Stored Procedures\CAMBIAPROPIETARIO.sql" />
+    <Build Include="dbo\Stored Procedures\ConsultaContactosActivosPorGrupo.sql" />
+    <Build Include="dbo\Stored Procedures\ConsultaContactosDetalle.sql" />
+    <Build Include="dbo\Stored Procedures\Consultas.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteTablesLinkedtoInsumo.sql" />
+    <Build Include="dbo\Stored Procedures\DesactivarUsuariosPorFecha.sql" />
+    <Build Include="dbo\Stored Procedures\DisableAllTriggers.sql" />
+    <Build Include="dbo\Stored Procedures\DR_Cargar_ProyectoAporte.sql" />
+    <Build Include="dbo\Stored Procedures\DR_Eliminar_Aporte_proyecto.sql" />
+    <Build Include="dbo\Stored Procedures\DR_Procesar_Aporte_proyecto.sql" />
+    <Build Include="dbo\Stored Procedures\Fog_AMPerfInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Fog_BMPerfInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Fog_DBPerfInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Fog_Jobs.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Fog_MMPerfInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Fog_Trace.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Fog_TraceControl.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Fog_TraceEnd.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Fog_TraceMaintainSQL.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Fog_TraceRefreshEventNames.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Fog_TraceStart.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\GetDataPeriodosProductos.sql" />
+    <Build Include="dbo\Stored Procedures\GetPeriodosProductos.sql" />
+    <Build Include="dbo\Stored Procedures\GetPosicionArancelaria.sql" />
+    <Build Include="dbo\Stored Procedures\GetPrecioUnidadesInsumo.sql" />
+    <Build Include="dbo\Stored Procedures\InsertaActualizaRegistroDesactivacion.sql" />
+    <Build Include="dbo\Stored Procedures\InsertaActualizaUsuarioDesactivacion.sql" />
+    <Build Include="dbo\Stored Procedures\InsertUpdateInsumoPrecio.sql" />
+    <Build Include="dbo\Stored Procedures\InsertUpdateprecio.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ActasFormato.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ActivarEmprendedor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ActivarEvaluadores.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ActivarInterventor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ActivarInterventores.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Actualizar_ConvocatoriaProyecto.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ActualizarContactoEmprendedor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ActualizarProyectoNegocio.sql" />
+    <Build Include="dbo\Stored Procedures\MD_AdicionarVisita_Tipo1.sql" />
+    <Build Include="dbo\Stored Procedures\MD_AdicionarVisita_Tipo2.sql" />
+    <Build Include="dbo\Stored Procedures\MD_AdministrarRegistrosMercantiles.sql" />
+    <Build Include="dbo\Stored Procedures\MD_AgendarTareas.sql" />
+    <Build Include="dbo\Stored Procedures\MD_AgendarTareas_Prueba.sql" />
+    <Build Include="dbo\Stored Procedures\MD_AsignacionActaProyecto.sql" />
+    <Build Include="dbo\Stored Procedures\MD_AuditoriaAdministrador.sql" />
+    <Build Include="dbo\Stored Procedures\MD_BuscarReportePlanesEnAcreditacion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_CambiarClave.sql" />
+    <Build Include="dbo\Stored Procedures\MD_CambiosPlanOperativo.sql" />
+    <Build Include="dbo\Stored Procedures\MD_cargarAsesorMiPerfil.sql" />
+    <Build Include="dbo\Stored Procedures\MD_CargarConvocatorias_Estados.sql" />
+    <Build Include="dbo\Stored Procedures\MD_CargarJefeUnidadMiPerfil.sql" />
+    <Build Include="dbo\Stored Procedures\MD_cargarMiPerfilEmprendedor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_cargarMiPerfilEvaluador.sql" />
+    <Build Include="dbo\Stored Procedures\MD_cargarPlanes.sql" />
+    <Build Include="dbo\Stored Procedures\MD_cargarProyectoContacto.sql" />
+    <Build Include="dbo\Stored Procedures\MD_cargarProyectosEval.sql" />
+    <Build Include="dbo\Stored Procedures\MD_cargarProyectosInterv.sql" />
+    <Build Include="dbo\Stored Procedures\MD_cargarProyectosSector.sql" />
+    <Build Include="dbo\Stored Procedures\MD_cargarProyectoSumarioActual.sql" />
+    <Build Include="dbo\Stored Procedures\MD_CatalogoGestionInter.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ConceptoFinalRecomendacionesInterventor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ConcultarInfoAcreditacion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Consulta.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Consultar.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Consultar_Documento.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Consultar_Documento_Nomina.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Consultar_Documento_Produccion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Consultar_Documento_Ventas.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Consultar_UnidadesdeEmprendimiento.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Consultarjefe.sql" />
+    <Build Include="dbo\Stored Procedures\MD_convocatoria_criterios_priorizacion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_convocatoria_regla_salarios.sql" />
+    <Build Include="dbo\Stored Procedures\MD_CrearEmprendedor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_CrearEmprendedor_mod.sql" />
+    <Build Include="dbo\Stored Procedures\MD_CrearInformeVisita.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Create_InformeBimensual.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Create_InformePresupuestal.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Create_InterventorContrato.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Create_JefeUnidad_Admin.sql" />
+    <Build Include="dbo\Stored Procedures\MD_DeleteAmbito.sql" />
+    <Build Include="dbo\Stored Procedures\MD_DeleteSectorEvaluador.sql" />
+    <Build Include="dbo\Stored Procedures\MD_DeleteTipoAmbito.sql" />
+    <Build Include="dbo\Stored Procedures\MD_DeleteTipoVariable.sql" />
+    <Build Include="dbo\Stored Procedures\MD_DeleteVariable.sql" />
+    <Build Include="dbo\Stored Procedures\MD_DesactivarCoordinadorEvaluador.sql" />
+    <Build Include="dbo\Stored Procedures\MD_DesactivarCoordinadorInterventor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_DesactivarEvaluador.sql" />
+    <Build Include="dbo\Stored Procedures\MD_DesactivarInterventor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_DesactivarUnidadEmprendimiento.sql" />
+    <Build Include="dbo\Stored Procedures\MD_DetalleSolicitudesPago.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EliminarBeneficiario.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EliminarDocumento.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EliminarEstudioRealizado.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EliminarProyectoDeActa.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EvaluacionEvaluador_DeleteRow.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EvaluacionEvaluador_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EvaluacionEvaluador_SelectAll.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EvaluacionEvaluador_SelectRow.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EvaluacionEvaluador_Update.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EvaluacionIndicadorGestion_DeleteRow.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EvaluacionIndicadorGestion_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EvaluacionIndicadorGestion_SelectAll.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EvaluacionIndicadorGestion_SelectRow.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EvaluacionIndicadorGestion_Update.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EvaluacionProyectoAporte_DeleteRow.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EvaluacionProyectoAporte_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EvaluacionProyectoAporte_SelectAll.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EvaluacionProyectoAporte_SelectRow.sql" />
+    <Build Include="dbo\Stored Procedures\MD_EvaluacionProyectoAporte_Update.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Fiduciaria.sql" />
+    <Build Include="dbo\Stored Procedures\MD_FormalizarProyecto.sql" />
+    <Build Include="dbo\Stored Procedures\MD_GenerarInformeEvaluacionTablasDinamicas.sql" />
+    <Build Include="dbo\Stored Procedures\MD_GetAportes.sql" />
+    <Build Include="dbo\Stored Procedures\MD_GetIntegrantesIniciativa.sql" />
+    <Build Include="dbo\Stored Procedures\MD_historicoAuditoria.sql" />
+    <Build Include="dbo\Stored Procedures\MD_HojaAvanceEvaluacion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Home.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ImprimirActaAsignacion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ImprimirDetalles_Nomina.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ImprimirDetalles_Produccion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ImprimirDetalles_Ventas.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InfoContactoEmprendedor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InformacionProyecto.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InformeBimensualInterventoria.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InformeConsolidadoInterventoria.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InformeEjecucionInterventoria.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InformeEvaluacion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InformeVistaInterventoria.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insert_ProyectoFormalizar.sql" />
+    <Build Include="dbo\Stored Procedures\MD_insert_ProyectoInsumoPrecio.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insert_Update_Beneficiario.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insert_Update_Convocatorias.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insert_Update_Delete_ProyectoInsumo.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insert_Update_Estudios.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertActa.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insertar_Actualizar.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insertar_Actualizar_EvaluacionIndicadorGestion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insertar_Actualizar_InterventorTMP.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insertar_Actualizar_planOperativo.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insertar_Actualizar_ProductosVentas.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insertar_Actualizar_ProyectoActividadPO.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insertar_Actualizar_ProyectoActividadPO1.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insertar_Actualizar_ProyectoMercadoProyeccionVentas.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insertar_Actualizar_ProyectoProducto.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insertar_Actualizar_ProyectoProductoPrecio.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insertar_Actualizar_ProyectoProductoUnidadesVentas.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Insertar_New_EmpresaInterventor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertarInformeVisita.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertarNuevoRiesgo.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertarProductosVentas.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertNuevoProgramaAcademico.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertProyectoAcreditacionDocumento.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertSectorEvaluador.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateAmbito.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateAmbitos.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateContratoEvaluador.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateContratoInterventor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateCoordinadorEvaluador.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateDeleteProyectoInsumoPrecio.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateEvaluacionCentrales.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateEvaluacionFlujoCajaObs.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateEvaluacionRubroValor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateEvaluador.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateImpactoProyecto.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateInterventor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateproyectoresumenejecutivo.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateTipoAmbito.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateTipoCriterio.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateTipoVariable.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateTipoVerificacion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InsertUpdateVariable.sql" />
+    <Build Include="dbo\Stored Procedures\MD_InterventorFida.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Item_DeleteRow.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Item_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Item_SelectAll.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Item_SelectRow.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Item_Update.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ItemEscala_DeleteRow.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ItemEscala_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ItemEscala_SelectAll.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ItemEscala_SelectRow.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ItemEscala_Update.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ListaDeCargosEnAprobacion_Nomina.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ListaDeCargosEnAprobacion_Produccion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ListaDeCargosEnAprobacion_Ventas.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ListaDePersonalCalificado_Nomina.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ListadoDetallesProductos_Produccion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ListadoDetallesProductos_Venta.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ListaInterventoresActivos.sql" />
+    <Build Include="dbo\Stored Procedures\MD_listarAmbito.sql" />
+    <Build Include="dbo\Stored Procedures\MD_listarAmbitos.sql" />
+    <Build Include="dbo\Stored Procedures\MD_listarCatalogoInsumo.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ListarEmpresaInterventor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ListarPlanesDenegocio.sql" />
+    <Build Include="dbo\Stored Procedures\MD_listarTipoAmbitos.sql" />
+    <Build Include="dbo\Stored Procedures\MD_listarTipoCriterio.sql" />
+    <Build Include="dbo\Stored Procedures\MD_listarTipoCriterios.sql" />
+    <Build Include="dbo\Stored Procedures\MD_listarTipoVariable.sql" />
+    <Build Include="dbo\Stored Procedures\MD_listarTipoVerificacion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_listarVariable.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ModificarNuevoRiesgo.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Mostrar_ConvocatoriaCriterioPriorizacion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Mostrar_ListadoCriterios.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Mostrar_resumen_equipo.sql" />
+    <Build Include="dbo\Stored Procedures\MD_MostrarArchivosOffline.sql" />
+    <Build Include="dbo\Stored Procedures\MD_MostrarBeneficiarios.sql" />
+    <Build Include="dbo\Stored Procedures\MD_MostrarEvalNominaManoObra.sql" />
+    <Build Include="dbo\Stored Procedures\MD_MostrarEvalNominaPersonal.sql" />
+    <Build Include="dbo\Stored Procedures\MD_MostrarEvaluacionRubroProyecto.sql" />
+    <Build Include="dbo\Stored Procedures\MD_MostrarIdInstitucionAct.sql" />
+    <Build Include="dbo\Stored Procedures\MD_MostrarInfoProyectoImprimir.sql" />
+    <Build Include="dbo\Stored Procedures\MD_MostrarInstituciones.sql" />
+    <Build Include="dbo\Stored Procedures\MD_MostrarIntegrantesCentralesRiesgos.sql" />
+    <Build Include="dbo\Stored Procedures\MD_MostrarProgramasAcademicos.sql" />
+    <Build Include="dbo\Stored Procedures\MD_MostrarProyectosaPriorizar.sql" />
+    <Build Include="dbo\Stored Procedures\MD_MostrarProyectosPorConvocatoria.sql" />
+    <Build Include="dbo\Stored Procedures\MD_MostrarProyectosPorSector.sql" />
+    <Build Include="dbo\Stored Procedures\MD_NotificacionEnviadas.sql" />
+    <Build Include="dbo\Stored Procedures\MD_NuevaTareaInsert.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerActas.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerAsesor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerCamposEvaluacionObservaciones.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerCamposEvaluacionObservacionesHijas.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerFuncionesProyectoNegocio.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerInformacionEmprendedor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerInformacionEvaluacion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerInformacionProyectoAcreditacion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerInformacionProyectoAcreditacion_.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerInfraestructura.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerItems_Indicadores.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerItems_Interventor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerItems_InterventorHijo.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerListadoProyectoProcesoAcreditacion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerProyectoOperacionInfraestructura.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ObtenerProyectosNegociosActas.sql" />
+    <Build Include="dbo\Stored Procedures\MD_obtenerTabs.sql" />
+    <Build Include="dbo\Stored Procedures\MD_PagosActividad.sql" />
+    <Build Include="dbo\Stored Procedures\MD_PagosInterv.sql" />
+    <Build Include="dbo\Stored Procedures\MD_PermisosUsuario.sql" />
+    <Build Include="dbo\Stored Procedures\MD_PersonalCalificadoSeleccionado_Nomina.sql" />
+    <Build Include="dbo\Stored Procedures\MD_PlanesAcreditarUsuario.sql" />
+    <Build Include="dbo\Stored Procedures\MD_PlanesDeNegocioAcreditar.sql" />
+    <Build Include="dbo\Stored Procedures\MD_PlanNegocio.sql" />
+    <Build Include="dbo\Stored Procedures\MD_prActualizarTabEval.sql" />
+    <Build Include="dbo\Stored Procedures\MD_PresupuestoInterventor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ProductosEnProduccion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ProductosEnVentas.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ProyectosEjecucion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ReporteAuditoria.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ReporteDetalladoEvaluacion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ReporteEmpresa.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ReporteFinalActasAcreditacio.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ReportPagosActividad.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Resultados_Impacto.sql" />
+    <Build Include="dbo\Stored Procedures\MD_TipoIndicadorGestion_DeleteRow.sql" />
+    <Build Include="dbo\Stored Procedures\MD_TipoIndicadorGestion_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\MD_TipoIndicadorGestion_SelectAll.sql" />
+    <Build Include="dbo\Stored Procedures\MD_TipoIndicadorGestion_SelectRow.sql" />
+    <Build Include="dbo\Stored Procedures\MD_TipoIndicadorGestion_Update.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Translado_Planes.sql" />
+    <Build Include="dbo\Stored Procedures\MD_txt_insumo.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Update_Asesor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Update_Emprendedor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Update_EmpresaInterventor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Update_Evaluador.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Update_Horas_Al_Proyecto.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Update_InterventorContrato.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Update_JefeUnidad.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Update_UsGeneral.sql" />
+    <Build Include="dbo\Stored Procedures\MD_updateCoordEvalAsignado.sql" />
+    <Build Include="dbo\Stored Procedures\MD_updateCoordIntervAsignado.sql" />
+    <Build Include="dbo\Stored Procedures\MD_updateEvalAsignado.sql" />
+    <Build Include="dbo\Stored Procedures\MD_validar_auditoria.sql" />
+    <Build Include="dbo\Stored Procedures\MD_ValidarConvocatoriaCriterio.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VeIntervSector.sql" />
+    <Build Include="dbo\Stored Procedures\MD_Ver_Perfil_Contacto.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerActaAsignacionRecursos.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerContratosEvaluador.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerContratosInterventor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerCoordinadorAsignado.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerCoordinadoresDEEvaluacion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerCoordinadoresDEInterventor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerEmprendedoresInact.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerEstudiosAsesor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerEvalDelProyecto.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerEvalSector.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerEvaluadores.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerEvaluadoresActivos.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerEvaluadoresDeCoordinador.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerFormalizacion.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerFormalizacionEmpleos.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerFormalizacionEmprendedor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerFormalizacionQuerys.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerGerenteInterv.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerGerenteIntervxCod.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerInterventoresActivos.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerInterventoresDeCoordinador.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerListadoActas.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerListadoConvocatorias.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerProyectosEvaluador.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerProyectosInterventor.sql" />
+    <Build Include="dbo\Stored Procedures\MD_VerReglasConvocatoria.sql" />
+    <Build Include="dbo\Stored Procedures\modificar.sql" />
+    <Build Include="dbo\Stored Procedures\MP_ReporteTareasUsuario.sql" />
+    <Build Include="dbo\Stored Procedures\ObtenerRegistroDesactivacionNoEnviado.sql" />
+    <Build Include="dbo\Stored Procedures\ObtenerUsuariosDesactivacionPaginado.sql" />
+    <Build Include="dbo\Stored Procedures\pr_ActivaUnidad.sql">
+      <AnsiNulls>Off</AnsiNulls>
+    </Build>
+    <Build Include="dbo\Stored Procedures\pr_ActividadDefault.sql" />
+    <Build Include="dbo\Stored Procedures\pr_Convocatoria.sql">
+      <AnsiNulls>Off</AnsiNulls>
+    </Build>
+    <Build Include="dbo\Stored Procedures\pr_LegalizacionPaso1.sql" />
+    <Build Include="dbo\Stored Procedures\pr_LegalizacionPaso2.sql" />
+    <Build Include="dbo\Stored Procedures\pr_LegalizacionPaso3.sql" />
+    <Build Include="dbo\Stored Procedures\pr_LegalizacionPaso4.sql" />
+    <Build Include="dbo\Stored Procedures\pr_LegalizacionPaso5.sql" />
+    <Build Include="dbo\Stored Procedures\pr_LegalizacionPaso6.sql" />
+    <Build Include="dbo\Stored Procedures\pr_LegalizacionPaso7.sql" />
+    <Build Include="dbo\Stored Procedures\pr_ProyectosAcreditados.sql" />
+    <Build Include="dbo\Stored Procedures\pr_ProyectosAcreditadosExcel.sql" />
+    <Build Include="dbo\Stored Procedures\pr_ProyectosEvaluados.sql" />
+    <Build Include="dbo\Stored Procedures\Proc_SaldoProyecto.sql" />
+    <Build Include="dbo\Stored Procedures\PTAL_Sector_Can.sql" />
+    <Build Include="dbo\Stored Procedures\PTAL_Sector_Caninus.sql" />
+    <Build Include="dbo\Stored Procedures\PTAL_Sector_Indicadores.sql" />
+    <Build Include="dbo\Stored Procedures\PTAL_Sector_Indicadores_backup.sql" />
+    <Build Include="dbo\Stored Procedures\PTAL_Sector_Indicadores_Prueba.sql" />
+    <Build Include="dbo\Stored Procedures\PTAL_Sector_Indicadores_Prueba2.sql" />
+    <Build Include="dbo\Stored Procedures\PTAL_Sector_Indicadores_temp.sql" />
+    <Build Include="dbo\Stored Procedures\qs_spc_calc_actually_used.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\qs_spc_collect_data_files.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\qs_spc_collect_databases.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\qs_spc_collect_disks.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\qs_spc_collect_filegroups.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\qs_spc_collect_logfiles.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\qs_spc_collect_object_data.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\qs_spc_min_version.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Recover_Dropped_Objects_Proc.sql" />
+    <Build Include="dbo\Stored Procedures\RetornarActividadesPendientes.sql" />
+    <Build Include="dbo\Stored Procedures\RetornarContactos.sql" />
+    <Build Include="dbo\Stored Procedures\RetornarEmprendedoresProyecto.sql" />
+    <Build Include="dbo\Stored Procedures\RetornarEstudiosAsesor.sql" />
+    <Build Include="dbo\Stored Procedures\RetornarInfoContacto.sql" />
+    <Build Include="dbo\Stored Procedures\RetornarPlanesNegocio.sql" />
+    <Build Include="dbo\Stored Procedures\RetornarProyectosAsesor.sql" />
+    <Build Include="dbo\Stored Procedures\RetornarTareasAsesor.sql" />
+    <Build Include="dbo\Stored Procedures\SearchAllTables.sql" />
+    <Build Include="dbo\Stored Procedures\SP_EditarActividaPO.sql" />
+    <Build Include="dbo\Stored Procedures\sp_EvaluacionProyectoIndicador_DeleteRow.sql" />
+    <Build Include="dbo\Stored Procedures\sp_EvaluacionProyectoIndicador_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\sp_EvaluacionProyectoIndicador_SelectAll.sql" />
+    <Build Include="dbo\Stored Procedures\sp_EvaluacionProyectoIndicador_SelectRow.sql" />
+    <Build Include="dbo\Stored Procedures\sp_EvaluacionProyectoIndicador_Update.sql" />
+    <Build Include="dbo\Stored Procedures\sp_InsertarIntervRiesgo.sql" />
+    <Build Include="dbo\Stored Procedures\spActualizarEvaluacionesDeRiesgo.sql" />
+    <Build Include="dbo\Stored Procedures\spCrearEvaluacionesDeRiesgo.sql" />
+    <Build Include="dbo\Stored Procedures\spEliminarEvaluacionesDeRiesgo.sql" />
+    <Build Include="dbo\Stored Procedures\spGestionTranslados.sql" />
+    <Build Include="dbo\Stored Procedures\spListaEvaluacionesEspecificas.sql" />
+    <Build Include="dbo\Stored Procedures\spObtenerCodNomina.sql" />
+    <Build Include="dbo\Stored Procedures\Spot_AccessMethods.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_AgentAlertList.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_BackupHistory.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_BinToString.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_BufferCacheContents.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_BufferManager.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_CheckCluster.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_CheckErrorlogSize.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_CheckFileExists.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_CheckIfFeatureSuppressed.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_CheckIfReplicationInstalled.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_CheckRefresh.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_CheckSettings.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_Cleanup1.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_ClearCache.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_ClusterInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_ConfigSuggestions.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_Configure.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_ConnectionDetails.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_ConnectionList.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_Connections.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_DatabaseInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_DatabaseList.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_Errorlog.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_FilesGroupsDisksList.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_FulltextCatalogs.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GeneralCounters.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GeneralDBStats.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GetAllDBList.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GetDBOldestTrans.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GetDBProperties.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GetDBStatus.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GetErrorlogEntries.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GetErrorlogFileInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GetErrorlogPath.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GetFileDetails.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GetMemoryDetails.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GetMinPotentialAvailable.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GetResourceName.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GetServerInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GetTableCollation.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GetTraceTableName.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_GlobalVariables.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_IndexStats.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_IWCodeList.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_IWInstanceStatus.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_IWObjectColumns.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_IWObjectDepends.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_IWObjectIndexes.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_IWObjectList.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_IWObjectPermissions.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_IWOldestTransactions.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_Jobs.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_LatchesLocks.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_ListErrorlogs.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_Locks.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_LocksList.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_LockStats.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_LogMessage.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_LogShippingInSync.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_LogShippingMonitorInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_ObjectsByDatabase.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_ProcCacheByType.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_ProcCacheContents.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_RecordRefreshTime.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_RefreshDB_DBStatus.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_RefreshDB_FileChange.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_RefreshDB_FileOrDiskChange.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_RefreshDB_IXChange.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_RefreshDB_MaintainFGInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_RefreshDBInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_RefreshDiskInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_RefreshFile_Full.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_RefreshFileInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_RefreshIXInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_RefreshLogUsageInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_RefreshReplData.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_Replication.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_ReplicationAgentMessages.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_ReplicationAgents.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_ReplicationReinit.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_ReplicationStats.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_ServiceControl.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_SetDBMonList.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_SQL2K_IOByFile.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_Statistics.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_SuppressFeature.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_TableFragInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_TableSize.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_TablesList.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_Trace.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_TraceCheck.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_TraceControl.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_TraceEnd.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_TraceFilterUpdate.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_TraceMaintainSQL.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_TraceRefreshEventNames.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_TraceStart.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_VersionInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_VirtualLogFileList.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\Spot_WaitsList.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\UsuariosPorProyecto.sql" />
+    <Build Include="dbo\Tables\VersionProyecto_1.sql" />
+    <Build Include="dbo\Tables\TipoEstrategia_1.sql" />
+    <Build Include="dbo\Tables\ProyectoSolucion_1.sql" />
+    <Build Include="dbo\Tables\ProyectoSolFichaTecnica_1.sql" />
+    <Build Include="dbo\Tables\ProyectoRiesgos_1.sql" />
+    <Build Include="dbo\Tables\ProyectoResumenEjecutivoV2_1.sql" />
+    <Build Include="dbo\Tables\ProyectoRequerimientos_1.sql" />
+    <Build Include="dbo\Tables\ProyectoProyeccion_1.sql" />
+    <Build Include="dbo\Tables\ProyectoProtagonistaClientes_1.sql" />
+    <Build Include="dbo\Tables\ProyectoProtagonista_1.sql" />
+    <Build Include="dbo\Tables\ProyectoProductividad_1.sql" />
+    <Build Include="dbo\Tables\ProyectoProduccion_1.sql" />
+    <Build Include="dbo\Tables\ProyectoPeriodoArranque_1.sql" />
+    <Build Include="dbo\Tables\ProyectoOportunidadMercadoCompetidores_1.sql" />
+    <Build Include="dbo\Tables\ProyectoOportunidadMercado_1.sql" />
+    <Build Include="dbo\Tables\ProyectoNormatividad_1.sql" />
+    <Build Include="dbo\Tables\ProyectoMercadoEstrategiasBk57899_1.sql" />
+    <Build Include="dbo\Tables\ProyectoFuturoNegocio_1.sql" />
+    <Build Include="dbo\Tables\ProyectoEstrategiaActividades_1.sql" />
+    <Build Include="dbo\Tables\ProyectoEmprendedorPerfil_1.sql" />
+    <Build Include="dbo\Tables\ProyectoDetalleProceso_1.sql" />
+    <Build Include="dbo\Tables\ProyectoDesarrolloSolucion_1.sql" />
+    <Build Include="dbo\Tables\ProyectoCondicionesComerciales_1.sql" />
+    <Build Include="dbo\Tables\FuenteFinanciacion_1.sql" />
+    <Build Include="dbo\Functions\fn_consultarStrInterventor_1.sql" />
+    <Build Include="dbo\Functions\fn_consultarInterventores_1.sql" />
+    <Build Include="dbo\Tables\EvaluacionSeguimientoV2.sql" />
+    <Build Include="dbo\Tables\AvanceEvaluacion.sql" />
+    <Build Include="dbo\Stored Procedures\REP_ConsultarReportePuntaje.sql" />
+    <Build Include="dbo\Stored Procedures\MD_HojaAvanceEvaluacionV2.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Snapshots\FonadeDB_20170117_16-09-09.dacpac" />
+    <None Include="Snapshots\FonadeDB_20170316_10-26-16.dacpac" />
+  </ItemGroup>
+</Project>

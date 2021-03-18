@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_CapacitacionAportes (solicitado, recomendado, Id_Proyecto, NomProyecto, CodEstado) AS SELECT Sum(T1.Solicitado), Sum(T1.Recomendado), T2.Id_Proyecto, T2.NomProyecto, T2.CodEstado FROM EvaluacionProyectoAporte T1, Proyecto T2 WHERE T1.CodProyecto=T2.Id_Proyecto GROUP BY T2.Id_Proyecto, T2.NomProyecto, T2.CodEstado

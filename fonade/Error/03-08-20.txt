@@ -1,0 +1,12 @@
+
+Log Entry : 
+08/03/2020 13:15:09
+Error in: http://localhost:5153/FONADE/PlandeNegocio/CrearPlanDeNegocio.aspx?IdVersionProyecto=2.
+Error URL: http://localhost:5153/FONADE/PlandeNegocio/CrearPlanDeNegocio.aspx?IdVersionProyecto=2.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.PlandeNegocio.CrearPlanDeNegocio.getSectores() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\PlandeNegocio\CrearPlanDeNegocio.aspx.cs:línea 214
+katyhoyos_09@hotmail.com
+99582
+__________________________

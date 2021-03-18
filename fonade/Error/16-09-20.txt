@@ -1,0 +1,62 @@
+
+Log Entry : 
+09/16/2020 11:49:48
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/Riesgos/GeneralRiesgos.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/Riesgos/GeneralRiesgos.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: GridView 'gvRiesgos' desencadenó el evento RowEditing, que no estaba controlado.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.WebControls.GridView.OnRowEditing(GridViewEditEventArgs e)
+   en System.Web.UI.WebControls.GridView.HandleEdit(Int32 rowIndex)
+   en System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   en System.Web.UI.WebControls.GridView.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.GridView.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+liyana0507@outlook.com
+104225
+__________________________
+
+Log Entry : 
+09/16/2020 12:02:57
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/Riesgos/GeneralRiesgos.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/Riesgos/GeneralRiesgos.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: GridView 'gvRiesgos' desencadenó el evento RowCancelingEdit, que no estaba controlado.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.WebControls.GridView.OnRowCancelingEdit(GridViewCancelEditEventArgs e)
+   en System.Web.UI.WebControls.GridView.HandleCancel(Int32 rowIndex)
+   en System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   en System.Web.UI.WebControls.GridView.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.GridView.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+liyana0507@outlook.com
+104225
+__________________________
+
+Log Entry : 
+09/16/2020 12:09:45
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/Riesgos/GeneralRiesgos.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/Riesgos/GeneralRiesgos.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: GridView 'gvRiesgos' desencadenó el evento RowUpdating, que no estaba controlado.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.WebControls.GridView.OnRowUpdating(GridViewUpdateEventArgs e)
+   en System.Web.UI.WebControls.GridView.HandleUpdate(GridViewRow row, Int32 rowIndex, Boolean causesValidation)
+   en System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   en System.Web.UI.WebControls.GridView.OnBubbleEvent(Object source, EventArgs e)
+   en System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   en System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(Object source, EventArgs e)
+   en System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   en System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   en System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.LinkButton.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+liyana0507@outlook.com
+104225
+__________________________

@@ -1,0 +1,71 @@
+
+Log Entry : 
+06/24/2020 14:54:33
+Error in: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx.
+Error URL: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: DataSourceID de 'cmbTipoIdentificacion' debe ser el identificador de un control del tipo IDataSource. No se pudo encontrar un identificador 'dataTipoDocumento'.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.WebControls.DataBoundControl.GetDataSource()
+   en System.Web.UI.WebControls.DataBoundControl.ConnectToDataSourceView()
+   en System.Web.UI.WebControls.DataBoundControl.OnLoad(EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+85234
+__________________________
+
+Log Entry : 
+06/24/2020 14:56:13
+Error in: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx.
+Error URL: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: DataSourceID de 'cmbTipoIdentificacion' debe ser el identificador de un control del tipo IDataSource. No se pudo encontrar un identificador 'dataTipoDocumento'.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.WebControls.DataBoundControl.GetDataSource()
+   en System.Web.UI.WebControls.DataBoundControl.ConnectToDataSourceView()
+   en System.Web.UI.WebControls.DataBoundControl.OnLoad(EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+85234
+__________________________
+
+Log Entry : 
+06/24/2020 14:59:42
+Error in: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx.
+Error URL: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: DataSourceID de 'cmbTipoIdentificacion' debe ser el identificador de un control del tipo IDataSource. No se pudo encontrar un identificador 'dataTipoDocumento'.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.WebControls.DataBoundControl.GetDataSource()
+   en System.Web.UI.WebControls.DataBoundControl.ConnectToDataSourceView()
+   en System.Web.UI.WebControls.DataBoundControl.OnLoad(EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+85234
+__________________________
+
+Log Entry : 
+06/24/2020 15:17:15
+Error in: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx.
+Error URL: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Argumento de postback o de devolución de llamadas no válido. La validación de eventos se habilita usando <pages enableEventValidation="true"/> en la configuración o <%@ Page EnableEventValidation="true" %> en una página. Por motivos de seguridad, esta característica comprueba que los argumentos pasados a eventos de postback o de devolución de llamadas se origina desde el control del servidor que inicialmente los procesó. Si los datos son válidos y son los que se esperaba, utilice el método ClientScriptManager.RegisterForEventValidation para registrar los datos de postback o de devolución de llamadas para su validación.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.ClientScriptManager.ValidateEvent(String uniqueId, String argument)
+   en System.Web.UI.Control.ValidateEvent(String uniqueID, String eventArgument)
+   en System.Web.UI.WebControls.DropDownList.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   en System.Web.UI.WebControls.DropDownList.System.Web.UI.IPostBackDataHandler.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   en System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+85234
+__________________________

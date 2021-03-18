@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_ASESORESXUNIDAD_EMPRENDIMIENTO (Nombres, Apellidos, Identificacion, Email, CodInstitucion, Inactivo) AS SELECT T1.Nombres, T1.Apellidos, T1.Identificacion, T1.Email, T1.CodInstitucion, T1.Inactivo FROM Contacto T1, GrupoContacto T2 WHERE T1.Id_Contacto=T2.CodContacto AND T2.CodGrupo=5 AND T1.CodInstitucion=371 AND T1.Inactivo=0

@@ -1,0 +1,12 @@
+
+Log Entry : 
+01/12/2021 18:46:49
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: SFTP.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoPlano(Int32 _codConvocatoria, String _nomConvocatoria, String fechaArchivo, String tipoArchivo, String& rutaConvocatoria, String& nombreArchivoPlano, Int32& cantidadProyectos) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 3497
+williama.pena@carvajal.com
+104225
+__________________________

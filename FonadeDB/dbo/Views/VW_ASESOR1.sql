@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_ASESOR1 (identificacion, Contacto, email, Rol, departamento) AS SELECT T1.identificacion, T1.Contacto, T1.email, T1.Rol, T1.departamento FROM ContactosRol T1

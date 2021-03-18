@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PI_USUARIOS_JEFEUNIDAD (Nombres, Apellidos, Identificacion, Email, Inactivo, NomGrupo) AS SELECT T1.Nombres, T1.Apellidos, T1.Identificacion, T1.Email, T1.Inactivo, T2.NomGrupo FROM Contacto T1, Grupo T2, GrupoContacto T3 WHERE T1.Id_Contacto=T3.CodContacto AND T2.Id_Grupo=T3.CodGrupo AND T3.CodGrupo=4

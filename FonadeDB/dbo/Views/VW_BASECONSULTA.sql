@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_BASECONSULTA (Nombres, Apellidos, Identificacion, Email, Clave) AS SELECT T1.Nombres, T1.Apellidos, T1.Identificacion, T1.Email, T1.Clave FROM Contacto T1, Proyecto T2, ProyectoContacto T3 WHERE T1.Id_Contacto=T3.CodContacto AND T3.CodProyecto=T2.Id_Proyecto AND T1.Identificacion=37941156 AND T1.Identificacion=91071764

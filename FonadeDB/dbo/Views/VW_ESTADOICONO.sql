@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_ESTADOICONO (Id_Estado, CodFase, NomEstado, Orden) AS SELECT T1.Id_Estado, T1.CodFase, T1.NomEstado, T1.Orden FROM Estado T1 WHERE T1.Id_Estado=1

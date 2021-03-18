@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_FC_NOMBRECONVOCATORIA (Id_Convocatoria, NomConvocatoria) AS SELECT T1.Id_Convocatoria, T1.NomConvocatoria FROM Convocatoria T1

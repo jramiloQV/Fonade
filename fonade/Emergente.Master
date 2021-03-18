@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Emergente.master.cs"
+    Inherits="Fonade.Emergente" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <script>
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-85402368-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        html, body
+        {
+            margin: 0 auto;
+            height: 100%;
+            background-color: transparent; /*background-image:url(../images/bodyBgPattern.jpg);
+	        text-align:center;*/
+            background-repeat: repeat-x;
+            font-family: "Trebuchet MS" , "Lucida Sans Unicode" , "Lucida Grande" , "Lucida Sans" , Arial, sans-serif;
+            font-size: 12px;
+            background-image: none;
+            background-repeat: repeat;
+            background-position: left top;
+        }
+        .Grilla2 table
+        {
+            border: none !important;
+        }
+        .Grilla2 td
+        {
+            border: none !important;
+            padding: 5px;
+            font-size: 11px !important;
+        }
+        .Grilla2 th
+        {
+            background-color: #6F6F6F;
+            color: #f2f2f2;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: 1px solid #6F6F6F;
+            padding: 5px;
+            text-align: left;
+        }
+        .Grilla2 tr:nth-child(2n+1)
+        {
+            background-color: #F1F1F2;
+            font-size: 11px;
+            border: 1px solid #F1F1F2;
+        }
+        .Grilla2 tr:nth-child(2n)
+        {
+            background-color: #FFFFFF;
+            font-size: 11px;
+            border: 1px solid #fff;
+        }     
+        .ajax__calendar .ajax__calendar_container {
+            height: 180px !important;
+        }
+
+        .ajax__calendar_header div:nth-child(1) {
+            float: left !important;
+        }
+
+        .ajax__calendar_header div:nth-child(2) {
+            float: right !important;
+        }
+
+        .ajax__calendar_body {
+            height: 139px !important;
+            width: 170px !important;
+            position: relative;
+            overflow: hidden;
+            margin: auto;
+        }
+        .theme-title{
+            background-color:#3D5A87; text-align:center; color:#fff; font-size: .80em;
+        }
+        .ajax__calendar_prev {
+            height: 15px !important;
+        }
+        .ajax__calendar_next {
+            height: 15px !important;
+        }
+        /*html,body { overflow-y: scroll !important; } Se deja en comentario 
+            porque al imprimir corta la pagina*/
+    </style>
+    <script type="text/javascript" src="/../Scripts/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/../Scripts/jquery.number.min.js"></script>
+    <script type="text/javascript" >
+        function refreshParentPage() {
+            window.opener.location.href = window.opener.location.href;
+            if (window.opener.progressWindow) {
+                window.opener.progressWindow.close();
+            }
+            window.close();
+        };
+
+        $(function () {
+            $('.money').number(true, 2);
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '541324449399250', {
+    em: 'insert_email_variable,'
+    });
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=541324449399250&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+</head>
+<body style="background-color: White"  >
+    <form id="form1" runat="server" name="form1" >
+    <%--<div style="width: 100%; height: 100%; text-align: left; background-color: White">--%>
+    <asp:ContentPlaceHolder ID="bodyContentPlace" runat="server">
+    </asp:ContentPlaceHolder>
+    <%--</div>--%>
+    </form>
+</body>
+</html>

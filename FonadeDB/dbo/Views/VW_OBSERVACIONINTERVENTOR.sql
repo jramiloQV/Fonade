@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_OBSERVACIONINTERVENTOR (razonsocial, ObservacionesInt, Id_Proyecto, NomProyecto) AS SELECT T1.razonsocial, T1.ObservacionesInt, T2.Id_Proyecto, T2.NomProyecto FROM Empresa T1, Proyecto T2 WHERE T1.codproyecto=T2.Id_Proyecto

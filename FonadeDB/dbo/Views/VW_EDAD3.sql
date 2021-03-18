@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_EDAD3 (Nombres, Apellidos, Identificacion, FechaNacimiento, Email, Viable, Id_Proyecto, NomProyecto) AS SELECT T1.Nombres, T1.Apellidos, T1.Identificacion, T1.FechaNacimiento, T1.Email, T2.Viable, T3.Id_Proyecto, T3.NomProyecto FROM Contacto T1, ConvocatoriaProyecto T2, Proyecto T3 WHERE T1.Id_Contacto=T3.CodContacto AND T2.CodProyecto=T3.Id_Proyecto

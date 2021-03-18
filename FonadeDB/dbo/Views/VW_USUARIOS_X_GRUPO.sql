@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_USUARIOS_X_GRUPO (Contactos, Team) AS SELECT Count(T1.Id_Contacto), T2.NomGrupo FROM Contacto T1, Grupo T2, GrupoContacto T3 WHERE T3.CodContacto=T1.Id_Contacto AND T3.CodGrupo=T2.Id_Grupo GROUP BY T2.NomGrupo

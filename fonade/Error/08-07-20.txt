@@ -1,0 +1,35 @@
+
+Log Entry : 
+07/08/2020 12:44:38
+Error in: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx?doc=Mod1.Uni1.
+Error URL: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx?doc=Mod1.Uni1.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.RegistroUnico.ComportamientoEmprendedor.cargarCheck() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\RegistroUnico\ComportamientoEmprendedor.aspx.cs:línea 33
+   en Fonade.RegistroUnico.ComportamientoEmprendedor.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\RegistroUnico\ComportamientoEmprendedor.aspx.cs:línea 25
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+85234
+__________________________
+
+Log Entry : 
+07/08/2020 15:40:11
+Error in: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx?doc=nomID.
+Error URL: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx?doc=nomID.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Índice fuera de los límites de la matriz.
+Error InnerException: 
+Error StackTrace:    en Fonade.RegistroUnico.ComportamientoEmprendedor.btnRegistrar_Click(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\RegistroUnico\ComportamientoEmprendedor.aspx.cs:línea 95
+   en System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   en System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+85234
+__________________________

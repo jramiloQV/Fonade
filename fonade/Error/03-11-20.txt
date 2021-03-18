@@ -1,0 +1,20 @@
+
+Log Entry : 
+11/03/2020 09:24:29
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: El control con el id. 'upExportar' requiere un ScriptManager en la página. ScriptManager debe aparecer antes que los controles que lo requieren.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.UpdatePanel.get_ScriptManager()
+   en System.Web.UI.UpdatePanel.RegisterPanel()
+   en System.Web.UI.UpdatePanel.OnInit(EventArgs e)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+wdazan@sena.edu.co
+81764
+__________________________

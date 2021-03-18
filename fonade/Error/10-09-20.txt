@@ -1,0 +1,28 @@
+
+Log Entry : 
+09/10/2020 11:43:52
+Error in: http://localhost:5153/observaevaluacion/observacionesAcreditacion.aspx.
+Error URL: http://localhost:5153/observaevaluacion/observacionesAcreditacion.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Cannot insert the value NULL into column 'Id_ObservacionesAcreditacion', table 'Fonade.dbo.ObservacionesAcreditacion'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+Error InnerException: 
+Error StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Fonade.Negocio.Base_Page.ejecutaReader(String sql, Int32 obj) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 642
+   en Fonade.ObservaEvaluacion.ObservacionesAcreditacion.Validar() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\ObservaEvaluacion\ObservacionesAcreditacion.aspx.cs:línea 144
+   en Fonade.ObservaEvaluacion.ObservacionesAcreditacion.btnEnviar_Click(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\ObservaEvaluacion\ObservacionesAcreditacion.aspx.cs:línea 60
+   en System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   en System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+85234
+__________________________

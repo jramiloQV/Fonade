@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PLANES_INSCRITOS (Id_Proyecto, NomProyecto, FechaCreacion, CodEstado) AS SELECT T1.Id_Proyecto, T1.NomProyecto, T1.FechaCreacion, T1.CodEstado FROM Proyecto T1 WHERE T1.CodEstado<>3 AND T1.CodEstado<>5 AND T1.FechaCreacion<>19/12/2004

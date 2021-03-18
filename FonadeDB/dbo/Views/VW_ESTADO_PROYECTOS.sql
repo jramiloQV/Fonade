@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_ESTADO_PROYECTOS (Id_Estado, CodFase, NomEstado, Orden) AS SELECT * FROM Estado T1

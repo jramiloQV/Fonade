@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_SECTOR_SUBSECTOR (Id_Sector, Codigo, NomSector, Id_SubSector, Codigo1, NomSubSector, CodSector, Rango) AS SELECT T1.Id_Sector, T1.Codigo, T1.NomSector, T2.Id_SubSector, T2.Codigo, T2.NomSubSector, T2.CodSector, T2.Rango FROM Sector T1, SubSector T2 WHERE T1.Id_Sector=T2.CodSector

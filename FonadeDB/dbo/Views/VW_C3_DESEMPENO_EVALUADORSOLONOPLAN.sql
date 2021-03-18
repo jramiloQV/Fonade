@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_C3_DESEMPENO_EVALUADORSOLONOPLAN (CodItem, Puntaje, Id_Proyecto, NomProyecto) AS SELECT T1.CodItem, T1.Puntaje, T2.Id_Proyecto, T2.NomProyecto FROM EvaluacionEvaluador T1, Proyecto T2 WHERE T1.CodProyecto=T2.Id_Proyecto AND T1.CodConvocatoria=4

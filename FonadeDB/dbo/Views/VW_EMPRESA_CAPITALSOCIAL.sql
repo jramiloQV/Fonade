@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_EMPRESA_CAPITALSOCIAL (razonsocial, codproyecto, CapitalSocial) AS SELECT T1.razonsocial, T1.codproyecto, T1.CapitalSocial FROM Empresa T1

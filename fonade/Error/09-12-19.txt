@@ -1,0 +1,36 @@
+
+Log Entry : 
+12/09/2019 16:20:23
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Operador/NuevoOperador.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Operador/NuevoOperador.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.PlanDeNegocioV2.Administracion.Operador.NuevoOperador.cargarDatos(Nullable`1 _idOperador) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Operador\NuevoOperador.aspx.cs:línea 44
+   en Fonade.PlanDeNegocioV2.Administracion.Operador.NuevoOperador.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Operador\NuevoOperador.aspx.cs:línea 34
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 87
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+12/09/2019 16:27:30
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Operador/NuevoOperador.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Operador/NuevoOperador.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.PlanDeNegocioV2.Administracion.Operador.NuevoOperador.cargarDatos(Nullable`1 _idOperador) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Operador\NuevoOperador.aspx.cs:línea 44
+   en Fonade.PlanDeNegocioV2.Administracion.Operador.NuevoOperador.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Administracion\Operador\NuevoOperador.aspx.cs:línea 34
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 87
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________

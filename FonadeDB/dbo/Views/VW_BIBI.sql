@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_BIBI (Id_Proyecto, NomProyecto, FechaCreacion, Fecha, CodConvocatoria) AS SELECT T1.Id_Proyecto, T1.NomProyecto, T1.FechaCreacion, T2.Fecha, T2.CodConvocatoria FROM Proyecto T1, ProyectoFormalizacion T2 WHERE T1.Id_Proyecto=T2.codProyecto AND T2.CodConvocatoria=2 AND T1.CodEstado=3

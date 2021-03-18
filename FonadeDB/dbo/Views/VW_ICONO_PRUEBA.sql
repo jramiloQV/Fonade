@@ -1,0 +1,2 @@
+﻿
+CREATE VIEW VW_ICONO_PRUEBA (CodProyecto, Total, Generado, Joven, Desplazado, Madre, Minoria, Recluido, Desmovilizado, Discapacitado, Desvinculado, Justificacion) AS SELECT T1.CodProyecto, T1.Total, T1.Generado, T1.Joven, T1.Desplazado, T1.Madre, T1.Minoria, T1.Recluido, T1.Desmovilizado, T1.Discapacitado, T1.Desvinculado, T2.Justificacion FROM EmpleosGenerados T1, ConvocatoriaProyecto T2 WHERE T1.CodProyecto=T2.CodProyecto AND T2.CodConvocatoria=2

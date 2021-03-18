@@ -1,0 +1,35 @@
+
+Log Entry : 
+06/30/2020 12:57:10
+Error in: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx.
+Error URL: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.RegistroUnico.ComportamientoEmprendedor.btnRegistrar_Click(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\RegistroUnico\ComportamientoEmprendedor.aspx.cs:línea 87
+   en System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   en System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+85234
+__________________________
+
+Log Entry : 
+06/30/2020 15:14:37
+Error in: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx/btnRegistrar_Click.
+Error URL: http://localhost:5153/RegistroUnico/ComportamientoEmprendedor.aspx/btnRegistrar_Click.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Método web btnRegistrar_Click desconocido.
+Nombre del parámetro: methodName
+Error InnerException: 
+Error StackTrace:    en System.Web.Script.Services.WebServiceData.GetMethodData(String methodName)
+   en System.Web.Handlers.ScriptModule.OnPostAcquireRequestState(Object sender, EventArgs eventArgs)
+   en System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+85234
+__________________________

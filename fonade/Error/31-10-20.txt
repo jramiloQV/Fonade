@@ -1,0 +1,55 @@
+
+Log Entry : 
+10/31/2020 10:56:17
+Error in: http://localhost:5153/PlanDeNegocioV2/Formulacion/ResumenEjecutivo/ResumenEjecutivo.aspx?codproyecto=73756.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Formulacion/ResumenEjecutivo/ResumenEjecutivo.aspx?codproyecto=73756.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: DataSourceID de 'cmbSector' debe ser el identificador de un control del tipo IDataSource. No se pudo encontrar un identificador 'dataSector'.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.WebControls.DataBoundControl.GetDataSource()
+   en System.Web.UI.WebControls.DataBoundControl.ConnectToDataSourceView()
+   en System.Web.UI.WebControls.DataBoundControl.OnLoad(EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+alejandro.ospina.abogado@hotmail.com
+110311
+__________________________
+
+Log Entry : 
+10/31/2020 11:19:48
+Error in: http://localhost:5153/PlanDeNegocioV2/Formulacion/ResumenEjecutivo/ResumenEjecutivo.aspx?codproyecto=69450.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Formulacion/ResumenEjecutivo/ResumenEjecutivo.aspx?codproyecto=69450.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.PlanDeNegocioV2.Formulacion.ResumenEjecutivo.ResumenEjecutivo.CargarResumen() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Formulacion\ResumenEjecutivo\ResumenEjecutivo.aspx.cs:línea 148
+   en Fonade.PlanDeNegocioV2.Formulacion.ResumenEjecutivo.ResumenEjecutivo.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Formulacion\ResumenEjecutivo\ResumenEjecutivo.aspx.cs:línea 59
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+avicoladonmarcos@hotmail.com
+104723
+__________________________
+
+Log Entry : 
+10/31/2020 11:23:11
+Error in: http://localhost:5153/PlanDeNegocioV2/Formulacion/ResumenEjecutivo/ResumenEjecutivo.aspx?codproyecto=69450.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Formulacion/ResumenEjecutivo/ResumenEjecutivo.aspx?codproyecto=69450.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.PlanDeNegocioV2.Formulacion.ResumenEjecutivo.ResumenEjecutivo.CargarResumen() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Formulacion\ResumenEjecutivo\ResumenEjecutivo.aspx.cs:línea 148
+   en Fonade.PlanDeNegocioV2.Formulacion.ResumenEjecutivo.ResumenEjecutivo.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Formulacion\ResumenEjecutivo\ResumenEjecutivo.aspx.cs:línea 59
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+avicoladonmarcos@hotmail.com
+104723
+__________________________

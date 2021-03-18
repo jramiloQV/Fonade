@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsAceptarTerminosCargaInformacion" targetNamespace="http://tempuri.org/dsAceptarTerminosCargaInformacion.xsd" xmlns:mstns="http://tempuri.org/dsAceptarTerminosCargaInformacion.xsd" xmlns="http://tempuri.org/dsAceptarTerminosCargaInformacion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsAceptarTerminosCargaInformacion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsAceptarTerminosCargaInformacion" msprop:Generator_UserDSName="dsAceptarTerminosCargaInformacion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtCargaInfo" msprop:Generator_TableClassName="dtCargaInfoDataTable" msprop:Generator_TableVarName="tabledtCargaInfo" msprop:Generator_TablePropName="dtCargaInfo" msprop:Generator_RowDeletingName="dtCargaInfoRowDeleting" msprop:Generator_RowChangingName="dtCargaInfoRowChanging" msprop:Generator_RowEvHandlerName="dtCargaInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="dtCargaInfoRowDeleted" msprop:Generator_UserTableName="dtCargaInfo" msprop:Generator_RowChangedName="dtCargaInfoRowChanged" msprop:Generator_RowEvArgName="dtCargaInfoRowChangeEvent" msprop:Generator_RowClassName="dtCargaInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NombreAcepta" msdata:Caption="NombreEnvia" msprop:Generator_ColumnVarNameInTable="columnNombreAcepta" msprop:Generator_ColumnPropNameInRow="NombreAcepta" msprop:Generator_ColumnPropNameInTable="NombreAceptaColumn" msprop:Generator_UserColumnName="NombreAcepta" type="xs:string" minOccurs="0" />
+              <xs:element name="EmailAcepta" msdata:Caption="NombreRecibe" msprop:Generator_ColumnVarNameInTable="columnEmailAcepta" msprop:Generator_ColumnPropNameInRow="EmailAcepta" msprop:Generator_ColumnPropNameInTable="EmailAceptaColumn" msprop:Generator_UserColumnName="EmailAcepta" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaHoraAceptacion" msdata:Caption="EmailRecibe" msprop:Generator_ColumnVarNameInTable="columnFechaHoraAceptacion" msprop:Generator_ColumnPropNameInRow="FechaHoraAceptacion" msprop:Generator_ColumnPropNameInTable="FechaHoraAceptacionColumn" msprop:Generator_UserColumnName="FechaHoraAceptacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Mensaje" msprop:Generator_ColumnVarNameInTable="columnMensaje" msprop:Generator_ColumnPropNameInRow="Mensaje" msprop:Generator_ColumnPropNameInTable="MensajeColumn" msprop:Generator_UserColumnName="Mensaje" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

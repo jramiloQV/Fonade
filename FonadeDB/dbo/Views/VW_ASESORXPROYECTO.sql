@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_ASESORXPROYECTO (Nombres, Apellidos, CodInstitucion, CodProyecto, CodRol, CodConvocatoria) AS SELECT T1.Nombres, T1.Apellidos, T1.CodInstitucion, T2.CodProyecto, T2.CodRol, T2.CodConvocatoria FROM Contacto T1, ProyectoContacto T2 WHERE T1.Id_Contacto=T2.CodContacto AND T2.CodConvocatoria=46142

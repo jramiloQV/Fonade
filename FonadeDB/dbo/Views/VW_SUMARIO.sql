@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_SUMARIO (Id_Proyecto, NomProyecto, Sumario) AS SELECT T1.Id_Proyecto, T1.NomProyecto, T1.Sumario FROM Proyecto T1

@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_EJ1 (Nombres, Apellidos, Email, Direccion, Telefono, Fax, HojaVida, NomProyecto) AS SELECT T1.Nombres, T1.Apellidos, T1.Email, T1.Direccion, T1.Telefono, T1.Fax, T1.HojaVida, T2.NomProyecto FROM Contacto T1, Proyecto T2, ProyectoContacto T3 WHERE T1.Id_Contacto=T3.CodContacto AND T2.Id_Proyecto=T3.CodProyecto AND T3.CodRol=3

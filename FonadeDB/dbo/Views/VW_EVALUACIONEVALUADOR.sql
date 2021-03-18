@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_EVALUACIONEVALUADOR (CodProyecto, CodConvocatoria, CodItem, Puntaje) AS SELECT * FROM EvaluacionEvaluador T1 WHERE T1.CodProyecto=T1.CodProyecto

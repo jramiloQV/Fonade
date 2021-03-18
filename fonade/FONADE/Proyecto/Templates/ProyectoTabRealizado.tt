@@ -1,0 +1,18 @@
+﻿<div class="marcar-realizado">
+    <div style="display: inline-block">
+        <span>ULTIMA ACTUALIZACI&Oacute;N:</span> <# if (query.Contacto != null){ #> <span><#=query.Contacto.Nombres
+            + " " + query.Contacto.Apellidos#></span> <span><#=query.FechaModificacion.ToShortDateString()#></span>
+        <#} #>
+    </div>
+    <div style="display: inline-block">
+        <span>MARCAR COMO REALIZADO:</span> 
+        <# if(disabled){ #>
+        <input type="checkbox" disabled />
+        <# } else{ #>
+        <input type="checkbox" />
+        <# }#> 
+        <# if (guardar) {#>
+        <input type="button" />
+        <# }#>
+    </div>
+</div>

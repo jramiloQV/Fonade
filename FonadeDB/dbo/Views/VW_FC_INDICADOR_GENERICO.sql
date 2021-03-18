@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_FC_INDICADOR_GENERICO (codproyecto, Id_IndicadorGenerico, NombreIndicador, Numerador, Denominador) AS SELECT T1.codproyecto, T2.Id_IndicadorGenerico, T2.NombreIndicador, T2.Numerador, T2.Denominador FROM Empresa T1, IndicadorGenerico T2 WHERE T1.id_empresa=T2.CodEmpresa

@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_03CONCEPTOS_EVALXCONV (CodConvocatoria, CodProyecto, nomevaluacionconceptos) AS SELECT T1.CodConvocatoria, T1.CodProyecto, T2.nomevaluacionconceptos FROM ConvocatoriaProyecto T1, evaluacionconceptos T2 WHERE T1.codevaluacionconceptos=T2.id_evaluacionconceptos AND T1.CodConvocatoria=81

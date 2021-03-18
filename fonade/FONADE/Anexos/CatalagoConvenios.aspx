@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/Master.master" AutoEventWireup="true" CodeBehind="CatalagoConvenios.aspx.cs" Inherits="Fonade.FONADE.Anexos.CatalagoConvenios" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>

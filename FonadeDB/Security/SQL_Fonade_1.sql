@@ -1,0 +1,2 @@
+﻿CREATE USER [SQL_Fonade] FOR LOGIN [SQL_Fonade];
+

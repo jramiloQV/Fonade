@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_EDAD (Nombres, Apellidos, Identificacion, FechaNacimiento) AS SELECT T1.Nombres, T1.Apellidos, T1.Identificacion, T1.FechaNacimiento FROM Contacto T1

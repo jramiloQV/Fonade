@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_ACTIVIDADPLANOPERATIVO (Id_Proyecto, NomProyecto, NomActividad) AS SELECT T1.Id_Proyecto, T1.NomProyecto, T2.NomActividad FROM Proyecto T1, ProyectoActividadPOInterventor T2 WHERE T1.Id_Proyecto=T2.CodProyecto

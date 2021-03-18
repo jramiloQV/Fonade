@@ -1,0 +1,64 @@
+
+Log Entry : 
+12/26/2019 11:18:52
+Error in: http://localhost:5153/FONADE/Proyecto/Proyectos.aspx.
+Error URL: http://localhost:5153/FONADE/Proyecto/Proyectos.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: No se puede convertir un objeto de tipo 'WhereSelectEnumerableIterator`2[Datos.MD_VerTODOSLosProyectosActivosResult,Fonade.Negocio.Proyecto.ListadoPlanesDeNegocio]' al tipo 'System.Linq.IQueryable`1[Fonade.Negocio.Proyecto.ListadoPlanesDeNegocio]'.
+Error InnerException: 
+Error StackTrace:    en Fonade.Negocio.Proyecto.ProyectoController.VerTodosLosProyectosActivosADMIN() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade.Negocio\Proyecto\ProyectoController.cs:línea 17
+   en Fonade.Fonade.Proyecto.Proyectos.lds_proyectos_Selecting(Object sender, LinqDataSourceSelectEventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Proyecto\Proyectos.aspx.cs:línea 75
+   en System.Web.UI.WebControls.LinqDataSourceView.OnSelecting(LinqDataSourceSelectEventArgs e)
+   en System.Web.UI.WebControls.LinqDataSourceView.GetSource(QueryContext context)
+   en System.Web.UI.WebControls.LinqDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   en System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   en System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   en System.Web.UI.WebControls.GridView.DataBind()
+   en System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   en System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________
+
+Log Entry : 
+12/26/2019 11:21:50
+Error in: http://localhost:5153/Fonade/Proyecto/Proyectos.aspx.
+Error URL: http://localhost:5153/Fonade/Proyecto/Proyectos.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: No se pueden enumerar varias veces los resultados de la consulta.
+Error InnerException: 
+Error StackTrace:    en System.Data.Linq.SqlClient.SqlProvider.OneTimeEnumerable`1.GetEnumerator()
+   en System.Data.Linq.SqlClient.SqlProvider.SingleResult`1.GetEnumerator()
+   en System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   en System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   en System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   en Fonade.Fonade.Proyecto.Proyectos.lds_proyectos_Selecting(Object sender, LinqDataSourceSelectEventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Proyecto\Proyectos.aspx.cs:línea 126
+   en System.Web.UI.WebControls.LinqDataSourceView.OnSelecting(LinqDataSourceSelectEventArgs e)
+   en System.Web.UI.WebControls.LinqDataSourceView.GetSource(QueryContext context)
+   en System.Web.UI.WebControls.LinqDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   en System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   en System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   en System.Web.UI.WebControls.GridView.DataBind()
+   en System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   en System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________

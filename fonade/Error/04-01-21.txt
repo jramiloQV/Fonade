@@ -1,0 +1,62 @@
+
+Log Entry : 
+01/04/2021 11:04:00
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: SFTP.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Could not find stored procedure 'dbo.SPIAE_TabEvaDatosGenerales'.
+Error InnerException: 
+Error StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.ExecuteReader()
+   en System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   en System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   en System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   en System.Data.Linq.DataContext.ExecuteMethodCall(Object instance, MethodInfo methodInfo, Object[] parameters)
+   en Datos.FonadeDBLightDataContext.SPIAE_TabEvaDatosGenerales(Nullable`1 codProyecto, Nullable`1 codConvocatoria) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Datos\FonadeDBLight.designer.cs:línea 1036
+   en Fonade.Negocio.Proyecto.ProyectoController.infoEvalDatosGenerales(Int32 _codProyecto, Int32 _codConvocatoria) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade.Negocio\Proyecto\ProyectoController.cs:línea 427
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoPlano(Int32 _codConvocatoria, String _nomConvocatoria, String fechaArchivo, String tipoArchivo, String& rutaConvocatoria, String& nombreArchivoPlano, Int32& cantidadProyectos) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 1908
+williama.pena@carvajal.com
+104225
+__________________________
+
+Log Entry : 
+01/04/2021 11:04:09
+Error in: http://localhost:5153/FONADE/Administracion/ExportarInformacionHIS.aspx.
+Error URL: SFTP.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Could not find stored procedure 'dbo.SPIAE_TabEvaDatosGenerales'.
+Error InnerException: 
+Error StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.ExecuteReader()
+   en System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   en System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   en System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   en System.Data.Linq.DataContext.ExecuteMethodCall(Object instance, MethodInfo methodInfo, Object[] parameters)
+   en Datos.FonadeDBLightDataContext.SPIAE_TabEvaDatosGenerales(Nullable`1 codProyecto, Nullable`1 codConvocatoria) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Datos\FonadeDBLight.designer.cs:línea 1036
+   en Fonade.Negocio.Proyecto.ProyectoController.infoEvalDatosGenerales(Int32 _codProyecto, Int32 _codConvocatoria) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade.Negocio\Proyecto\ProyectoController.cs:línea 427
+   en Fonade.FONADE.Administracion.ExportarInformacionHIS.crearArchivoPlano(Int32 _codConvocatoria, String _nomConvocatoria, String fechaArchivo, String tipoArchivo, String& rutaConvocatoria, String& nombreArchivoPlano, Int32& cantidadProyectos) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\Administracion\ExportarInformacionHIS.aspx.cs:línea 1908
+williama.pena@carvajal.com
+104225
+__________________________

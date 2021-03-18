@@ -1,0 +1,10 @@
+﻿CREATE PROCEDURE [dbo].[Spot_ServiceControl]
+@ServiceName [sysname], @ServiceAction VARCHAR (10), @ClusterType VARCHAR (20), @MoveTo [sysname], @Debug CHAR (1), @xp_cmdshell_available CHAR (1)
+WITH ENCRYPTION
+AS
+BEGIN
+--The script body was encrypted and cannot be reproduced here.
+    RETURN
+END
+
+

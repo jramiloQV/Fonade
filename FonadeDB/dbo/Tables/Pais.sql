@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Pais] (
+    [Id_Pais] INT          IDENTITY (1, 1) NOT NULL,
+    [NomPais] VARCHAR (80) NOT NULL,
+    CONSTRAINT [PK_Pais] PRIMARY KEY CLUSTERED ([Id_Pais] ASC) WITH (FILLFACTOR = 50)
+);
+

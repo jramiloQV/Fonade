@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_RESUMENEJECUTIVO (CodProyecto, ConceptoNegocio, PotencialMercados, VentajasCompetitivas, ResumenInversiones, Proyecciones, ConclusionesFinancieras) AS SELECT T1.CodProyecto, T1.ConceptoNegocio, T1.PotencialMercados, T1.VentajasCompetitivas, T1.ResumenInversiones, T1.Proyecciones, T1.ConclusionesFinancieras FROM ProyectoResumenEjecutivo T1 WHERE T1.CodProyecto=15

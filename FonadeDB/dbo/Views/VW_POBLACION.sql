@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_POBLACION (Ciudad, Contactos, Proyectos) AS SELECT T1.NomCiudad, Count(T2.Id_Contacto), Count(T3.Id_Proyecto) FROM Ciudad T1, Contacto T2, Proyecto T3, ProyectoContacto T4 WHERE T4.CodProyecto=T3.Id_Proyecto AND T4.CodContacto=T2.Id_Contacto AND T1.Id_Ciudad=T3.CodCiudad GROUP BY T1.NomCiudad

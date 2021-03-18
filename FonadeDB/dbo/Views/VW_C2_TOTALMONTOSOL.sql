@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_C2_TOTALMONTOSOL (TotalPyts, TotaSalariosMin) AS SELECT Count(T1.CodProyecto), Sum(T2.Recursos) FROM ConvocatoriaProyecto T1, ProyectoFinanzasIngresos T2 WHERE T1.CodProyecto=T2.CodProyecto AND T1.CodConvocatoria=2

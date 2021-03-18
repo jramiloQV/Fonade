@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_INDICADORESGENERICOS (razonsocial, NombreIndicador, Numerador, Denominador, Id_Proyecto, NomProyecto) AS SELECT T1.razonsocial, T2.NombreIndicador, T2.Numerador, T2.Denominador, T3.Id_Proyecto, T3.NomProyecto FROM Empresa T1, IndicadorGenerico T2, Proyecto T3 WHERE T1.codproyecto=T3.Id_Proyecto AND T2.CodEmpresa=T1.id_empresa

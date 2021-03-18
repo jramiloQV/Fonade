@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_EVALUADORES_X_PLAN (Nombres, Apellidos, CodConvocatoria, CodProyecto, FechaInicio, FechaFin) AS SELECT T1.Nombres, T1.Apellidos, T2.CodConvocatoria, T2.CodProyecto, T3.FechaInicio, T3.FechaFin FROM Contacto T1, ConvocatoriaProyecto T2, ProyectoContacto T3 WHERE T1.Id_Contacto=T3.CodContacto AND T2.CodProyecto=T3.CodProyecto AND T3.CodRol=4 AND T3.CodRol>20000

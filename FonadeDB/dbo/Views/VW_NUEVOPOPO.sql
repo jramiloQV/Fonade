@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_NUEVOPOPO (Id_Ciudad, NomCiudad, Contacto, Nombres, CodCiudad, Id_Proyecto, ciudad) AS SELECT T1.Id_Ciudad, T1.NomCiudad, T2.Id_Contacto, T2.Nombres, T2.CodCiudad, T3.Id_Proyecto, T3.CodCiudad FROM Ciudad T1, Contacto T2, Proyecto T3 WHERE T1.Id_Ciudad=T2.CodCiudad AND T1.Id_Ciudad=T3.CodCiudad AND T1.Id_Ciudad>=912

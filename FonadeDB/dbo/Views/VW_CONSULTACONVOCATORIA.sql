@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_CONSULTACONVOCATORIA (NomConvocatoria, Id_Proyecto, NomProyecto, Fecha) AS SELECT T1.NomConvocatoria, T3.Id_Proyecto, T3.NomProyecto, T4.Fecha FROM Convocatoria T1, ConvocatoriaProyecto T2, Proyecto T3, ProyectoFormalizacion T4 WHERE T1.Id_Convocatoria=T2.CodConvocatoria AND T2.CodProyecto=T3.Id_Proyecto AND T4.codProyecto=T3.Id_Proyecto AND T3.Id_Proyecto=14721

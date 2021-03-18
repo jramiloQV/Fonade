@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_IDH_ALIRIO (Id_Ciudad, NomCiudad, IDH, Id_Estado, CodFase, NomEstado, Id_Proyecto, NomProyecto) AS SELECT T1.Id_Ciudad, T1.NomCiudad, T1.IDH, T2.Id_Estado, T2.CodFase, T2.NomEstado, T3.Id_Proyecto, T3.NomProyecto FROM Ciudad T1, Estado T2, Proyecto T3 WHERE T1.Id_Ciudad=T3.CodCiudad AND T2.Id_Estado=T3.CodEstado AND T2.CodFase>1 AND T2.Id_Estado<10

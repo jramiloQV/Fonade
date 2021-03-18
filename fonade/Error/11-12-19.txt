@@ -1,0 +1,20 @@
+
+Log Entry : 
+12/11/2019 15:21:47
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Operador/Operadores.aspx.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Operador/Operadores.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: GridView 'gvOperadores' desencadenó el evento Sorting, que no estaba controlado.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.WebControls.GridView.OnSorting(GridViewSortEventArgs e)
+   en System.Web.UI.WebControls.GridView.HandleSort(String sortExpression, SortDirection sortDirection)
+   en System.Web.UI.WebControls.GridView.HandleSort(String sortExpression)
+   en System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   en System.Web.UI.WebControls.GridView.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.GridView.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+giovannybenitez@gmail.com
+94544
+__________________________

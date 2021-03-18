@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_123456 (Id_Ciudad, NomCiudad, IDH, Id_Departamento, NomDepartamento) AS SELECT T1.Id_Ciudad, T1.NomCiudad, T1.IDH, T2.Id_Departamento, T2.NomDepartamento FROM Ciudad T1, departamento T2

@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PROY_X_CIUD (Ciudad, Cantidad) AS SELECT T1.NomCiudad, Count(T2.Id_Proyecto) FROM Ciudad T1, Proyecto T2 WHERE T2.CodCiudad=T1.Id_Ciudad GROUP BY T1.NomCiudad

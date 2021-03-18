@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_preguntasevaluadores (Id_Convocatoria, NomConvocatoria, Id_Proyecto, NomProyecto, Nombres, Apellidos, Descripcion, Fecha) AS SELECT T1.Id_Convocatoria, T1.NomConvocatoria, T2.Id_Proyecto, T2.NomProyecto, T2.Nombres, T2.Apellidos, T3.Descripcion, T3.Fecha FROM Vista_Convocatorias_Proyectos T1, Vista_EvaluadorProyectoConvocatoria T2, VISTA_TAREASEVALUADORES T3

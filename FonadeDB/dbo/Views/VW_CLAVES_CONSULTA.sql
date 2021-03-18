@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_CLAVES_CONSULTA (Email, Clave) AS SELECT T1.Email, T1.Clave FROM Contacto T1, ProyectoContacto T2 WHERE T1.Id_Contacto=T2.CodContacto AND T1.Identificacion=9951762284

@@ -1,0 +1,53 @@
+﻿CREATE TABLE [dbo].[Spot_Repl_Agents] (
+    [Type]                  VARCHAR (15)     NULL,
+    [Sequencer]             INT              NULL,
+    [DistributionDBName]    [sysname]        NULL,
+    [AgentName]             [sysname]        NULL,
+    [Status]                INT              NULL,
+    [Publisher]             [sysname]        NULL,
+    [PublisherDBName]       [sysname]        NULL,
+    [PublicationName]       [sysname]        NULL,
+    [StartTime]             DATETIME         NULL,
+    [Time]                  DATETIME         NULL,
+    [Duration]              NUMERIC (18)     NULL,
+    [Comments]              NVARCHAR (2000)  NULL,
+    [DeliveredTransactions] NUMERIC (18)     NULL,
+    [DeliveredCommands]     NUMERIC (18)     NULL,
+    [DeliveryRate]          NUMERIC (18)     NULL,
+    [ErrorID]               INT              NULL,
+    [JobID]                 UNIQUEIDENTIFIER NULL,
+    [LocalJob]              INT              NULL,
+    [ProfileID]             INT              NULL,
+    [AgentID]               INT              NULL,
+    [LocalTimestamp]        VARBINARY (8)    NULL,
+    [DeliveryTime]          NUMERIC (18)     NULL,
+    [AverageCommands]       NUMERIC (18)     NULL,
+    [DeliveryLatency]       NUMERIC (18)     NULL,
+    [Subscriber]            [sysname]        NULL,
+    [SubscriberDBName]      [sysname]        NULL,
+    [SubscriptionType]      INT              NULL,
+    [OffloadEnabled]        INT              NULL,
+    [OffloadServer]         [sysname]        NULL,
+    [SubscriberType]        INT              NULL,
+    [PublisherInsertCount]  INT              NULL,
+    [PublisherUpdateCount]  INT              NULL,
+    [PublisherDeleteCount]  INT              NULL,
+    [PublisherConflicts]    INT              NULL,
+    [SubscriberInsertCount] INT              NULL,
+    [SubscriberUpdateCount] INT              NULL,
+    [SubscriberDeleteCount] INT              NULL,
+    [SubscriberConflicts]   INT              NULL,
+    [MiscAgentType]         [sysname]        NULL,
+    [ErrorMessageText]      VARCHAR (1000)   NULL,
+    [id]                    INT              IDENTITY (1, 1) NOT NULL,
+    [SubscriptionTypeChar]  VARCHAR (20)     NULL,
+    [StatusText]            VARCHAR (20)     NULL,
+    [InternalAgentName]     [sysname]        NULL,
+    [Schedule]              VARCHAR (20)     NULL
+);
+
+
+GO
+CREATE UNIQUE CLUSTERED INDEX [PK_Spot_Repl_Agents]
+    ON [dbo].[Spot_Repl_Agents]([id] ASC) WITH (FILLFACTOR = 50);
+

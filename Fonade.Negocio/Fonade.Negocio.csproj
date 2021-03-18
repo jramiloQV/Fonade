@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31C15F53-4C33-4C55-9F53-04B019249170}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fonade.Negocio</RootNamespace>
+    <AssemblyName>Fonade.Negocio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\LIBRERIAS\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administracion\AcreditacionActaNegocio.cs" />
+    <Compile Include="Administracion\ConfiguraAuditoriaNegocio.cs" />
+    <Compile Include="CatalogoInsumoNegocio.cs" />
+    <Compile Include="Entidades\HistoricoEmailAcreditacionEntity.cs" />
+    <Compile Include="Entidades\InterventoriaNominaEntity.cs" />
+    <Compile Include="Entidades\InterventorProduccionEntity.cs" />
+    <Compile Include="Entidades\Parametro.cs" />
+    <Compile Include="Entidades\PlanOperativoEntity.cs" />
+    <Compile Include="Entidades\ProyectoActividadPOInterventorEntity.cs" />
+    <Compile Include="Entidades\ProyectoActividadPOInterventorTMPEntity.cs" />
+    <Compile Include="Entidades\ProyectoActividadPOMesInterventorEntity.cs" />
+    <Compile Include="Entidades\ProyectoActividadPOMesInterventorTMPEntity.cs" />
+    <Compile Include="Entidades\ProyectoMercadoProyeccionVentas.cs" />
+    <Compile Include="Entidades\Variable.cs" />
+    <Compile Include="Evaluacion\CatalogoActividadPONegocio.cs" />
+    <Compile Include="FonadeUtility.cs" />
+    <Compile Include="FonDBLight\ActaSeguimCompromisosController.cs" />
+    <Compile Include="FonDBLight\ActaSeguimContrapartidaController.cs" />
+    <Compile Include="FonDBLight\ActaSeguimEstadoEmpresaController.cs" />
+    <Compile Include="FonDBLight\ActaSeguimGestionMercadeoController.cs" />
+    <Compile Include="FonDBLight\ActaSeguimGestionEmpleoController.cs" />
+    <Compile Include="FonDBLight\ActaSeguimGestionProduccionController.cs" />
+    <Compile Include="FonDBLight\ActaSeguimGestionVentasController.cs" />
+    <Compile Include="FonDBLight\ActaSeguimientoController.cs" />
+    <Compile Include="FonDBLight\ActaSeguimientoDatosController.cs" />
+    <Compile Include="FonDBLight\ActaSeguimientoInterventoriaController.cs" />
+    <Compile Include="FonDBLight\ActaSeguimInfoPagosController.cs" />
+    <Compile Include="FonDBLight\ActaSeguimNotasController.cs" />
+    <Compile Include="FonDBLight\ActaSeguimObligContablesController.cs" />
+    <Compile Include="FonDBLight\ActaSeguimOtrasObligacionesController.cs" />
+    <Compile Include="FonDBLight\ActaSeguimOtrosAspectosController.cs" />
+    <Compile Include="FonDBLight\ActaSeguimRiesgosController.cs" />
+    <Compile Include="FonDBLight\ContratoController.cs" />
+    <Compile Include="FonDBLight\ConvenioController.cs" />
+    <Compile Include="FonDBLight\ConvocatoriaController.cs" />
+    <Compile Include="FonDBLight\DatosActaDTOController.cs" />
+    <Compile Include="FonDBLight\ddlCumplimientoController.cs" />
+    <Compile Include="FonDBLight\EmpresaController.cs" />
+    <Compile Include="FonDBLight\EvaluacionRiesgoController.cs" />
+    <Compile Include="FonDBLight\MetasActividadControllerDTO.cs" />
+    <Compile Include="FonDBLight\MetasEmpleoControllerDTO.cs" />
+    <Compile Include="FonDBLight\MetasProduccionControllerDTO.cs" />
+    <Compile Include="FonDBLight\MetasVentasControllerDTO.cs" />
+    <Compile Include="FonDBLight\ProyectoController.cs" />
+    <Compile Include="FonDBLight\SectorController.cs" />
+    <Compile Include="FonDBLight\TipoActaSeguimientoController.cs" />
+    <Compile Include="FonDBLight\UsuarioController.cs" />
+    <Compile Include="Interventoria\CambiosPONegocio.cs" />
+    <Compile Include="Interventoria\CargueMasivoZIPBLL.cs" />
+    <Compile Include="Interventoria\CatalogoVariableNegocio.cs" />
+    <Compile Include="Interventoria\CorreosNotificacionBLL.cs" />
+    <Compile Include="Interventoria\ImprimirPlanOperativoNegocio.cs" />
+    <Compile Include="Interventoria\ProyectoAcreditacionNegocio.cs" />
+    <Compile Include="Mensajes\Mensajes.cs" />
+    <Compile Include="OperacionesRoleNegocio.cs" />
+    <Compile Include="PlanDeNegocioV2\Administracion\ConcejoDirectivo\ConcejoDirectivo.cs" />
+    <Compile Include="PlanDeNegocioV2\Administracion\Interventoria\Abogado.cs" />
+    <Compile Include="PlanDeNegocioV2\Administracion\Interventoria\ActasDeSeguimientos\ActaSeguimiento.cs" />
+    <Compile Include="PlanDeNegocioV2\Administracion\Interventoria\Entidades\Contratos\Contrato.cs" />
+    <Compile Include="PlanDeNegocioV2\Administracion\Interventoria\Entidades\Empresas\Empresa.cs" />
+    <Compile Include="PlanDeNegocioV2\Administracion\Interventoria\Entidades\Entidad.cs" />
+    <Compile Include="PlanDeNegocioV2\Administracion\Interventoria\Entidades\Zonas\Zona.cs" />
+    <Compile Include="PlanDeNegocioV2\Administracion\Interventoria\Reintegros\Reintegro.cs" />
+    <Compile Include="PlanDeNegocioV2\Administracion\Interventoria\Reportes\EstadisticasAvancesModel.cs" />
+    <Compile Include="PlanDeNegocioV2\Administracion\Interventoria\Reportes\EstadisticasPagosBLL.cs" />
+    <Compile Include="PlanDeNegocioV2\Administracion\Interventoria\Reportes\EstadisticasPagosModel.cs" />
+    <Compile Include="PlanDeNegocioV2\Administracion\Interventoria\Reportes\InterventoresActivosModel.cs" />
+    <Compile Include="PlanDeNegocioV2\Administracion\Interventoria\TareasEspeciales\TareaEspecial.cs" />
+    <Compile Include="PlanDeNegocioV2\Administracion\Operador\OperadorController.cs" />
+    <Compile Include="PlanDeNegocioV2\Administracion\Operador\OperadorModel.cs" />
+    <Compile Include="PlanDeNegocioV2\Ejecucion\Actividades\ActividadPlanOperativo.cs" />
+    <Compile Include="PlanDeNegocioV2\Ejecucion\Empresa\Empresa.cs" />
+    <Compile Include="PlanDeNegocioV2\Evaluacion\AdministrarEvaluaciones\Evaluaciones.cs" />
+    <Compile Include="PlanDeNegocioV2\Evaluacion\AdministrarEvaluacion\AdministrarCoordinador\AsignarCoordinador.cs" />
+    <Compile Include="PlanDeNegocioV2\Evaluacion\AdministrarEvaluacion\AdministrarEvaluador\AsignarEvaluador.cs" />
+    <Compile Include="PlanDeNegocioV2\Evaluacion\ConceptoFinal\Aportes.cs" />
+    <Compile Include="PlanDeNegocioV2\Evaluacion\TablaDeEvaluacion\ConsultasTablaDeEvaluacion.cs" />
+    <Compile Include="PlanDeNegocioV2\Evaluacion\TablaDeEvaluacion\DatosGenerales.cs" />
+    <Compile Include="PlanDeNegocioV2\Evaluacion\TablaDeEvaluacion\HojaAvance.cs" />
+    <Compile Include="PlanDeNegocioV2\Fiduciaria\FiduciariaBLL.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\Solucion\FichaTecnica.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\TerminosYCondiciones\TerminosYCondiciones.cs" />
+    <Compile Include="PlanDeNegocioV2\ImpresionPlanNeg\ImpresionPlanNeg.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\Anexos\Anexos.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\DesarrolloSolucion\NormatividadYCondicionTech.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\DesarrolloSolucion\ProduccionNegocio.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\DesarrolloSolucion\Productividad.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\DesarrolloSolucion\Proyeccion.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\DesarrolloSolucion\RequerimientosNegocio.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\FuturoDelNegocio\Actividades.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\FuturoDelNegocio\FuturoNegocio.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\FuturoDelNegocio\PeriodoArranque.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\FuturoDelNegocio\TipoEstrategia.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\OportunidadMercado\Competidores.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\OportunidadMercado\Oportunidad.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\Protagonista\Protagonista.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\ResumenEjecutivo\Resumen.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\Riesgos\Riesgos.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\Solucion\Producto.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\DesarrolloSolucion\IngresosYCondicionesComercio.cs" />
+    <Compile Include="PlanDeNegocioV2\Formulacion\Solucion\Solucion.cs" />
+    <Compile Include="PlanDeNegocioV2\Interventoria\AvancesInterventoriaReg.cs" />
+    <Compile Include="PlanDeNegocioV2\Interventoria\CargueMasivoInformesBLL.cs" />
+    <Compile Include="PlanDeNegocioV2\Interventoria\Interventoria.cs" />
+    <Compile Include="PlanDeNegocioV2\Interventoria\Pagos.cs" />
+    <Compile Include="PlanDeNegocioV2\Interventoria\RecomendacionInterventoriaBLL.cs" />
+    <Compile Include="PlanDeNegocioV2\Interventoria\SeguimientoInterventoriaBLL.cs" />
+    <Compile Include="PlanDeNegocioV2\LiderRegional\LiderRegionalBLL.cs" />
+    <Compile Include="PlanDeNegocioV2\ReportePuntaje\ReportePtajeEvaluacion.cs" />
+    <Compile Include="PlanDeNegocioV2\Utilidad\Convocatoria.cs" />
+    <Compile Include="PlanDeNegocioV2\Utilidad\General.cs" />
+    <Compile Include="PlanDeNegocioV2\Utilidad\IndicadorEvaluacion.cs" />
+    <Compile Include="PlanDeNegocioV2\Utilidad\IndicadorFormulacion.cs" />
+    <Compile Include="PlanDeNegocioV2\Utilidad\PagingExtensions.cs" />
+    <Compile Include="PlanDeNegocioV2\Utilidad\Proyecto.cs" />
+    <Compile Include="PlanDeNegocioV2\Utilidad\ProyectoEvaluacion.cs" />
+    <Compile Include="PlanDeNegocioV2\Utilidad\ProyectoGeneral.cs" />
+    <Compile Include="PlanDeNegocioV2\Utilidad\TabEvaluacion.cs" />
+    <Compile Include="PlanDeNegocioV2\Utilidad\TabFormulacion.cs" />
+    <Compile Include="PlanDeNegocioV2\Utilidad\User.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoOperacionNegocio.cs" />
+    <Compile Include="Proyecto\OperacionesComunes.cs" />
+    <Compile Include="Proyecto\ProyectoController.cs" />
+    <Compile Include="Proyecto\ProyectoMercadoEstrategiaNegocio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proyecto\ProyectoMercadoInvestigacionNegocio.cs" />
+    <Compile Include="Proyecto\ProyectoMercadoProyeccionVentasNegocio.cs" />
+    <Compile Include="Utilidades\ConvertirMonedasEnLetras.cs" />
+    <Compile Include="Utilidades\CorreoAdvanced.cs" />
+    <Compile Include="Utilidades\Encriptar.cs" />
+    <Compile Include="Utilidades\OrdenarGridLinQ.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{5332f5c6-2b63-4ba4-842c-adeb440baada}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fonade.DbAccess\Fonade.DbAccess.csproj">
+      <Project>{0206f51e-9a64-444d-8986-2e78c0f88a74}</Project>
+      <Name>Fonade.DbAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

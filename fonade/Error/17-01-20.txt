@@ -1,0 +1,17 @@
+
+Log Entry : 
+01/17/2020 16:13:39
+Error in: http://localhost:5153/FONADE/interventoria/CatalogoDocumentoPagos.aspx.
+Error URL: http://localhost:5153/FONADE/interventoria/CatalogoDocumentoPagos.aspx.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: Referencia a objeto no establecida como instancia de un objeto.
+Error InnerException: 
+Error StackTrace:    en Fonade.FONADE.interventoria.CatalogoDocumentoPagos.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\FONADE\interventoria\CatalogoDocumentoPagos.aspx.cs:línea 36
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 89
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+mayucalle@gmail.com
+104464
+__________________________

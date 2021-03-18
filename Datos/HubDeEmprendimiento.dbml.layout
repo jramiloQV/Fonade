@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="HubDeEmprendimiento">
+  <DataContextMoniker Name="/HubDeEmprendimientoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5d10f732-b84c-4531-933c-cd2c72ac5def" absoluteBounds="4.25, 1.625, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/HubDeEmprendimientoDataContext/HubDeEmprendimiento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c00bf91c-b93a-4240-929b-56405362d944" absoluteBounds="4.265, 2.085, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

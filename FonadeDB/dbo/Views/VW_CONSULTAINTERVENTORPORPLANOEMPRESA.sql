@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_CONSULTAINTERVENTORPORPLANOEMPRESA (Nombres, Apellidos, Email, Id_Proyecto, NomProyecto) AS SELECT T1.Nombres, T1.Apellidos, T1.Email, T4.Id_Proyecto, T4.NomProyecto FROM Contacto T1, Empresa T2, EmpresaInterventor T3, Proyecto T4 WHERE T1.Id_Contacto=T3.CodContacto AND T2.codproyecto=T4.Id_Proyecto AND T3.CodEmpresa=T2.id_empresa

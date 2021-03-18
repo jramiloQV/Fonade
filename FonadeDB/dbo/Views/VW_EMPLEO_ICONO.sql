@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_EMPLEO_ICONO (NomProyecto, EmpleoDirecto, EmpleoIndirecto) AS SELECT T1.NomProyecto, T2.EmpleoDirecto, T2.EmpleoIndirecto FROM Proyecto T1, ProyectoMetaSocial T2 WHERE T2.CodProyecto=T1.Id_Proyecto

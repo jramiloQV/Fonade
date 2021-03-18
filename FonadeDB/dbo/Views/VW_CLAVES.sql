@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_CLAVES (CodProyecto, Nombres, Apellidos, Identificacion, Email, Clave) AS SELECT T1.CodProyecto, T2.Nombres, T2.Apellidos, T2.Identificacion, T2.Email, T2.Clave FROM ProyectoContacto T1, Contacto T2 WHERE T1.CodContacto=T2.Id_Contacto AND T1.CodProyecto=30982

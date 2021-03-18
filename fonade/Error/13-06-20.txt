@@ -1,0 +1,54 @@
+
+Log Entry : 
+06/13/2020 01:39:19
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/GestionarActas.aspx?codigo=65775.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/GestionarActas.aspx?codigo=65775.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: No se puede crear un lector de datos para el conjunto de datos 'dsDatosFirmaInterventor'.
+Error InnerException: 
+Error StackTrace:    en Microsoft.ReportingServices.OnDemandProcessing.RuntimeLiveQueryExecutor.ExecuteReader(IJobContext jobContext, DataSourceErrorInspector errorInspector, String commandText)
+   en Microsoft.ReportingServices.OnDemandProcessing.RuntimeLiveQueryExecutor.RunLiveQuery(List`1 queryParams, Object[] paramValues)
+   en Microsoft.ReportingServices.OnDemandProcessing.RuntimeDataSet.RunEmbeddedQuery(List`1 queryParams, Object[] paramValues)
+   en Microsoft.ReportingServices.OnDemandProcessing.RuntimeDataSet.RunDataSetQuery()
+   en Microsoft.ReportingServices.OnDemandProcessing.RuntimeDataSet.InitializeAndRunLiveQuery()
+   en Microsoft.ReportingServices.OnDemandProcessing.RuntimeAtomicDataSet.InitializeRowSourceAndProcessRows(ExecutedQuery existingQuery)
+   en Microsoft.ReportingServices.OnDemandProcessing.RuntimeAtomicDataSet.Process(ExecutedQuery existingQuery)
+   en Microsoft.ReportingServices.OnDemandProcessing.RuntimeAtomicDataSet.ProcessConcurrent(Object threadSet)
+elena.alzate@udea.edu.co
+109442
+__________________________
+
+Log Entry : 
+06/13/2020 01:47:16
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/GestionarActas.aspx?codigo=65775.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/GestionarActas.aspx?codigo=65775.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: No se puede crear un lector de datos para el conjunto de datos 'dsDatosFirmaInterventor'.
+Error InnerException: 
+Error StackTrace:    en Microsoft.ReportingServices.OnDemandProcessing.RuntimeLiveQueryExecutor.ExecuteReader(IJobContext jobContext, DataSourceErrorInspector errorInspector, String commandText)
+   en Microsoft.ReportingServices.OnDemandProcessing.RuntimeLiveQueryExecutor.RunLiveQuery(List`1 queryParams, Object[] paramValues)
+   en Microsoft.ReportingServices.OnDemandProcessing.RuntimeDataSet.RunEmbeddedQuery(List`1 queryParams, Object[] paramValues)
+   en Microsoft.ReportingServices.OnDemandProcessing.RuntimeDataSet.RunDataSetQuery()
+   en Microsoft.ReportingServices.OnDemandProcessing.RuntimeDataSet.InitializeAndRunLiveQuery()
+   en Microsoft.ReportingServices.OnDemandProcessing.RuntimeAtomicDataSet.InitializeRowSourceAndProcessRows(ExecutedQuery existingQuery)
+   en Microsoft.ReportingServices.OnDemandProcessing.RuntimeAtomicDataSet.Process(ExecutedQuery existingQuery)
+   en Microsoft.ReportingServices.OnDemandProcessing.RuntimeAtomicDataSet.ProcessConcurrent(Object threadSet)
+elena.alzate@udea.edu.co
+109442
+__________________________
+
+Log Entry : 
+06/13/2020 17:41:33
+Error in: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/GestionarActas.aspx?codigo=65775.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Administracion/Interventoria/ActasDeSeguimiento/GestionarActas.aspx?codigo=65775.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: La expresión Value del objeto ‘Textbox27’ de tipo text box tiene un parámetro de ámbito que no es válido para una función de agregado. El parámetro de ámbito debe establecerse en una constante de cadena que sea igual al nombre de un grupo contenedor, al nombre de una región de datos contenedora o al nombre de un conjunto de datos.
+Error InnerException: 
+Error StackTrace:    en Microsoft.ReportingServices.ReportPublishing.ReportPublishing.InternalCreateIntermediateFormat(Stream definitionStream, String& description, String& language, ParameterInfoCollection& parameters, DataSourceInfoCollection& dataSources, DataSetInfoCollection& sharedDataSetReferences, UserLocationFlags& userReferenceLocation, ArrayList& dataSetsName, Boolean& hasExternalImages, Boolean& hasHyperlinks, Byte[]& dataSetsHash)
+   en Microsoft.ReportingServices.ReportPublishing.ReportPublishing.CreateIntermediateFormat(Byte[] definition, String& description, String& language, ParameterInfoCollection& parameters, DataSourceInfoCollection& dataSources, DataSetInfoCollection& sharedDataSetReferences, UserLocationFlags& userReferenceLocation, ArrayList& dataSetsName, Boolean& hasExternalImages, Boolean& hasHyperlinks, Byte[]& dataSetsHash)
+   en Microsoft.ReportingServices.ReportProcessing.ReportProcessing.CompileOdpReport(PublishingContext reportPublishingContext, PublishingErrorContext errorContext, String& reportDescription, String& reportLanguage, ParameterInfoCollection& parameters, DataSourceInfoCollection& dataSources, DataSetInfoCollection& sharedDataSetReferences, UserLocationFlags& userReferenceLocation, ArrayList& dataSetsName, Boolean& hasExternalImages, Boolean& hasHyperlinks, Byte[]& dataSetsHash)
+   en Microsoft.ReportingServices.ReportProcessing.ReportProcessing.CreateIntermediateFormat(PublishingContext reportPublishingContext)
+   en Microsoft.Reporting.ReportCompiler.CompileReport(ICatalogItemContext context, Byte[] reportDefinition, Boolean generateExpressionHostWithRefusedPermissions, ControlSnapshot& snapshot)
+elena.alzate@udea.edu.co
+109442
+__________________________

@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PRUEBA_CARVAJAL (Id_TareaUsuario, CodTareaPrograma, CodProyecto, NomTareaUsuario, Descripcion, RecordatorioEmail, Fecha, Respuesta, FechaCierre) AS SELECT T1.Id_TareaUsuario, T1.CodTareaPrograma, T1.CodProyecto, T1.NomTareaUsuario, T1.Descripcion, T1.RecordatorioEmail, T2.Fecha, T2.Respuesta, T2.FechaCierre FROM TareaUsuario T1, TareaUsuarioRepeticion T2

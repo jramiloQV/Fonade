@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_PPPPOOO (Id_Ciudad, NomCiudad, Id_Grupo, NomGrupo) AS SELECT T1.Id_Ciudad, T1.NomCiudad, T2.Id_Grupo, T2.NomGrupo FROM Ciudad T1, Grupo T2 WHERE T1.Id_Ciudad=T2.Id_Grupo

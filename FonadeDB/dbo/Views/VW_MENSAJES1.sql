@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_MENSAJES1 (Nombres, Apellidos, Email, Id_Proyecto, NomProyecto, CodEstado, Descripcion, RequiereRespuesta) AS SELECT T1.Nombres, T1.Apellidos, T1.Email, T2.Id_Proyecto, T2.NomProyecto, T2.CodEstado, T4.Descripcion, T4.RequiereRespuesta FROM Contacto T1, Proyecto T2, ProyectoContacto T3, TareaUsuario T4

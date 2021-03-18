@@ -1,0 +1,79 @@
+
+Log Entry : 
+04/07/2020 21:24:50
+Error in: http://localhost:5153/PlanDeNegocioV2/Formulacion/SeguimientoInterventoria/SeguimInterventoria.aspx?codproyecto=70944.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Formulacion/SeguimientoInterventoria/SeguimInterventoria.aspx?codproyecto=70944.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: DataBinding: 'Fonade.Negocio.PlanDeNegocioV2.Interventoria.ArchivosActas' no contiene una propiedad con el nombre 'Nombre'.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   en System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   en System.Web.UI.DataBinder.Eval(Object container, String expression)
+   en System.Web.UI.TemplateControl.Eval(String expression)
+   en ASP.plandenegociov2_formulacion_seguimientointerventoria_seguiminterventoria_aspx.__DataBinding__control37(Object sender, EventArgs e) en d:\DevFonade\SP\1. APP_CODE\CS\FUENTES\fonade\PlanDeNegocioV2\Formulacion\SeguimientoInterventoria\SeguimInterventoria.aspx:línea 68
+   en System.Web.UI.Control.OnDataBinding(EventArgs e)
+   en System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   en System.Web.UI.Control.DataBind()
+   en System.Web.UI.Control.DataBindChildren()
+   en System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   en System.Web.UI.Control.DataBind()
+   en System.Web.UI.Control.DataBindChildren()
+   en System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   en System.Web.UI.Control.DataBind()
+   en System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   en System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   en System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   en System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   en System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   en System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   en System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   en System.Web.UI.WebControls.GridView.DataBind()
+   en Fonade.PlanDeNegocioV2.Formulacion.SeguimientoInterventoria.SeguimInterventoria.cargarGrillas() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Formulacion\SeguimientoInterventoria\SeguimInterventoria.aspx.cs:línea 42
+   en Fonade.PlanDeNegocioV2.Formulacion.SeguimientoInterventoria.SeguimInterventoria.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Formulacion\SeguimientoInterventoria\SeguimInterventoria.aspx.cs:línea 34
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 89
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+wapl1989@gmail.com
+107273
+__________________________
+
+Log Entry : 
+04/07/2020 22:11:34
+Error in: http://localhost:5153/PlanDeNegocioV2/Formulacion/SeguimientoInterventoria/SeguimInterventoria.aspx?codproyecto=70944.
+Error URL: http://localhost:5153/PlanDeNegocioV2/Formulacion/SeguimientoInterventoria/SeguimInterventoria.aspx?codproyecto=70944.
+Error Data: System.Collections.ListDictionaryInternal.
+Error Message: DataBinding: 'ASP.plandenegociov2_formulacion_seguimientointerventoria_seguiminterventoria_aspx' no contiene una propiedad con el nombre 'mostrarEliminar'.
+Error InnerException: 
+Error StackTrace:    en System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   en ASP.plandenegociov2_formulacion_seguimientointerventoria_seguiminterventoria_aspx.__DataBinding__control45(Object sender, EventArgs e) en d:\DevFonade\SP\1. APP_CODE\CS\FUENTES\fonade\PlanDeNegocioV2\Formulacion\SeguimientoInterventoria\SeguimInterventoria.aspx:línea 78
+   en System.Web.UI.Control.OnDataBinding(EventArgs e)
+   en System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   en System.Web.UI.Control.DataBind()
+   en System.Web.UI.Control.DataBindChildren()
+   en System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   en System.Web.UI.Control.DataBind()
+   en System.Web.UI.Control.DataBindChildren()
+   en System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   en System.Web.UI.Control.DataBind()
+   en System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   en System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   en System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   en System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   en System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   en System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   en System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   en System.Web.UI.WebControls.GridView.DataBind()
+   en Fonade.PlanDeNegocioV2.Formulacion.SeguimientoInterventoria.SeguimInterventoria.cargarGrillas() en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Formulacion\SeguimientoInterventoria\SeguimInterventoria.aspx.cs:línea 42
+   en Fonade.PlanDeNegocioV2.Formulacion.SeguimientoInterventoria.SeguimInterventoria.Page_Load(Object sender, EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\PlanDeNegocioV2\Formulacion\SeguimientoInterventoria\SeguimInterventoria.aspx.cs:línea 34
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Fonade.Negocio.Base_Page.OnLoad(EventArgs e) en D:\DevFonade\SP\1. APP_CODE\CS\FUENTES\Fonade\Negocio\Base_Page.cs:línea 89
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+wapl1989@gmail.com
+107273
+__________________________

@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_C (Nombres, Apellidos, Email, Clave) AS SELECT T1.Nombres, T1.Apellidos, T1.Email, T1.Clave FROM Contacto T1 WHERE T1.Identificacion=79434099

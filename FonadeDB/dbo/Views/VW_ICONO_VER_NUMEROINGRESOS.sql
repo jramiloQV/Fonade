@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_ICONO_VER_NUMEROINGRESOS (No_Ingresos) AS SELECT Count(T1.CodContacto) FROM LogIngreso T1

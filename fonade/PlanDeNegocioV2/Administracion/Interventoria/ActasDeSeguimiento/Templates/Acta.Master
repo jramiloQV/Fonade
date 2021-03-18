@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Acta.master.cs" Inherits="Fonade.PlanDeNegocioV2.Administracion.Interventoria.ActasDeSeguimiento.Templates.Acta" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-85402368-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+        table.specialTable, table.specialTable th, table.specialTable td {
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+
+            table.specialTable th, table.specialTable td {
+                padding: 5px;
+                text-align: left;
+                font-size: 12px;
+            }
+
+        .centered {
+            text-align: center !important;
+        }
+
+        .gray {
+            color: gray;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .verticalSpace {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .tabla_anexo_2 {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        page {
+            background: white;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 0.5cm;
+        }
+
+            page[size="A4"] {
+                width: 21cm;
+                height: 29.7cm;
+            }
+
+                page[size="A4"][layout="portrait"] {
+                    width: 29.7cm;
+                    height: 21cm;
+                }
+
+        @media print {
+            body, page {
+                margin: 0;
+                box-shadow: 0;
+            }
+
+            /*@page {
+                margin: 0;
+                size: auto;
+            }*/
+        }
+
+        div.footer {
+            display: block;
+            text-align: center;
+        }
+    </style>
+    <style type="text/css">
+        .auto-style1 {
+            width: 131px;
+        }
+
+        .auto-style3 {
+            width: 120px;
+            height: 105px;
+        }
+
+        .auto-style4 {
+            width: 577px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div>
+                <table style="width: 100%;">
+                    <tr>
+                        <td class="auto-style1" rowspan="2" style="border-style: solid; border-width: 1px">
+                            <img alt="" class="auto-style3" src="../../../../../Images/Img/logoFonade.png" /></td>
+                        <td class="auto-style4" style="border-style: solid; border-width: thin">
+                            <strong>ACTA DE SEGUIMIENTO DE CONTRATO</strong></td>
+                        <td rowspan="2" style="border-style: solid; border-width: thin">
+                            <img alt="" class="auto-style3" src="../../../../../Images/Img/logoFonade.png" /></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4" style="border-style: solid; border-width: thin"><strong>DOCUMENTO DE INTERVENTORIA FONDO EMPRENDER</strong></td>
+                    </tr>
+                </table>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
+
+<script language="javascript">
+    window.print();
+</script>

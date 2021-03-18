@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_INTERVENTORESXEMPRESA (Nombres, Apellidos, Email, razonsocial, codproyecto) AS SELECT T1.Nombres, T1.Apellidos, T1.Email, T2.razonsocial, T2.codproyecto FROM Contacto T1, Empresa T2, EmpresaInterventor T3 WHERE T1.Id_Contacto=T3.CodContacto AND T2.id_empresa=T3.CodEmpresa AND T3.Rol=8 AND T3.Inactivo=0

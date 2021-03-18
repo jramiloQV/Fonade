@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_ACTASACREDITACION (NomActa, NumActa, CodProyecto, NomConvocatoria) AS SELECT T1.NomActa, T1.NumActa, T2.CodProyecto, T3.NomConvocatoria FROM AcreditacionActa T1, AcreditacionActaProyecto T2, Convocatoria T3 WHERE T1.Id_Acta=T2.CodActa AND T1.CodConvocatoria=T3.Id_Convocatoria AND T2.CodProyecto=43487

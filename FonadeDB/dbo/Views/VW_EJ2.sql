@@ -1,0 +1,1 @@
+﻿CREATE VIEW VW_EJ2 (CodConvocatoria, CodProyecto, Fecha, Justificacion, Viable) AS SELECT T1.CodConvocatoria, T1.CodProyecto, T1.Fecha, T1.Justificacion, T1.Viable FROM ConvocatoriaProyecto T1
